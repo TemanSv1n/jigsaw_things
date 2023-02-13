@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "jigsaw:cock_chestplate"
+    },
+    "title": {
+      "translate": "advancements.cockachievement.title"
+    },
+    "description": {
+      "translate": "advancements.cockachievement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cockachievement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jigsaw:cock_chestplate"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "jigsaw:slaveachievement"
+}

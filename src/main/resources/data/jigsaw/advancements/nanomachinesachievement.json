@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jigsaw:nanomachines_chestplate"
+    },
+    "title": {
+      "translate": "advancements.nanomachinesachievement.title"
+    },
+    "description": {
+      "translate": "advancements.nanomachinesachievement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "nanomachinesachievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jigsaw:jigsawroot"
+}

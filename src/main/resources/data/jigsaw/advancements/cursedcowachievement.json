@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:skeleton_skull"
+    },
+    "title": {
+      "translate": "advancements.cursedcowachievement.title"
+    },
+    "description": {
+      "translate": "advancements.cursedcowachievement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cursedcowachievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jigsaw:teethmaskachievement"
+}

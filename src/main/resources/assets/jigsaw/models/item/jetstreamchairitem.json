@@ -1,0 +1,7 @@
+{
+  "parent": "jigsaw:custom/jetstream_chair_item",
+  "textures": {
+    "2": "jigsaw:blocks/texturejsc",
+    "particle": "jigsaw:items/stick"
+  }
+}

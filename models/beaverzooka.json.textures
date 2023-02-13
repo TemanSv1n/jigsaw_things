@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "smithing_table_top",
+        "1": "cauldron_inner",
+        "2": "cauldron_side",
+        "3": "composter_side",
+        "4": "composter_bottom"
+      },
+      "name": "default"
+    }
+  }
+}

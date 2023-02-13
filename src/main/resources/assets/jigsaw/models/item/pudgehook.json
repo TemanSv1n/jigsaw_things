@@ -1,0 +1,7 @@
+{
+  "parent": "jigsaw:custom/pudge_hook",
+  "textures": {
+    "3": "jigsaw:blocks/pudge",
+    "particle": "jigsaw:items/tool_wirecutter"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "jigsaw:beaverblock"
+    },
+    "title": {
+      "translate": "advancements.beaverblockachievement.title"
+    },
+    "description": {
+      "translate": "advancements.beaverblockachievement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "beaverblockachievement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jigsaw:beaverblock"
+            ],
+            "count": {
+              "min": 1,
+              "max": 9999
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "jigsaw:jigsawroot"
+}

@@ -1,0 +1,46 @@
+{
+  "_fv": 38,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.OBSERVER"
+      },
+      {
+        "value": "Blocks.OBSIDIAN"
+      },
+      {
+        "value": "Blocks.FURNACE"
+      },
+      {
+        "value": "Blocks.PISTON"
+      },
+      {
+        "value": "Blocks.CAULDRON"
+      },
+      {
+        "value": "Blocks.LEVER"
+      },
+      {
+        "value": "Blocks.OBSERVER"
+      },
+      {
+        "value": "Blocks.OBSIDIAN"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Murasamsheathempty"
+    },
+    "name": "murasamsheathrecipe",
+    "namespace": "mod"
+  }
+}

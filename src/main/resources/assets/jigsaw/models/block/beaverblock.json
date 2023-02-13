@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jigsaw:blocks/beaver_block",
+    "up": "jigsaw:blocks/beaver_block",
+    "north": "jigsaw:blocks/beaver_block",
+    "east": "jigsaw:blocks/beaver_block",
+    "south": "jigsaw:blocks/beaver_block",
+    "west": "jigsaw:blocks/beaver_block",
+    "particle": "jigsaw:blocks/beaver_block"
+  }
+}

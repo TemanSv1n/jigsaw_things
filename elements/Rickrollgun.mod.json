@@ -1,0 +1,45 @@
+{
+  "_fv": 38,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 1,
+    "texture": "acacia_boat",
+    "customModelName": "mspgun:default",
+    "name": "Rickroll gun",
+    "specialInfo": [
+      "Requires arrows"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "Items.ARROW"
+    },
+    "shootConstantly": false,
+    "usageCount": 64,
+    "actionSound": {
+      "value": "entity.generic.explode"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "RickrollgunRangedItemUsed"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 1.0,
+    "bulletKnockback": 5,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Blocks.CHISELED_POLISHED_BLACKSTONE"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsEntity": {
+      "name": "RickrollgunProjectileHitsPlayer"
+    }
+  }
+}

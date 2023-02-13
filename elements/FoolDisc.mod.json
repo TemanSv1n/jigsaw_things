@@ -1,0 +1,21 @@
+{
+  "_fv": 38,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Calambour - Fools' village",
+    "texture": "fool_disc",
+    "description": "Fools' village",
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "specialInfo": [
+      "Drops from chicken"
+    ],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:fools_village"
+    },
+    "lengthInTicks": 0,
+    "analogOutput": 0
+  }
+}

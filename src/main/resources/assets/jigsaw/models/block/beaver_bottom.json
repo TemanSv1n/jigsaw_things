@@ -1,0 +1,8 @@
+{
+  "parent": "jigsaw:custom/beaver_bottom",
+  "textures": {
+    "all": "jigsaw:blocks/d41fb99355c78d33_2",
+    "particle": "jigsaw:blocks/farmland_moist",
+    "0": "jigsaw:blocks/d41fb99355c78d33_2"
+  }
+}

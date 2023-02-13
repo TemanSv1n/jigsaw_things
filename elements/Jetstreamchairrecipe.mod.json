@@ -1,0 +1,46 @@
+{
+  "_fv": 38,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Highcompressedbeaweed"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Beaweeddustblock"
+      },
+      {
+        "value": "Blocks.WOODEN_SLAB"
+      },
+      {
+        "value": "CUSTOM:Beaweeddustblock"
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": "Blocks.HOPPER"
+      },
+      {
+        "value": "Items.STICK"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Jetstreamchairitem"
+    },
+    "name": "jetstreamchairrecipe",
+    "namespace": "mod"
+  }
+}

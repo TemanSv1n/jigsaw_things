@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jigsaw:blocks/pig",
+    "up": "jigsaw:blocks/pig",
+    "north": "jigsaw:blocks/pig",
+    "east": "jigsaw:blocks/pig",
+    "south": "jigsaw:blocks/pig",
+    "west": "jigsaw:blocks/pig",
+    "particle": "jigsaw:blocks/pig"
+  }
+}

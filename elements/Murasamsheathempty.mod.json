@@ -1,0 +1,30 @@
+{
+  "_fv": 38,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "minecart_contraption",
+    "customModelName": "sheath:default",
+    "name": "Empty sheath",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 0.0,
+    "attackSpeed": 0.0,
+    "enchantability": 0,
+    "damageVsEntity": 0.0,
+    "usageCount": 23676,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "MurasamsheathemptyRightclicked"
+    }
+  }
+}

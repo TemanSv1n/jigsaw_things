@@ -1,0 +1,10 @@
+{
+  "parent": "jigsaw:custom/medic_gun",
+  "textures": {
+    "0": "jigsaw:blocks/red_shulker_box",
+    "1": "jigsaw:blocks/observer_side",
+    "2": "jigsaw:blocks/cauldron_inner",
+    "3": "jigsaw:blocks/cauldron_side",
+    "particle": "jigsaw:items/red_sword"
+  }
+}

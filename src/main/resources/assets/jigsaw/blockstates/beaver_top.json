@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jigsaw:block/beaver_top"
+    },
+    "facing=east": {
+      "model": "jigsaw:block/beaver_top",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jigsaw:block/beaver_top",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jigsaw:block/beaver_top",
+      "y": 270
+    }
+  }
+}

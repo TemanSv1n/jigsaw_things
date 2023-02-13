@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jigsaw:slave_helmet"
+    },
+    "title": {
+      "translate": "advancements.slaveachievement.title"
+    },
+    "description": {
+      "translate": "advancements.slaveachievement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "slaveachievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jigsaw:jigsawroot"
+}

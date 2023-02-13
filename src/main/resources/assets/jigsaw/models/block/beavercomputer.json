@@ -1,0 +1,17 @@
+{
+  "parent": "jigsaw:custom/beaver_computer",
+  "textures": {
+    "all": "jigsaw:blocks/destroy_stage_9",
+    "particle": "jigsaw:blocks/anvil",
+    "0": "jigsaw:blocks/anvil_top",
+    "1": "jigsaw:blocks/anvil",
+    "2": "jigsaw:blocks/destroy_stage_9",
+    "3": "jigsaw:blocks/coal_block",
+    "4": "jigsaw:blocks/redstone_block",
+    "5": "jigsaw:blocks/bone_block_top",
+    "6": "jigsaw:blocks/emerald_block",
+    "7": "jigsaw:blocks/amethyst_block",
+    "8": "jigsaw:blocks/diamond_block",
+    "9": "jigsaw:blocks/iron_block"
+  }
+}

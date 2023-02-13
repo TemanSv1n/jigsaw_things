@@ -1,0 +1,8 @@
+{
+  "parent": "jigsaw:custom/pwhat_block",
+  "textures": {
+    "all": "jigsaw:blocks/pw_layer_1",
+    "particle": "jigsaw:blocks/peeled_overweight_carrot_top",
+    "0": "jigsaw:blocks/pw_layer_1"
+  }
+}

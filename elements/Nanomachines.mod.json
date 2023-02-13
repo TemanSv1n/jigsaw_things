@@ -1,0 +1,73 @@
+{
+  "_fv": 38,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": false,
+    "textureHelmet": "",
+    "enableBody": true,
+    "textureBody": "beaweed_seeds",
+    "enableLeggings": false,
+    "textureLeggings": "",
+    "enableBoots": false,
+    "textureBoots": "",
+    "onBodyTick": {
+      "name": "NanomachinesBodyTickEvent"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "armorTextureFile": "pw_",
+    "helmetName": "Nanomachines Helmet",
+    "bodyName": "Nanomachines",
+    "leggingsName": "Nanomachines Leggings",
+    "bootsName": "Nanomachines Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "ModelNanomachines",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "ArmsL",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "senator-armstrong-mgr-hd-on-planetminecraft-com.png",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": true,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 128,
+    "damageValueHelmet": 0,
+    "damageValueBody": 20,
+    "damageValueLeggings": 0,
+    "damageValueBoots": 0,
+    "enchantability": 15,
+    "toughness": 3.0,
+    "knockbackResistance": 0.1,
+    "equipSound": {
+      "value": "block.beacon.activate"
+    },
+    "repairItems": [
+      {
+        "value": "Items.NETHERITE_INGOT"
+      }
+    ]
+  }
+}

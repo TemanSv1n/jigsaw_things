@@ -1,0 +1,62 @@
+{
+  "rickroll": {
+    "category": "master",
+    "subtitle": "subtitles.rickroll",
+    "sounds": [
+      {
+        "name": "jigsaw:pwgood-astley",
+        "stream": false
+      }
+    ]
+  },
+  "clown_horn": {
+    "category": "master",
+    "subtitle": "subtitles.clown_horn",
+    "sounds": [
+      {
+        "name": "jigsaw:double-clown-horn-funny-comedy-tone",
+        "stream": false
+      }
+    ]
+  },
+  "fools_village": {
+    "category": "record",
+    "subtitle": "subtitles.fools_village",
+    "sounds": [
+      {
+        "name": "jigsaw:videoplayback-_5_",
+        "stream": true
+      }
+    ]
+  },
+  "fargus": {
+    "category": "master",
+    "subtitle": "subtitles.fargus",
+    "sounds": [
+      {
+        "name": "jigsaw:farghus",
+        "stream": false
+      }
+    ]
+  },
+  "ponos_sounds": {
+    "category": "record",
+    "subtitle": "subtitles.ponos_sounds",
+    "sounds": [
+      {
+        "name": "jigsaw:videoplayback-_4_",
+        "stream": true
+      }
+    ]
+  },
+  "circus_theme": {
+    "category": "record",
+    "subtitle": "subtitles.circus_theme",
+    "sounds": [
+      {
+        "name": "jigsaw:videoplayback",
+        "stream": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:flint"
+    },
+    "1": {
+      "item": "jigsaw:beaweeddustblock"
+    },
+    "2": {
+      "item": "jigsaw:beaweeddust"
+    }
+  },
+  "result": {
+    "item": "jigsaw:shitammo",
+    "count": 4
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "jigsaw:custom/pigkaxe",
+  "textures": {
+    "0": "jigsaw:blocks/pig",
+    "1": "jigsaw:blocks/lightning_rod",
+    "particle": "jigsaw:items/netherite_boots"
+  }
+}

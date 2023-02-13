@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "jigsaw:super_auto_fork"
+    },
+    "title": {
+      "translate": "advancements.forkachievement.title"
+    },
+    "description": {
+      "translate": "advancements.forkachievement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "forkachievement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jigsaw:super_auto_fork"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "jigsaw:purgenachievement"
+}

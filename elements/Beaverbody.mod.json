@@ -1,0 +1,47 @@
+{
+  "_fv": 38,
+  "_type": "item",
+  "definition": {
+    "renderType": 1,
+    "texture": "birbebiba",
+    "customModelName": "beaver:default",
+    "name": "Beaver",
+    "rarity": "EPIC",
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 32,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Hit armor stand with it to create Statue. You can destroy it with sword."
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onEntityHitWith": {
+      "name": "BeaverbodyLivingEntityIsHitWithItem"
+    },
+    "isFood": true,
+    "nutritionalValue": 16,
+    "saturation": 0.7999999999999999,
+    "eatResultItem": {
+      "value": "Items.BONE"
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "eat"
+  }
+}

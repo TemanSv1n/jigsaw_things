@@ -1,0 +1,30 @@
+{
+  "_fv": 38,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGH",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "bvsod.png",
+          "use1Xscale": true,
+          "x": -25,
+          "y": -14
+        }
+      }
+    ],
+    "baseTexture": "bvsod.png",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "BeaverSODDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

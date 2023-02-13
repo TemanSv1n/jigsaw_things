@@ -1,0 +1,19 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "anvil_top",
+        "1": "anvil",
+        "2": "destroy_stage_9",
+        "3": "coal_block",
+        "4": "redstone_block",
+        "5": "bone_block_top",
+        "6": "emerald_block",
+        "7": "amethyst_block",
+        "8": "diamond_block",
+        "9": "iron_block"
+      },
+      "name": "default"
+    }
+  }
+}

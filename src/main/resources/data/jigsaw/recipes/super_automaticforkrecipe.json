@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_hoe"
+    },
+    "1": {
+      "item": "minecraft:iron_hoe"
+    },
+    "2": {
+      "item": "minecraft:iron_hoe"
+    },
+    "4": {
+      "item": "minecraft:piston"
+    },
+    "7": {
+      "item": "minecraft:oak_log"
+    }
+  },
+  "result": {
+    "item": "jigsaw:super_auto_fork",
+    "count": 1
+  }
+}

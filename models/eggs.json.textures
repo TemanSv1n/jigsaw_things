@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "anvil",
+        "1": "calcite",
+        "2": "deepslate_tiles",
+        "3": "amethyst_block",
+        "4": "gold_block",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

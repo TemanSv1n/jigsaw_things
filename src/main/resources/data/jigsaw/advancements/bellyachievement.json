@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "jigsaw:belly_chestplate"
+    },
+    "title": {
+      "translate": "advancements.bellyachievement.title"
+    },
+    "description": {
+      "translate": "advancements.bellyachievement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bellyachievement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jigsaw:belly_chestplate"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "jigsaw:slaveachievement"
+}

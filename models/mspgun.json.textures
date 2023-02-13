@@ -1,0 +1,17 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "barrel_side",
+        "1": "blast_furnace_side",
+        "2": "observer_side",
+        "4": "black_shulker_box",
+        "5": "redstone_lamp_on",
+        "6": "activator_rail",
+        "7": "respawn_anchor_top_off",
+        "missing": "lodestone_top"
+      },
+      "name": "default"
+    }
+  }
+}

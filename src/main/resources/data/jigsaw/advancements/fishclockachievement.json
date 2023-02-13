@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jigsaw:fishclock"
+    },
+    "title": {
+      "translate": "advancements.fishclockachievement.title"
+    },
+    "description": {
+      "translate": "advancements.fishclockachievement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fishclockachievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jigsaw:jigsawroot"
+}

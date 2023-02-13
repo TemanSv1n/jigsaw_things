@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jigsaw:beaweedsoup"
+    },
+    "title": {
+      "translate": "advancements.beaweedsoupachievement.title"
+    },
+    "description": {
+      "translate": "advancements.beaweedsoupachievement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "beaweedsoupachievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jigsaw:beaweedachievement"
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 "
+  ],
+  "key": {
+    "0": {
+      "tag": "minecraft:coals"
+    },
+    "1": {
+      "item": "jigsaw:beaweeddustblock"
+    },
+    "2": {
+      "tag": "minecraft:coals"
+    },
+    "4": {
+      "item": "minecraft:bone_meal"
+    }
+  },
+  "result": {
+    "item": "jigsaw:beaverblock",
+    "count": 1
+  }
+}

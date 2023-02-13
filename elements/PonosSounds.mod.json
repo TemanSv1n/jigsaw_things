@@ -1,0 +1,21 @@
+{
+  "_fv": 38,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Beaver - Ponos Sounds",
+    "texture": "beaver_disc",
+    "description": "Sounds of ponos",
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "specialInfo": [
+      "Drops from cow"
+    ],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:ponos_sounds"
+    },
+    "lengthInTicks": 0,
+    "analogOutput": 0
+  }
+}

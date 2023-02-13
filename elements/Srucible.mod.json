@@ -1,0 +1,33 @@
+{
+  "_fv": 38,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "antioxidant",
+    "customModelName": "crucible:default",
+    "name": "Srucible",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 4,
+    "efficiency": 8.0,
+    "attackSpeed": 1.6,
+    "enchantability": 0,
+    "damageVsEntity": 7.0,
+    "usageCount": 1024,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "SrucibleRightclicked"
+    },
+    "onEntityHitWith": {
+      "name": "SrucibleLivingEntityIsHitWithTool"
+    }
+  }
+}

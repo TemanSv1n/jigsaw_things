@@ -1,0 +1,7 @@
+{
+  "parent": "jigsaw:custom/beaver",
+  "textures": {
+    "0": "jigsaw:blocks/graph_bober_iv",
+    "particle": "jigsaw:items/birbebiba"
+  }
+}

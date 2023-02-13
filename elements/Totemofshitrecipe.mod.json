@@ -1,0 +1,46 @@
+{
+  "_fv": 38,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Beaweeddust"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Beaweed"
+      },
+      {
+        "value": "Items.WOODEN_SWORD"
+      },
+      {
+        "value": "CUSTOM:Beaweed"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Beaweeddustblock"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Totemofshit"
+    },
+    "name": "totemofshitrecipe",
+    "namespace": "mod"
+  }
+}

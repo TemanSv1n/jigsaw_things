@@ -1,0 +1,48 @@
+{
+  "_fv": 38,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "bundle",
+    "customModelName": "Normal",
+    "name": "Shit Ammo Gun",
+    "specialInfo": [
+      "NOT GAMEPLAY"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "block.piston.extend"
+    },
+    "hasGlow": false,
+    "animation": "drink",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 5,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Blocks.DIRT#1"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "ponos.png",
+    "onBulletHitsBlock": {
+      "name": "ShitAmmoGunProjectileHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "ShitAmmoGunProjectileHitsLivingEntity"
+    },
+    "onBulletFlyingTick": {
+      "name": "ShitAmmoGunWhileProjectileFlyingTick"
+    }
+  }
+}

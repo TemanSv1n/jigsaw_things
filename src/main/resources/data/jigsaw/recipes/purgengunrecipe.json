@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "345",
+    "6 8"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:cauldron"
+    },
+    "2": {
+      "item": "jigsaw:purgenbundle"
+    },
+    "3": {
+      "item": "minecraft:dispenser"
+    },
+    "4": {
+      "item": "minecraft:copper_ingot"
+    },
+    "5": {
+      "item": "minecraft:copper_block"
+    },
+    "6": {
+      "item": "minecraft:hopper"
+    },
+    "8": {
+      "item": "minecraft:barrel"
+    }
+  },
+  "result": {
+    "item": "jigsaw:purgengun",
+    "count": 1
+  }
+}

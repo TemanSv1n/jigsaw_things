@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jigsaw:beavercollar"
+    },
+    "title": {
+      "translate": "advancements.beavercollarachievement.title"
+    },
+    "description": {
+      "translate": "advancements.beavercollarachievement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "beavercollarachievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jigsaw:beawerbody_achievement"
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "jigsaw:custom/eggs",
+  "textures": {
+    "0": "jigsaw:blocks/anvil",
+    "1": "jigsaw:blocks/calcite",
+    "2": "jigsaw:blocks/deepslate_tiles",
+    "3": "jigsaw:blocks/amethyst_block",
+    "4": "jigsaw:blocks/gold_block",
+    "missing": "jigsaw:blocks/",
+    "particle": "jigsaw:items/heart_of_the_sea"
+  }
+}

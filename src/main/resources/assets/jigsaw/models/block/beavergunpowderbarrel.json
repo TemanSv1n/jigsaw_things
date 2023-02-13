@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jigsaw:blocks/barrel_bottom",
+    "up": "jigsaw:blocks/barrel_top_tnt",
+    "north": "jigsaw:blocks/barrel_side_tnt",
+    "east": "jigsaw:blocks/barrel_side_tnt",
+    "south": "jigsaw:blocks/barrel_side_tnt",
+    "west": "jigsaw:blocks/barrel_side_tnt",
+    "particle": "jigsaw:blocks/barrel_bottom"
+  }
+}

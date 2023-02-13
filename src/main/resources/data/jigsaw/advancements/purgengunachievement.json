@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "jigsaw:purgengun"
+    },
+    "title": {
+      "translate": "advancements.purgengunachievement.title"
+    },
+    "description": {
+      "translate": "advancements.purgengunachievement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "purgengunachievement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jigsaw:purgengun"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "jigsaw:purgenachievement"
+}

@@ -1,0 +1,21 @@
+{
+  "_fv": 38,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Bottle of shit",
+    "splashName": "Splash bottle of shit",
+    "lingeringName": "Lingering shit",
+    "arrowName": "Shit arrow",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Poop"
+        },
+        "duration": 1200,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

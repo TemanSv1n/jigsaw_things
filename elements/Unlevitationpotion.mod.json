@@ -1,0 +1,21 @@
+{
+  "_fv": 38,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Unlevitation",
+    "splashName": "Splash Potion of Unlevitation",
+    "lingeringName": "Lingering Potion of Unlevitation",
+    "arrowName": "Arrow of Unlevitation",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Unlevitation"
+        },
+        "duration": 1200,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

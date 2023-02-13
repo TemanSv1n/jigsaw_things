@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "jigsaw:jetstreamchairitem"
+    },
+    "title": {
+      "translate": "advancements.jetstreamchairachievement.title"
+    },
+    "description": {
+      "translate": "advancements.jetstreamchairachievement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "jetstreamchairachievement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jigsaw:jetstreamchairitem"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "jigsaw:jigsawroot"
+}

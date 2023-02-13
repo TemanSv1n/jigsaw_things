@@ -1,0 +1,46 @@
+{
+  "_fv": 38,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 1,
+    "texture": "splash_potion",
+    "customModelName": "poop_smoke_grenade_0:default",
+    "name": "Shitty grenade",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "stackSize": 16,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.snowball.throw"
+    },
+    "hasGlow": false,
+    "animation": "spear",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "ShitgrenadeRangedItemUsed"
+    },
+    "bulletPower": 0.6,
+    "bulletDamage": 0.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modelpoop_smoke_grenade_entity",
+    "customBulletModelTexture": "stiched_texture_gr.png",
+    "onBulletHitsBlock": {
+      "name": "ShitgrenadeProjectileHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "ShitgrenadeProjectileHitsBlock"
+    }
+  }
+}

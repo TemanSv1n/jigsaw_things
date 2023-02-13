@@ -1,0 +1,11 @@
+{
+  "parent": "jigsaw:custom/poop_smoke_grenade_0",
+  "textures": {
+    "0": "jigsaw:blocks/barrel_side",
+    "1": "jigsaw:blocks/anvil",
+    "2": "jigsaw:blocks/repeater",
+    "3": "jigsaw:blocks/gr1",
+    "missing": "jigsaw:blocks/anvil",
+    "particle": "jigsaw:items/splash_potion"
+  }
+}

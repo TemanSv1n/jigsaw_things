@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jigsaw:blocks/b111",
+    "up": "jigsaw:blocks/b3",
+    "north": "jigsaw:blocks/barrel_side111",
+    "east": "jigsaw:blocks/barrel_side111",
+    "south": "jigsaw:blocks/barrel_side111",
+    "west": "jigsaw:blocks/barrel_side111",
+    "particle": "jigsaw:blocks/b111"
+  }
+}

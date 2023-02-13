@@ -1,0 +1,33 @@
+{
+  "_fv": 38,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "heart_of_the_sea",
+    "customModelName": "eggs:default",
+    "name": "Eggs",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 0.0,
+    "attackSpeed": 0.8,
+    "enchantability": 0,
+    "damageVsEntity": 4.0,
+    "usageCount": 128,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "EggsRightclicked"
+    },
+    "onRightClickedOnBlock": {
+      "name": "EggsRightclicked"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "blast_furnace_front",
+        "missing": "blast_furnace_front"
+      },
+      "name": "default"
+    }
+  }
+}

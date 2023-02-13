@@ -1,0 +1,46 @@
+{
+  "_fv": 38,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "Items.COPPER_INGOT"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "Items.BOOK"
+      },
+      {
+        "value": "Items.GOLD_INGOT"
+      },
+      {
+        "value": "Items.COAL#0"
+      },
+      {
+        "value": "Items.EMERALD"
+      },
+      {
+        "value": "Items.DYE#4"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Capitalbook"
+    },
+    "name": "capitalbookrecipe",
+    "namespace": "mod"
+  }
+}

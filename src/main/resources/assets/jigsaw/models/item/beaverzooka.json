@@ -1,0 +1,11 @@
+{
+  "parent": "jigsaw:custom/beaverzooka",
+  "textures": {
+    "0": "jigsaw:blocks/smithing_table_top",
+    "1": "jigsaw:blocks/cauldron_inner",
+    "2": "jigsaw:blocks/cauldron_side",
+    "3": "jigsaw:blocks/composter_side",
+    "4": "jigsaw:blocks/composter_bottom",
+    "particle": "jigsaw:items/bamboo"
+  }
+}

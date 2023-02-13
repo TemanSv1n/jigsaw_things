@@ -1,0 +1,23 @@
+{
+  "_fv": 38,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Brewing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "brewingInputStack": {
+      "value": "POTION:WATER"
+    },
+    "brewingIngredientStack": {
+      "value": "CUSTOM:Beaweeddust"
+    },
+    "brewingReturnStack": {
+      "value": "POTION:CUSTOM:Shitbottle"
+    },
+    "name": "shitbottlerecipe",
+    "namespace": "mod"
+  }
+}

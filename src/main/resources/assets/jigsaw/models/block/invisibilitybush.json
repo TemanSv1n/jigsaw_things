@@ -1,0 +1,7 @@
+{
+  "parent": "block/leaves",
+  "textures": {
+    "all": "jigsaw:blocks/oak_leaves",
+    "particle": "jigsaw:blocks/oak_leaves"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "jigsaw:custom/cigarette",
+  "textures": {
+    "0": "jigsaw:blocks/piglin_banner_pattern",
+    "particle": "jigsaw:items/stick"
+  }
+}

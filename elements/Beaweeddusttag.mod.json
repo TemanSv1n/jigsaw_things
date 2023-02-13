@@ -1,0 +1,18 @@
+{
+  "_fv": 38,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Beaweeddust"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "beaweeddust",
+    "namespace": "forge"
+  }
+}

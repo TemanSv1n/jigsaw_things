@@ -1,0 +1,46 @@
+{
+  "_fv": 38,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 16,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.LEAVES"
+      },
+      {
+        "value": "Blocks.LEAVES"
+      },
+      {
+        "value": "Blocks.LEAVES"
+      },
+      {
+        "value": "Blocks.LEAVES"
+      },
+      {
+        "value": "Items.GOLDEN_CARROT"
+      },
+      {
+        "value": "Blocks.LEAVES"
+      },
+      {
+        "value": "Blocks.LEAVES"
+      },
+      {
+        "value": "Blocks.LEAVES"
+      },
+      {
+        "value": "Blocks.LEAVES"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Invisibilitybush"
+    },
+    "name": "invbushrecipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "jigsaw:blocks/wheat121212",
+    "particle": "jigsaw:blocks/wheat121212"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "jigsaw:beaweeddust"
+    },
+    {
+      "item": "jigsaw:beaweeddustblock"
+    },
+    {
+      "item": "jigsaw:beaweeddust"
+    },
+    {
+      "item": "minecraft:leather"
+    },
+    {
+      "item": "jigsaw:ponos_bucket"
+    },
+    {
+      "item": "minecraft:leather"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "minecraft:wheat"
+    }
+  ],
+  "result": {
+    "item": "jigsaw:purgenbundle",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_fv": 38,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "SPACE",
+    "keyBindingName": "Murasam double-jump",
+    "keyBindingCategoryKey": "movement",
+    "onKeyReleased": {
+      "name": "MurasamjumpOnKeyReleased"
+    }
+  }
+}

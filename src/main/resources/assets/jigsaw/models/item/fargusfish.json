@@ -1,0 +1,7 @@
+{
+  "parent": "jigsaw:custom/fargusfishjson",
+  "textures": {
+    "0": "jigsaw:blocks/cod123",
+    "particle": "jigsaw:items/beaver_bomb_6"
+  }
+}

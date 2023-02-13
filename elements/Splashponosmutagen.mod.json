@@ -1,0 +1,43 @@
+{
+  "_fv": 38,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "ponos_mutagen",
+    "customModelName": "Normal",
+    "name": "Purgen Mutagen",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 1,
+    "actionSound": {
+      "value": "entity.splash_potion.throw"
+    },
+    "hasGlow": false,
+    "animation": "drink",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 0.6,
+    "bulletDamage": 0.4,
+    "bulletKnockback": 5,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Splashponosmutagen"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "SplashponosmutagenProjectileHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "SplashponosmutagenProjectileHitsBlock"
+    }
+  }
+}

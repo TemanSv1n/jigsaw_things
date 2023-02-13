@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "graph_bober_iv_collar"
+      },
+      "name": "default"
+    }
+  }
+}

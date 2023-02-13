@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "red_shulker_box",
+        "1": "observer_side",
+        "2": "cauldron_inner",
+        "3": "cauldron_side"
+      },
+      "name": "default"
+    }
+  }
+}

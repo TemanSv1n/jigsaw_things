@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "stripped_dark_oak_log",
+        "1": "stripped_dark_oak_log_top",
+        "2": "barrel_top_open"
+      },
+      "name": "default"
+    }
+  }
+}

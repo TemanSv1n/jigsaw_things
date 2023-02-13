@@ -1,0 +1,45 @@
+{
+  "_fv": 38,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "beaweed_soup",
+    "customModelName": "Normal",
+    "name": "Beaweed soup",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 32,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "BeaweedsoupPlayerFinishesUsingItem"
+    },
+    "isFood": true,
+    "nutritionalValue": 2,
+    "saturation": 0.19999999999999998,
+    "eatResultItem": {
+      "value": "Items.BOWL"
+    },
+    "isMeat": false,
+    "isAlwaysEdible": true,
+    "animation": "drink"
+  }
+}

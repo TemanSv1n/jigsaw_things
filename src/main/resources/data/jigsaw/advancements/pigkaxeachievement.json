@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jigsaw:pigkaxe"
+    },
+    "title": {
+      "translate": "advancements.pigkaxeachievement.title"
+    },
+    "description": {
+      "translate": "advancements.pigkaxeachievement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "pigkaxeachievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jigsaw:jigsawroot"
+}

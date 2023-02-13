@@ -1,0 +1,11 @@
+{
+  "parent": "jigsaw:custom/autofork",
+  "textures": {
+    "0": "jigsaw:blocks/brass_casing_side",
+    "1": "jigsaw:blocks/brass_funnel_plating",
+    "2": "jigsaw:blocks/standard_track_crossing",
+    "3": "jigsaw:blocks/chute_diagonal",
+    "missing": "jigsaw:blocks/standard_track_crossing",
+    "particle": "jigsaw:items/fool_disc"
+  }
+}

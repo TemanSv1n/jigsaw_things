@@ -1,0 +1,39 @@
+{
+  "_fv": 38,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "red_sword",
+    "customModelName": "murasam:default",
+    "name": "MuraSAM",
+    "specialInfo": [
+      "Owner of this sword is not obliged..."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 2.0,
+    "attackSpeed": 1.7000000000000002,
+    "enchantability": 2,
+    "damageVsEntity": 6.199999999999999,
+    "usageCount": 1228,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Blocks.REDSTONE_BLOCK"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "MurasamRightclicked"
+    },
+    "onEntityHitWith": {
+      "name": "MurasamLivingEntityIsHitWithTool"
+    }
+  }
+}

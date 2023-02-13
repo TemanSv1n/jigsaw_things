@@ -1,0 +1,46 @@
+{
+  "_fv": 38,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.CAULDRON"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.STONE_BRICK_WALL"
+      },
+      {
+        "value": "Items.AMETHYST_SHARD"
+      },
+      {
+        "value": "Blocks.STONE_BRICK_WALL"
+      },
+      {
+        "value": "Blocks.BASALT"
+      },
+      {
+        "value": "Blocks.BLAST_FURNACE"
+      },
+      {
+        "value": "Blocks.BASALT"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Solonka"
+    },
+    "name": "solonkarecipe",
+    "namespace": "mod"
+  }
+}

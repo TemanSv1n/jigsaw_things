@@ -1,0 +1,7 @@
+{
+  "parent": "jigsaw:custom/marmoset",
+  "textures": {
+    "0": "jigsaw:blocks/marmoset",
+    "particle": "jigsaw:items/birbebiba"
+  }
+}

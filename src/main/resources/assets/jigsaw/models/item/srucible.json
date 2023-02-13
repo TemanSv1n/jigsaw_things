@@ -1,0 +1,12 @@
+{
+  "parent": "jigsaw:custom/crucible",
+  "textures": {
+    "0": "jigsaw:blocks/grindstone_pivot",
+    "1": "jigsaw:blocks/blast_furnace_side",
+    "2": "jigsaw:blocks/stonecutter_bottom",
+    "3": "jigsaw:blocks/blast_furnace_front_true",
+    "5": "jigsaw:blocks/texture",
+    "6": "jigsaw:blocks/texture2",
+    "particle": "jigsaw:items/antioxidant"
+  }
+}

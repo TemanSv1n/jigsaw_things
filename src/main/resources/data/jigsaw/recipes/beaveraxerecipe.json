@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "jigsaw:beaverblock"
+    },
+    "1": {
+      "item": "jigsaw:beaweeddustblock"
+    },
+    "2": {
+      "item": "jigsaw:beaweeddustblock"
+    },
+    "3": {
+      "item": "minecraft:iron_ingot"
+    },
+    "5": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "jigsaw:beaveraxe",
+    "count": 1
+  }
+}

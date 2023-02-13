@@ -1,0 +1,30 @@
+{
+  "_fv": 38,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "1123dsddssd",
+    "customModelName": "Normal",
+    "name": "Beaver knife",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 2,
+    "efficiency": 6.0,
+    "attackSpeed": 1.7999999999999998,
+    "enchantability": 5,
+    "damageVsEntity": 4.0,
+    "usageCount": 128,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "BeaverknifeLivingEntityIsHitWithTool"
+    }
+  }
+}

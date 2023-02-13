@@ -1,0 +1,46 @@
+{
+  "_fv": 38,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 8,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.PISTON"
+      },
+      {
+        "value": "CUSTOM:Beaweed"
+      },
+      {
+        "value": "Blocks.PISTON"
+      },
+      {
+        "value": "Blocks.STONE"
+      },
+      {
+        "value": "CUSTOM:Beaweeddustblock"
+      },
+      {
+        "value": "Blocks.STONE"
+      },
+      {
+        "value": "Blocks.OBSIDIAN"
+      },
+      {
+        "value": "CUSTOM:Beaweed"
+      },
+      {
+        "value": "Blocks.OBSIDIAN"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Highcompressedbeaweed"
+    },
+    "name": "compressedbeaweedrecipe",
+    "namespace": "mod"
+  }
+}

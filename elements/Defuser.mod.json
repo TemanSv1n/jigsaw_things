@@ -1,0 +1,37 @@
+{
+  "_fv": 38,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "defuser",
+    "customModelName": "Normal",
+    "name": "Defuser",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 1.0,
+    "usageCount": 64,
+    "blocksAffected": [
+      {
+        "value": "CUSTOM:Gunpowderbarrel"
+      },
+      {
+        "value": "CUSTOM:Safegunpowderbarrel"
+      },
+      {
+        "value": "CUSTOM:Beavergunpowderbarrel"
+      }
+    ],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

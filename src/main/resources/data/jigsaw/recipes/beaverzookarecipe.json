@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    "345",
+    "6  "
+  ],
+  "key": {
+    "2": {
+      "item": "minecraft:repeater"
+    },
+    "3": {
+      "item": "jigsaw:beaverbomb"
+    },
+    "4": {
+      "item": "minecraft:hopper"
+    },
+    "5": {
+      "item": "jigsaw:beaverblock"
+    },
+    "6": {
+      "item": "minecraft:grindstone"
+    }
+  },
+  "result": {
+    "item": "jigsaw:beaverzooka",
+    "count": 1
+  }
+}

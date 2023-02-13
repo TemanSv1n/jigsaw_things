@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "muramasa_sam123",
+        "2": "kobura",
+        "missing": "kobura"
+      },
+      "name": "default"
+    }
+  }
+}

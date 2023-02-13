@@ -1,0 +1,14 @@
+{
+  "parent": "jigsaw:custom/mspgun",
+  "textures": {
+    "0": "jigsaw:blocks/barrel_side",
+    "1": "jigsaw:blocks/blast_furnace_side",
+    "2": "jigsaw:blocks/observer_side",
+    "4": "jigsaw:blocks/black_shulker_box",
+    "5": "jigsaw:blocks/redstone_lamp_on",
+    "6": "jigsaw:blocks/activator_rail",
+    "7": "jigsaw:blocks/respawn_anchor_top_off",
+    "missing": "jigsaw:blocks/lodestone_top",
+    "particle": "jigsaw:items/acacia_boat"
+  }
+}

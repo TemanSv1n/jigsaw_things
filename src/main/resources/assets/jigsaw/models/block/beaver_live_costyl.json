@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jigsaw:blocks/lightning_rod",
+    "up": "jigsaw:blocks/lightning_rod",
+    "north": "jigsaw:blocks/lightning_rod",
+    "east": "jigsaw:blocks/lightning_rod",
+    "south": "jigsaw:blocks/lightning_rod",
+    "west": "jigsaw:blocks/lightning_rod",
+    "particle": "jigsaw:blocks/lightning_rod"
+  }
+}

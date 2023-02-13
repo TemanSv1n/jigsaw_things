@@ -1,0 +1,9 @@
+{
+  "parent": "jigsaw:custom/smoking_pipee",
+  "textures": {
+    "0": "jigsaw:blocks/stripped_dark_oak_log",
+    "1": "jigsaw:blocks/stripped_dark_oak_log_top",
+    "2": "jigsaw:blocks/barrel_top_open",
+    "particle": "jigsaw:items/slave_boots"
+  }
+}

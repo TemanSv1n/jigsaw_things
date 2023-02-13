@@ -1,0 +1,17 @@
+{
+  "_fv": 38,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "BrownSOD",
+    "icon": "bvsod.png",
+    "color": {
+      "value": -10007531,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true
+  }
+}

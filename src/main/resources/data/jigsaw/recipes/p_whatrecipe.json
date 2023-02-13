@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    " 4 ",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:black_wool"
+    },
+    "4": {
+      "item": "minecraft:yellow_wool"
+    },
+    "6": {
+      "item": "minecraft:black_wool"
+    },
+    "7": {
+      "item": "minecraft:black_wool"
+    },
+    "8": {
+      "item": "minecraft:black_wool"
+    }
+  },
+  "result": {
+    "item": "jigsaw:pwhat_helmet",
+    "count": 1
+  }
+}

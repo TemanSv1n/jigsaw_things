@@ -1,0 +1,17 @@
+{
+  "_fv": 38,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Adminkiller"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "unbreakable",
+    "namespace": "minecraft"
+  }
+}

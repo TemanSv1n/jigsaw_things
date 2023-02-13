@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "muramasa_sam",
+        "1": "muramasa_sam123"
+      },
+      "name": "default"
+    }
+  }
+}

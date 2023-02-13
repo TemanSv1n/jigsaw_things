@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "jigsaw:beaweeddust"
+    },
+    "1": {
+      "item": "jigsaw:beaweeddustblock"
+    },
+    "2": {
+      "item": "jigsaw:beaweeddust"
+    },
+    "3": {
+      "item": "jigsaw:beaweeddustblock"
+    },
+    "4": {
+      "item": "minecraft:tnt"
+    },
+    "5": {
+      "item": "jigsaw:beaweeddustblock"
+    },
+    "6": {
+      "item": "jigsaw:beaweeddust"
+    },
+    "7": {
+      "item": "jigsaw:beaweeddustblock"
+    },
+    "8": {
+      "item": "jigsaw:beaweeddust"
+    }
+  },
+  "result": {
+    "item": "jigsaw:beaverbomb",
+    "count": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "jigsaw:custom/beavser",
+  "textures": {
+    "0": "jigsaw:blocks/graph_bober_iv_collar",
+    "particle": "jigsaw:items/acacia_boat"
+  }
+}

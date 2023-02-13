@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:stick"
+  },
+  "addition": {
+    "item": "minecraft:command_block"
+  },
+  "result": {
+    "item": "jigsaw:adminkiller"
+  }
+}

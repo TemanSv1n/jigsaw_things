@@ -1,0 +1,8 @@
+{
+  "parent": "jigsaw:custom/solonka",
+  "textures": {
+    "0": "jigsaw:blocks/blast_furnace_front",
+    "missing": "jigsaw:blocks/blast_furnace_front",
+    "particle": "jigsaw:items/acacia_boat"
+  }
+}

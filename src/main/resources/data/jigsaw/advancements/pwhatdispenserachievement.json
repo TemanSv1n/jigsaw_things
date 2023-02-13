@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:dispenser"
+    },
+    "title": {
+      "translate": "advancements.pwhatdispenserachievement.title"
+    },
+    "description": {
+      "translate": "advancements.pwhatdispenserachievement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "pwhatdispenserachievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jigsaw:pwhatachievement"
+}

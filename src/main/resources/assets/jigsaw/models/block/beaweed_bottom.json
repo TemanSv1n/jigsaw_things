@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "jigsaw:blocks/bamboo_stalk",
+    "particle": "jigsaw:blocks/bamboo_stalk"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_fv": 38,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Beaweeddust"
+      },
+      {
+        "value": "CUSTOM:Beaweeddustblock"
+      },
+      {
+        "value": "CUSTOM:Beaweeddust"
+      },
+      {
+        "value": "Items.LEATHER"
+      },
+      {
+        "value": "CUSTOM:Ponos.bucket"
+      },
+      {
+        "value": "Items.LEATHER"
+      },
+      {
+        "value": "Items.WHEAT"
+      },
+      {
+        "value": "Items.EGG"
+      },
+      {
+        "value": "Items.WHEAT"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Purgenbundle"
+    },
+    "name": "purgenbundlerecipe",
+    "namespace": "mod"
+  }
+}

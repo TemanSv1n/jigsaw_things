@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "jigsaw:block/beavergunpowderbarrel",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "jigsaw:block/beavergunpowderbarrel"
+    },
+    "axis=z": {
+      "model": "jigsaw:block/beavergunpowderbarrel",
+      "x": 90
+    }
+  }
+}

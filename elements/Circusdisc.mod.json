@@ -1,0 +1,21 @@
+{
+  "_fv": 38,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Clown - Circus",
+    "texture": "music_disc_circus",
+    "description": "Circus theme",
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "specialInfo": [
+      "Drops from pig"
+    ],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:circus_theme"
+    },
+    "lengthInTicks": 0,
+    "analogOutput": 0
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "piglin_banner_pattern"
+      },
+      "name": "default"
+    }
+  }
+}

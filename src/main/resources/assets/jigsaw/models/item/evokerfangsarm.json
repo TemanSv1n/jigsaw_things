@@ -1,0 +1,7 @@
+{
+  "parent": "jigsaw:custom/evoker_fangs_arm",
+  "textures": {
+    "0": "jigsaw:blocks/evoker_fangs",
+    "particle": "jigsaw:items/big_carrot"
+  }
+}

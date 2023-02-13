@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "jigsaw:beaweeddustblock"
+    },
+    {
+      "item": "jigsaw:beaweeddustblock"
+    },
+    {
+      "item": "jigsaw:beaweeddustblock"
+    },
+    {
+      "item": "jigsaw:beaweeddustblock"
+    },
+    {
+      "item": "minecraft:bone_block"
+    },
+    {
+      "item": "jigsaw:beaweeddustblock"
+    },
+    {
+      "item": "jigsaw:beaweeddustblock"
+    },
+    {
+      "item": "jigsaw:beaweeddustblock"
+    },
+    {
+      "item": "jigsaw:beaweeddustblock"
+    }
+  ],
+  "result": {
+    "item": "jigsaw:beaverbody",
+    "count": 1
+  }
+}

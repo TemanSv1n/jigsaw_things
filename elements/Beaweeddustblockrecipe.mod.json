@@ -1,0 +1,46 @@
+{
+  "_fv": 38,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Beaweeddust"
+      },
+      {
+        "value": "CUSTOM:Beaweeddust"
+      },
+      {
+        "value": "CUSTOM:Beaweeddust"
+      },
+      {
+        "value": "CUSTOM:Beaweeddust"
+      },
+      {
+        "value": "CUSTOM:Beaweeddust"
+      },
+      {
+        "value": "CUSTOM:Beaweeddust"
+      },
+      {
+        "value": "CUSTOM:Beaweeddust"
+      },
+      {
+        "value": "CUSTOM:Beaweeddust"
+      },
+      {
+        "value": "CUSTOM:Beaweeddust"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Beaweeddustblock"
+    },
+    "name": "beaweeddustblockrecipe",
+    "namespace": "mod"
+  }
+}

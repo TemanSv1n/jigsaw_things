@@ -1,0 +1,51 @@
+{
+  "_fv": 38,
+  "_type": "fluid",
+  "definition": {
+    "name": "Ponos",
+    "bucketName": "Bucket of ponos",
+    "textureStill": "ponos_still",
+    "textureFlowing": "ponos_flow",
+    "tintType": "No tint",
+    "canMultiply": true,
+    "flowRate": 8,
+    "levelDecrease": 1,
+    "slopeFindDistance": 4,
+    "spawnParticles": false,
+    "dripParticle": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "flowStrength": -2.0,
+    "luminosity": 0,
+    "density": 1000,
+    "viscosity": 1000,
+    "temperature": 400,
+    "type": "WATER",
+    "generateBucket": true,
+    "textureBucket": "ponos_bucket",
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "emptySound": {
+      "value": "item.bucket.empty_lava"
+    },
+    "rarity": "COMMON",
+    "specialInfo": [
+      "Hold bucket when you have diarrhea to get it"
+    ],
+    "resistance": 100.0,
+    "luminance": 0,
+    "lightOpacity": 0,
+    "emissiveRendering": false,
+    "tickRate": 10,
+    "flammability": 50,
+    "fireSpreadSpeed": 50,
+    "colorOnMap": "PODZOL",
+    "frequencyOnChunks": 5,
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "onEntityCollides": {
+      "name": "PonosMobplayerCollidesBlock"
+    }
+  }
+}

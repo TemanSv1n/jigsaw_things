@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "paper",
+        "1": "red_terracotta"
+      },
+      "name": "default"
+    }
+  }
+}

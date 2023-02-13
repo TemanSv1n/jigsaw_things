@@ -1,0 +1,45 @@
+{
+  "_fv": 38,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 1,
+    "texture": "bamboo",
+    "customModelName": "beaverzooka:default",
+    "name": "Beaver-zooka",
+    "specialInfo": [
+      "Beaver chops the tree"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:Beaverammo"
+    },
+    "shootConstantly": false,
+    "usageCount": 35,
+    "actionSound": {
+      "value": "entity.ghast.shoot"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "BeaverzookaRangedItemUsed"
+    },
+    "bulletPower": 0.5,
+    "bulletDamage": 1.0,
+    "bulletKnockback": 1,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Beaverblock"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletFlyingTick": {
+      "name": "BeaverzookaWhileProjectileFlyingTick"
+    }
+  }
+}

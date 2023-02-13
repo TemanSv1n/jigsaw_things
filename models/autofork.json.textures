@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "brass_casing_side",
+        "1": "brass_funnel_plating",
+        "2": "standard_track_crossing",
+        "3": "chute_diagonal",
+        "missing": "standard_track_crossing"
+      },
+      "name": "default"
+    }
+  }
+}

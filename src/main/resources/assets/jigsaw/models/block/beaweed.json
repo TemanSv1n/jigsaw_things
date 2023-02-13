@@ -1,0 +1,9 @@
+{
+  "parent": "jigsaw:custom/beawed",
+  "textures": {
+    "all": "jigsaw:blocks/bamboo_stalk",
+    "particle": "jigsaw:blocks/bamboo_stalk",
+    "0": "jigsaw:blocks/bamboo_stalk",
+    "1": "jigsaw:blocks/farmland_moist"
+  }
+}

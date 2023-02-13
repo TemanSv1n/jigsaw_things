@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "grindstone_pivot",
+        "1": "blast_furnace_side",
+        "2": "stonecutter_bottom",
+        "3": "blast_furnace_front_true",
+        "5": "texture"
+      },
+      "name": "default"
+    }
+  }
+}

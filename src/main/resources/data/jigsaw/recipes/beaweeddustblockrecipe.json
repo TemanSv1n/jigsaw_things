@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "jigsaw:beaweeddust"
+    },
+    {
+      "item": "jigsaw:beaweeddust"
+    },
+    {
+      "item": "jigsaw:beaweeddust"
+    },
+    {
+      "item": "jigsaw:beaweeddust"
+    },
+    {
+      "item": "jigsaw:beaweeddust"
+    },
+    {
+      "item": "jigsaw:beaweeddust"
+    },
+    {
+      "item": "jigsaw:beaweeddust"
+    },
+    {
+      "item": "jigsaw:beaweeddust"
+    },
+    {
+      "item": "jigsaw:beaweeddust"
+    }
+  ],
+  "result": {
+    "item": "jigsaw:beaweeddustblock",
+    "count": 1
+  }
+}

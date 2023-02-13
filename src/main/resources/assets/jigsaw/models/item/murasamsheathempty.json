@@ -1,0 +1,9 @@
+{
+  "parent": "jigsaw:custom/sheath",
+  "textures": {
+    "1": "jigsaw:blocks/muramasa_sam123",
+    "2": "jigsaw:blocks/kobura",
+    "missing": "jigsaw:blocks/kobura",
+    "particle": "jigsaw:items/minecart_contraption"
+  }
+}

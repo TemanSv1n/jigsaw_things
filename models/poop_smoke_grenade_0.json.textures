@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "barrel_side",
+        "1": "anvil",
+        "2": "repeater",
+        "3": "gr1",
+        "missing": "anvil"
+      },
+      "name": "default"
+    }
+  }
+}
