@@ -1,11 +1,13 @@
 package net.svisvi.jigsaw.procedures;
 
 import net.svisvi.jigsaw.init.JigsawModItems;
+import net.svisvi.jigsaw.init.JigsawModEnchantments;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -35,6 +37,10 @@ public class SrucibleoffrightclickProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.conduit.activate")), SoundSource.PLAYERS, 1, -1, false);
 				}
 			}
+			if (EnchantmentHelper.getItemEnchantmentLevel(JigsawModEnchantments.SRUCIBLECHARGE.get(), itemstack) != 0) {
+				((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)).enchant(JigsawModEnchantments.SRUCIBLECHARGE.get(),
+						EnchantmentHelper.getItemEnchantmentLevel(JigsawModEnchantments.SRUCIBLECHARGE.get(), itemstack));
+			}
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == itemstack.getItem()) {
 			if (entity instanceof LivingEntity _entity) {
 				ItemStack _setstack = new ItemStack(JigsawModItems.SRUCIBLE.get());
@@ -50,6 +56,10 @@ public class SrucibleoffrightclickProcedure {
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.conduit.activate")), SoundSource.PLAYERS, 1, -1, false);
 				}
+			}
+			if (EnchantmentHelper.getItemEnchantmentLevel(JigsawModEnchantments.SRUCIBLECHARGE.get(), itemstack) != 0) {
+				((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY)).enchant(JigsawModEnchantments.SRUCIBLECHARGE.get(),
+						EnchantmentHelper.getItemEnchantmentLevel(JigsawModEnchantments.SRUCIBLECHARGE.get(), itemstack));
 			}
 		}
 	}

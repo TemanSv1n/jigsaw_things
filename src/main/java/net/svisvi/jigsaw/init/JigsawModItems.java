@@ -39,6 +39,7 @@ import net.svisvi.jigsaw.item.MedicgunItem;
 import net.svisvi.jigsaw.item.MaznyaslayerItem;
 import net.svisvi.jigsaw.item.MarmosetItem;
 import net.svisvi.jigsaw.item.JokerNoseItem;
+import net.svisvi.jigsaw.item.JigsawbatteryItem;
 import net.svisvi.jigsaw.item.JetstreamchairitemItem;
 import net.svisvi.jigsaw.item.HitlermoustacheItem;
 import net.svisvi.jigsaw.item.HighcompressedbeaweedItem;
@@ -192,6 +193,7 @@ public class JigsawModItems {
 	public static final RegistryObject<Item> MAZNYASLAYER_LEGGINGS = REGISTRY.register("maznyaslayer_leggings", () -> new MaznyaslayerItem.Leggings());
 	public static final RegistryObject<Item> SRUCIBLE = REGISTRY.register("srucible", () -> new SrucibleItem());
 	public static final RegistryObject<Item> SRUCIBLEOFF = REGISTRY.register("srucibleoff", () -> new SrucibleoffItem());
+	public static final RegistryObject<Item> JIGSAWBATTERY = REGISTRY.register("jigsawbattery", () -> new JigsawbatteryItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
