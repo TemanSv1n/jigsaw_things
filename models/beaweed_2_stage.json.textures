@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "bamboo_stalk_kk",
+        "4": "bamboo_small_leaves",
+        "5": "azalea_side",
+        "6": "farmland_moist222123",
+        "7": "none",
+        "8": "azalea_top"
+      },
+      "name": "default"
+    }
+  }
+}

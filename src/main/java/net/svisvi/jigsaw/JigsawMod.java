@@ -26,6 +26,7 @@ import net.svisvi.jigsaw.init.JigsawModFeatures;
 import net.svisvi.jigsaw.init.JigsawModEntities;
 import net.svisvi.jigsaw.init.JigsawModEnchantments;
 import net.svisvi.jigsaw.init.JigsawModBlocks;
+import net.svisvi.jigsaw.init.JigsawModBlockEntities;
 
 import net.minecraftforge.network.simple.SimpleChannel;
 import net.minecraftforge.network.NetworkRegistry;
@@ -55,7 +56,7 @@ public class JigsawMod {
 		JigsawModBlocks.REGISTRY.register(bus);
 		JigsawModItems.REGISTRY.register(bus);
 		JigsawModEntities.REGISTRY.register(bus);
-
+		JigsawModBlockEntities.REGISTRY.register(bus);
 		JigsawModFeatures.REGISTRY.register(bus);
 		JigsawModFluids.REGISTRY.register(bus);
 		JigsawModEnchantments.REGISTRY.register(bus);

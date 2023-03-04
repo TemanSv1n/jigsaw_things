@@ -194,6 +194,11 @@ public class JigsawModItems {
 	public static final RegistryObject<Item> SRUCIBLE = REGISTRY.register("srucible", () -> new SrucibleItem());
 	public static final RegistryObject<Item> SRUCIBLEOFF = REGISTRY.register("srucibleoff", () -> new SrucibleoffItem());
 	public static final RegistryObject<Item> JIGSAWBATTERY = REGISTRY.register("jigsawbattery", () -> new JigsawbatteryItem());
+	public static final RegistryObject<Item> BEAWEEDSEEDS = block(JigsawModBlocks.BEAWEEDSEEDS, JigsawModTabs.TAB_JIGSAW);
+	public static final RegistryObject<Item> BEAWEEDSTAGE_1 = block(JigsawModBlocks.BEAWEEDSTAGE_1, JigsawModTabs.TAB_JIGSAW);
+	public static final RegistryObject<Item> BEAWEEDSTAGE_2 = block(JigsawModBlocks.BEAWEEDSTAGE_2, JigsawModTabs.TAB_JIGSAW);
+	public static final RegistryObject<Item> BEAWEEDSTAGE_3 = block(JigsawModBlocks.BEAWEEDSTAGE_3, JigsawModTabs.TAB_JIGSAW);
+	public static final RegistryObject<Item> BEAWEEDSTAGE_4 = block(JigsawModBlocks.BEAWEEDSTAGE_4, JigsawModTabs.TAB_JIGSAW);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

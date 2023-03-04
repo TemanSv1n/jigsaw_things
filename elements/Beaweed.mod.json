@@ -1,5 +1,5 @@
 {
-  "_fv": 38,
+  "_fv": 39,
   "_type": "plant",
   "definition": {
     "renderType": 2,
@@ -10,11 +10,11 @@
     "particleTexture": "bamboo_stalk",
     "tintType": "No tint",
     "isItemTinted": false,
-    "plantType": "growapable",
+    "plantType": "normal",
     "staticPlantGenerationType": "Flower",
-    "suspiciousStewEffect": "CUSTOM:Poop",
-    "suspiciousStewDuration": 100,
-    "growapableSpawnType": "Plains",
+    "suspiciousStewEffect": "SPEED",
+    "suspiciousStewDuration": 1,
+    "growapableSpawnType": "Crop",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",
     "customBoundingBox": false,
@@ -79,6 +79,9 @@
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
     "canBePlacedOn": [],
+    "placingCondition": {
+      "name": "BeaweedAdditionalPlacinggrowthCondition"
+    },
     "isBonemealable": false,
     "frequencyOnChunks": 4,
     "spawnWorldTypes": [

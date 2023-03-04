@@ -3,7 +3,7 @@
     "default": {
       "map": {
         "0": "bamboo_stalk",
-        "1": "farmland_moist"
+        "1": "farmland_moist_new"
       },
       "name": "default"
     }

@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "bamboo_stalk_kk",
+        "4": "bamboo_small_leaves",
+        "6": "farmland_moist_2_st",
+        "7": "none",
+        "9": "shit_blossom"
+      },
+      "name": "default"
+    }
+  }
+}

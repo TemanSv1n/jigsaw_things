@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "bamboo_stalk_new",
+        "10": "farmland_moist222123"
+      },
+      "name": "default"
+    }
+  }
+}

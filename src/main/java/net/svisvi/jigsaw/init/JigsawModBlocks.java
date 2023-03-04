@@ -12,6 +12,11 @@ import net.svisvi.jigsaw.block.InvisibilitywheatbottomBlock;
 import net.svisvi.jigsaw.block.InvisibilitywheatBlock;
 import net.svisvi.jigsaw.block.InvisibilitybushBlock;
 import net.svisvi.jigsaw.block.GunpowderbarrelBlock;
+import net.svisvi.jigsaw.block.Beaweedstage4Block;
+import net.svisvi.jigsaw.block.Beaweedstage3Block;
+import net.svisvi.jigsaw.block.Beaweedstage2Block;
+import net.svisvi.jigsaw.block.Beaweedstage1Block;
+import net.svisvi.jigsaw.block.BeaweedseedsBlock;
 import net.svisvi.jigsaw.block.BeaweeddustblockBlock;
 import net.svisvi.jigsaw.block.BeaweedBlock;
 import net.svisvi.jigsaw.block.BeavertopolivecostylBlock;
@@ -55,6 +60,11 @@ public class JigsawModBlocks {
 	public static final RegistryObject<Block> INVISIBILITY_WHEAT_BOTTOM = REGISTRY.register("invisibility_wheat_bottom", () -> new InvisibilitywheatbottomBlock());
 	public static final RegistryObject<Block> WHEATPLACER = REGISTRY.register("wheatplacer", () -> new WheatplacerBlock());
 	public static final RegistryObject<Block> INVISIBILITYBUSH = REGISTRY.register("invisibilitybush", () -> new InvisibilitybushBlock());
+	public static final RegistryObject<Block> BEAWEEDSEEDS = REGISTRY.register("beaweedseeds", () -> new BeaweedseedsBlock());
+	public static final RegistryObject<Block> BEAWEEDSTAGE_1 = REGISTRY.register("beaweedstage_1", () -> new Beaweedstage1Block());
+	public static final RegistryObject<Block> BEAWEEDSTAGE_2 = REGISTRY.register("beaweedstage_2", () -> new Beaweedstage2Block());
+	public static final RegistryObject<Block> BEAWEEDSTAGE_3 = REGISTRY.register("beaweedstage_3", () -> new Beaweedstage3Block());
+	public static final RegistryObject<Block> BEAWEEDSTAGE_4 = REGISTRY.register("beaweedstage_4", () -> new Beaweedstage4Block());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -69,6 +79,11 @@ public class JigsawModBlocks {
 			InvisibilitywheatBlock.registerRenderLayer();
 			InvisibilitywheatbottomBlock.registerRenderLayer();
 			WheatplacerBlock.registerRenderLayer();
+			BeaweedseedsBlock.registerRenderLayer();
+			Beaweedstage1Block.registerRenderLayer();
+			Beaweedstage2Block.registerRenderLayer();
+			Beaweedstage3Block.registerRenderLayer();
+			Beaweedstage4Block.registerRenderLayer();
 		}
 
 		@SubscribeEvent

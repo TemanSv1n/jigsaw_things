@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "11": "base_sss_sss",
+        "2": "bamboo_stalk_kk",
+        "9": "shit_blossom_cut",
+        "10": "moist"
+      },
+      "name": "default"
+    }
+  }
+}

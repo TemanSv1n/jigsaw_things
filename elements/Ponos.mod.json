@@ -1,5 +1,5 @@
 {
-  "_fv": 38,
+  "_fv": 39,
   "_type": "fluid",
   "definition": {
     "name": "Ponos",
@@ -41,9 +41,6 @@
     "flammability": 50,
     "fireSpreadSpeed": 50,
     "colorOnMap": "PODZOL",
-    "frequencyOnChunks": 5,
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
     "onEntityCollides": {
       "name": "PonosMobplayerCollidesBlock"
     }

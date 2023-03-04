@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "jigsaw:blocks/beaweed_stage0",
+    "particle": "jigsaw:blocks/beaweed_dust_block"
+  }
+}

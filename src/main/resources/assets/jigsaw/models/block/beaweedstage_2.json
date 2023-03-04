@@ -1,0 +1,12 @@
+{
+  "parent": "jigsaw:custom/beaweeeed_2_stage",
+  "textures": {
+    "all": "jigsaw:blocks/beaweed_stage_1",
+    "particle": "jigsaw:blocks/beaweed_dust_block",
+    "2": "jigsaw:blocks/bamboo_stalk_kk",
+    "4": "jigsaw:blocks/bamboo_small_leaves",
+    "6": "jigsaw:blocks/farmland_moist_2_st",
+    "7": "jigsaw:blocks/none",
+    "9": "jigsaw:blocks/shit_blossom"
+  }
+}

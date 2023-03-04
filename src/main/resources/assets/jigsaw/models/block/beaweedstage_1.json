@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "jigsaw:blocks/beaweed_stage_1",
+    "particle": "jigsaw:blocks/beaweed_dust_block"
+  }
+}
