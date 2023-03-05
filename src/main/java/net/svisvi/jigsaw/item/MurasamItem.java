@@ -34,7 +34,7 @@ public class MurasamItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 4.199999999999999f;
+				return 3.8f;
 			}
 
 			public int getLevel() {
@@ -48,7 +48,7 @@ public class MurasamItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Blocks.REDSTONE_BLOCK));
 			}
-		}, 3, -2.2999999999999998f, new Item.Properties().tab(JigsawModTabs.TAB_JIGSAW));
+		}, 3, -1.8000000000000003f, new Item.Properties().tab(JigsawModTabs.TAB_JIGSAW));
 	}
 
 	@Override
