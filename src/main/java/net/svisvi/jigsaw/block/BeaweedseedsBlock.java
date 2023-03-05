@@ -1,8 +1,11 @@
 
 package net.svisvi.jigsaw.block;
 
+import net.svisvi.jigsaw.procedures.Beaweedstage1UpdateTickProcedure;
+import net.svisvi.jigsaw.procedures.BeaweedseedsPlantAddedProcedure;
 import net.svisvi.jigsaw.procedures.BeaweedseedsAdditionalPlacinggrowthConditionProcedure;
 import net.svisvi.jigsaw.init.JigsawModBlocks;
+import net.svisvi.jigsaw.block.entity.BeaweedseedsBlockEntity;
 
 import net.minecraftforge.common.PlantType;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -12,22 +15,27 @@ import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.FlowerBlock;
+import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
+import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
-public class BeaweedseedsBlock extends FlowerBlock {
+public class BeaweedseedsBlock extends FlowerBlock implements EntityBlock {
 	public BeaweedseedsBlock() {
 		super(MobEffects.MOVEMENT_SPEED, 1, BlockBehaviour.Properties.of(Material.PLANT).randomTicks().sound(SoundType.CROP).instabreak().noCollission());
 	}
@@ -78,6 +86,30 @@ public class BeaweedseedsBlock extends FlowerBlock {
 	@Override
 	public PlantType getPlantType(BlockGetter world, BlockPos pos) {
 		return PlantType.CROP;
+	}
+
+	@Override
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		BeaweedseedsPlantAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	@Override
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+		super.tick(blockstate, world, pos, random);
+		Beaweedstage1UpdateTickProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	@Override
+	public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
+		return new BeaweedseedsBlockEntity(pos, state);
+	}
+
+	@Override
+	public boolean triggerEvent(BlockState state, Level world, BlockPos pos, int eventID, int eventParam) {
+		super.triggerEvent(state, world, pos, eventID, eventParam);
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		return blockEntity == null ? false : blockEntity.triggerEvent(eventID, eventParam);
 	}
 
 	@OnlyIn(Dist.CLIENT)

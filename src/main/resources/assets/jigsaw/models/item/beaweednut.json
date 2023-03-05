@@ -1,0 +1,7 @@
+{
+  "parent": "jigsaw:custom/beawed_nut",
+  "textures": {
+    "4": "jigsaw:blocks/farmland_moist_new",
+    "particle": "jigsaw:items/nut"
+  }
+}

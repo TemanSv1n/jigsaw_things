@@ -8,9 +8,9 @@ import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
-public class Beaweedstage2BlockEntity extends BlockEntity {
-	public Beaweedstage2BlockEntity(BlockPos pos, BlockState state) {
-		super(JigsawModBlockEntities.BEAWEEDSTAGE_2.get(), pos, state);
+public class BeaweedseedsBlockEntity extends BlockEntity {
+	public BeaweedseedsBlockEntity(BlockPos pos, BlockState state) {
+		super(JigsawModBlockEntities.BEAWEEDSEEDS.get(), pos, state);
 	}
 
 	@Override

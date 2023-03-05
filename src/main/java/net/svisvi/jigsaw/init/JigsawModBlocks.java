@@ -14,7 +14,6 @@ import net.svisvi.jigsaw.block.InvisibilitybushBlock;
 import net.svisvi.jigsaw.block.GunpowderbarrelBlock;
 import net.svisvi.jigsaw.block.Beaweedstage4Block;
 import net.svisvi.jigsaw.block.Beaweedstage3Block;
-import net.svisvi.jigsaw.block.Beaweedstage2Block;
 import net.svisvi.jigsaw.block.Beaweedstage1Block;
 import net.svisvi.jigsaw.block.BeaweedseedsBlock;
 import net.svisvi.jigsaw.block.BeaweeddustblockBlock;
@@ -62,7 +61,6 @@ public class JigsawModBlocks {
 	public static final RegistryObject<Block> INVISIBILITYBUSH = REGISTRY.register("invisibilitybush", () -> new InvisibilitybushBlock());
 	public static final RegistryObject<Block> BEAWEEDSEEDS = REGISTRY.register("beaweedseeds", () -> new BeaweedseedsBlock());
 	public static final RegistryObject<Block> BEAWEEDSTAGE_1 = REGISTRY.register("beaweedstage_1", () -> new Beaweedstage1Block());
-	public static final RegistryObject<Block> BEAWEEDSTAGE_2 = REGISTRY.register("beaweedstage_2", () -> new Beaweedstage2Block());
 	public static final RegistryObject<Block> BEAWEEDSTAGE_3 = REGISTRY.register("beaweedstage_3", () -> new Beaweedstage3Block());
 	public static final RegistryObject<Block> BEAWEEDSTAGE_4 = REGISTRY.register("beaweedstage_4", () -> new Beaweedstage4Block());
 
@@ -81,7 +79,6 @@ public class JigsawModBlocks {
 			WheatplacerBlock.registerRenderLayer();
 			BeaweedseedsBlock.registerRenderLayer();
 			Beaweedstage1Block.registerRenderLayer();
-			Beaweedstage2Block.registerRenderLayer();
 			Beaweedstage3Block.registerRenderLayer();
 			Beaweedstage4Block.registerRenderLayer();
 		}

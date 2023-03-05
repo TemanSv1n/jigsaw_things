@@ -20,7 +20,7 @@ import net.minecraft.core.BlockPos;
 
 public abstract class PonosFluid extends ForgeFlowingFluid {
 	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(JigsawModFluids.PONOS, JigsawModFluids.FLOWING_PONOS,
-			FluidAttributes.builder(new ResourceLocation("jigsaw:blocks/ponos_still"), new ResourceLocation("jigsaw:blocks/ponos_flow"))
+			FluidAttributes.builder(new ResourceLocation("jigsaw:blocks/drist_ponos_still"), new ResourceLocation("jigsaw:blocks/drist_ponos_flow"))
 
 					.temperature(400)
 

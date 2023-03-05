@@ -6,8 +6,8 @@ package net.svisvi.jigsaw.init;
 
 import net.svisvi.jigsaw.block.entity.Beaweedstage4BlockEntity;
 import net.svisvi.jigsaw.block.entity.Beaweedstage3BlockEntity;
-import net.svisvi.jigsaw.block.entity.Beaweedstage2BlockEntity;
 import net.svisvi.jigsaw.block.entity.Beaweedstage1BlockEntity;
+import net.svisvi.jigsaw.block.entity.BeaweedseedsBlockEntity;
 import net.svisvi.jigsaw.JigsawMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -19,8 +19,8 @@ import net.minecraft.world.level.block.Block;
 
 public class JigsawModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, JigsawMod.MODID);
+	public static final RegistryObject<BlockEntityType<?>> BEAWEEDSEEDS = register("beaweedseeds", JigsawModBlocks.BEAWEEDSEEDS, BeaweedseedsBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BEAWEEDSTAGE_1 = register("beaweedstage_1", JigsawModBlocks.BEAWEEDSTAGE_1, Beaweedstage1BlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> BEAWEEDSTAGE_2 = register("beaweedstage_2", JigsawModBlocks.BEAWEEDSTAGE_2, Beaweedstage2BlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BEAWEEDSTAGE_3 = register("beaweedstage_3", JigsawModBlocks.BEAWEEDSTAGE_3, Beaweedstage3BlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BEAWEEDSTAGE_4 = register("beaweedstage_4", JigsawModBlocks.BEAWEEDSTAGE_4, Beaweedstage4BlockEntity::new);
 

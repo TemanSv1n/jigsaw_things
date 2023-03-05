@@ -1,0 +1,27 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Beaweedseeds"
+      },
+      {
+        "value": "CUSTOM:Beaweedstage1"
+      },
+      {
+        "value": "CUSTOM:Beaweedstage3"
+      },
+      {
+        "value": "CUSTOM:Beaweedstage4"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "beaweed_block_grow",
+    "namespace": "jigsaw"
+  }
+}

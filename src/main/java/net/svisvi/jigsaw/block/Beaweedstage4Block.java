@@ -1,6 +1,7 @@
 
 package net.svisvi.jigsaw.block;
 
+import net.svisvi.jigsaw.procedures.Beaweedstage1UpdateTickProcedure;
 import net.svisvi.jigsaw.procedures.BeaweedseedsAdditionalPlacinggrowthConditionProcedure;
 import net.svisvi.jigsaw.init.JigsawModBlocks;
 import net.svisvi.jigsaw.block.entity.Beaweedstage4BlockEntity;
@@ -26,6 +27,7 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
@@ -33,6 +35,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
+import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
@@ -98,6 +101,12 @@ public class Beaweedstage4Block extends FlowerBlock implements EntityBlock {
 	@Override
 	public PlantType getPlantType(BlockGetter world, BlockPos pos) {
 		return PlantType.CROP;
+	}
+
+	@Override
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+		super.tick(blockstate, world, pos, random);
+		Beaweedstage1UpdateTickProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

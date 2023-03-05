@@ -4,8 +4,8 @@
   "definition": {
     "name": "Ponos",
     "bucketName": "Bucket of ponos",
-    "textureStill": "ponos_still",
-    "textureFlowing": "ponos_flow",
+    "textureStill": "drist_ponos_still",
+    "textureFlowing": "drist_ponos_flow",
     "tintType": "No tint",
     "canMultiply": true,
     "flowRate": 8,

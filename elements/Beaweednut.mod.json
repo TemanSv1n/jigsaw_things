@@ -1,0 +1,45 @@
+{
+  "_fv": 39,
+  "_type": "item",
+  "definition": {
+    "renderType": 1,
+    "texture": "nut",
+    "customModelName": "beawed_nut:default",
+    "name": "Beaweed nut",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "stackSize": 16,
+    "enchantability": 0,
+    "useDuration": 32,
+    "toolType": 1.0,
+    "damageCount": 16,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "BeaweednutPlayerFinishesUsingItem"
+    },
+    "isFood": true,
+    "nutritionalValue": -1,
+    "saturation": 0.0,
+    "eatResultItem": {
+      "value": "CUSTOM:Beaweednut"
+    },
+    "isMeat": false,
+    "isAlwaysEdible": true,
+    "animation": "eat"
+  }
+}

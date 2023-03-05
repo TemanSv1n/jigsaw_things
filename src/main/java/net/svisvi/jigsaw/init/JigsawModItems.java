@@ -63,7 +63,9 @@ import net.svisvi.jigsaw.item.CapitalbookItem;
 import net.svisvi.jigsaw.item.BellyItem;
 import net.svisvi.jigsaw.item.BeaweedteaItem;
 import net.svisvi.jigsaw.item.BeaweedsoupItem;
+import net.svisvi.jigsaw.item.BeaweednutItem;
 import net.svisvi.jigsaw.item.BeaweeddustItem;
+import net.svisvi.jigsaw.item.BeaweeddataItem;
 import net.svisvi.jigsaw.item.BeaverzookaItem;
 import net.svisvi.jigsaw.item.BeaverknifeItem;
 import net.svisvi.jigsaw.item.BeavercollarItem;
@@ -196,9 +198,10 @@ public class JigsawModItems {
 	public static final RegistryObject<Item> JIGSAWBATTERY = REGISTRY.register("jigsawbattery", () -> new JigsawbatteryItem());
 	public static final RegistryObject<Item> BEAWEEDSEEDS = block(JigsawModBlocks.BEAWEEDSEEDS, JigsawModTabs.TAB_JIGSAW);
 	public static final RegistryObject<Item> BEAWEEDSTAGE_1 = block(JigsawModBlocks.BEAWEEDSTAGE_1, JigsawModTabs.TAB_JIGSAW);
-	public static final RegistryObject<Item> BEAWEEDSTAGE_2 = block(JigsawModBlocks.BEAWEEDSTAGE_2, JigsawModTabs.TAB_JIGSAW);
 	public static final RegistryObject<Item> BEAWEEDSTAGE_3 = block(JigsawModBlocks.BEAWEEDSTAGE_3, JigsawModTabs.TAB_JIGSAW);
 	public static final RegistryObject<Item> BEAWEEDSTAGE_4 = block(JigsawModBlocks.BEAWEEDSTAGE_4, JigsawModTabs.TAB_JIGSAW);
+	public static final RegistryObject<Item> BEAWEEDDATA = REGISTRY.register("beaweeddata", () -> new BeaweeddataItem());
+	public static final RegistryObject<Item> BEAWEEDNUT = REGISTRY.register("beaweednut", () -> new BeaweednutItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
