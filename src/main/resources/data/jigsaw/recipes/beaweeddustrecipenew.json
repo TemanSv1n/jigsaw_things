@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 1,
   "ingredient": {
-    "item": "jigsaw:beaweed"
+    "item": "jigsaw:beaweedseeds"
   },
   "result": "jigsaw:beaweeddust"
 }

@@ -23,7 +23,7 @@ public class BeaweeddataRightclickedOnBlockProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "counter1")) + " " + "\"coeff\" = " + (new Object() {
+				}.getValue(world, new BlockPos(x, y, z), "counter1")) + " " + "\"required\" = " + (new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)

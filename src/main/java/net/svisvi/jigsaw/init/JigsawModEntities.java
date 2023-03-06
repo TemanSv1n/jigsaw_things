@@ -23,6 +23,7 @@ import net.svisvi.jigsaw.entity.LivingBeaverEntity;
 import net.svisvi.jigsaw.entity.LivingBeaverBodyEntity;
 import net.svisvi.jigsaw.entity.JetstreamchairEntity;
 import net.svisvi.jigsaw.entity.CursedCowEntity;
+import net.svisvi.jigsaw.entity.BeaweednutconsumableEntity;
 import net.svisvi.jigsaw.entity.BeaverzookaEntity;
 import net.svisvi.jigsaw.entity.BeaverbombEntity;
 import net.svisvi.jigsaw.JigsawMod;
@@ -104,6 +105,8 @@ public class JigsawModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<PudgehookEntity>> PUDGEHOOK = register("projectile_pudgehook",
 			EntityType.Builder.<PudgehookEntity>of(PudgehookEntity::new, MobCategory.MISC).setCustomClientFactory(PudgehookEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<BeaweednutconsumableEntity>> BEAWEEDNUTCONSUMABLE = register("projectile_beaweednutconsumable", EntityType.Builder.<BeaweednutconsumableEntity>of(BeaweednutconsumableEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(BeaweednutconsumableEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

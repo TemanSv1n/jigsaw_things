@@ -761,19 +761,6 @@
       }
     },
     {
-      "name": "Beaweeddustrecipe",
-      "type": "recipe",
-      "sortid": 52,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "beaweeddustrecipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/jigsaw/recipes/beaweeddustrecipe.json"
-        ]
-      }
-    },
-    {
       "name": "Beaweedachievement",
       "type": "achievement",
       "sortid": 53,
@@ -7283,20 +7270,6 @@
       }
     },
     {
-      "name": "Beaweednut",
-      "type": "item",
-      "sortid": 374,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "beaweednut",
-      "metadata": {
-        "files": [
-          "src/main/java/net/svisvi/jigsaw/item/BeaweednutItem.java",
-          "src/main/resources/assets/jigsaw/models/item/beaweednut.json"
-        ]
-      }
-    },
-    {
       "name": "BeaweednutPlayerFinishesUsingItem",
       "type": "procedure",
       "sortid": 375,
@@ -7316,6 +7289,179 @@
             "name": "world",
             "type": "world"
           }
+        ]
+      }
+    },
+    {
+      "name": "BeaweednutconsumableWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 376,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beaweednutconsumable_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/BeaweednutconsumableWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Beaweednutconsumable",
+      "type": "rangeditem",
+      "sortid": 377,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beaweednutconsumable",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/entity/BeaweednutconsumableEntity.java",
+          "src/main/resources/assets/jigsaw/models/item/beaweednutconsumable.json",
+          "src/main/java/net/svisvi/jigsaw/item/BeaweednutconsumableItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BeaweednutconsumableCanUseRangedItem",
+      "type": "procedure",
+      "sortid": 378,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beaweednutconsumable_can_use_ranged_item",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/BeaweednutconsumableCanUseRangedItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BeaweednutconsumableRangedItemUsed",
+      "type": "procedure",
+      "sortid": 379,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beaweednutconsumable_ranged_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/BeaweednutconsumableRangedItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Nutdestroyed",
+      "type": "procedure",
+      "sortid": 380,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nutdestroyed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/NutdestroyedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BeaweedPlantRightClicked",
+      "type": "procedure",
+      "sortid": 381,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beaweed_plant_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/BeaweedPlantRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Beaweedwandrecipe",
+      "type": "recipe",
+      "sortid": 382,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beaweedwandrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw/recipes/beaweedwandrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Beaweeddustrecipenew",
+      "type": "recipe",
+      "sortid": 383,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beaweeddustrecipenew",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw/recipes/beaweeddustrecipenew.json"
         ]
       }
     }
@@ -7413,6 +7559,7 @@
       "item.jigsaw.shitammo": "Укомплектованный говеный патрон",
       "advancements.beavercollarachievement.descr": "Выкурите бобровый косяк",
       "item.jigsaw.clown_nose_boots": "Клоуноботы",
+      "item.jigsaw.beaweednutconsumable": "Beaweed nut",
       "item.jigsaw.splashponosmutagen": "Взрывной поносный мутаген",
       "item.minecraft.potion.effect.shitbottle": "Бутылочка с дерьмом",
       "item.jigsaw.beaver_boots": "Ботинки бобра",
@@ -7499,7 +7646,6 @@
       "advancements.jigsawroot.descr": "Вы скачали мод!",
       "item.minecraft.tipped_arrow.effect.unlevitationpotion": "Стрела антилевитации",
       "item.jigsaw.captainbeaver_chestplate": "Captainbeaver Body",
-      "item.jigsaw.beaweednut": "Beaweed nut",
       "subtitles.fools_village": "Деревня дураков",
       "advancements.medicgunachievement.descr": "Проявите командный дух и возьмите на себя ответственную роль Медика",
       "advancements.fargusachievement.descr": "Создайте рыбу Фаргуса",
@@ -7671,6 +7817,7 @@
       "item.jigsaw.shitammo": "Complected shit ammo",
       "advancements.beavercollarachievement.descr": "Smoke Beaweed collar",
       "item.jigsaw.clown_nose_boots": "Clown Nose Boots",
+      "item.jigsaw.beaweednutconsumable": "Beaweed nut",
       "item.jigsaw.splashponosmutagen": "Purgen Mutagen",
       "item.minecraft.potion.effect.shitbottle": "Bottle of shit",
       "item.jigsaw.beaver_boots": "Beaver Boots",
@@ -7757,7 +7904,6 @@
       "advancements.jigsawroot.descr": "You downloaded this mod",
       "item.minecraft.tipped_arrow.effect.unlevitationpotion": "Arrow of Unlevitation",
       "item.jigsaw.captainbeaver_chestplate": "Captainbeaver Body",
-      "item.jigsaw.beaweednut": "Beaweed nut",
       "subtitles.fools_village": "Fools\u0027 village",
       "advancements.medicgunachievement.descr": "Create Medic gun",
       "advancements.fargusachievement.descr": "Create Fargus Fish",

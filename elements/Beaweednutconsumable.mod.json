@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 1,
+    "texture": "nut",
+    "customModelName": "beawed_nut:default",
+    "name": "Beaweed nut",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 16,
+    "actionSound": {
+      "value": "entity.turtle.egg_break"
+    },
+    "hasGlow": false,
+    "animation": "eat",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "BeaweednutconsumableRangedItemUsed"
+    },
+    "useCondition": {
+      "name": "BeaweednutconsumableCanUseRangedItem"
+    },
+    "bulletPower": 0.0,
+    "bulletDamage": 0.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Blocks.AIR"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletFlyingTick": {
+      "name": "BeaweednutconsumableWhileProjectileFlyingTick"
+    }
+  }
+}

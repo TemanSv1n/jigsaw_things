@@ -9,12 +9,12 @@
     "group": "",
     "recipeShapeless": false,
     "stoneCuttingInputStack": {
-      "value": "CUSTOM:Beaweed"
+      "value": "CUSTOM:Beaweedseeds"
     },
     "stoneCuttingReturnStack": {
       "value": "CUSTOM:Beaweeddust"
     },
-    "name": "beaweeddustrecipe",
+    "name": "beaweeddustrecipenew",
     "namespace": "mod"
   }
 }

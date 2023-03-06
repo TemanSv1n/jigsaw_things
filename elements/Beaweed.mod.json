@@ -92,6 +92,9 @@
     "generateAtAnyHeight": false,
     "onBlockAdded": {
       "name": "BeaweedPlantAdded"
+    },
+    "onRightClicked": {
+      "name": "BeaweedPlantRightClicked"
     }
   }
 }

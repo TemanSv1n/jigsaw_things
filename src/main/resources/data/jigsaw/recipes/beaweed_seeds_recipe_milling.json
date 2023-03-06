@@ -1,0 +1,14 @@
+	"type": "create:milling",
+    "ingredients": [
+    	{
+    		"item": "jigsaw:beaweedseeds"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "jigsaw:beaweeddust",
+			"count": 1
+		}
+	],
+	"processingTime": 200
+}

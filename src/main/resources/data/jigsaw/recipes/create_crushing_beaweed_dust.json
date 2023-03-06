@@ -1,0 +1,24 @@
+  "type": "create:crushing",
+    "ingredients": [
+    	{
+    		"item": "jigsaw:beaweedseeds"
+    	}
+    ],
+	"results": [
+		{
+			"item": "jigsaw:beaweeddust",
+			"count": 2
+		},
+		{
+			"item": "jigsaw:beaweeddust",
+			"count": 1,
+			"chance": 0.25
+		},
+		{
+			"item": "jigsaw:beaweeddust",
+			"count": 1,
+			"chance": 0.125
+		}
+	],
+	"processingTime": 300
+}

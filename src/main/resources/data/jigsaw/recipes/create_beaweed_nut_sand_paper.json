@@ -1,0 +1,22 @@
+{
+    "type": "create:sandpaper_polishing",
+    "ingredients": [
+    	{
+    		"item": "jigsaw:beaweednutconsumable"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "jigsaw:beaweedseeds",
+			"count": 2
+		},
+		{
+			"item": "jigsaw:beaweedseeds",
+			"count": 1,
+			"chance": 0.25
+		},
+		{
+			"item": "jigsaw:beaweedseeds",
+			"count": 1,
+			"chance": 0.125
+}
