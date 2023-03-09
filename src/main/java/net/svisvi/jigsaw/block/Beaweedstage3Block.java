@@ -1,6 +1,7 @@
 
 package net.svisvi.jigsaw.block;
 
+import net.svisvi.jigsaw.procedures.Beaweedstage3ClientDisplayRandomTickProcedure;
 import net.svisvi.jigsaw.procedures.Beaweedstage1UpdateTickProcedure;
 import net.svisvi.jigsaw.procedures.BeaweedseedsAdditionalPlacinggrowthConditionProcedure;
 import net.svisvi.jigsaw.init.JigsawModBlocks;
@@ -107,6 +108,12 @@ public class Beaweedstage3Block extends FlowerBlock implements EntityBlock {
 	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
 		super.tick(blockstate, world, pos, random);
 		Beaweedstage1UpdateTickProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	@Override
+	public void animateTick(BlockState blockstate, Level world, BlockPos pos, Random random) {
+		super.animateTick(blockstate, world, pos, random);
+		Beaweedstage3ClientDisplayRandomTickProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

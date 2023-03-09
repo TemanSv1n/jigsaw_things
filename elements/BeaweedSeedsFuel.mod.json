@@ -1,0 +1,15 @@
+{
+  "_fv": 39,
+  "_type": "itemextension",
+  "definition": {
+    "item": {
+      "value": "CUSTOM:Beaweedseeds"
+    },
+    "enableFuel": true,
+    "fuelPower": {
+      "fixedValue": 10.0
+    },
+    "hasDispenseBehavior": false,
+    "compostLayerChance": 0.1
+  }
+}

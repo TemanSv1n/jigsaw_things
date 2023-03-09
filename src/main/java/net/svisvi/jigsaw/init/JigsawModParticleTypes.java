@@ -17,4 +17,5 @@ public class JigsawModParticleTypes {
 	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, JigsawMod.MODID);
 	public static final RegistryObject<ParticleType<?>> SHIT = REGISTRY.register("shit", () -> new SimpleParticleType(false));
 	public static final RegistryObject<ParticleType<?>> POOPCLOUD = REGISTRY.register("poopcloud", () -> new SimpleParticleType(false));
+	public static final RegistryObject<ParticleType<?>> FLY = REGISTRY.register("fly", () -> new SimpleParticleType(false));
 }

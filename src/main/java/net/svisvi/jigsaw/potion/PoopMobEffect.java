@@ -26,7 +26,9 @@ public class PoopMobEffect extends MobEffect {
 
 	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		PoopOnEffectActiveTickProcedure.execute(entity);
+		PoopOnEffectActiveTickProcedure.execute(
+
+		);
 	}
 
 	@Override

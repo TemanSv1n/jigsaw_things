@@ -1,3 +1,4 @@
+{
 	"type": "create:milling",
     "ingredients": [
     	{
@@ -7,7 +8,7 @@
 	"results": [
 		{
 			"item": "jigsaw:beaweeddust",
-			"count": 1
+			"count": 2
 		}
 	],
 	"processingTime": 200

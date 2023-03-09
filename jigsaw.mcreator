@@ -1633,12 +1633,7 @@
         "files": [
           "src/main/java/net/svisvi/jigsaw/procedures/PoopOnEffectActiveTickProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
@@ -7462,6 +7457,95 @@
       "metadata": {
         "files": [
           "src/main/resources/data/jigsaw/recipes/beaweeddustrecipenew.json"
+        ]
+      }
+    },
+    {
+      "name": "Beaweeddustfuel",
+      "type": "itemextension",
+      "sortid": 385,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beaweeddustfuel",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "BeaweedBlockFuel",
+      "type": "itemextension",
+      "sortid": 384,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beaweed_block_fuel",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "BeaweedSeedsFuel",
+      "type": "itemextension",
+      "sortid": 386,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beaweed_seeds_fuel",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Beaweedstickfuel",
+      "type": "itemextension",
+      "sortid": 387,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beaweedstickfuel",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Fly",
+      "type": "particle",
+      "sortid": 388,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw/particles/fly.json",
+          "src/main/java/net/svisvi/jigsaw/client/particle/FlyParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "Beaweedstage3ClientDisplayRandomTick",
+      "type": "procedure",
+      "sortid": 389,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beaweedstage_3_client_display_random_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/Beaweedstage3ClientDisplayRandomTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }

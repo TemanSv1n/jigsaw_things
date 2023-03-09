@@ -92,6 +92,9 @@
     "generateAtAnyHeight": false,
     "onTickUpdate": {
       "name": "Beaweedstage1UpdateTick"
+    },
+    "onRandomUpdateEvent": {
+      "name": "Beaweedstage3ClientDisplayRandomTick"
     }
   }
 }

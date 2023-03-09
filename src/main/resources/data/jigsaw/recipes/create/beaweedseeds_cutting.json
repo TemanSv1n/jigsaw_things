@@ -1,0 +1,25 @@
+{
+"type": "create:cutting",
+    "ingredients": [
+    	{
+    		"item": "jigsaw:beaweednutconsumable"
+    	}
+    ],
+	"results": [
+		{
+			"item": "jigsaw:beaweedseeds",
+			"count": 3
+		},
+		{
+			"item": "jigsaw:beaweedseeds",
+			"count": 1,
+			"chance": 0.25
+		},
+		{
+			"item": "jigsaw:beaweedseeds",
+			"count": 1,
+			"chance": 0.125
+		}
+	],
+	"processingTime": 700
+}
