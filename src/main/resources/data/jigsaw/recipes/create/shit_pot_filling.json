@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:flower_pot"
+    },
+    {
+      "fluid": "jigsaw:ponos",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "jigsaw:shitammo"
+    }
+  ]
+}

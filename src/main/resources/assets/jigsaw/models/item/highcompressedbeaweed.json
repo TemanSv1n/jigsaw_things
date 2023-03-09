@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "jigsaw:items/compressed_beaweed"
+    "layer0": "jigsaw:items/b1_sheet"
   }
 }

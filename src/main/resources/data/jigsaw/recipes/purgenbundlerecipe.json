@@ -5,28 +5,28 @@
       "item": "jigsaw:beaweeddust"
     },
     {
-      "item": "jigsaw:beaweeddustblock"
+      "item": "minecraft:milk_bucket"
     },
     {
       "item": "jigsaw:beaweeddust"
     },
     {
-      "item": "minecraft:leather"
+      "item": "minecraft:brick"
     },
     {
       "item": "jigsaw:ponos_bucket"
     },
     {
-      "item": "minecraft:leather"
+      "item": "minecraft:brick"
     },
     {
       "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:brick"
     },
     {
       "item": "minecraft:egg"
-    },
-    {
-      "item": "minecraft:wheat"
     }
   ],
   "result": {

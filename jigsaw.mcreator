@@ -270,19 +270,6 @@
       }
     },
     {
-      "name": "Shitbottlerecipe",
-      "type": "recipe",
-      "sortid": 19,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "shitbottlerecipe",
-      "metadata": {
-        "files": [
-          "src/main/java/net/svisvi/jigsaw/recipes/brewing/ShitbottlerecipeBrewingRecipe.java"
-        ]
-      }
-    },
-    {
       "name": "Pwhat",
       "type": "armor",
       "sortid": 20,
@@ -7548,6 +7535,20 @@
           }
         ]
       }
+    },
+    {
+      "name": "Beaweedsheetincomplete",
+      "type": "item",
+      "sortid": 390,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beaweedsheetincomplete",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw/models/item/beaweedsheetincomplete.json",
+          "src/main/java/net/svisvi/jigsaw/item/BeaweedsheetincompleteItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -7766,6 +7767,7 @@
       "effect.jigsaw.unlevitation": "Антилевитация",
       "item.jigsaw.beaver_chestplate": "Тело бобра",
       "advancements.nanomachinesachievement.title": "Наномашины, сынок!",
+      "item.jigsaw.beaweedsheetincomplete": "High compressed beaweed",
       "item.jigsaw.pwhat_leggings": "Пугод штаны пугод",
       "itemGroup.tabjigsaw": "Цыганство",
       "item.jigsaw.beaverknife": "Beaver knife",
@@ -7898,12 +7900,12 @@
       "advancements.hitlerachievement.title": "Heil Hitler!",
       "advancements.beaverblockachievement.title": "Why did Bananacat do this...",
       "item.jigsaw.cursed_cow_spawn_egg": "Cursed Cow Spawn Egg",
-      "item.jigsaw.shitammo": "Complected shit ammo",
+      "item.jigsaw.shitammo": "Complected shit pot",
       "advancements.beavercollarachievement.descr": "Smoke Beaweed collar",
       "item.jigsaw.clown_nose_boots": "Clown Nose Boots",
       "item.jigsaw.beaweednutconsumable": "Beaweed nut",
       "item.jigsaw.splashponosmutagen": "Purgen Mutagen",
-      "item.minecraft.potion.effect.shitbottle": "Bottle of shit",
+      "item.minecraft.potion.effect.shitbottle": "Purgative",
       "item.jigsaw.beaver_boots": "Beaver Boots",
       "item.jigsaw.jigsawbattery": "Jigsaw battery",
       "item.minecraft.lingering_potion.effect.unlevitationpotion": "Lingering Potion of Unlevitation",
@@ -7984,7 +7986,7 @@
       "item.jigsaw.hitlermoustache_leggings": "Hitlermoustache Leggings",
       "entity.jigsaw.living_beaverlegs": "Beaver legs",
       "item.minecraft.tipped_arrow.effect.shitbottle": "Shit arrow",
-      "item.jigsaw.purgenbundle": "Bundle of P.U.R.G.E.N.",
+      "item.jigsaw.purgenbundle": "Pot of P.U.R.G.E.N.",
       "advancements.jigsawroot.descr": "You downloaded this mod",
       "item.minecraft.tipped_arrow.effect.unlevitationpotion": "Arrow of Unlevitation",
       "item.jigsaw.captainbeaver_chestplate": "Captainbeaver Body",
@@ -8024,6 +8026,7 @@
       "effect.jigsaw.unlevitation": "Unlevitation",
       "item.jigsaw.beaver_chestplate": "Dead Beaver Body",
       "advancements.nanomachinesachievement.title": "Nanomachines, son!",
+      "item.jigsaw.beaweedsheetincomplete": "Compressed beaweed - Incomplete",
       "item.jigsaw.pwhat_leggings": "Pwhat Leggings",
       "itemGroup.tabjigsaw": "Jigsaw",
       "item.jigsaw.beaverknife": "Beaver knife",

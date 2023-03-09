@@ -13,28 +13,28 @@
         "value": "CUSTOM:Beaweeddust"
       },
       {
-        "value": "CUSTOM:Beaweeddustblock"
+        "value": "Items.MILK_BUCKET"
       },
       {
         "value": "CUSTOM:Beaweeddust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "Items.BRICK"
       },
       {
         "value": "CUSTOM:Ponos.bucket"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "Items.BRICK"
       },
       {
         "value": "Items.WHEAT"
+      },
+      {
+        "value": "Items.BRICK"
       },
       {
         "value": "Items.EGG"
-      },
-      {
-        "value": "Items.WHEAT"
       }
     ],
     "recipeReturnStack": {

@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "purgen_bundle",
+    "texture": "p_purgen_pot",
     "customModelName": "Normal",
-    "name": "Bundle of P.U.R.G.E.N.",
+    "name": "Pot of P.U.R.G.E.N.",
     "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "CUSTOM:Jigsaw"

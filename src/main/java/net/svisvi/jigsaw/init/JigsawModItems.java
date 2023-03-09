@@ -63,6 +63,7 @@ import net.svisvi.jigsaw.item.CapitalbookItem;
 import net.svisvi.jigsaw.item.BellyItem;
 import net.svisvi.jigsaw.item.BeaweedteaItem;
 import net.svisvi.jigsaw.item.BeaweedsoupItem;
+import net.svisvi.jigsaw.item.BeaweedsheetincompleteItem;
 import net.svisvi.jigsaw.item.BeaweednutconsumableItem;
 import net.svisvi.jigsaw.item.BeaweeddustItem;
 import net.svisvi.jigsaw.item.BeaweeddataItem;
@@ -202,6 +203,7 @@ public class JigsawModItems {
 	public static final RegistryObject<Item> BEAWEEDSTAGE_4 = block(JigsawModBlocks.BEAWEEDSTAGE_4, JigsawModTabs.TAB_JIGSAW);
 	public static final RegistryObject<Item> BEAWEEDDATA = REGISTRY.register("beaweeddata", () -> new BeaweeddataItem());
 	public static final RegistryObject<Item> BEAWEEDNUTCONSUMABLE = REGISTRY.register("beaweednutconsumable", () -> new BeaweednutconsumableItem());
+	public static final RegistryObject<Item> BEAWEEDSHEETINCOMPLETE = REGISTRY.register("beaweedsheetincomplete", () -> new BeaweedsheetincompleteItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

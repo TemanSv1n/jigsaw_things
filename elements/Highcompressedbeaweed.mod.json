@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "compressed_beaweed",
+    "texture": "b1_sheet",
     "customModelName": "Normal",
     "name": "High compressed beaweed",
     "rarity": "COMMON",

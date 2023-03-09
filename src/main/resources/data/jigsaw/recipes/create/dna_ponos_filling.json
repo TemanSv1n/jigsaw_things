@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "jigsaw:highcompressedbeaweed"
+    },
+    {
+      "fluid": "jigsaw:ponos",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "jigsaw:dn_aponos"
+    }
+  ]
+}

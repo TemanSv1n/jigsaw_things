@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "jigsaw:items/p_shit_pot"
+    "layer0": "jigsaw:items/b2_sheet"
   }
 }

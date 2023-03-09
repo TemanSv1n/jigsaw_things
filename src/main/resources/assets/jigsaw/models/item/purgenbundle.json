@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "jigsaw:items/purgen_bundle"
+    "layer0": "jigsaw:items/p_purgen_pot"
   }
 }
