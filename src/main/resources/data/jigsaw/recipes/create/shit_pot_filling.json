@@ -5,8 +5,12 @@
       "item": "minecraft:flower_pot"
     },
     {
-      "fluid": "jigsaw:ponos",
-      "amount": 250
+      "fluid": "create:potion",
+      "nbt": {
+        "Bottle": "REGULAR",
+        "Potion": "jigsaw:shitbottle"
+      },
+      "amount": 100
     }
   ],
   "results": [

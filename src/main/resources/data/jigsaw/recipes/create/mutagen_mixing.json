@@ -2,11 +2,14 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "jigsaw:beaweeddustblock"
+      "item": "jigsaw:dn_aponos"
     },
     {
-      "fluid": "minecraft:water",
-      "nbt": {},
+       "fluid": "create:potion",
+      "nbt": {
+        "Bottle": "REGULAR",
+        "Potion": "jigsaw:purgativestrong"
+      },
       "amount": 1000
     }
   ],
@@ -15,7 +18,7 @@
        "fluid": "create:potion",
       "nbt": {
         "Bottle": "REGULAR",
-        "Potion": "jigsaw:shitbottle"
+        "Potion": "jigsaw:mutagen"
       },
       "amount": 1000
     }

@@ -2,8 +2,11 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "fluid": "jigsaw:ponos",
-      "nbt": {},
+       "fluid": "create:potion",
+      "nbt": {
+        "Bottle": "REGULAR",
+        "Potion": "jigsaw:shitbottle"
+      },
       "amount": 250
     },
     {
@@ -16,7 +19,7 @@
        "fluid": "create:potion",
       "nbt": {
         "Bottle": "REGULAR",
-        "Potion": "jigsaw:shitbottle"
+        "Potion": "jigsaw:purgativestrong"
       },
       "amount": 500
     }

@@ -2,20 +2,20 @@
   "type": "create:filling",
   "ingredients": [
     {
-      "item": "jigsaw:pilule"
+      "item": "jigsaw:ampoule"
     },
     {
       "fluid": "create:potion",
       "nbt": {
         "Bottle": "REGULAR",
-        "Potion": "jigsaw:purgativestrong"
+        "Potion": "jigsaw:mutagen"
       },
       "amount": 500
     }
   ],
   "results": [
     {
-      "item": "jigsaw:purgenbundle"
+      "item": "jigsaw:splashponosmutagen"
     }
   ]
 }

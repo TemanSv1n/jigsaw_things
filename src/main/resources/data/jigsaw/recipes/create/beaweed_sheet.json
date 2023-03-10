@@ -17,9 +17,9 @@
          "fluid": "create:potion",
       "nbt": {
         "Bottle": "REGULAR",
-        "Potion": "jigsaw:shitbottle"
+        "Potion": "jigsaw:purgativestrong"
       },
-      "amount": 125
+      "amount": 250
         }
       ],
       "results": [

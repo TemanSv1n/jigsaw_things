@@ -1,17 +1,19 @@
 {
-  "type": "create:filling",
+  "type": "create:mixing",
   "ingredients": [
     {
       "item": "jigsaw:highcompressedbeaweed"
     },
     {
-      "fluid": "jigsaw:ponos",
+      "fluidTag": "forge:milk",
       "amount": 250
     }
   ],
   "results": [
     {
-      "item": "jigsaw:dn_aponos"
+      "item": "jigsaw:dn_aponos",
+      "count": 4
     }
-  ]
+  ],
+  "heatRequirement": "superheated"
 }

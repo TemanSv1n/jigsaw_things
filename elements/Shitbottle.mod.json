@@ -2,10 +2,10 @@
   "_fv": 39,
   "_type": "potion",
   "definition": {
-    "potionName": "Purgative",
-    "splashName": "Splash bottle of shit",
-    "lingeringName": "Lingering shit",
-    "arrowName": "Shit arrow",
+    "potionName": "Liquid Beaweed",
+    "splashName": "Splash bottle of Beaweed",
+    "lingeringName": "Lingering Beaweed",
+    "arrowName": "Beaweed arrow",
     "effects": [
       {
         "effect": {

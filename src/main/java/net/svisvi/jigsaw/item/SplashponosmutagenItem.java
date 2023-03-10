@@ -18,7 +18,7 @@ import net.minecraft.server.level.ServerPlayer;
 
 public class SplashponosmutagenItem extends Item {
 	public SplashponosmutagenItem() {
-		super(new Item.Properties().tab(JigsawModTabs.TAB_JIGSAW).durability(1));
+		super(new Item.Properties().tab(JigsawModTabs.TAB_JIGSAW).stacksTo(16));
 	}
 
 	@Override

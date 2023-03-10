@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "p_purgen_pot",
+    "texture": "full",
     "customModelName": "Normal",
-    "name": "Pot of P.U.R.G.E.N.",
+    "name": "Pilule of P.U.R.G.E.N.",
     "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "CUSTOM:Jigsaw"
@@ -16,11 +16,11 @@
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
-      "value": ""
+      "value": "CUSTOM:Pilule"
     },
     "destroyAnyBlock": false,
     "immuneToFire": false,
-    "stayInGridWhenCrafting": false,
+    "stayInGridWhenCrafting": true,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
@@ -38,7 +38,7 @@
     "nutritionalValue": 1,
     "saturation": 0.1,
     "eatResultItem": {
-      "value": ""
+      "value": "CUSTOM:Pilule"
     },
     "isMeat": false,
     "isAlwaysEdible": true,

@@ -10,37 +10,37 @@
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Beaweeddust"
+        "value": "Items.IRON_NUGGET"
       },
       {
-        "value": "Items.MILK_BUCKET"
+        "value": "Items.IRON_NUGGET"
       },
       {
-        "value": "CUSTOM:Beaweeddust"
+        "value": "Items.IRON_NUGGET"
       },
       {
-        "value": "Items.BRICK"
+        "value": "Items.IRON_INGOT"
       },
       {
-        "value": "CUSTOM:Ponos.bucket"
+        "value": "Items.IRON_INGOT"
       },
       {
-        "value": "Items.BRICK"
+        "value": "Items.IRON_INGOT"
       },
       {
-        "value": "Items.WHEAT"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Pilule"
+        "value": ""
       },
       {
-        "value": "Items.EGG"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Purgenbundle"
+      "value": "CUSTOM:Pilule"
     },
-    "name": "purgenbundlerecipe",
+    "name": "pilulerecipe",
     "namespace": "mod"
   }
 }

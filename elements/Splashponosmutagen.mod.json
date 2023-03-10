@@ -10,12 +10,12 @@
     "creativeTab": {
       "value": "CUSTOM:Jigsaw"
     },
-    "stackSize": 1,
+    "stackSize": 16,
     "ammoItem": {
       "value": ""
     },
     "shootConstantly": false,
-    "usageCount": 1,
+    "usageCount": 0,
     "actionSound": {
       "value": "entity.splash_potion.throw"
     },

@@ -29,6 +29,7 @@ import net.svisvi.jigsaw.item.PurgenAmmoGunSniperItem;
 import net.svisvi.jigsaw.item.PudgehookItem;
 import net.svisvi.jigsaw.item.PonosSoundsItem;
 import net.svisvi.jigsaw.item.PonosItem;
+import net.svisvi.jigsaw.item.PiluleItem;
 import net.svisvi.jigsaw.item.PigkaxeItem;
 import net.svisvi.jigsaw.item.NanomachinesItem;
 import net.svisvi.jigsaw.item.MurasamsheathemptyItem;
@@ -75,6 +76,7 @@ import net.svisvi.jigsaw.item.BeaverbodyItem;
 import net.svisvi.jigsaw.item.BeaveraxeItem;
 import net.svisvi.jigsaw.item.BeaverammoItem;
 import net.svisvi.jigsaw.item.BeaverItem;
+import net.svisvi.jigsaw.item.AmpouleItem;
 import net.svisvi.jigsaw.item.AdminkillerItem;
 import net.svisvi.jigsaw.JigsawMod;
 
@@ -204,6 +206,8 @@ public class JigsawModItems {
 	public static final RegistryObject<Item> BEAWEEDDATA = REGISTRY.register("beaweeddata", () -> new BeaweeddataItem());
 	public static final RegistryObject<Item> BEAWEEDNUTCONSUMABLE = REGISTRY.register("beaweednutconsumable", () -> new BeaweednutconsumableItem());
 	public static final RegistryObject<Item> BEAWEEDSHEETINCOMPLETE = REGISTRY.register("beaweedsheetincomplete", () -> new BeaweedsheetincompleteItem());
+	public static final RegistryObject<Item> PILULE = REGISTRY.register("pilule", () -> new PiluleItem());
+	public static final RegistryObject<Item> AMPOULE = REGISTRY.register("ampoule", () -> new AmpouleItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
