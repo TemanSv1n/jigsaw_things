@@ -1,5 +1,6 @@
 package net.svisvi.jigsaw.procedures;
 
+import net.svisvi.jigsaw.init.JigsawModParticleTypes;
 import net.svisvi.jigsaw.init.JigsawModMobEffects;
 
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -15,6 +16,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.TextComponent;
+import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
@@ -36,6 +38,8 @@ public class SplashponosmutagenProjectileHitsBlockProcedure {
 					_entity.addEffect(new MobEffectInstance(JigsawModMobEffects.PONOSMUTAGEN.get(), 60, 1));
 			}
 		}
+		if (world instanceof ServerLevel _level)
+			_level.sendParticles((SimpleParticleType) (JigsawModParticleTypes.SHIT.get()), x, y, z, 500, 3, 3, 3, 1);
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
 					"fill ~-6 ~-6 ~-6 ~6 ~6 ~6 jigsaw:beaver_live_costyl replace jigsaw:beaver_bottom");
@@ -65,6 +69,6 @@ public class SplashponosmutagenProjectileHitsBlockProcedure {
 							"fill ~-6 ~-6 ~-6 ~6 ~6 ~6 jigsaw:beavertopolivecostyl replace jigsaw:beaver_top");
 				MinecraftForge.EVENT_BUS.unregister(this);
 			}
-		}.start(world, 10);
+		}.start(world, 6);
 	}
 }

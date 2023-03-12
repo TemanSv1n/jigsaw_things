@@ -9,7 +9,7 @@ import net.minecraft.world.effect.MobEffect;
 
 public class PurgativeMobEffect extends MobEffect {
 	public PurgativeMobEffect() {
-		super(MobEffectCategory.HARMFUL, -13490673);
+		super(MobEffectCategory.HARMFUL, -15134203);
 	}
 
 	@Override

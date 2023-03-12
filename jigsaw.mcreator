@@ -1891,19 +1891,6 @@
       }
     },
     {
-      "name": "Purgenbundlerecipe",
-      "type": "recipe",
-      "sortid": 116,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "purgenbundlerecipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/jigsaw/recipes/purgenbundlerecipe.json"
-        ]
-      }
-    },
-    {
       "name": "Purgengun",
       "type": "rangeditem",
       "sortid": 117,
@@ -2103,19 +2090,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      }
-    },
-    {
-      "name": "ShitAmmoRecipe",
-      "type": "recipe",
-      "sortid": 126,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "shit_ammo_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/jigsaw/recipes/shit_ammo_recipe.json"
         ]
       }
     },
@@ -2918,19 +2892,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/jigsaw/recipes/compressedbeaweedrecipe.json"
-        ]
-      }
-    },
-    {
-      "name": "DNAofponosrecipe",
-      "type": "recipe",
-      "sortid": 169,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dn_aofponosrecipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/jigsaw/recipes/dn_aofponosrecipe.json"
         ]
       }
     },
@@ -7612,6 +7573,167 @@
           "src/main/resources/data/jigsaw/recipes/ampoulerecipe.json"
         ]
       }
+    },
+    {
+      "name": "MutagenextensionOnDispenseAttemptWithResult",
+      "type": "procedure",
+      "sortid": 397,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mutagenextension_on_dispense_attempt_with_result",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/MutagenextensionOnDispenseAttemptWithResultProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mutagenextension",
+      "type": "itemextension",
+      "sortid": 398,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mutagenextension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/item/extension/MutagenextensionItemExtension.java"
+        ]
+      }
+    },
+    {
+      "name": "Beaweednutachievement",
+      "type": "achievement",
+      "sortid": 399,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beaweednutachievement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw/advancements/beaweednutachievement.json"
+        ]
+      }
+    },
+    {
+      "name": "Beaweedseedsachievement",
+      "type": "achievement",
+      "sortid": 400,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beaweedseedsachievement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw/advancements/beaweedseedsachievement.json"
+        ]
+      }
+    },
+    {
+      "name": "Shitammoachievement",
+      "type": "achievement",
+      "sortid": 401,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shitammoachievement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw/advancements/shitammoachievement.json"
+        ]
+      }
+    },
+    {
+      "name": "Livingbeaverachievement",
+      "type": "achievement",
+      "sortid": 402,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "livingbeaverachievement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw/advancements/livingbeaverachievement.json"
+        ]
+      }
+    },
+    {
+      "name": "Beaversniperachievement",
+      "type": "achievement",
+      "sortid": 403,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beaversniperachievement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw/advancements/beaversniperachievement.json"
+        ]
+      }
+    },
+    {
+      "name": "Radiobeaverachievement",
+      "type": "achievement",
+      "sortid": 404,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiobeaverachievement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw/advancements/radiobeaverachievement.json"
+        ]
+      }
+    },
+    {
+      "name": "Eggsachievement",
+      "type": "achievement",
+      "sortid": 405,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eggsachievement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw/advancements/eggsachievement.json"
+        ]
+      }
+    },
+    {
+      "name": "Pudgeachievement",
+      "type": "achievement",
+      "sortid": 406,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pudgeachievement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw/advancements/pudgeachievement.json"
+        ]
+      }
+    },
+    {
+      "name": "Srucibleachievement",
+      "type": "achievement",
+      "sortid": 407,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "srucibleachievement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw/advancements/srucibleachievement.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -7692,33 +7814,33 @@
       "item.jigsaw.cock_chestplate": "Хуй",
       "advancements.purgenachievement.title": "Лекарство от кашля",
       "item.jigsaw.flowergun_0": "Цветочный пистолет",
-      "item.jigsaw.beaverzooka": "Боброзука",
       "item.jigsaw.flowergun_1": "Цветочный пистолет",
+      "item.jigsaw.beaverzooka": "Боброзука",
       "advancements.slaveachievement.title": "Jabroni outfit",
       "advancements.teethmaskachievement.descr": "Создайте накладные зубы",
       "item.jigsaw.radio_beaver_spawn_egg": "Яичко радио бобра",
       "item.jigsaw.beaweedsoup": "Бобровый суп",
-      "item.jigsaw.cock_leggings": "Хуёвые штаны",
       "item.jigsaw.smokingsuperpipe": "Трубка",
+      "item.jigsaw.cock_leggings": "Хуёвые штаны",
       "item.jigsaw.beaverbomb": "Бобровая бомба",
       "advancements.hitlerachievement.title": "Усики - проход в трусики",
       "advancements.beaverblockachievement.title": "Бананакет, за что...",
       "item.jigsaw.cursed_cow_spawn_egg": "Яичко проклятой коровы",
       "item.jigsaw.shitammo": "Укомплектованный говеный патрон",
-      "item.minecraft.potion.effect.mutagen": "Пурген-мутаген",
       "advancements.beavercollarachievement.descr": "Выкурите бобровый косяк",
+      "item.minecraft.potion.effect.mutagen": "Пурген-мутаген",
       "item.jigsaw.clown_nose_boots": "Клоуноботы",
       "item.jigsaw.beaweednutconsumable": "Бобровый орех",
       "item.jigsaw.splashponosmutagen": "Взрывной поносный мутаген",
       "item.minecraft.potion.effect.shitbottle": "Бутылочка с дерьмом",
       "item.jigsaw.beaver_boots": "Ботинки бобра",
-      "item.jigsaw.jigsawbattery": "Цыганская батарея",
       "item.minecraft.lingering_potion.effect.unlevitationpotion": "Оседающее зелье антилевитации",
+      "item.jigsaw.jigsawbattery": "Цыганская батарея",
       "item.jigsaw.hitlermoustache_boots": "гитлер ботинки",
       "item.jigsaw.beaweeddata": "Надсмотрщик боброжмыха",
       "item.minecraft.tipped_arrow.effect.purgativestrong": "Слабительная стрела",
-      "entity.jigsaw.poopemitter": "Имитатор поноса",
       "item.jigsaw.circusdisc.desc": "Клоунская музыка",
+      "entity.jigsaw.poopemitter": "Имитатор поноса",
       "item.jigsaw.beaverammo": "Патрон бобра",
       "block.jigsaw.wheatplacer": "Невидимая пшеница",
       "advancements.fishclockachievement.title": "Рыбный четверг",
@@ -7726,10 +7848,10 @@
       "item.jigsaw.murasamsheathempty": "Пустые ножны",
       "item.minecraft.lingering_potion.effect.mutagen": "Вонючий Пурген-мутаген",
       "advancements.cursedcowachievement.title": "О нет...",
-      "advancements.nanomachinesachievement.descr": "Активируйте наномашины",
       "advancements.bellyachievement.title": "Кто здесь бибика?",
-      "advancements.purgenmutagenachievement.title": "Юный химик",
+      "advancements.nanomachinesachievement.descr": "Активируйте наномашины",
       "item.jigsaw.hitlermoustache_helmet": "Усики гитлера",
+      "advancements.purgenmutagenachievement.title": "Юный химик",
       "item.jigsaw.hitlermoustache_chestplate": "гитлер пузо",
       "item.jigsaw.murasamsheath": "Ножны с МураСАМ",
       "key.jigsaw.murasamjump": "Прыжок МураСАМ",
@@ -7739,6 +7861,7 @@
       "item.jigsaw.murasam": "МураСАМ",
       "item.jigsaw.solonka": "Солонка",
       "key.jigsaw.sbeaver": "S - радио",
+      "advancements.beaweedseedsachievement.descr": "Разгрызите орех и получите семечки",
       "advancements.forkachievement.descr": "Соорудите вилку, чтобы чистить...",
       "item.jigsaw.beaweedtea": "Боброжмыховый чай",
       "item.jigsaw.ponos_bucket": "Ведёрко поноса",
@@ -7758,6 +7881,7 @@
       "entity.jigsaw.living_beaver_body": "Вершок бобра",
       "item.jigsaw.purgenbad": "Злостный Пурген нехороший",
       "item.jigsaw.merchant_helmet": "Маска Торгового Союза",
+      "advancements.beaversniperachievement.descr": "Повышайте своих бобров",
       "item.jigsaw.sniper_beaver_spawn_egg": "Яичко бобра спинера",
       "advancements.clownachievement.descr": "Создайте клоунский нос",
       "entity.jigsaw.radio_beaver": "Подключенный боброжуйка",
@@ -7775,7 +7899,9 @@
       "item.jigsaw.rickrollgun": "Рикроллер",
       "item.jigsaw.clown_nose_helmet": "Клоунский нос",
       "item.jigsaw.shit_ammo_gun": "Дерьмопатронный коллайдер",
+      "advancements.beaweedseedsachievement.title": "Я сказал не грызть яйца!",
       "item.jigsaw.cock_belly_chestplate": "Пузочлен",
+      "advancements.beaweednutachievement.descr": "Срежьте боброжмыховый орех",
       "advancements.flowergunachievement.title": "Хенде хох!",
       "item.jigsaw.cigarettebox": "Пачка сигарет",
       "advancements.fishclockachievement.descr": "Убейте древнего стража и запустите неизбежное",
@@ -7795,7 +7921,8 @@
       "entity.jigsaw.living_beaverlegs": "Ножки бобра",
       "item.minecraft.tipped_arrow.effect.shitbottle": "Говёная стрела",
       "item.jigsaw.purgenbundle": "Пилюля с П.У.Р.Г.Е.Н.-ом",
-      "advancements.jigsawroot.descr": "Вы скачали мод!",
+      "advancements.srucibleachievement.descr": "Создайте легендарное Говнило Палача Мазни",
+      "advancements.jigsawroot.descr": "Вы скачали мод! Это было зря...",
       "item.minecraft.tipped_arrow.effect.unlevitationpotion": "Стрела антилевитации",
       "item.jigsaw.captainbeaver_chestplate": "Captainbeaver Body",
       "subtitles.fools_village": "Деревня дураков",
@@ -7811,11 +7938,15 @@
       "item.jigsaw.capitalbook": "Капитал",
       "block.jigsaw.safegunpowderbarrel": "Не ломающая очка бочка с порохом",
       "subtitles.rickroll": "Рикролл",
+      "advancements.shitammoachievement.title": "1.20 Археология",
       "block.jigsaw.beaver_top": "Верхний бобер",
       "item.minecraft.lingering_potion.effect.purgativestrong": "Вонючее слабительное",
       "item.jigsaw.shittybee_spawn_egg": "Яичко дурацкой пчелы",
+      "advancements.beaversniperachievement.title": "Give war a chance!",
+      "advancements.radiobeaverachievement.descr": "Дайте радио шляпу своим бобрам",
       "item.jigsaw.radiohat_helmet": "Радио-шляпа",
       "block.jigsaw.beaweedstage_4": "Боброжмыховое отродье",
+      "advancements.eggsachievement.descr": "Яйца",
       "block.jigsaw.beaweedstage_3": "Боброжмыховый стебелек",
       "block.jigsaw.beaweedstage_1": "Боброжмыховый проросток",
       "item.jigsaw.nanomachines_boots": "Наноботинки",
@@ -7860,16 +7991,18 @@
       "block.jigsaw.ponos": "Понос",
       "subtitles.circus_theme": "Клоунская музыка",
       "advancements.beawerbody_achievement.descr": "Синтезируйте трупик бобра",
-      "item.jigsaw.eggs": "Яйца",
+      "item.jigsaw.eggs": "Яйца!",
       "item.jigsaw.radiohat_boots": "Radiohat Boots",
+      "advancements.pudgeachievement.title": "Свежее мясо!",
       "advancements.beawerbody_achievement.title": "Трупик бобра",
       "item.jigsaw.teeth_helmet": "Накладные зубы",
       "item.jigsaw.captainbeaver_leggings": "Captainbeaver Leggings",
+      "advancements.livingbeaverachievement.title": "И восстали бобры из поноса!",
       "item.jigsaw.sniperpromotionkit": "Набор повышения : снайпер",
       "block.jigsaw.invisibilitybush": "Невидимые кусты",
       "advancements.bellyachievement.descr": "Создайте пузо",
       "item.jigsaw.cigarette": "Сигарета",
-      "advancements.purgenmutagenachievement.descr": "Сварите ДНК поноса с водой на варочной стойке...",
+      "advancements.purgenmutagenachievement.descr": "Сварите это как-нибудь...",
       "advancements.clownachievement.title": "Ты настоящий цирк!",
       "enchantment.jigsaw.immovable": "Недвижимость",
       "item.jigsaw.pwhat_chestplate": "пвтело",
@@ -7891,8 +8024,9 @@
       "item.jigsaw.fool_disc.desc": "Деревня Дураков",
       "effect.jigsaw.ponosmutagen": "Пурген-мутаген",
       "entity.jigsaw.jetstreamchair": "Реактивный стул",
+      "advancements.eggsachievement.title": "Яйца?",
       "item.jigsaw.teeth_leggings": "Зубоштаны",
-      "item.jigsaw.beaveraxe": "Beaver axe",
+      "item.jigsaw.beaveraxe": "Бобротопор",
       "item.jigsaw.jetstreamchair_spawn_egg": "Яичко стула",
       "item.jigsaw.teeth_boots": "Зуботы",
       "item.jigsaw.merchant_leggings": "Merchant Leggings",
@@ -7902,6 +8036,7 @@
       "item.jigsaw.pilule": "Пилюля",
       "advancements.fargusachievement.title": "Gold ФАРГУС",
       "item.jigsaw.joker_nose_leggings": "Штаны носа джокера",
+      "advancements.pudgeachievement.descr": "Создайте крюк для мяса",
       "item.jigsaw.shitgrenade": "Дерьмовая граната",
       "advancements.beavercomputerachievement.descr": "Создайте Боброхост. Возможно следует запитать редстоуном....",
       "item.jigsaw.srucibleoff": "Говнило",
@@ -7910,12 +8045,14 @@
       "advancements.cockachievement.descr": "Создайте хуй",
       "fluid.jigsaw.ponos": "Понос",
       "item.minecraft.tipped_arrow.effect.mutagen": "Стрела, вымазанная в пурген-мутагене",
+      "advancements.livingbeaverachievement.descr": "Оживите статуи бобров",
       "effect.jigsaw.poop": "Экран в говне",
       "advancements.medicgunachievement.title": "МЕЕЕЕЕДИК!!!",
       "advancements.purgenachievement.descr": "Создайте П.У.Р.Г.Е.Н.",
       "item.jigsaw.dn_aponos": "ДНК поноса",
       "item.jigsaw.purgen_ammo_gun_sniper": "Пургеновая снайперка для бобра",
       "advancements.purgengunachievement.title": "Нюхай бебру!",
+      "advancements.shitammoachievement.descr": "Налейте сжиженный боброжмых в горшок",
       "item.jigsaw.maznyaslayer_leggings": "Штаны Палача Мазни",
       "block.jigsaw.beaweedseeds": "Семена боброжмыха",
       "advancements.jigsawroot.title": "Цыганство",
@@ -7931,6 +8068,7 @@
       "effect.jigsaw.purgative": "Сильное слабительное",
       "item.jigsaw.shitgrenadeitem": "Дерьмовая граната предмет",
       "effect.jigsaw.egged": "Магия яичек",
+      "advancements.srucibleachievement.title": "Против всех исчадий из глубин Бобруйска...",
       "entity.jigsaw.cursed_cow": "Проклятая корова",
       "advancements.hitlerachievement.descr": "Создайте усики гитлера",
       "item.jigsaw.living_beaver_spawn_egg": "Яичко бобра",
@@ -7938,15 +8076,17 @@
       "advancements.slaveachievement.descr": "Создайте настоящий мужской сет брони",
       "item.jigsaw.ponos_sounds.desc": "Звуки поноса",
       "block.jigsaw.beaverblock": "Рожа бобра",
-      "item.minecraft.potion.effect.purgativestrong": "Purgative",
+      "item.minecraft.potion.effect.purgativestrong": "Слабительное",
       "block.jigsaw.gunpowderbarrel": "Бочка с порохом",
       "advancements.beaverbombachievement.title": "ЭТО ЗАПРЕЩЕНО!!!",
       "item.jigsaw.radiohat_leggings": "Radiohat Leggings",
+      "advancements.radiobeaverachievement.title": "Если ноги не сотрутся...",
       "block.jigsaw.beaweeddustblock": "Блок бобровой пыли",
       "item.jigsaw.defuser": "Кусачки",
       "advancements.captainbeaverachievement.descr": "Станьте Вождём бобров!",
       "advancements.beaweedachievement.descr": "Соберите боброжмых",
-      "item.jigsaw.clown_nose_leggings": "клоун штаны"
+      "item.jigsaw.clown_nose_leggings": "клоун штаны",
+      "advancements.beaweednutachievement.title": "Яйца грызть запрещается!"
     },
     "en_us": {
       "item.jigsaw.fishclock": "Fish clock",
@@ -8008,6 +8148,7 @@
       "item.jigsaw.murasam": "MuraSAM",
       "item.jigsaw.solonka": "Solonka",
       "key.jigsaw.sbeaver": "S - radio",
+      "advancements.beaweedseedsachievement.descr": "Consume seeds from the nut",
       "advancements.forkachievement.descr": "Create Fork",
       "item.jigsaw.beaweedtea": "Beaweed tea",
       "item.jigsaw.ponos_bucket": "Bucket of ponos",
@@ -8027,6 +8168,7 @@
       "entity.jigsaw.living_beaver_body": "Beaver body",
       "item.jigsaw.purgenbad": "Purgenbad",
       "item.jigsaw.merchant_helmet": "Merchant Mask",
+      "advancements.beaversniperachievement.descr": "Hire your beavers",
       "item.jigsaw.sniper_beaver_spawn_egg": "Sniper Beaver Spawn Egg",
       "advancements.clownachievement.descr": "Create clown nose",
       "entity.jigsaw.radio_beaver": "Radio Beaver",
@@ -8044,7 +8186,9 @@
       "item.jigsaw.rickrollgun": "Rickroll gun",
       "item.jigsaw.clown_nose_helmet": "Clown Nose",
       "item.jigsaw.shit_ammo_gun": "Shit Ammo Gun",
+      "advancements.beaweedseedsachievement.title": "I said not to gnaw the balls!",
       "item.jigsaw.cock_belly_chestplate": "Cock-belly",
+      "advancements.beaweednutachievement.descr": "Cut the nut from Beaweed",
       "advancements.flowergunachievement.title": "Hande Hoch!",
       "item.jigsaw.cigarettebox": "Cigarette box",
       "advancements.fishclockachievement.descr": "Kill ellder guardian and activate it...",
@@ -8064,7 +8208,8 @@
       "entity.jigsaw.living_beaverlegs": "Beaver legs",
       "item.minecraft.tipped_arrow.effect.shitbottle": "Beaweed arrow",
       "item.jigsaw.purgenbundle": "Pilule of P.U.R.G.E.N.",
-      "advancements.jigsawroot.descr": "You downloaded this mod",
+      "advancements.srucibleachievement.descr": "Create Legendary Srucible of the Maznya Slayer",
+      "advancements.jigsawroot.descr": "You downloaded this mod. This was a mistake...",
       "item.minecraft.tipped_arrow.effect.unlevitationpotion": "Arrow of Unlevitation",
       "item.jigsaw.captainbeaver_chestplate": "Captainbeaver Body",
       "subtitles.fools_village": "Fools\u0027 village",
@@ -8080,11 +8225,15 @@
       "item.jigsaw.capitalbook": "Capital",
       "block.jigsaw.safegunpowderbarrel": "Safe gunpowder barrel",
       "subtitles.rickroll": "rickrolled",
+      "advancements.shitammoachievement.title": "1.20 Archeology",
       "block.jigsaw.beaver_top": "Beaver Top",
       "item.minecraft.lingering_potion.effect.purgativestrong": "Lingering Purgative",
       "item.jigsaw.shittybee_spawn_egg": "Fool bee Spawn Egg",
+      "advancements.beaversniperachievement.title": "Give war a chance!",
+      "advancements.radiobeaverachievement.descr": "Give radio hat to your beavers!",
       "item.jigsaw.radiohat_helmet": "Radio Hat",
       "block.jigsaw.beaweedstage_4": "Beaweed stage 4",
+      "advancements.eggsachievement.descr": "Eggs",
       "block.jigsaw.beaweedstage_3": "Beaweed stage 3",
       "block.jigsaw.beaweedstage_1": "Beaweed stage 1",
       "item.jigsaw.circusdisc": "Clown - Circus",
@@ -8131,14 +8280,16 @@
       "advancements.beawerbody_achievement.descr": "Create body of Beaver",
       "item.jigsaw.eggs": "Eggs",
       "item.jigsaw.radiohat_boots": "Radiohat Boots",
+      "advancements.pudgeachievement.title": "Look who\u0027s coming for dinner!",
       "advancements.beawerbody_achievement.title": "Beaver has gone...",
       "item.jigsaw.teeth_helmet": "Teeth Mask",
       "item.jigsaw.captainbeaver_leggings": "Captainbeaver Leggings",
+      "advancements.livingbeaverachievement.title": "The beavers rose from the diarrhea!",
       "item.jigsaw.sniperpromotionkit": "Promotion kit : Sniper",
       "block.jigsaw.invisibilitybush": "Invisibility leaves",
       "advancements.bellyachievement.descr": "Create belly",
       "item.jigsaw.cigarette": "Cigarette",
-      "advancements.purgenmutagenachievement.descr": "Brew DNA of ponos with water in brewing stand",
+      "advancements.purgenmutagenachievement.descr": "Brew Purgen Mutagen",
       "advancements.clownachievement.title": "You are entire circus!",
       "enchantment.jigsaw.immovable": "Immovable",
       "item.jigsaw.pwhat_chestplate": "Pwhat Body",
@@ -8160,6 +8311,7 @@
       "item.jigsaw.fool_disc.desc": "Fools\u0027 village",
       "effect.jigsaw.ponosmutagen": "Ponos mutagen",
       "entity.jigsaw.jetstreamchair": "Jetstream chair",
+      "advancements.eggsachievement.title": "Eggs",
       "item.jigsaw.teeth_leggings": "Teeth Leggings",
       "item.jigsaw.beaveraxe": "Beaver axe",
       "item.jigsaw.jetstreamchair_spawn_egg": "Jetstream chair Spawn Egg",
@@ -8171,6 +8323,7 @@
       "item.jigsaw.pilule": "Pilule",
       "advancements.fargusachievement.title": "Gold ФАРГУС",
       "item.jigsaw.joker_nose_leggings": "Joker Nose Leggings",
+      "advancements.pudgeachievement.descr": "Create Meat Hook",
       "item.jigsaw.shitgrenade": "Shitty grenade",
       "advancements.beavercomputerachievement.descr": "Create Beaver computer... Redstone can do something...",
       "item.jigsaw.srucibleoff": "Srucible",
@@ -8179,12 +8332,14 @@
       "advancements.cockachievement.descr": "Create COCK!!!",
       "fluid.jigsaw.ponos": "Ponos",
       "item.minecraft.tipped_arrow.effect.mutagen": "Arrow of Purgen Mutagen",
+      "advancements.livingbeaverachievement.descr": "Bring the live to beaver statues!",
       "effect.jigsaw.poop": "Poop",
       "advancements.medicgunachievement.title": "MEEEEEEEEDIC!!!",
       "advancements.purgenachievement.descr": "Create P.U.R.G.E.N.",
       "item.jigsaw.dn_aponos": "DNA of ponos",
       "item.jigsaw.purgen_ammo_gun_sniper": "Purgen Ammo Gun Sniper",
       "advancements.purgengunachievement.title": "Smell bebra",
+      "advancements.shitammoachievement.descr": "Put liquid beaweed into a pot",
       "item.jigsaw.maznyaslayer_leggings": "Pants of Maznya Slayer",
       "block.jigsaw.beaweedseeds": "Beaweed seeds",
       "advancements.jigsawroot.title": "Jigsaw",
@@ -8200,6 +8355,7 @@
       "effect.jigsaw.purgative": "Strong purgative",
       "item.jigsaw.shitgrenadeitem": "Shit grenade item",
       "effect.jigsaw.egged": "Egg magic",
+      "advancements.srucibleachievement.title": "Srucible",
       "entity.jigsaw.cursed_cow": "Cursed Cow",
       "advancements.hitlerachievement.descr": "Create Hitler moustache",
       "item.jigsaw.living_beaver_spawn_egg": "Beaver Spawn Egg",
@@ -8211,11 +8367,13 @@
       "block.jigsaw.gunpowderbarrel": "Gunpowder barrel",
       "advancements.beaverbombachievement.title": "THIS IS FORBIDDEN!!!",
       "item.jigsaw.radiohat_leggings": "Radiohat Leggings",
+      "advancements.radiobeaverachievement.title": "Gorod Omsk",
       "block.jigsaw.beaweeddustblock": "Beaweed dust block",
       "item.jigsaw.defuser": "Defuser",
       "advancements.captainbeaverachievement.descr": "Become the Leader of beavers!",
       "advancements.beaweedachievement.descr": "Collect Beaweed!",
-      "item.jigsaw.clown_nose_leggings": "Clown Nose Leggings"
+      "item.jigsaw.clown_nose_leggings": "Clown Nose Leggings",
+      "advancements.beaweednutachievement.title": "It\u0027s forbidden to gnaw the balls!"
     }
   },
   "foldersRoot": {

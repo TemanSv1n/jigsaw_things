@@ -1,36 +1,36 @@
 {
   "display": {
     "icon": {
-      "item": "jigsaw:purgenbundle"
+      "item": "jigsaw:shitammo"
     },
     "title": {
-      "translate": "advancements.purgenachievement.title"
+      "translate": "advancements.shitammoachievement.title"
     },
     "description": {
-      "translate": "advancements.purgenachievement.descr"
+      "translate": "advancements.shitammoachievement.descr"
     },
-    "frame": "goal",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {
-    "purgenachievement": {
+    "shitammoachievement": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "jigsaw:purgenbundle"
+              "jigsaw:shitammo"
             ],
             "count": {
               "min": 1,
-              "max": 16
+              "max": 1024
             }
           }
         ]
       }
     }
   },
-  "parent": "jigsaw:shitammoachievement"
+  "parent": "jigsaw:beaweedachievement"
 }

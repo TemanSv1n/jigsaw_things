@@ -1,6 +1,6 @@
 {
   "display": {
-    "background": "jigsaw:textures/screens/red_glazed_terracotta.png",
+    "background": "jigsaw:textures/screens/bvsod.png",
     "icon": {
       "item": "minecraft:sculk_sensor"
     },

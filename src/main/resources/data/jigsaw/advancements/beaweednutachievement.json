@@ -1,36 +1,39 @@
 {
   "display": {
     "icon": {
-      "item": "jigsaw:purgenbundle"
+      "item": "jigsaw:beaweednutconsumable"
     },
     "title": {
-      "translate": "advancements.purgenachievement.title"
+      "translate": "advancements.beaweednutachievement.title"
     },
     "description": {
-      "translate": "advancements.purgenachievement.descr"
+      "translate": "advancements.beaweednutachievement.descr"
     },
-    "frame": "goal",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {
-    "purgenachievement": {
+    "beaweednutachievement": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "jigsaw:purgenbundle"
+              "jigsaw:beaweednutconsumable"
             ],
             "count": {
               "min": 1,
-              "max": 16
+              "max": 128
             }
           }
         ]
       }
     }
   },
-  "parent": "jigsaw:shitammoachievement"
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "jigsaw:jigsawroot"
 }

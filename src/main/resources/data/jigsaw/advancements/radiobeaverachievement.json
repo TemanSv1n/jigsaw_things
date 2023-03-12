@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jigsaw:radiohat_helmet"
+    },
+    "title": {
+      "translate": "advancements.radiobeaverachievement.title"
+    },
+    "description": {
+      "translate": "advancements.radiobeaverachievement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "radiobeaverachievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jigsaw:livingbeaverachievement"
+}

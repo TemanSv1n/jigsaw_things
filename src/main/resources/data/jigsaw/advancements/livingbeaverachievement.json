@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jigsaw:beaverbody"
+    },
+    "title": {
+      "translate": "advancements.livingbeaverachievement.title"
+    },
+    "description": {
+      "translate": "advancements.livingbeaverachievement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "livingbeaverachievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jigsaw:purgenmutagenachievement"
+}

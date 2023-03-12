@@ -40,7 +40,7 @@ public class FlyParticle extends TextureSheetParticle {
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
 		this.quadSize *= 0.8f;
-		this.lifetime = 16;
+		this.lifetime = 1024;
 		this.gravity = 0f;
 		this.hasPhysics = true;
 		this.xd = vx * 1;

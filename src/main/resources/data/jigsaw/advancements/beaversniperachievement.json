@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jigsaw:sniperpromotionkit"
+    },
+    "title": {
+      "translate": "advancements.beaversniperachievement.title"
+    },
+    "description": {
+      "translate": "advancements.beaversniperachievement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "beaversniperachievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jigsaw:livingbeaverachievement"
+}

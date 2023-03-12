@@ -9,7 +9,7 @@ import net.minecraft.world.effect.MobEffect;
 
 public class PonosmutagenMobEffect extends MobEffect {
 	public PonosmutagenMobEffect() {
-		super(MobEffectCategory.BENEFICIAL, -11914995);
+		super(MobEffectCategory.BENEFICIAL, -15857663);
 	}
 
 	@Override

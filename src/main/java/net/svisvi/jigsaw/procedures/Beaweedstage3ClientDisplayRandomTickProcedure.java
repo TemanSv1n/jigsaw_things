@@ -9,6 +9,6 @@ import net.minecraft.core.particles.SimpleParticleType;
 public class Beaweedstage3ClientDisplayRandomTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (JigsawModParticleTypes.FLY.get()), x, y, z, 20, 2, 2, 2, 0.1);
+			_level.sendParticles((SimpleParticleType) (JigsawModParticleTypes.FLY.get()), x, y, z, 100, 2, 2, 2, 0);
 	}
 }

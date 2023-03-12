@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Srucible"
+      "value": "CUSTOM:Srucibleoff"
     },
     "name": "sruciblerecipe",
     "namespace": "mod"

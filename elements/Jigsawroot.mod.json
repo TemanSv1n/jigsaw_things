@@ -3,11 +3,11 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Jigsaw",
-    "achievementDescription": "You downloaded this mod",
+    "achievementDescription": "You downloaded this mod. This was a mistake...",
     "achievementIcon": {
       "value": "Blocks.SCULK_SENSOR"
     },
-    "background": "red_glazed_terracotta.png",
+    "background": "bvsod.png",
     "disableDisplay": false,
     "showPopup": false,
     "announceToChat": false,
