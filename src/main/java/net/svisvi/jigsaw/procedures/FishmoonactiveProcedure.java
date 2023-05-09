@@ -80,7 +80,7 @@ public class FishmoonactiveProcedure {
 			}
 		}
 		if (!world.getLevelData().isRaining() && JigsawModVariables.WorldVariables.get(world).fish_moon == true && JigsawModVariables.WorldVariables.get(world).fish_moon == true && (entity.level.dimension()) == (Level.OVERWORLD)) {
-			world.getLevelData().setRaining((true));
+			world.getLevelData().setRaining(true);
 		}
 	}
 }

@@ -35,7 +35,7 @@ public class BeaverknifeItem extends SwordItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of();
 			}
 		}, 3, -2.2000000000000002f, new Item.Properties().tab(JigsawModTabs.TAB_JIGSAW));
 	}

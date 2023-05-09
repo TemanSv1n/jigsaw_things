@@ -22,7 +22,7 @@ public class EffectGiveInPoopAreaProcedure {
 		double timer = 0;
 		if (timer % 2 == 0) {
 			timer = timer + 1;
-			for (int index0 = 0; index0 < (int) (13800); index0++) {
+			for (int index0 = 0; index0 < 13800; index0++) {
 				new Object() {
 					private int ticks = 0;
 					private float waitTicks;
@@ -49,8 +49,8 @@ public class EffectGiveInPoopAreaProcedure {
 							List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
 									.collect(Collectors.toList());
 							for (Entity entityiterator : _entfound) {
-								if (entityiterator instanceof LivingEntity _entity)
-									_entity.addEffect(new MobEffectInstance(JigsawModMobEffects.POOP.get(), 120, 1, (false), (true)));
+								if (entityiterator instanceof LivingEntity _entity && !_entity.level.isClientSide())
+									_entity.addEffect(new MobEffectInstance(JigsawModMobEffects.POOP.get(), 120, 1, false, true));
 							}
 						}
 						MinecraftForge.EVENT_BUS.unregister(this);

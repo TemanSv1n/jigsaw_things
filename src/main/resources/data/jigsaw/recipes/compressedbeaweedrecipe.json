@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:piston"
+    },
+    "1": {
+      "item": "jigsaw:beaweed"
+    },
+    "2": {
+      "item": "minecraft:piston"
+    },
+    "3": {
+      "tag": "forge:stone"
+    },
+    "4": {
+      "item": "jigsaw:beaweeddustblock"
+    },
+    "5": {
+      "tag": "forge:stone"
+    },
+    "6": {
+      "item": "minecraft:obsidian"
+    },
+    "7": {
+      "item": "jigsaw:beaweed"
+    },
+    "8": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "jigsaw:highcompressedbeaweed",
+    "count": 8
+  }
+}

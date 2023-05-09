@@ -4,8 +4,10 @@
  */
 package net.svisvi.jigsaw.init;
 
+import net.svisvi.jigsaw.item.UnbreakerItem;
 import net.svisvi.jigsaw.item.TotemofshitItem;
 import net.svisvi.jigsaw.item.TeethItem;
+import net.svisvi.jigsaw.item.SupershotgunprItem;
 import net.svisvi.jigsaw.item.SuperAutoForkItem;
 import net.svisvi.jigsaw.item.SrucibleoffItem;
 import net.svisvi.jigsaw.item.SrucibleItem;
@@ -27,6 +29,7 @@ import net.svisvi.jigsaw.item.PurgenbadItem;
 import net.svisvi.jigsaw.item.PurgenammogunItem;
 import net.svisvi.jigsaw.item.PurgenAmmoGunSniperItem;
 import net.svisvi.jigsaw.item.PudgehookItem;
+import net.svisvi.jigsaw.item.PonoscutlassItem;
 import net.svisvi.jigsaw.item.PonosSoundsItem;
 import net.svisvi.jigsaw.item.PonosItem;
 import net.svisvi.jigsaw.item.PiluleItem;
@@ -39,6 +42,7 @@ import net.svisvi.jigsaw.item.MerchantItem;
 import net.svisvi.jigsaw.item.MedicgunItem;
 import net.svisvi.jigsaw.item.MaznyaslayerItem;
 import net.svisvi.jigsaw.item.MarmosetItem;
+import net.svisvi.jigsaw.item.JumpingPantsItem;
 import net.svisvi.jigsaw.item.JokerNoseItem;
 import net.svisvi.jigsaw.item.JigsawbatteryItem;
 import net.svisvi.jigsaw.item.JetstreamchairitemItem;
@@ -208,6 +212,11 @@ public class JigsawModItems {
 	public static final RegistryObject<Item> BEAWEEDSHEETINCOMPLETE = REGISTRY.register("beaweedsheetincomplete", () -> new BeaweedsheetincompleteItem());
 	public static final RegistryObject<Item> PILULE = REGISTRY.register("pilule", () -> new PiluleItem());
 	public static final RegistryObject<Item> AMPOULE = REGISTRY.register("ampoule", () -> new AmpouleItem());
+	public static final RegistryObject<Item> PONOSCUTLASS = REGISTRY.register("ponoscutlass", () -> new PonoscutlassItem());
+	public static final RegistryObject<Item> SUPERSHOTGUNPR = REGISTRY.register("supershotgunpr", () -> new SupershotgunprItem());
+	public static final RegistryObject<Item> JUMPING_PANTS_HELMET = REGISTRY.register("jumping_pants_helmet", () -> new JumpingPantsItem.Helmet());
+	public static final RegistryObject<Item> JUMPING_PANTS_LEGGINGS = REGISTRY.register("jumping_pants_leggings", () -> new JumpingPantsItem.Leggings());
+	public static final RegistryObject<Item> UNBREAKER = REGISTRY.register("unbreaker", () -> new UnbreakerItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -1,9 +1,9 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "p_purgen_pot",
+    "texture": "shit_ammo",
     "customModelName": "Normal",
     "name": "Complected shit pot",
     "rarity": "COMMON",

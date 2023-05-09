@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.common.brewing.IBrewingRecipe;
 import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.item.alchemy.PotionUtils;
 import net.minecraft.world.item.Items;
@@ -30,7 +31,7 @@ public class UnlevitationbrewingBrewingRecipe implements IBrewingRecipe {
 
 	@Override
 	public boolean isIngredient(ItemStack ingredient) {
-		return ingredient.getItem() == Items.GLOWSTONE_DUST;
+		return Ingredient.of(new ItemStack(Items.GLOWSTONE_DUST)).test(ingredient);
 	}
 
 	@Override

@@ -56,8 +56,8 @@ public class TotemofshitItemInHandTickProcedure {
 					if (_entity instanceof Player _player)
 						_player.getInventory().setChanged();
 				}
-				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(JigsawModMobEffects.POOP.get(), 120, 1, (false), (false)));
+				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+					_entity.addEffect(new MobEffectInstance(JigsawModMobEffects.POOP.get(), 120, 1, false, false));
 				if (world instanceof ServerLevel _level) {
 					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
 					entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
@@ -81,8 +81,8 @@ public class TotemofshitItemInHandTickProcedure {
 					if (_entity instanceof Player _player)
 						_player.getInventory().setChanged();
 				}
-				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(JigsawModMobEffects.POOP.get(), 120, 1, (false), (false)));
+				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+					_entity.addEffect(new MobEffectInstance(JigsawModMobEffects.POOP.get(), 120, 1, false, false));
 				if (world instanceof ServerLevel _level) {
 					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
 					entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));

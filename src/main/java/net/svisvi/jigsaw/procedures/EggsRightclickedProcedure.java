@@ -71,8 +71,8 @@ public class EggsRightclickedProcedure {
 				}
 
 				private void run() {
-					if (entity instanceof LivingEntity _entity)
-						_entity.addEffect(new MobEffectInstance(JigsawModMobEffects.EGGED.get(), 600, 0, (true), (true)));
+					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+						_entity.addEffect(new MobEffectInstance(JigsawModMobEffects.EGGED.get(), 600, 0, true, true));
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
 			}.start(world, 5);
@@ -143,8 +143,8 @@ public class EggsRightclickedProcedure {
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(5 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
 						.collect(Collectors.toList());
 				for (Entity entityiterator : _entfound) {
-					if (entityiterator instanceof LivingEntity _entity)
-						_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 3, (false), (false)));
+					if (entityiterator instanceof LivingEntity _entity && !_entity.level.isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 3, false, false));
 					if (!(entityiterator == entity)) {
 						entityiterator.hurt(egged, 7);
 						entityiterator.setDeltaMovement(new Vec3((speed2 * Math.cos((Yaw + 90) * (Math.PI / 180))), (speed2 * 0.5), (speed2 * Math.sin((Yaw + 90) * (Math.PI / 180)))));

@@ -4,7 +4,6 @@ package net.svisvi.jigsaw.block;
 import net.svisvi.jigsaw.procedures.PonosMobplayerCollidesBlockProcedure;
 import net.svisvi.jigsaw.init.JigsawModFluids;
 
-import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.block.state.BlockState;
@@ -18,7 +17,7 @@ import net.minecraft.core.BlockPos;
 
 public class PonosBlock extends LiquidBlock {
 	public PonosBlock() {
-		super(() -> (FlowingFluid) JigsawModFluids.PONOS.get(), BlockBehaviour.Properties.of(Material.WATER, MaterialColor.PODZOL).strength(100f)
+		super(() -> (FlowingFluid) JigsawModFluids.PONOS.get(), BlockBehaviour.Properties.of(Material.WATER).strength(100f)
 
 		);
 	}

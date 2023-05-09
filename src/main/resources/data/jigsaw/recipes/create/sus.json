@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bedrock"
+    },
+    {
+      "item": "minecraft:nether_star"
+    }
+  ],
+   "result": {
+    "item": "potion",
+    "count": 1,
+    "nbt": {"Potion": "jigsaw:shitbottle"}
+  }
+}

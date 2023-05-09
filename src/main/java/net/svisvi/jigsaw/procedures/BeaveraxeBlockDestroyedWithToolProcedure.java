@@ -23,19 +23,18 @@ public class BeaveraxeBlockDestroyedWithToolProcedure {
 		if ((new ItemStack((world.getBlockState(new BlockPos(x, y, z))).getBlock())).is(ItemTags.create(new ResourceLocation("minecraft:logs")))) {
 			sx = -3;
 			found = false;
-			for (int index0 = 0; index0 < (int) (6); index0++) {
+			for (int index0 = 0; index0 < 6; index0++) {
 				sy = -3;
-				for (int index1 = 0; index1 < (int) (6); index1++) {
+				for (int index1 = 0; index1 < 6; index1++) {
 					sz = -3;
-					for (int index2 = 0; index2 < (int) (6); index2++) {
+					for (int index2 = 0; index2 < 6; index2++) {
 						if ((new ItemStack((world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock())).is(ItemTags.create(new ResourceLocation("minecraft:logs")))) {
 							if (!(ForgeRegistries.BLOCKS.getKey((world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock()).toString()).contains("stripped")) {
 								world.levelEvent(2001, new BlockPos(x + sx, y + sy, z + sz), Block.getId((world.getBlockState(new BlockPos(x + sx, y + sy, z + sz)))));
 								{
 									BlockPos _bp = new BlockPos(x + sx, y + sy, z + sz);
-									BlockState _bs = ForgeRegistries.BLOCKS.getValue(new ResourceLocation((("stripped_" + (ForgeRegistries.BLOCKS.getKey((world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock()).toString())
-											.substring((int) 10, (int) (ForgeRegistries.BLOCKS.getKey((world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock()).toString()).length()))).toLowerCase(java.util.Locale.ENGLISH)))
-											.defaultBlockState();
+									BlockState _bs = ForgeRegistries.BLOCKS.getValue(new ResourceLocation((("stripped_" + (ForgeRegistries.BLOCKS.getKey((world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock()).toString()).substring(10,
+											(int) (ForgeRegistries.BLOCKS.getKey((world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock()).toString()).length()))).toLowerCase(java.util.Locale.ENGLISH))).defaultBlockState();
 									BlockState _bso = world.getBlockState(_bp);
 									for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 										Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());

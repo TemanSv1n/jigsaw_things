@@ -17,11 +17,11 @@ public class BeaverknifeLivingEntityIsHitWithToolProcedure {
 			}
 		}
 		if (Mth.nextInt(new Random(), 1, 2) == 1) {
-			itemstack.getOrCreateTag().putBoolean("chance", (true));
+			itemstack.getOrCreateTag().putBoolean("chance", true);
 			if (world.isClientSide())
 				Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
 		} else {
-			itemstack.getOrCreateTag().putBoolean("chance", (false));
+			itemstack.getOrCreateTag().putBoolean("chance", false);
 		}
 	}
 }

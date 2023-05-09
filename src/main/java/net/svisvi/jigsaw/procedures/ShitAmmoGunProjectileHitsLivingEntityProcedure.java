@@ -10,7 +10,7 @@ public class ShitAmmoGunProjectileHitsLivingEntityProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof LivingEntity _entity)
+		if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 			_entity.addEffect(new MobEffectInstance(JigsawModMobEffects.POOP.get(), 40, 0));
 	}
 }

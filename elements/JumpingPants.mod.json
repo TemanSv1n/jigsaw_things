@@ -1,0 +1,72 @@
+{
+  "_fv": 43,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "praetor_helmet",
+    "enableBody": false,
+    "textureBody": "",
+    "enableLeggings": true,
+    "textureLeggings": "slave_pants",
+    "enableBoots": false,
+    "textureBoots": "",
+    "onHelmetTick": {
+      "name": "JumpingPantsHelmetTickEvent"
+    },
+    "onLeggingsTick": {
+      "name": "JumpingPantsLeggingsTickEvent"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "armorTextureFile": "slave_",
+    "helmetName": "Jumping Pants Helmet",
+    "bodyName": "Jumping Pants Body",
+    "leggingsName": "Jumping Pants",
+    "bootsName": "Jumping Pants Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Modelmaznya_slayer",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "123doom_slayer.png",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": true,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 33,
+    "damageValueHelmet": 5,
+    "damageValueBody": 0,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 0,
+    "enchantability": 9,
+    "toughness": 2.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

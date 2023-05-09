@@ -19,7 +19,7 @@ public class PudgehookWhileProjectileFlyingTickProcedure {
 		double Xa = 0;
 		immediatesourceentity.getPersistentData().putString("j_proj_owner", entity.getStringUUID());
 		if (!immediatesourceentity.isNoGravity()) {
-			immediatesourceentity.setNoGravity((true));
+			immediatesourceentity.setNoGravity(true);
 		}
 		Xo = entity.getX() - immediatesourceentity.getX();
 		Yo = entity.getY() - immediatesourceentity.getY();

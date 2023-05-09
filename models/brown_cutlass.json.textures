@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "grindstone_pivot",
+        "2": "netherite_block",
+        "6": "cutlass",
+        "missing": "netherite_block",
+        "10": "blade"
+      },
+      "name": "default"
+    }
+  }
+}

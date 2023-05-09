@@ -14,8 +14,8 @@ public class EggedOnEffectActiveTickProcedure {
 		if (entity == null)
 			return;
 		if (world.getBlockState(new BlockPos(x, y - 2, z)).canOcclude()) {
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 10, 0, (false), (false)));
+			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 10, 0, false, false));
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(JigsawModMobEffects.EGGED.get());
 		}

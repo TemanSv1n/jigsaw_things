@@ -128,7 +128,7 @@ public class PurgengunCanUseRangedItemProcedure {
 			}
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 60);
-			for (int index0 = 0; index0 < (int) (Mth.nextInt(new Random(), 3, 7)); index0++) {
+			for (int index0 = 0; index0 < Mth.nextInt(new Random(), 3, 7); index0++) {
 				{
 					Entity _shootFrom = entity;
 					Level projectileLevel = _shootFrom.level;
@@ -293,7 +293,7 @@ public class PurgengunCanUseRangedItemProcedure {
 			}
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 60);
-			for (int index1 = 0; index1 < (int) (Mth.nextInt(new Random(), 3, 7)); index1++) {
+			for (int index1 = 0; index1 < Mth.nextInt(new Random(), 3, 7); index1++) {
 				{
 					Entity _shootFrom = entity;
 					Level projectileLevel = _shootFrom.level;

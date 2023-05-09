@@ -2,7 +2,7 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "jigsaw:dn_aponos"
+      "item": "minecraft:beetroot"
     },
     {
        "fluid": "create:potion",
@@ -15,11 +15,7 @@
   ],
   "results": [
     {
-       "fluid": "create:potion",
-      "nbt": {
-        "Bottle": "REGULAR",
-        "Potion": "jigsaw:mutagen"
-      },
+       "fluid": "vs_clockwork:strawberry_frosting",
       "amount": 1000
     }
   ],

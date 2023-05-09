@@ -1,0 +1,43 @@
+{
+  "_fv": 43,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "antioxidant",
+    "customModelName": "Normal",
+    "name": "Super shotgun pr",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 1488,
+    "actionSound": {
+      "value": "entity.armorstand.break"
+    },
+    "hasGlow": false,
+    "animation": "drink",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 3.0,
+    "bulletKnockback": 5,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Beaweeddustblock"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "SupershotgunprProjectileHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "SupershotgunprProjectileHitsLivingEntity"
+    }
+  }
+}

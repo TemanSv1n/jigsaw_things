@@ -16,7 +16,7 @@ public class ClownNoseHelmetTickEventProcedure {
 			return;
 		boolean enable = false;
 		if (!entity.isShiftKeyDown()) {
-			itemstack.getOrCreateTag().putBoolean("sus", (false));
+			itemstack.getOrCreateTag().putBoolean("sus", false);
 		} else if (itemstack.getOrCreateTag().getBoolean("sus") == false && entity.isShiftKeyDown()) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
@@ -25,7 +25,7 @@ public class ClownNoseHelmetTickEventProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jigsaw:clown_horn")), SoundSource.PLAYERS, 1, 1, false);
 				}
 			}
-			itemstack.getOrCreateTag().putBoolean("sus", (true));
+			itemstack.getOrCreateTag().putBoolean("sus", true);
 		}
 	}
 }

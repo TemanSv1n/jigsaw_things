@@ -40,7 +40,7 @@ public class SrucibleItem extends SwordItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of();
 			}
 		}, 3, -2.4f, new Item.Properties().tab(JigsawModTabs.TAB_JIGSAW).fireResistant());
 	}

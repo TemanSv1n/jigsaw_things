@@ -38,8 +38,8 @@ public class MedicgunToolInHandTickProcedure {
 						.collect(Collectors.toList());
 				for (Entity entityiterator : _entfound) {
 					if (!(entity == entityiterator)) {
-						if (entityiterator instanceof LivingEntity _entity)
-							_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 61, 3, (false), (true)));
+						if (entityiterator instanceof LivingEntity _entity && !_entity.level.isClientSide())
+							_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 61, 3, false, true));
 						entity.getPersistentData().putDouble("counter1", (entity.getPersistentData().getDouble("counter1") + 1));
 						if (entity.getPersistentData().getDouble("counter1") % 10 == 0) {
 							{

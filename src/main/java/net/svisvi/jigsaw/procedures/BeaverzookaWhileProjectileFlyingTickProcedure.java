@@ -60,16 +60,16 @@ public class BeaverzookaWhileProjectileFlyingTickProcedure {
 				MinecraftForge.EVENT_BUS.unregister(this);
 			}
 		}.start(world, 110);
-		immediatesourceentity.setNoGravity((true));
+		immediatesourceentity.setNoGravity(true);
 		if (world instanceof ServerLevel _level)
 			_level.sendParticles((SimpleParticleType) (JigsawModParticleTypes.SHIT.get()), x, y, z, 5, 0.1, 0.1, 0.1, 0);
 		sx = -3;
 		found = false;
-		for (int index0 = 0; index0 < (int) (6); index0++) {
+		for (int index0 = 0; index0 < 6; index0++) {
 			sy = -3;
-			for (int index1 = 0; index1 < (int) (6); index1++) {
+			for (int index1 = 0; index1 < 6; index1++) {
 				sz = -3;
-				for (int index2 = 0; index2 < (int) (6); index2++) {
+				for (int index2 = 0; index2 < 6; index2++) {
 					if (!((world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock() == JigsawModBlocks.BEAVERGUNPOWDERBARREL.get())
 							&& !((world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock() == JigsawModBlocks.GUNPOWDERBARREL.get())
 							&& !((world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock() == JigsawModBlocks.SAFEGUNPOWDERBARREL.get())

@@ -7734,6 +7734,255 @@
           "src/main/resources/data/jigsaw/advancements/srucibleachievement.json"
         ]
       }
+    },
+    {
+      "name": "Ponoscutlass",
+      "type": "tool",
+      "sortid": 408,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ponoscutlass",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/item/PonoscutlassItem.java",
+          "src/main/resources/assets/jigsaw/models/item/ponoscutlass.json"
+        ]
+      }
+    },
+    {
+      "name": "PonoscutlassLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 409,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ponoscutlass_living_entity_is_hit_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/PonoscutlassLivingEntityIsHitWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ponoscutlassrecipe",
+      "type": "recipe",
+      "sortid": 410,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ponoscutlassrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw/recipes/ponoscutlassrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SupershotgunRightclicked",
+      "type": "procedure",
+      "sortid": 412,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "supershotgun_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/SupershotgunRightclickedProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Supershotgunpr",
+      "type": "rangeditem",
+      "sortid": 413,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "supershotgunpr",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw/models/item/supershotgunpr.json",
+          "src/main/java/net/svisvi/jigsaw/entity/SupershotgunprEntity.java",
+          "src/main/java/net/svisvi/jigsaw/item/SupershotgunprItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SupershotgunprProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 414,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "supershotgunpr_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/SupershotgunprProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SupershotgunprProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 415,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "supershotgunpr_projectile_hits_living_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/SupershotgunprProjectileHitsLivingEntityProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "SupershotgunItemInHandTick",
+      "type": "procedure",
+      "sortid": 416,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "supershotgun_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/SupershotgunItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JumpingPantsLeggingsTickEvent",
+      "type": "procedure",
+      "sortid": 417,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jumping_pants_leggings_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/JumpingPantsLeggingsTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JumpingPants",
+      "type": "armor",
+      "sortid": 418,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jumping_pants",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/item/JumpingPantsItem.java",
+          "src/main/resources/assets/jigsaw/models/item/jumping_pants_helmet.json",
+          "src/main/resources/assets/jigsaw/models/item/jumping_pants_leggings.json"
+        ]
+      }
+    },
+    {
+      "name": "JumpingPantsHelmetTickEvent",
+      "type": "procedure",
+      "sortid": 419,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jumping_pants_helmet_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/JumpingPantsHelmetTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Unbreaker",
+      "type": "item",
+      "sortid": 420,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unbreaker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/item/UnbreakerItem.java",
+          "src/main/resources/assets/jigsaw/models/item/unbreaker.json"
+        ]
+      }
+    },
+    {
+      "name": "UnbreakerRightclicked",
+      "type": "procedure",
+      "sortid": 421,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unbreaker_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/UnbreakerRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -7822,6 +8071,8 @@
       "item.jigsaw.beaweedsoup": "Бобровый суп",
       "item.jigsaw.smokingsuperpipe": "Трубка",
       "item.jigsaw.cock_leggings": "Хуёвые штаны",
+      "item.jigsaw.jumping_pants_chestplate": "Jumping Pants Body",
+      "item.jigsaw.jumping_pants_boots": "Jumping Pants Boots",
       "item.jigsaw.beaverbomb": "Бобровая бомба",
       "advancements.hitlerachievement.title": "Усики - проход в трусики",
       "advancements.beaverblockachievement.title": "Бананакет, за что...",
@@ -7832,6 +8083,7 @@
       "item.jigsaw.clown_nose_boots": "Клоуноботы",
       "item.jigsaw.beaweednutconsumable": "Бобровый орех",
       "item.jigsaw.splashponosmutagen": "Взрывной поносный мутаген",
+      "item.jigsaw.jumping_pants_leggings": "Jumping Pants",
       "item.minecraft.potion.effect.shitbottle": "Бутылочка с дерьмом",
       "item.jigsaw.beaver_boots": "Ботинки бобра",
       "item.minecraft.lingering_potion.effect.unlevitationpotion": "Оседающее зелье антилевитации",
@@ -7966,6 +8218,7 @@
       "item.jigsaw.maznyaslayer_boots": "Сапоги Палача Мазни",
       "effect.jigsaw.unlevitation": "Антилевитация",
       "item.jigsaw.beaver_chestplate": "Тело бобра",
+      "item.jigsaw.ponoscutlass": "Cutlass of the Shit Heart",
       "advancements.nanomachinesachievement.title": "Наномашины, сынок!",
       "item.jigsaw.beaweedsheetincomplete": "Сверхспресованный боброжмыховый лист - в процессе",
       "item.jigsaw.pwhat_leggings": "Пугод штаны пугод",
@@ -7978,9 +8231,11 @@
       "item.jigsaw.purgenammogun": "Пургеновый патрон пушка",
       "item.jigsaw.ponos_sounds": "Бобёр - звуки поноса",
       "item.jigsaw.super_auto_fork": "Супер автоматическая вилка",
+      "item.jigsaw.supershotgunpr": "Super shotgun pr",
       "advancements.pigkaxeachievement.descr": "Ударьте свинью громоотводом",
       "advancements.pwhatdispenserachievement.descr": "Поставьте шляпу на раздатчик",
       "item.jigsaw.slave_leggings": "Slave труселя",
+      "item.jigsaw.unbreaker": "Unbreaker",
       "advancements.pigkaxeachievement.title": "Свинство",
       "entity.jigsaw.sniper_beaver": "Бобр",
       "item.jigsaw.pigkaxe": "Свинокоп",
@@ -8000,6 +8255,7 @@
       "advancements.livingbeaverachievement.title": "И восстали бобры из поноса!",
       "item.jigsaw.sniperpromotionkit": "Набор повышения : снайпер",
       "block.jigsaw.invisibilitybush": "Невидимые кусты",
+      "item.jigsaw.jumping_pants_helmet": "Jumping Pants Helmet",
       "advancements.bellyachievement.descr": "Создайте пузо",
       "item.jigsaw.cigarette": "Сигарета",
       "advancements.purgenmutagenachievement.descr": "Сварите это как-нибудь...",
@@ -8109,6 +8365,8 @@
       "item.jigsaw.beaweedsoup": "Beaweed soup",
       "item.jigsaw.smokingsuperpipe": "Smoking pipe",
       "item.jigsaw.cock_leggings": "Cock Leggings",
+      "item.jigsaw.jumping_pants_chestplate": "Jumping Pants Body",
+      "item.jigsaw.jumping_pants_boots": "Jumping Pants Boots",
       "item.jigsaw.beaverbomb": "Beaver bomb",
       "advancements.hitlerachievement.title": "Heil Hitler!",
       "advancements.beaverblockachievement.title": "Why did Bananacat do this...",
@@ -8119,6 +8377,7 @@
       "item.jigsaw.clown_nose_boots": "Clown Nose Boots",
       "item.jigsaw.beaweednutconsumable": "Beaweed nut",
       "item.jigsaw.splashponosmutagen": "Purgen Mutagen",
+      "item.jigsaw.jumping_pants_leggings": "Jumping Pants",
       "item.minecraft.potion.effect.shitbottle": "Liquid Beaweed",
       "item.jigsaw.beaver_boots": "Beaver Boots",
       "item.minecraft.lingering_potion.effect.unlevitationpotion": "Lingering Potion of Unlevitation",
@@ -8253,6 +8512,7 @@
       "item.jigsaw.maznyaslayer_boots": "Boots of Maznya Slayer",
       "effect.jigsaw.unlevitation": "Unlevitation",
       "item.jigsaw.beaver_chestplate": "Dead Beaver Body",
+      "item.jigsaw.ponoscutlass": "Cutlass of the Shit Heart",
       "advancements.nanomachinesachievement.title": "Nanomachines, son!",
       "item.jigsaw.beaweedsheetincomplete": "Compressed beaweed - Incomplete",
       "item.jigsaw.pwhat_leggings": "Pwhat Leggings",
@@ -8265,9 +8525,11 @@
       "item.jigsaw.purgenammogun": "Purgen Ammo Gun",
       "item.jigsaw.ponos_sounds": "Beaver - Ponos Sounds",
       "item.jigsaw.super_auto_fork": "Super Automatic Fork",
+      "item.jigsaw.supershotgunpr": "Super shotgun pr",
       "item.jigsaw.slave_leggings": "Slave Pants",
       "advancements.pwhatdispenserachievement.descr": "Place hat on the dispenser",
       "advancements.pigkaxeachievement.descr": "Hit pig with lightning rod!",
+      "item.jigsaw.unbreaker": "Unbreaker",
       "advancements.pigkaxeachievement.title": "Pigging",
       "entity.jigsaw.sniper_beaver": "Sniper Beaver",
       "item.jigsaw.pigkaxe": "Pigkaxe",
@@ -8287,6 +8549,7 @@
       "advancements.livingbeaverachievement.title": "The beavers rose from the diarrhea!",
       "item.jigsaw.sniperpromotionkit": "Promotion kit : Sniper",
       "block.jigsaw.invisibilitybush": "Invisibility leaves",
+      "item.jigsaw.jumping_pants_helmet": "Jumping Pants Helmet",
       "advancements.bellyachievement.descr": "Create belly",
       "item.jigsaw.cigarette": "Cigarette",
       "advancements.purgenmutagenachievement.descr": "Brew Purgen Mutagen",
@@ -8378,12 +8641,17 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "vs_recipes",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "jigsaw",
     "modName": "jigsaw_things",
-    "version": "4.6.0",
+    "version": "6.0.0",
     "description": "Strange shit mod",
     "author": "TemanSvin1, MCreator",
     "websiteURL": "https://andrey-golovenchik.nethouse.ru/",
@@ -8400,5 +8668,5 @@
     "modElementsPackage": "net.svisvi.jigsaw",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202300108712
+  "mcreatorVersion": 202300217118
 }

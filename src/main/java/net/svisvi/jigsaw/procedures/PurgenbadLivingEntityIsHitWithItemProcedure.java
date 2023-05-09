@@ -23,8 +23,8 @@ public class PurgenbadLivingEntityIsHitWithItemProcedure {
 		speed = 2.2;
 		Yaw = sourceentity.getYRot();
 		entity.setDeltaMovement(new Vec3((speed * Math.cos((Yaw + 90) * (Math.PI / 180))), (entity.getDeltaMovement().y() + speed), (speed * Math.sin((Yaw + 90) * (Math.PI / 180)))));
-		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(JigsawModMobEffects.PURGATIVE.get(), 6, 0, (false), (false)));
+		if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+			_entity.addEffect(new MobEffectInstance(JigsawModMobEffects.PURGATIVE.get(), 6, 0, false, false));
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
 				_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jigsaw:clown_horn")), SoundSource.PLAYERS, 1, -1);

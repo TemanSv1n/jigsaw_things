@@ -57,10 +57,8 @@ public class PigkaxerecipeProcedure {
 		if (sourceentity instanceof Player
 				&& ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.LIGHTNING_ROD.asItem()
 						|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == Blocks.LIGHTNING_ROD.asItem())
-				&& entity instanceof Pig
-				&& !(sourceentity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel
-						? _plr.getAdvancements().getOrStartProgress(_plr.server.getAdvancements().getAdvancement(new ResourceLocation("jigsaw:pigkaxeachievement"))).isDone()
-						: false)) {
+				&& entity instanceof Pig && !(sourceentity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel
+						&& _plr.getAdvancements().getOrStartProgress(_plr.server.getAdvancements().getAdvancement(new ResourceLocation("jigsaw:pigkaxeachievement"))).isDone())) {
 			if (sourceentity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("jigsaw:pigkaxeachievement"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);

@@ -29,6 +29,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
@@ -48,16 +49,21 @@ public class MurasamsheathRightclickedProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == JigsawModItems.MURASAMSHEATH.get()
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
 			if (entity instanceof LivingEntity _entity) {
-				ItemStack _setstack = new ItemStack(JigsawModItems.MURASAMSHEATHEMPTY.get());
-				_setstack.setCount(1);
-				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-				if (_entity instanceof Player _player)
-					_player.getInventory().setChanged();
-			}
-			if (entity instanceof LivingEntity _entity) {
 				ItemStack _setstack = new ItemStack(JigsawModItems.MURASAM.get());
 				_setstack.setCount(1);
 				_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack);
+				if (_entity instanceof Player _player)
+					_player.getInventory().setChanged();
+			}
+			{
+				CompoundTag _nbtTag = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getTag();
+				if (_nbtTag != null)
+					(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).setTag(_nbtTag.copy());
+			}
+			if (entity instanceof LivingEntity _entity) {
+				ItemStack _setstack = new ItemStack(JigsawModItems.MURASAMSHEATHEMPTY.get());
+				_setstack.setCount(1);
+				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 				if (_entity instanceof Player _player)
 					_player.getInventory().setChanged();
 			}
@@ -80,6 +86,11 @@ public class MurasamsheathRightclickedProcedure {
 					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 					if (_entity instanceof Player _player)
 						_player.getInventory().setChanged();
+				}
+				{
+					CompoundTag _nbtTag = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getTag();
+					if (_nbtTag != null)
+						(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).setTag(_nbtTag.copy());
 				}
 				if (entity instanceof LivingEntity _entity) {
 					ItemStack _setstack = new ItemStack(JigsawModItems.MURASAMSHEATHEMPTY.get());

@@ -36,7 +36,7 @@ public abstract class MaznyaslayerItem extends ArmorItem {
 
 			@Override
 			public int getDefenseForSlot(EquipmentSlot slot) {
-				return new int[]{0, 5, 6, 3}[slot.getIndex()];
+				return new int[]{0, 7, 8, 5}[slot.getIndex()];
 			}
 
 			@Override
@@ -51,7 +51,7 @@ public abstract class MaznyaslayerItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of();
 			}
 
 			@Override
@@ -61,12 +61,12 @@ public abstract class MaznyaslayerItem extends ArmorItem {
 
 			@Override
 			public float getToughness() {
-				return 0.1f;
+				return 2f;
 			}
 
 			@Override
 			public float getKnockbackResistance() {
-				return 0f;
+				return 0.1f;
 			}
 		}, slot, properties);
 	}

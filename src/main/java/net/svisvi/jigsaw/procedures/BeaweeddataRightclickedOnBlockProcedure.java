@@ -30,7 +30,7 @@ public class BeaweeddataRightclickedOnBlockProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "rand_gr")))), (true));
+				}.getValue(world, new BlockPos(x, y, z), "rand_gr")))), true);
 		}
 	}
 }

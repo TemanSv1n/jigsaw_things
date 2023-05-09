@@ -1,0 +1,11 @@
+{
+  "parent": "jigsaw:custom/brown_cutlass",
+  "textures": {
+    "1": "jigsaw:blocks/grindstone_pivot",
+    "2": "jigsaw:blocks/netherite_block",
+    "6": "jigsaw:blocks/cutlass",
+    "missing": "jigsaw:blocks/netherite_block",
+    "10": "jigsaw:blocks/blade",
+    "particle": "jigsaw:items/red_sword"
+  }
+}

@@ -17,6 +17,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
 public class MurasamRightclickedProcedure {
@@ -51,16 +52,21 @@ public class MurasamRightclickedProcedure {
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == JigsawModItems.MURASAM.get()
 							&& (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == JigsawModItems.MURASAMSHEATHEMPTY.get()) {
 						if (entity instanceof LivingEntity _entity) {
-							ItemStack _setstack = new ItemStack(Blocks.AIR);
-							_setstack.setCount(1);
-							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-							if (_entity instanceof Player _player)
-								_player.getInventory().setChanged();
-						}
-						if (entity instanceof LivingEntity _entity) {
 							ItemStack _setstack = new ItemStack(JigsawModItems.MURASAMSHEATH.get());
 							_setstack.setCount(1);
 							_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack);
+							if (_entity instanceof Player _player)
+								_player.getInventory().setChanged();
+						}
+						{
+							CompoundTag _nbtTag = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getTag();
+							if (_nbtTag != null)
+								(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).setTag(_nbtTag.copy());
+						}
+						if (entity instanceof LivingEntity _entity) {
+							ItemStack _setstack = new ItemStack(Blocks.AIR);
+							_setstack.setCount(1);
+							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 							if (_entity instanceof Player _player)
 								_player.getInventory().setChanged();
 						}

@@ -51,5 +51,6 @@ public class JigsawModEntityRenderers {
 		event.registerEntityRenderer(JigsawModEntities.RADIO_BEAVER.get(), RadioBeaverRenderer::new);
 		event.registerEntityRenderer(JigsawModEntities.PUDGEHOOK.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(JigsawModEntities.BEAWEEDNUTCONSUMABLE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(JigsawModEntities.SUPERSHOTGUNPR.get(), ThrownItemRenderer::new);
 	}
 }

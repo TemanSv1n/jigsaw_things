@@ -35,7 +35,7 @@ public class BeaveraxeItem extends AxeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of();
 			}
 		}, 1, -2.7999999999999998f, new Item.Properties().tab(JigsawModTabs.TAB_JIGSAW));
 	}

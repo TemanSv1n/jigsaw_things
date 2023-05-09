@@ -65,10 +65,8 @@ public class CursedCowSummonProcedure {
 		if (sourceentity instanceof Player
 				&& ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == JigsawModItems.TEETH_HELMET.get()
 						|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == JigsawModItems.TEETH_HELMET.get())
-				&& entity instanceof Cow
-				&& !(sourceentity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel
-						? _plr.getAdvancements().getOrStartProgress(_plr.server.getAdvancements().getAdvancement(new ResourceLocation("jigsaw:cursedcowachievement"))).isDone()
-						: false)) {
+				&& entity instanceof Cow && !(sourceentity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel
+						&& _plr.getAdvancements().getOrStartProgress(_plr.server.getAdvancements().getAdvancement(new ResourceLocation("jigsaw:cursedcowachievement"))).isDone())) {
 			if (sourceentity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("jigsaw:cursedcowachievement"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);

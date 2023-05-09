@@ -30,9 +30,9 @@ public class FishclockRightclickedProcedure {
 			JigsawModVariables.WorldVariables.get(world).syncData(world);
 		} else {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(new TextComponent("You can activate it only at night in overworld"), (true));
+				_player.displayClientMessage(new TextComponent("You can activate it only at night in overworld"), true);
 		}
-		if (!(entity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel ? _plr.getAdvancements().getOrStartProgress(_plr.server.getAdvancements().getAdvancement(new ResourceLocation("jigsaw:fishclockachievement"))).isDone() : false)) {
+		if (!(entity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel && _plr.getAdvancements().getOrStartProgress(_plr.server.getAdvancements().getAdvancement(new ResourceLocation("jigsaw:fishclockachievement"))).isDone())) {
 			if (entity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("jigsaw:fishclockachievement"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
