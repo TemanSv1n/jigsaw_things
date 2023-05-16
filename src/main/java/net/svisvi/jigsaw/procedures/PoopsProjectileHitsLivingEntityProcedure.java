@@ -1,21 +1,8 @@
 package net.svisvi.jigsaw.procedures;
 
-import net.svisvi.jigsaw.init.JigsawModItems;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.Explosion;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.damagesource.IndirectEntityDamageSource;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.BlockPos;
+import javax.annotation.Nullable;
 
 public class PoopsProjectileHitsLivingEntityProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity immediatesourceentity, Entity sourceentity) {
@@ -36,7 +23,7 @@ public class PoopsProjectileHitsLivingEntityProcedure {
 			entity.hurt(new IndirectEntityDamageSource("generic", immediatesourceentity, sourceentity), 4);
 			if (Math.random() < 0.2) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(JigsawModItems.POOPS.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(JigsawModItems.DELETED_MOD_ELEMENT.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}

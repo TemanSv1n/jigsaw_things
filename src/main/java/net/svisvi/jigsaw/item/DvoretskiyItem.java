@@ -1,14 +1,7 @@
 
 package net.svisvi.jigsaw.item;
 
-import net.svisvi.jigsaw.init.JigsawModTabs;
-
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 
 public class DvoretskiyItem extends SwordItem {
 	public DvoretskiyItem() {
@@ -36,6 +29,11 @@ public class DvoretskiyItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.BOOK));
 			}
-		}, 3, -2.7f, new Item.Properties().tab(JigsawModTabs.TAB_JIGSAW).fireResistant());
+		},
+
+				3, -2.7f,
+
+				new Item.Properties().tab(JigsawModTabs.TAB_JIGSAW).fireResistant());
 	}
+
 }
