@@ -10,7 +10,7 @@ public class PurgenbundlePlayerFinishesUsingItemProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(JigsawModMobEffects.PURGATIVE.get(), 600, 1));
 	}
 }

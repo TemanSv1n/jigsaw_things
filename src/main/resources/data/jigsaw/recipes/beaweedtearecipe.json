@@ -1,9 +1,15 @@
 {
-  "type": "minecraft:blasting",
-  "experience": 1,
-  "cookingtime": 100,
-  "ingredient": {
-    "item": "jigsaw:beaweedsoup"
-  },
-  "result": "jigsaw:beaweedtea"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "jigsaw_ponos_dlc:steel_can"
+    },
+    {
+      "item": "jigsaw:beaweedsoup"
+    }
+  ],
+  "result": {
+    "item": "jigsaw:beaweedtea",
+    "count": 1
+  }
 }

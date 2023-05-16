@@ -37,7 +37,7 @@ public class RadioBeaverOnEntityTickUpdateProcedure {
 		double Ya = 0;
 		double Xa = 0;
 		if (entity.getPersistentData().getBoolean("signum") == true) {
-			entity.getPersistentData().putBoolean("signum", false);
+			entity.getPersistentData().putBoolean("signum", (false));
 			beaver = new EntityDamageSource("generic.player", entity);
 			{
 				final Vec3 _center = new Vec3(

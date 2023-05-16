@@ -41,7 +41,7 @@ public class AdminkillerItem extends SwordItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of();
+				return Ingredient.EMPTY;
 			}
 		}, 3, 3f, new Item.Properties().tab(JigsawModTabs.TAB_JIGSAW).fireResistant());
 	}

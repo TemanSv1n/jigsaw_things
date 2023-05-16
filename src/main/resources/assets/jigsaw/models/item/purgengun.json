@@ -1,14 +1,7 @@
 {
   "parent": "jigsaw:custom/ponos_gun",
   "textures": {
-    "0": "jigsaw:blocks/barrel_side",
-    "1": "jigsaw:blocks/blast_furnace_side",
-    "2": "jigsaw:blocks/smithing_table_top",
-    "3": "jigsaw:blocks/fluid_tank_connected",
-    "4": "jigsaw:blocks/pipes",
-    "5": "jigsaw:blocks/flywheel",
-    "6": "jigsaw:blocks/redstone_lamp_on",
-    "7": "jigsaw:blocks/furnace_top",
+    "2": "jigsaw:blocks/purgengun",
     "particle": "jigsaw:items/music_disc_stal"
   }
 }

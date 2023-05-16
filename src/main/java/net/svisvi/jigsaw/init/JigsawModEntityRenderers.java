@@ -52,5 +52,6 @@ public class JigsawModEntityRenderers {
 		event.registerEntityRenderer(JigsawModEntities.PUDGEHOOK.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(JigsawModEntities.BEAWEEDNUTCONSUMABLE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(JigsawModEntities.SUPERSHOTGUNPR.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(JigsawModEntities.POOPS.get(), ThrownItemRenderer::new);
 	}
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "jigsaw:custom/dvoretskiy",
+  "textures": {
+    "1": "jigsaw:blocks/dvoretskiy",
+    "particle": "jigsaw:items/capital"
+  }
+}

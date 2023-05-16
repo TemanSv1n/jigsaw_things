@@ -1,0 +1,8 @@
+{
+  "parent": "jigsaw:custom/poops",
+  "textures": {
+    "0": "jigsaw:blocks/villager",
+    "1": "jigsaw:blocks/plains",
+    "particle": "jigsaw:items/p_shit_pot"
+  }
+}

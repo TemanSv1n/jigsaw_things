@@ -56,7 +56,7 @@ public class WbeaverOnKeyPressedProcedure {
 									&& ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getDisplayName().getString())
 											.equals((entityiterator instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getDisplayName().getString())) {
 								if (entityiterator.getPersistentData().getBoolean("signum") == false) {
-									entityiterator.getPersistentData().putBoolean("signum", true);
+									entityiterator.getPersistentData().putBoolean("signum", (true));
 								}
 							}
 						}

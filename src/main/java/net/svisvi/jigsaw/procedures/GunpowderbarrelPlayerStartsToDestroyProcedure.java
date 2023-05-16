@@ -23,7 +23,7 @@ public class GunpowderbarrelPlayerStartsToDestroyProcedure {
 				&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == JigsawModItems.DEFUSER.get())) {
 			world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 			if (world instanceof Level _level && !_level.isClientSide())
-				_level.explode(null, x, y, z, 4, Explosion.BlockInteraction.DESTROY);
+				_level.explode(null, x, y, z, 4, Explosion.BlockInteraction.BREAK);
 		} else if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0
 				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == JigsawModItems.DEFUSER.get()) {
 			if (world instanceof ServerLevel _level)

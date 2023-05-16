@@ -33,8 +33,8 @@ public class PonoscutlassLivingEntityIsHitWithToolProcedure {
 		if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(JigsawModMobEffects.POOP.get()) : false) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(JigsawModMobEffects.POOP.get());
-			if (sourceentity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 60, 0, false, true));
+			if (sourceentity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 60, 0, (false), (true)));
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles((SimpleParticleType) (JigsawModParticleTypes.SHIT.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 20, 0.7, 0.7, 0.7, 0.2);
 			if (world instanceof Level _level) {
@@ -47,8 +47,8 @@ public class PonoscutlassLivingEntityIsHitWithToolProcedure {
 		} else if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(JigsawModMobEffects.PURGATIVE.get()) : false) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(JigsawModMobEffects.PURGATIVE.get());
-			if (sourceentity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 60, 1, false, true));
+			if (sourceentity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 60, 1, (false), (true)));
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles((SimpleParticleType) (JigsawModParticleTypes.SHIT.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 50, 0.7, 0.7, 0.7, 0.2);
 			if (world instanceof ServerLevel _level)

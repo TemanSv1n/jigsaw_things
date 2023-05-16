@@ -2,14 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "barrel_side",
-        "1": "blast_furnace_side",
-        "2": "smithing_table_top",
-        "3": "fluid_tank_connected",
-        "4": "pipes",
-        "5": "flywheel",
-        "6": "redstone_lamp_on",
-        "7": "furnace_top"
+        "2": "purgengun"
       },
       "name": "default"
     }

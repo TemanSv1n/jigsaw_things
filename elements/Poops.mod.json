@@ -1,0 +1,49 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 1,
+    "texture": "p_purgen_pot",
+    "customModelName": "poops:default",
+    "name": "Poops",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "stackSize": 16,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.villager.no"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": true,
+    "damageVsEntity": 2.0,
+    "onRangedItemUsed": {
+      "name": "PoopsRangedItemUsed"
+    },
+    "bulletPower": 2.2,
+    "bulletDamage": 10.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:PoopsItem"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "PoopsProjectileHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "PoopsProjectileHitsLivingEntity"
+    },
+    "onBulletFlyingTick": {
+      "name": "PoopsWhileProjectileFlyingTick"
+    }
+  }
+}

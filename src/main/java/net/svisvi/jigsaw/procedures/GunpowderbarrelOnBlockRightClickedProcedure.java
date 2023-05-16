@@ -10,6 +10,6 @@ public class GunpowderbarrelOnBlockRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 		if (world instanceof Level _level && !_level.isClientSide())
-			_level.explode(null, x, y, z, 4, Explosion.BlockInteraction.DESTROY);
+			_level.explode(null, x, y, z, 4, Explosion.BlockInteraction.BREAK);
 	}
 }

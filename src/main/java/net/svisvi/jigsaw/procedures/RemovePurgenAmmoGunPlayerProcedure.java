@@ -30,9 +30,11 @@ public class RemovePurgenAmmoGunPlayerProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(JigsawModItems.PURGEN_AMMO_GUN_SNIPER.get())) : false) {
-			if (entity instanceof Player _player) {
-				ItemStack _stktoremove = new ItemStack(JigsawModItems.PURGEN_AMMO_GUN_SNIPER.get());
-				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+			if (!(entity.getDisplayName().getString()).equals("Graph_Bober_IV")) {
+				if (entity instanceof Player _player) {
+					ItemStack _stktoremove = new ItemStack(JigsawModItems.PURGEN_AMMO_GUN_SNIPER.get());
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+				}
 			}
 		}
 	}

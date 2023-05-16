@@ -1,6 +1,7 @@
 
 package net.svisvi.jigsaw.fluid;
 
+import net.svisvi.jigsaw.init.JigsawModParticleTypes;
 import net.svisvi.jigsaw.init.JigsawModItems;
 import net.svisvi.jigsaw.init.JigsawModFluids;
 import net.svisvi.jigsaw.init.JigsawModBlocks;
@@ -16,6 +17,8 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.particles.SimpleParticleType;
+import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.BlockPos;
 
 public abstract class PonosFluid extends ForgeFlowingFluid {
@@ -25,12 +28,19 @@ public abstract class PonosFluid extends ForgeFlowingFluid {
 					.temperature(400)
 
 					.sound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty_lava"))))
-			.explosionResistance(100f).canMultiply().tickRate(8)
+			.explosionResistance(100f)
+
+			.tickRate(8)
 
 			.bucket(JigsawModItems.PONOS_BUCKET).block(() -> (LiquidBlock) JigsawModBlocks.PONOS.get());
 
 	private PonosFluid() {
 		super(PROPERTIES);
+	}
+
+	@Override
+	public ParticleOptions getDripParticle() {
+		return (SimpleParticleType) (JigsawModParticleTypes.SHIT.get());
 	}
 
 	@Override

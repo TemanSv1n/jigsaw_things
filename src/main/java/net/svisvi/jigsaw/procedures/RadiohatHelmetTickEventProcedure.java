@@ -31,10 +31,10 @@ public class RadiohatHelmetTickEventProcedure {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.ELECTRIC_SPARK, x, (y + 3.25), z, 5, 0, 0.3, 0, 1);
 			if (EnchantmentHelper.getItemEnchantmentLevel(JigsawModEnchantments.IMMOVABLE.get(), (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)) != 0) {
-				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-					_entity.addEffect(new MobEffectInstance(JigsawModMobEffects.UNLEVITATION.get(), 10, 0, false, false));
-				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 10, 255, false, false));
+				if (entity instanceof LivingEntity _entity)
+					_entity.addEffect(new MobEffectInstance(JigsawModMobEffects.UNLEVITATION.get(), 10, 0, (false), (false)));
+				if (entity instanceof LivingEntity _entity)
+					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 10, 255, (false), (false)));
 			}
 			{
 				final Vec3 _center = new Vec3(x, y, z);

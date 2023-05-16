@@ -8,6 +8,7 @@ import net.svisvi.jigsaw.client.model.Modelsubpants;
 import net.svisvi.jigsaw.client.model.Modelshit_rocket;
 import net.svisvi.jigsaw.client.model.Modelradio_hat;
 import net.svisvi.jigsaw.client.model.Modelpoop_smoke_grenade_entity;
+import net.svisvi.jigsaw.client.model.Modelonion_Converted;
 import net.svisvi.jigsaw.client.model.Modelmerchant_mask;
 import net.svisvi.jigsaw.client.model.Modelmaznya_slayer;
 import net.svisvi.jigsaw.client.model.Modeljetstream_chair;
@@ -44,6 +45,7 @@ public class JigsawModModels {
 		event.registerLayerDefinition(Modelradio_hat.LAYER_LOCATION, Modelradio_hat::createBodyLayer);
 		event.registerLayerDefinition(Modelhitler_moustache.LAYER_LOCATION, Modelhitler_moustache::createBodyLayer);
 		event.registerLayerDefinition(ModelBeaver_legs.LAYER_LOCATION, ModelBeaver_legs::createBodyLayer);
+		event.registerLayerDefinition(Modelonion_Converted.LAYER_LOCATION, Modelonion_Converted::createBodyLayer);
 		event.registerLayerDefinition(Modelmaznya_slayer.LAYER_LOCATION, Modelmaznya_slayer::createBodyLayer);
 		event.registerLayerDefinition(Modelsubpants.LAYER_LOCATION, Modelsubpants::createBodyLayer);
 		event.registerLayerDefinition(Modelpoop_smoke_grenade_entity.LAYER_LOCATION, Modelpoop_smoke_grenade_entity::createBodyLayer);

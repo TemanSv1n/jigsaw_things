@@ -24,11 +24,11 @@ public class BeaweedteaPlayerFinishesUsingItemProcedure {
 		if (entity == null)
 			return;
 		if (Mth.nextInt(new Random(), 1, 6) <= 5) {
-			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-				_entity.addEffect(new MobEffectInstance(JigsawModMobEffects.POOP.get(), 30, 0, false, false));
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(JigsawModMobEffects.POOP.get(), 30, 0, (false), (false)));
 		} else {
-			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-				_entity.addEffect(new MobEffectInstance(JigsawModMobEffects.PURGATIVE.get(), 8, 0, false, false));
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(JigsawModMobEffects.PURGATIVE.get(), 8, 0, (false), (false)));
 			if (world.isClientSide())
 				Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(JigsawModItems.PURGENBAD.get()));
 			if (world instanceof Level _level) {

@@ -12,8 +12,8 @@ public class LivingBeaverOnEntityTickUpdateProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(JigsawModMobEffects.PURGATIVE.get()) : false) {
-			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 60, 200, true, false));
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 60, 200, (true), (false)));
 		}
 	}
 }

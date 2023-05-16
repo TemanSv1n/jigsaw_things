@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 39,
   "_type": "fluid",
   "definition": {
     "name": "Ponos",
@@ -7,13 +7,13 @@
     "textureStill": "drist_ponos_still",
     "textureFlowing": "drist_ponos_flow",
     "tintType": "No tint",
-    "canMultiply": true,
+    "canMultiply": false,
     "flowRate": 8,
     "levelDecrease": 1,
     "slopeFindDistance": 4,
-    "spawnParticles": false,
+    "spawnParticles": true,
     "dripParticle": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "CUSTOM:Shit"
     },
     "flowStrength": -2.0,
     "luminosity": 0,

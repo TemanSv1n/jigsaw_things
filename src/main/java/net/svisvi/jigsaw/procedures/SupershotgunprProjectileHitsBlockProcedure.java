@@ -24,8 +24,8 @@ public class SupershotgunprProjectileHitsBlockProcedure {
 			for (Entity entityiterator : _entfound) {
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles((SimpleParticleType) (JigsawModParticleTypes.POOPCLOUD.get()), x, y, z, 40, 1, 1, 1, 0);
-				if (entityiterator instanceof LivingEntity _entity && !_entity.level.isClientSide())
-					_entity.addEffect(new MobEffectInstance(JigsawModMobEffects.POOP.get(), 21, 0, false, false));
+				if (entityiterator instanceof LivingEntity _entity)
+					_entity.addEffect(new MobEffectInstance(JigsawModMobEffects.POOP.get(), 21, 0, (false), (false)));
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles((SimpleParticleType) (JigsawModParticleTypes.SHIT.get()), (entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), 20, 1, 1, 1, 0);
 			}

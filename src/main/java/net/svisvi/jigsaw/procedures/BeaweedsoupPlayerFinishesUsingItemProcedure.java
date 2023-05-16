@@ -18,11 +18,13 @@ public class BeaweedsoupPlayerFinishesUsingItemProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-			_entity.addEffect(new MobEffectInstance(JigsawModMobEffects.POOP.get(), 60, 1, false, false));
-		if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 60, 1, false, false));
-		if (!(entity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel && _plr.getAdvancements().getOrStartProgress(_plr.server.getAdvancements().getAdvancement(new ResourceLocation("jigsaw:beaweedsoupachievement"))).isDone())) {
+		if (entity instanceof LivingEntity _entity)
+			_entity.addEffect(new MobEffectInstance(JigsawModMobEffects.POOP.get(), 60, 1, (false), (false)));
+		if (entity instanceof LivingEntity _entity)
+			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 60, 1, (false), (false)));
+		if (!(entity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel
+				? _plr.getAdvancements().getOrStartProgress(_plr.server.getAdvancements().getAdvancement(new ResourceLocation("jigsaw:beaweedsoupachievement"))).isDone()
+				: false)) {
 			if (entity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("jigsaw:beaweedsoupachievement"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);

@@ -16,10 +16,10 @@ public class SupershotgunItemInHandTickProcedure {
 		double Yaw = 0;
 		if (EnchantmentHelper.getItemEnchantmentLevel(JigsawModEnchantments.SRUCIBLECHARGE.get(), itemstack) != 0) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(new TextComponent(("Bullet : " + "1")), true);
+				_player.displayClientMessage(new TextComponent(("Bullet : " + "1")), (true));
 		} else {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(new TextComponent(("Bullet : " + "0")), true);
+				_player.displayClientMessage(new TextComponent(("Bullet : " + "0")), (true));
 		}
 	}
 }

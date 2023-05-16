@@ -58,11 +58,7 @@ repositories {
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.18.2-40.1.0'
-    //implementation fg.deobf('curse.maven:btrc-639842:4357572')
-    //implementation fg.deobf('curse.maven:cloth-348521:3972426')
-    //implementation fg.deobf('curse.maven:anim-658587:4418152')
-    //runtimeOnly fg.deobf('curse.maven:cloth-348521:3972426')
-    //runtimeOnly fg.deobf('curse.maven:anim-658587:4418152')
+    //implementation fg.deobf("curse.maven:btc-639842:4428885")
 }
 
 tasks.withType(JavaCompile).configureEach {

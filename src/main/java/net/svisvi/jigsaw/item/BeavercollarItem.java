@@ -34,7 +34,7 @@ public class BeavercollarItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		BeavercollarPlayerFinishesUsingItemProcedure.execute(entity);
+		BeavercollarPlayerFinishesUsingItemProcedure.execute(x, z, entity);
 		if (itemstack.isEmpty()) {
 			return retval;
 		} else {

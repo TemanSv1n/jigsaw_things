@@ -3,7 +3,6 @@ package net.svisvi.jigsaw.item;
 
 import net.svisvi.jigsaw.procedures.JumpingPantsLeggingsTickEventProcedure;
 import net.svisvi.jigsaw.procedures.JumpingPantsHelmetTickEventProcedure;
-import net.svisvi.jigsaw.init.JigsawModTabs;
 import net.svisvi.jigsaw.client.model.Modelmaznya_slayer;
 
 import net.minecraftforge.registries.ForgeRegistries;
@@ -53,7 +52,7 @@ public abstract class JumpingPantsItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of();
+				return Ingredient.EMPTY;
 			}
 
 			@Override
@@ -75,7 +74,7 @@ public abstract class JumpingPantsItem extends ArmorItem {
 
 	public static class Helmet extends JumpingPantsItem {
 		public Helmet() {
-			super(EquipmentSlot.HEAD, new Item.Properties().tab(JigsawModTabs.TAB_JIGSAW).fireResistant());
+			super(EquipmentSlot.HEAD, new Item.Properties().tab(null).fireResistant());
 		}
 
 		public void initializeClient(java.util.function.Consumer<net.minecraftforge.client.IItemRenderProperties> consumer) {
@@ -108,7 +107,7 @@ public abstract class JumpingPantsItem extends ArmorItem {
 
 	public static class Leggings extends JumpingPantsItem {
 		public Leggings() {
-			super(EquipmentSlot.LEGS, new Item.Properties().tab(JigsawModTabs.TAB_JIGSAW));
+			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
 		}
 
 		@Override

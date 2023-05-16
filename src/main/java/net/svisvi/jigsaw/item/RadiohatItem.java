@@ -52,7 +52,7 @@ public abstract class RadiohatItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of();
+				return Ingredient.EMPTY;
 			}
 
 			@Override

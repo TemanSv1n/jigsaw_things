@@ -55,7 +55,7 @@ public class SmokingpipeRightclickedProcedure {
 			}
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, x, y, z, 700, 3, 3, 3, 0);
-			for (int index0 = 0; index0 < 3; index0++) {
+			for (int index0 = 0; index0 < (int) (3); index0++) {
 				new Object() {
 					private int ticks = 0;
 					private float waitTicks;
@@ -99,7 +99,7 @@ public class SmokingpipeRightclickedProcedure {
 			}
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, x, y, z, 700, 3, 3, 3, 0);
-			for (int index1 = 0; index1 < 3; index1++) {
+			for (int index1 = 0; index1 < (int) (3); index1++) {
 				new Object() {
 					private int ticks = 0;
 					private float waitTicks;
@@ -175,7 +175,7 @@ public class SmokingpipeRightclickedProcedure {
 			if (world instanceof Level _level && !_level.isClientSide())
 				_level.explode(null, x, y, z, 3, Explosion.BlockInteraction.NONE);
 			SafegunpowderexplodeotherProcedure.execute(world, x, y, z);
-			for (int index2 = 0; index2 < 3; index2++) {
+			for (int index2 = 0; index2 < (int) (3); index2++) {
 				new Object() {
 					private int ticks = 0;
 					private float waitTicks;

@@ -1,19 +1,43 @@
 {
-  "_fv": 43,
+  "_fv": 39,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Blasting",
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
     "recipeRetstackSize": 1,
     "group": "",
-    "cookingBookCategory": "MISC",
-    "xpReward": 1.0,
-    "cookingTime": 100,
-    "craftingBookCategory": "MISC",
-    "recipeShapeless": false,
-    "blastingInputStack": {
-      "value": "CUSTOM:Beaweedsoup"
-    },
-    "blastingReturnStack": {
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.STONE#1"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Beaweedsoup"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
       "value": "CUSTOM:Beaweedtea"
     },
     "name": "beaweedtearecipe",

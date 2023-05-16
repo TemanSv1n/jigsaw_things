@@ -37,7 +37,7 @@ public class EntityhurtbeaverknifeProcedure {
 		DamageSource damagee = new DamageSource("generic");
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == JigsawModItems.BEAVERKNIFE.get()) {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("chance") == true) {
-				(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putBoolean("chance", false);
+				(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putBoolean("chance", (false));
 				damagee = new EntityDamageSource("flyIntoWall.player", entity);
 				damagee = damagee.bypassArmor();
 				entity.getPersistentData().putDouble("health_d", (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1));

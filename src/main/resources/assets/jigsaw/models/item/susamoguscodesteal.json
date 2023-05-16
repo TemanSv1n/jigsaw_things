@@ -1,0 +1,7 @@
+{
+  "parent": "jigsaw:custom/magicjar",
+  "textures": {
+    "0": "jigsaw:blocks/texture_tube_19",
+    "particle": "jigsaw:items/bamboo"
+  }
+}

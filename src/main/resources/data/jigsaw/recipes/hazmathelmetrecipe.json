@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_ingot"
+    },
+    "1": {
+      "item": "minecraft:dried_kelp"
+    },
+    "2": {
+      "item": "minecraft:iron_ingot"
+    },
+    "3": {
+      "item": "minecraft:dried_kelp"
+    },
+    "4": {
+      "item": "minecraft:glass"
+    },
+    "5": {
+      "item": "minecraft:dried_kelp"
+    },
+    "7": {
+      "item": "minecraft:yellow_dye"
+    }
+  },
+  "result": {
+    "item": "jigsaw:hazmat_helmet",
+    "count": 1
+  }
+}

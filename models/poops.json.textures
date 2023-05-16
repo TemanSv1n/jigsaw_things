@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "villager",
+        "1": "plains"
+      },
+      "name": "default"
+    }
+  }
+}

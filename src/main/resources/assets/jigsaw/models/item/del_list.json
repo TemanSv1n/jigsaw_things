@@ -1,0 +1,7 @@
+{
+  "parent": "jigsaw:custom/dellist",
+  "textures": {
+    "0": "jigsaw:blocks/idelmage",
+    "particle": "jigsaw:items/birbebiba"
+  }
+}

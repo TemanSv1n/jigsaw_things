@@ -12,7 +12,7 @@ import net.minecraft.core.BlockPos;
 public class MedicgunRightclickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, ItemStack itemstack) {
 		if (itemstack.getOrCreateTag().getBoolean("active") == false) {
-			itemstack.getOrCreateTag().putBoolean("active", true);
+			itemstack.getOrCreateTag().putBoolean("active", (true));
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.hit_player")), SoundSource.PLAYERS, 1, 1);
@@ -21,7 +21,7 @@ public class MedicgunRightclickedProcedure {
 				}
 			}
 		} else if (itemstack.getOrCreateTag().getBoolean("active") == true) {
-			itemstack.getOrCreateTag().putBoolean("active", false);
+			itemstack.getOrCreateTag().putBoolean("active", (false));
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.land")), SoundSource.PLAYERS, 1, 1);

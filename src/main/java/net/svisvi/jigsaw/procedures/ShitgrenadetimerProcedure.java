@@ -1,5 +1,6 @@
 package net.svisvi.jigsaw.procedures;
 
+import net.minecraftforge.server.ServerLifecycleHooks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -10,6 +11,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.Explosion;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.ChatType;
 import net.minecraft.Util;
@@ -31,8 +33,11 @@ public class ShitgrenadetimerProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof ItemEntity) {
-			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList().broadcastMessage(new TextComponent(("explosion_time " + entity.getPersistentData().getDouble("explosion_time"))), ChatType.SYSTEM, Util.NIL_UUID);
+			if (!world.isClientSide()) {
+				MinecraftServer _mcserv = ServerLifecycleHooks.getCurrentServer();
+				if (_mcserv != null)
+					_mcserv.getPlayerList().broadcastMessage(new TextComponent(("explosion_time " + entity.getPersistentData().getDouble("explosion_time"))), ChatType.SYSTEM, Util.NIL_UUID);
+			}
 			entity.getPersistentData().putDouble("explosion_time", (entity.getPersistentData().getDouble("explosion_time") + 1));
 		} else if (entity.getPersistentData().getDouble("explosion_time") >= 100) {
 			if (!entity.level.isClientSide())

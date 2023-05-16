@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:dried_kelp"
+    },
+    "2": {
+      "item": "minecraft:dried_kelp"
+    },
+    "3": {
+      "item": "minecraft:iron_ingot"
+    },
+    "4": {
+      "item": "minecraft:yellow_dye"
+    },
+    "5": {
+      "item": "minecraft:iron_ingot"
+    },
+    "6": {
+      "item": "minecraft:dried_kelp"
+    },
+    "7": {
+      "item": "minecraft:dried_kelp"
+    },
+    "8": {
+      "item": "minecraft:dried_kelp"
+    }
+  },
+  "result": {
+    "item": "jigsaw:hazmat_chestplate",
+    "count": 1
+  }
+}

@@ -51,7 +51,7 @@ public abstract class MaznyaslayerItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of();
+				return Ingredient.EMPTY;
 			}
 
 			@Override
