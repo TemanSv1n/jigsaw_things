@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:entity_melting",
+  "entity": {
+    "tag": "forge:villagers"
+  },
+  "result": {
+    "fluid": "jigsaw:fat",
+    "amount": 75
+  },
+  "damage": 5
+}

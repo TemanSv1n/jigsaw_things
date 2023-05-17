@@ -58,6 +58,7 @@ import net.svisvi.jigsaw.item.FoolDiscItem;
 import net.svisvi.jigsaw.item.Flowergun1Item;
 import net.svisvi.jigsaw.item.Flowergun0Item;
 import net.svisvi.jigsaw.item.FishclockItem;
+import net.svisvi.jigsaw.item.FatItem;
 import net.svisvi.jigsaw.item.FargusfishItem;
 import net.svisvi.jigsaw.item.EvokerfangsarmItem;
 import net.svisvi.jigsaw.item.EggsItem;
@@ -73,6 +74,7 @@ import net.svisvi.jigsaw.item.CigaretteboxItem;
 import net.svisvi.jigsaw.item.CigaretteItem;
 import net.svisvi.jigsaw.item.CaptainbeaverItem;
 import net.svisvi.jigsaw.item.CapitalbookItem;
+import net.svisvi.jigsaw.item.BrownSoapItem;
 import net.svisvi.jigsaw.item.BellyItem;
 import net.svisvi.jigsaw.item.BeaweedteaItem;
 import net.svisvi.jigsaw.item.BeaweedsoupItem;
@@ -236,6 +238,10 @@ public class JigsawModItems {
 	public static final RegistryObject<Item> SUSAMOGUSCODESTEAL = REGISTRY.register("susamoguscodesteal", () -> new SusamoguscodestealItem());
 	public static final RegistryObject<Item> DVORETSKIY = REGISTRY.register("dvoretskiy", () -> new DvoretskiyItem());
 	public static final RegistryObject<Item> DEL_LIST = REGISTRY.register("del_list", () -> new DelListItem());
+	public static final RegistryObject<Item> FAT_BUCKET = REGISTRY.register("fat_bucket", () -> new FatItem());
+	public static final RegistryObject<Item> FAT_BLOCK = block(JigsawModBlocks.FAT_BLOCK, JigsawModTabs.TAB_JIGSAW);
+	public static final RegistryObject<Item> TALLOW_BLOCK = block(JigsawModBlocks.TALLOW_BLOCK, JigsawModTabs.TAB_JIGSAW);
+	public static final RegistryObject<Item> BROWN_SOAP = REGISTRY.register("brown_soap", () -> new BrownSoapItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "jigsaw:beaverblock"
+    "jigsaw:beaverblock",
+    "jigsaw:fat_block",
+    "jigsaw:tallow_block"
   ]
 }

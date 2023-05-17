@@ -5,6 +5,7 @@
 package net.svisvi.jigsaw.init;
 
 import net.svisvi.jigsaw.block.WheatplacerBlock;
+import net.svisvi.jigsaw.block.TallowBlockBlock;
 import net.svisvi.jigsaw.block.SafegunpowderbarrelBlock;
 import net.svisvi.jigsaw.block.PonosBlock;
 import net.svisvi.jigsaw.block.PWhatblockBlock;
@@ -12,6 +13,8 @@ import net.svisvi.jigsaw.block.InvisibilitywheatbottomBlock;
 import net.svisvi.jigsaw.block.InvisibilitywheatBlock;
 import net.svisvi.jigsaw.block.InvisibilitybushBlock;
 import net.svisvi.jigsaw.block.GunpowderbarrelBlock;
+import net.svisvi.jigsaw.block.FatBlockBlock;
+import net.svisvi.jigsaw.block.FatBlock;
 import net.svisvi.jigsaw.block.Beaweedstage4Block;
 import net.svisvi.jigsaw.block.Beaweedstage3Block;
 import net.svisvi.jigsaw.block.Beaweedstage1Block;
@@ -63,6 +66,9 @@ public class JigsawModBlocks {
 	public static final RegistryObject<Block> BEAWEEDSTAGE_1 = REGISTRY.register("beaweedstage_1", () -> new Beaweedstage1Block());
 	public static final RegistryObject<Block> BEAWEEDSTAGE_3 = REGISTRY.register("beaweedstage_3", () -> new Beaweedstage3Block());
 	public static final RegistryObject<Block> BEAWEEDSTAGE_4 = REGISTRY.register("beaweedstage_4", () -> new Beaweedstage4Block());
+	public static final RegistryObject<Block> FAT = REGISTRY.register("fat", () -> new FatBlock());
+	public static final RegistryObject<Block> FAT_BLOCK = REGISTRY.register("fat_block", () -> new FatBlockBlock());
+	public static final RegistryObject<Block> TALLOW_BLOCK = REGISTRY.register("tallow_block", () -> new TallowBlockBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

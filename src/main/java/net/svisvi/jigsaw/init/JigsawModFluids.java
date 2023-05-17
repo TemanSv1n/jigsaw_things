@@ -5,6 +5,7 @@
 package net.svisvi.jigsaw.init;
 
 import net.svisvi.jigsaw.fluid.PonosFluid;
+import net.svisvi.jigsaw.fluid.FatFluid;
 import net.svisvi.jigsaw.JigsawMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -23,6 +24,8 @@ public class JigsawModFluids {
 	public static final DeferredRegister<Fluid> REGISTRY = DeferredRegister.create(ForgeRegistries.FLUIDS, JigsawMod.MODID);
 	public static final RegistryObject<Fluid> PONOS = REGISTRY.register("ponos", () -> new PonosFluid.Source());
 	public static final RegistryObject<Fluid> FLOWING_PONOS = REGISTRY.register("flowing_ponos", () -> new PonosFluid.Flowing());
+	public static final RegistryObject<Fluid> FAT = REGISTRY.register("fat", () -> new FatFluid.Source());
+	public static final RegistryObject<Fluid> FLOWING_FAT = REGISTRY.register("flowing_fat", () -> new FatFluid.Flowing());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -30,6 +33,8 @@ public class JigsawModFluids {
 		public static void clientSetup(FMLClientSetupEvent event) {
 			ItemBlockRenderTypes.setRenderLayer(PONOS.get(), renderType -> renderType == RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_PONOS.get(), renderType -> renderType == RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FAT.get(), renderType -> renderType == RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_FAT.get(), renderType -> renderType == RenderType.translucent());
 		}
 	}
 }

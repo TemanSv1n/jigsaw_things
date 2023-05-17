@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:casting_basin",
+  "fluid": {
+    "name": "jigsaw:fat",
+    "amount": 810
+  },
+  "result": "jigsaw:fat_block",
+  "cooling_time": 882
+}

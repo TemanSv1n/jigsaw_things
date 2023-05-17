@@ -8520,6 +8520,70 @@
           "src/main/resources/data/jigsaw/advancements/magic_jar_achievement.json"
         ]
       }
+    },
+    {
+      "name": "Fat",
+      "type": "fluid",
+      "sortid": 450,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/fluid/FatFluid.java",
+          "src/main/java/net/svisvi/jigsaw/block/FatBlock.java",
+          "src/main/resources/assets/jigsaw/models/item/fat_bucket.json",
+          "src/main/resources/assets/jigsaw/models/block/fat.json",
+          "src/main/java/net/svisvi/jigsaw/item/FatItem.java",
+          "src/main/resources/assets/jigsaw/blockstates/fat.json"
+        ]
+      }
+    },
+    {
+      "name": "FatBlock",
+      "type": "block",
+      "sortid": 451,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fat_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/block/FatBlockBlock.java",
+          "src/main/resources/assets/jigsaw/models/item/fat_block.json",
+          "src/main/resources/assets/jigsaw/models/block/fat_block.json",
+          "src/main/resources/assets/jigsaw/blockstates/fat_block.json"
+        ]
+      }
+    },
+    {
+      "name": "TallowBlock",
+      "type": "block",
+      "sortid": 452,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tallow_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/block/TallowBlockBlock.java",
+          "src/main/resources/assets/jigsaw/models/block/tallow_block.json",
+          "src/main/resources/assets/jigsaw/blockstates/tallow_block.json",
+          "src/main/resources/assets/jigsaw/models/item/tallow_block.json"
+        ]
+      }
+    },
+    {
+      "name": "BrownSoap",
+      "type": "item",
+      "sortid": 453,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brown_soap",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw/models/item/brown_soap.json",
+          "src/main/java/net/svisvi/jigsaw/item/BrownSoapItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -8659,6 +8723,7 @@
       "item.jigsaw.beaweedtea": "Боброжмыховый чай",
       "item.jigsaw.ponos_bucket": "Ведёрко поноса",
       "advancements.jetstreamchairachievement.descr": "Создайте свою первую ракету!",
+      "block.jigsaw.fat_block": "Fat Block",
       "item.minecraft.splash_potion.effect.shitbottle": "Разрывная бутылка дерьма",
       "block.jigsaw.beaver_bottom": "Нижний бобр",
       "subtitles.fargus": "Фаргус",
@@ -8673,6 +8738,7 @@
       "item.jigsaw.clown_nose_chestplate": "клоунлоъх",
       "item.jigsaw.dvoretskiy": "Dvoretskiy",
       "effect.jigsaw.beaver_so_deffect": "Бобровый экран смерти",
+      "item.jigsaw.brown_soap": "Brown Soap",
       "advancements.beavercollarachievement.title": "БОБРО-ЖМЫХ!!!",
       "entity.jigsaw.living_beaver_body": "Вершок бобра",
       "item.jigsaw.purgenbad": "Злостный Пурген нехороший",
@@ -8703,6 +8769,7 @@
       "advancements.fishclockachievement.descr": "Убейте древнего стража и запустите неизбежное",
       "item.jigsaw.captainbeaver_boots": "Captainbeaver Boots",
       "block.jigsaw.beavercutcostyl": "Боброрезка",
+      "fluid.jigsaw.fat": "Fat",
       "item.jigsaw.joker_nose_chestplate": "Тело джокер носа",
       "item.jigsaw.living_beaver_body_spawn_egg": "Призыв тела бобра",
       "advancements.beaverbombachievement.descr": "Создайте бобровую бомбу!",
@@ -8788,6 +8855,7 @@
       "advancements.pigkaxeachievement.title": "Свинство",
       "entity.jigsaw.sniper_beaver": "Бобр",
       "item.jigsaw.pigkaxe": "Свинокоп",
+      "item.jigsaw.fat_bucket": "Fat Bucket",
       "advancements.beaweedsoupachievement.title": "Фтонг!",
       "item.jigsaw.totemofshit": "Говёный тотем",
       "item.jigsaw.beaver_leggings": "Шт о ны бобра",
@@ -8853,6 +8921,7 @@
       "advancements.cockachievement.descr": "Создайте хуй",
       "fluid.jigsaw.ponos": "Понос",
       "item.minecraft.tipped_arrow.effect.mutagen": "Стрела, вымазанная в пурген-мутагене",
+      "block.jigsaw.fat": "Fat",
       "advancements.livingbeaverachievement.descr": "Оживите статуи бобров",
       "effect.jigsaw.poop": "Экран в говне",
       "advancements.medicgunachievement.title": "МЕЕЕЕЕДИК!!!",
@@ -8882,6 +8951,7 @@
       "advancements.hitlerachievement.descr": "Создайте усики гитлера",
       "item.jigsaw.living_beaver_spawn_egg": "Яичко бобра",
       "item.jigsaw.cock_boots": "хуй боты",
+      "block.jigsaw.tallow_block": "Fat Block",
       "advancements.slaveachievement.descr": "Создайте настоящий мужской сет брони",
       "item.jigsaw.ponos_sounds.desc": "Звуки поноса",
       "block.jigsaw.beaverblock": "Рожа бобра",
@@ -8969,6 +9039,7 @@
       "item.jigsaw.beaweedtea": "Beaweed tea",
       "item.jigsaw.ponos_bucket": "Bucket of ponos",
       "advancements.jetstreamchairachievement.descr": "Build your first rocket!",
+      "block.jigsaw.fat_block": "Fat Block",
       "item.minecraft.splash_potion.effect.shitbottle": "Splash bottle of Beaweed",
       "block.jigsaw.beaver_bottom": "Beaver Top",
       "subtitles.fargus": "Fargus",
@@ -8983,6 +9054,7 @@
       "item.jigsaw.clown_nose_chestplate": "Clown Nose Body",
       "item.jigsaw.dvoretskiy": "Dvoretskiy",
       "effect.jigsaw.beaver_so_deffect": "BrownSOD",
+      "item.jigsaw.brown_soap": "Brown Soap",
       "advancements.beavercollarachievement.title": "Bea-WEED!!!",
       "entity.jigsaw.living_beaver_body": "Beaver body",
       "item.jigsaw.purgenbad": "Purgenbad",
@@ -9013,6 +9085,7 @@
       "advancements.fishclockachievement.descr": "Kill ellder guardian and activate it...",
       "item.jigsaw.captainbeaver_boots": "Captainbeaver Boots",
       "block.jigsaw.beavercutcostyl": "Beaver cut costyl",
+      "fluid.jigsaw.fat": "Fat",
       "item.jigsaw.joker_nose_chestplate": "Joker Nose Body",
       "item.jigsaw.living_beaver_body_spawn_egg": "Beaver body Spawn Egg",
       "advancements.beaverbombachievement.descr": "Create Beaver Bomb",
@@ -9098,6 +9171,7 @@
       "advancements.pigkaxeachievement.title": "Pigging",
       "entity.jigsaw.sniper_beaver": "Sniper Beaver",
       "item.jigsaw.pigkaxe": "Pigkaxe",
+      "item.jigsaw.fat_bucket": "Fat Bucket",
       "advancements.beaweedsoupachievement.title": "Ftong!",
       "item.jigsaw.totemofshit": "Totem of shit",
       "item.jigsaw.beaver_leggings": "Beaver Leggings",
@@ -9163,6 +9237,7 @@
       "advancements.cockachievement.descr": "Create COCK!!!",
       "fluid.jigsaw.ponos": "Ponos",
       "item.minecraft.tipped_arrow.effect.mutagen": "Arrow of Purgen Mutagen",
+      "block.jigsaw.fat": "Fat",
       "advancements.livingbeaverachievement.descr": "Bring the live to beaver statues!",
       "effect.jigsaw.poop": "Poop",
       "advancements.medicgunachievement.title": "MEEEEEEEEDIC!!!",
@@ -9192,6 +9267,7 @@
       "advancements.hitlerachievement.descr": "Create Hitler moustache",
       "item.jigsaw.living_beaver_spawn_egg": "Beaver Spawn Egg",
       "item.jigsaw.cock_boots": "Cock Boots",
+      "block.jigsaw.tallow_block": "Tallow Block",
       "advancements.slaveachievement.descr": "Create gachi-set",
       "item.jigsaw.ponos_sounds.desc": "Sounds of ponos",
       "block.jigsaw.beaverblock": "Beaver block",

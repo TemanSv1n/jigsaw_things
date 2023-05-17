@@ -1,0 +1,43 @@
+{
+  "_fv": 39,
+  "_type": "fluid",
+  "definition": {
+    "name": "Fat",
+    "bucketName": "Fat Bucket",
+    "textureStill": "fat_still",
+    "textureFlowing": "fat_flow",
+    "tintType": "No tint",
+    "canMultiply": false,
+    "flowRate": 30,
+    "levelDecrease": 4,
+    "slopeFindDistance": 8,
+    "spawnParticles": false,
+    "dripParticle": {
+      "value": "CUSTOM:Shit"
+    },
+    "flowStrength": 0.7000000000000001,
+    "luminosity": 0,
+    "density": 1000,
+    "viscosity": 1000,
+    "temperature": 500,
+    "type": "LAVA",
+    "generateBucket": true,
+    "textureBucket": "",
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "emptySound": {
+      "value": "item.bucket.empty_lava"
+    },
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "resistance": 110.0,
+    "luminance": 0,
+    "lightOpacity": 1,
+    "emissiveRendering": false,
+    "tickRate": 10,
+    "flammability": 50,
+    "fireSpreadSpeed": 50,
+    "colorOnMap": "DEFAULT"
+  }
+}
