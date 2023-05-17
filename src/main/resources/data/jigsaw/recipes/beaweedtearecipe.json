@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "jigsaw_ponos_dlc:steel_can"
+      "item": "minecraft:granite"
     },
     {
       "item": "jigsaw:beaweedsoup"
