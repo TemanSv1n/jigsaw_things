@@ -2,6 +2,12 @@
   "replace": false,
   "values": [
     "jigsaw:ponos",
-    "jigsaw:flowing_ponos"
+    "jigsaw:flowing_ponos",
+    "jigsaw:pig_solution_fluid",
+    "jigsaw:flowing_pig_solution_fluid",
+    "jigsaw:fartgas",
+    "jigsaw:flowing_fartgas",
+    "jigsaw:beaver_mass",
+    "jigsaw:flowing_beaver_mass"
   ]
 }

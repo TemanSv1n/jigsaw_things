@@ -8650,6 +8650,92 @@
           }
         ]
       }
+    },
+    {
+      "name": "PigSolutionFluid",
+      "type": "fluid",
+      "sortid": 460,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pig_solution_fluid",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw/blockstates/pig_solution_fluid.json",
+          "src/main/java/net/svisvi/jigsaw/item/PigSolutionFluidItem.java",
+          "src/main/resources/assets/jigsaw/models/block/pig_solution_fluid.json",
+          "src/main/resources/assets/jigsaw/models/item/pig_solution_fluid_bucket.json",
+          "src/main/java/net/svisvi/jigsaw/block/PigSolutionFluidBlock.java",
+          "src/main/java/net/svisvi/jigsaw/fluid/PigSolutionFluidFluid.java"
+        ]
+      },
+      "path": "~/ponos_dlc"
+    },
+    {
+      "name": "IronCanRecipe",
+      "type": "recipe",
+      "sortid": 462,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_can_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw/recipes/iron_can_recipe.json"
+        ]
+      },
+      "path": "~/ponos_dlc"
+    },
+    {
+      "name": "IronCan",
+      "type": "item",
+      "sortid": 461,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_can",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw/models/item/iron_can.json",
+          "src/main/java/net/svisvi/jigsaw/item/IronCanItem.java"
+        ]
+      },
+      "path": "~/ponos_dlc"
+    },
+    {
+      "name": "Fartgas",
+      "type": "fluid",
+      "sortid": 459,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fartgas",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/item/FartgasItem.java",
+          "src/main/java/net/svisvi/jigsaw/fluid/FartgasFluid.java",
+          "src/main/java/net/svisvi/jigsaw/block/FartgasBlock.java",
+          "src/main/resources/assets/jigsaw/blockstates/fartgas.json",
+          "src/main/resources/assets/jigsaw/models/block/fartgas.json",
+          "src/main/resources/assets/jigsaw/models/item/fartgas_bucket.json"
+        ]
+      },
+      "path": "~/ponos_dlc"
+    },
+    {
+      "name": "BeaverMass",
+      "type": "fluid",
+      "sortid": 458,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beaver_mass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw/models/block/beaver_mass.json",
+          "src/main/java/net/svisvi/jigsaw/fluid/BeaverMassFluid.java",
+          "src/main/resources/assets/jigsaw/blockstates/beaver_mass.json",
+          "src/main/resources/assets/jigsaw/models/item/beaver_mass_bucket.json",
+          "src/main/java/net/svisvi/jigsaw/block/BeaverMassBlock.java",
+          "src/main/java/net/svisvi/jigsaw/item/BeaverMassItem.java"
+        ]
+      },
+      "path": "~/ponos_dlc"
     }
   ],
   "variable_elements": [
@@ -9074,6 +9160,7 @@
       "item.jigsaw.jumping_pants_leggings": "Jumping Pants",
       "item.minecraft.potion.effect.shitbottle": "Liquid Beaweed",
       "item.jigsaw.beaver_boots": "Beaver Boots",
+      "item.jigsaw.beaver_mass_bucket": "Beaver Mass Bucket",
       "item.jigsaw.jigsawbattery": "Jigsaw battery",
       "item.minecraft.lingering_potion.effect.unlevitationpotion": "Lingering Potion of Unlevitation",
       "item.jigsaw.hitlermoustache_boots": "Hitlermoustache Boots",
@@ -9081,6 +9168,7 @@
       "item.minecraft.tipped_arrow.effect.purgativestrong": "Arrow of Purgative",
       "item.jigsaw.circusdisc.desc": "Circus theme",
       "entity.jigsaw.poopemitter": "Poop_emitter",
+      "fluid.jigsaw.pig_solution_fluid": "Pig Solution Fluid",
       "item.jigsaw.beaverammo": "Beaver ammo",
       "block.jigsaw.wheatplacer": "Wheat placer",
       "advancements.fishclockachievement.title": "Fishy thursday",
@@ -9088,6 +9176,7 @@
       "item.jigsaw.murasamsheathempty": "Empty sheath",
       "item.minecraft.lingering_potion.effect.mutagen": "Lingering Purgen Mutagen",
       "advancements.cursedcowachievement.title": "Oh no...",
+      "block.jigsaw.pig_solution_fluid": "Pig Solution Fluid",
       "advancements.nanomachinesachievement.descr": "Equip nanomachines!",
       "advancements.bellyachievement.title": "Who\u0027s beebeeka here?",
       "item.jigsaw.hitlermoustache_helmet": "Hitler moustache",
@@ -9101,6 +9190,7 @@
       "item.jigsaw.nanomachines_leggings": "Nanomachines Leggings",
       "item.jigsaw.murasam": "MuraSAM",
       "item.jigsaw.solonka": "Solonka",
+      "item.jigsaw.beavermass_bottle": "Beavermass Bottle",
       "key.jigsaw.sbeaver": "S - radio",
       "item.jigsaw.hazmat_boots": "Hazmat Boots",
       "advancements.beaweedseedsachievement.descr": "Consume seeds from the nut",
@@ -9141,6 +9231,7 @@
       "item.jigsaw.purgenman_spawn_egg": "Purgen man Spawn Egg",
       "entity.jigsaw.purgenman": "Purgen man",
       "block.jigsaw.invisibility_wheat_bottom": "Invisibility wheat",
+      "fluid.jigsaw.fartgas": "Fartgas",
       "entity.jigsaw.living_beaver": "Beaver",
       "item.jigsaw.teeth_chestplate": "Teeth Body",
       "item.jigsaw.rickrollgun": "Rickroll gun",
@@ -9158,6 +9249,7 @@
       "item.jigsaw.joker_nose_chestplate": "Joker Nose Body",
       "item.jigsaw.living_beaver_body_spawn_egg": "Beaver body Spawn Egg",
       "advancements.beaverbombachievement.descr": "Create Beaver Bomb",
+      "item.jigsaw.fartgas_bucket": "Fartgas Bucket",
       "block.jigsaw.beaweed": "Beaweed",
       "advancements.purgengunachievement.descr": "Create Purgen gun",
       "item.jigsaw.maznyaslayer_helmet": "Helmet of Maznya Slayer",
@@ -9206,6 +9298,7 @@
       "item.minecraft.splash_potion.effect.purgativestrong": "Splash Purgative",
       "advancements.beavercomputerachievement.title": "Come join us for the Dristpunk 2",
       "advancements.murasamachievement.descr": "Get the legendary weapon of brown samurai...",
+      "item.jigsaw.pig_solution_fluid_bucket": "Pig Solution Fluid Bucket",
       "item.jigsaw.cock_belly_helmet": "Cock Helmet",
       "item.jigsaw.living_beaverlegs_spawn_egg": "Beaver legs Spawn Egg",
       "item.jigsaw.beaverbody": "Beaver",
@@ -9213,6 +9306,7 @@
       "item.jigsaw.hazmat_leggings": "Hazmat Leggings",
       "advancements.pwhatachievement.descr": "Create PW Hat",
       "advancements.captainbeaverachievement.title": "I am the Captain! What\u0027s going on there!?",
+      "block.jigsaw.beaver_mass": "Beaver Mass",
       "item.jigsaw.evokerfangsarm": "Evoker fang",
       "advancements.jetstreamchairachievement.title": "Ad Castores!",
       "item.jigsaw.poops": "Poops",
@@ -9226,6 +9320,7 @@
       "itemGroup.tabjigsaw": "Jigsaw",
       "item.jigsaw.drist_tnt_entity_spawn_egg": "Drist Tnt Entity Spawn Egg",
       "item.jigsaw.beaverknife": "Beaver knife",
+      "block.jigsaw.fartgas": "Fartgas",
       "subtitles.ponos_sounds": "ponos sounds",
       "enchantment.jigsaw.sruciblecharge": "Charge",
       "item.jigsaw.belly_chestplate": "Belly",
@@ -9323,6 +9418,7 @@
       "item.jigsaw.belly_helmet": "Belly Helmet",
       "key.jigsaw.wbeaver": "W - radio",
       "item.jigsaw.purgengun": "P.U.R.G.E.N. gun",
+      "item.jigsaw.iron_can": "Iron Can",
       "advancements.magic_jar_achievement.title": "Doctor, THERE IS A SHIT!!!",
       "block.jigsaw.p_whatblock": "PW hat block (TEST)",
       "item.jigsaw.fool_disc": "Calambour - Fools\u0027 village",
@@ -9332,6 +9428,7 @@
       "advancements.evokerfangsachievement.descr": "Get evoker fangs arm!",
       "effect.jigsaw.purgative": "Strong purgative",
       "item.jigsaw.shitgrenadeitem": "Shit grenade item",
+      "fluid.jigsaw.beaver_mass": "Beaver Mass",
       "effect.jigsaw.egged": "Egg magic",
       "advancements.srucibleachievement.title": "Srucible",
       "entity.jigsaw.drist_tnt_entity": "Drist Tnt Entity",
