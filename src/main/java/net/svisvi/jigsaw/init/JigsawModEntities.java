@@ -24,6 +24,7 @@ import net.svisvi.jigsaw.entity.LivingBeaverlegsEntity;
 import net.svisvi.jigsaw.entity.LivingBeaverEntity;
 import net.svisvi.jigsaw.entity.LivingBeaverBodyEntity;
 import net.svisvi.jigsaw.entity.JetstreamchairEntity;
+import net.svisvi.jigsaw.entity.DristTntEntityEntity;
 import net.svisvi.jigsaw.entity.CursedCowEntity;
 import net.svisvi.jigsaw.entity.BeaweednutconsumableEntity;
 import net.svisvi.jigsaw.entity.BeaverzookaEntity;
@@ -113,6 +114,8 @@ public class JigsawModEntities {
 			EntityType.Builder.<SupershotgunprEntity>of(SupershotgunprEntity::new, MobCategory.MISC).setCustomClientFactory(SupershotgunprEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<PoopsEntity>> POOPS = register("projectile_poops",
 			EntityType.Builder.<PoopsEntity>of(PoopsEntity::new, MobCategory.MISC).setCustomClientFactory(PoopsEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<DristTntEntityEntity>> DRIST_TNT_ENTITY = register("drist_tnt_entity", EntityType.Builder.<DristTntEntityEntity>of(DristTntEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+			.setTrackingRange(0).setUpdateInterval(3).setCustomClientFactory(DristTntEntityEntity::new).fireImmune().sized(1f, 1f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -132,6 +135,7 @@ public class JigsawModEntities {
 			JetstreamchairEntity.init();
 			PoopemitterEntity.init();
 			RadioBeaverEntity.init();
+			DristTntEntityEntity.init();
 		});
 	}
 
@@ -148,5 +152,6 @@ public class JigsawModEntities {
 		event.put(JETSTREAMCHAIR.get(), JetstreamchairEntity.createAttributes().build());
 		event.put(POOPEMITTER.get(), PoopemitterEntity.createAttributes().build());
 		event.put(RADIO_BEAVER.get(), RadioBeaverEntity.createAttributes().build());
+		event.put(DRIST_TNT_ENTITY.get(), DristTntEntityEntity.createAttributes().build());
 	}
 }

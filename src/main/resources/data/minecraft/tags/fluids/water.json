@@ -2,8 +2,6 @@
   "replace": false,
   "values": [
     "jigsaw:ponos",
-    "jigsaw:flowing_ponos",
-    "jigsaw:beaver_mass",
-    "jigsaw:flowing_beaver_mass"
+    "jigsaw:flowing_ponos"
   ]
 }

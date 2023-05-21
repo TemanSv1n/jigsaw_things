@@ -37,7 +37,6 @@ import net.svisvi.jigsaw.item.PonosSoundsItem;
 import net.svisvi.jigsaw.item.PonosItem;
 import net.svisvi.jigsaw.item.PiluleItem;
 import net.svisvi.jigsaw.item.PigkaxeItem;
-import net.svisvi.jigsaw.item.PigAmmoItem;
 import net.svisvi.jigsaw.item.OnionItem;
 import net.svisvi.jigsaw.item.NanomachinesItem;
 import net.svisvi.jigsaw.item.MurasamsheathemptyItem;
@@ -52,7 +51,6 @@ import net.svisvi.jigsaw.item.JumpingPantsItem;
 import net.svisvi.jigsaw.item.JokerNoseItem;
 import net.svisvi.jigsaw.item.JigsawbatteryItem;
 import net.svisvi.jigsaw.item.JetstreamchairitemItem;
-import net.svisvi.jigsaw.item.IronCanItem;
 import net.svisvi.jigsaw.item.HitlermoustacheItem;
 import net.svisvi.jigsaw.item.HighcompressedbeaweedItem;
 import net.svisvi.jigsaw.item.HazmatItem;
@@ -61,8 +59,6 @@ import net.svisvi.jigsaw.item.Flowergun1Item;
 import net.svisvi.jigsaw.item.Flowergun0Item;
 import net.svisvi.jigsaw.item.FishclockItem;
 import net.svisvi.jigsaw.item.FatItem;
-import net.svisvi.jigsaw.item.FartDebugItem;
-import net.svisvi.jigsaw.item.FartCanItem;
 import net.svisvi.jigsaw.item.FargusfishItem;
 import net.svisvi.jigsaw.item.EvokerfangsarmItem;
 import net.svisvi.jigsaw.item.EggsItem;
@@ -94,7 +90,6 @@ import net.svisvi.jigsaw.item.BeaverbombItem;
 import net.svisvi.jigsaw.item.BeaverbodyItem;
 import net.svisvi.jigsaw.item.BeaveraxeItem;
 import net.svisvi.jigsaw.item.BeaverammoItem;
-import net.svisvi.jigsaw.item.BeaverMassItem;
 import net.svisvi.jigsaw.item.BeaverItem;
 import net.svisvi.jigsaw.item.AmpouleItem;
 import net.svisvi.jigsaw.item.AdminkillerItem;
@@ -250,11 +245,8 @@ public class JigsawModItems {
 	public static final RegistryObject<Item> BROWN_SOAP = REGISTRY.register("brown_soap", () -> new BrownSoapItem());
 	public static final RegistryObject<Item> DRIST_TNT = block(JigsawModBlocks.DRIST_TNT, JigsawModTabs.TAB_JIGSAW);
 	public static final RegistryObject<Item> BEAVERMASS_BOTTLE = REGISTRY.register("beavermass_bottle", () -> new BeavermassBottleItem());
-	public static final RegistryObject<Item> FART_DEBUG = REGISTRY.register("fart_debug", () -> new FartDebugItem());
-	public static final RegistryObject<Item> IRON_CAN = REGISTRY.register("iron_can", () -> new IronCanItem());
-	public static final RegistryObject<Item> FART_CAN = REGISTRY.register("fart_can", () -> new FartCanItem());
-	public static final RegistryObject<Item> PIG_AMMO = REGISTRY.register("pig_ammo", () -> new PigAmmoItem());
-	public static final RegistryObject<Item> BEAVER_MASS_BUCKET = REGISTRY.register("beaver_mass_bucket", () -> new BeaverMassItem());
+	public static final RegistryObject<Item> DRIST_TNT_ENTITY_SPAWN_EGG = REGISTRY.register("drist_tnt_entity_spawn_egg",
+			() -> new ForgeSpawnEggItem(JigsawModEntities.DRIST_TNT_ENTITY, -10079488, -11123432, new Item.Properties().tab(JigsawModTabs.TAB_JIGSAW)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
