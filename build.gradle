@@ -50,15 +50,8 @@ minecraft {
     }
 }
 
-repositories {
-    maven {
-        url "https://cursemaven.com"
-    }
-}
-
 dependencies {
     minecraft 'net.minecraftforge:forge:1.18.2-40.1.0'
-    //implementation fg.deobf("curse.maven:btc-639842:4428885")
 }
 
 tasks.withType(JavaCompile).configureEach {
