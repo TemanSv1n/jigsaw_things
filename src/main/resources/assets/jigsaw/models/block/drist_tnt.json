@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jigsaw:blocks/drist_tnt_bottom",
+    "up": "jigsaw:blocks/drist_tnt_top",
+    "north": "jigsaw:blocks/drist_tnt_side",
+    "east": "jigsaw:blocks/drist_tnt_side",
+    "south": "jigsaw:blocks/drist_tnt_side",
+    "west": "jigsaw:blocks/drist_tnt_side",
+    "particle": "jigsaw:blocks/drist_tnt_bottom"
+  }
+}

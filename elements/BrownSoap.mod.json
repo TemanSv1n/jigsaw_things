@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "compressed_beaweed",
+    "texture": "brow_soap",
     "customModelName": "Normal",
     "name": "Brown Soap",
     "rarity": "COMMON",

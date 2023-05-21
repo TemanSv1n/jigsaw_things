@@ -8584,6 +8584,22 @@
           "src/main/java/net/svisvi/jigsaw/item/BrownSoapItem.java"
         ]
       }
+    },
+    {
+      "name": "DristTnt",
+      "type": "block",
+      "sortid": 454,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drist_tnt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw/models/item/drist_tnt.json",
+          "src/main/resources/assets/jigsaw/models/block/drist_tnt.json",
+          "src/main/resources/assets/jigsaw/blockstates/drist_tnt.json",
+          "src/main/java/net/svisvi/jigsaw/block/DristTntBlock.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -8804,6 +8820,7 @@
       "block.jigsaw.safegunpowderbarrel": "Не ломающая очка бочка с порохом",
       "subtitles.rickroll": "Рикролл",
       "advancements.shitammoachievement.title": "1.20 Археология",
+      "block.jigsaw.drist_tnt": "Drist Tnt",
       "block.jigsaw.beaver_top": "Верхний бобер",
       "item.minecraft.lingering_potion.effect.purgativestrong": "Вонючее слабительное",
       "item.jigsaw.shittybee_spawn_egg": "Яичко дурацкой пчелы",
@@ -9120,6 +9137,7 @@
       "block.jigsaw.safegunpowderbarrel": "Safe gunpowder barrel",
       "subtitles.rickroll": "rickrolled",
       "advancements.shitammoachievement.title": "1.20 Archeology",
+      "block.jigsaw.drist_tnt": "Drist Tnt",
       "block.jigsaw.beaver_top": "Beaver Top",
       "item.minecraft.lingering_potion.effect.purgativestrong": "Lingering Purgative",
       "item.jigsaw.shittybee_spawn_egg": "Fool bee Spawn Egg",

@@ -15,6 +15,7 @@ import net.svisvi.jigsaw.block.InvisibilitybushBlock;
 import net.svisvi.jigsaw.block.GunpowderbarrelBlock;
 import net.svisvi.jigsaw.block.FatBlockBlock;
 import net.svisvi.jigsaw.block.FatBlock;
+import net.svisvi.jigsaw.block.DristTntBlock;
 import net.svisvi.jigsaw.block.Beaweedstage4Block;
 import net.svisvi.jigsaw.block.Beaweedstage3Block;
 import net.svisvi.jigsaw.block.Beaweedstage1Block;
@@ -69,6 +70,7 @@ public class JigsawModBlocks {
 	public static final RegistryObject<Block> FAT = REGISTRY.register("fat", () -> new FatBlock());
 	public static final RegistryObject<Block> FAT_BLOCK = REGISTRY.register("fat_block", () -> new FatBlockBlock());
 	public static final RegistryObject<Block> TALLOW_BLOCK = REGISTRY.register("tallow_block", () -> new TallowBlockBlock());
+	public static final RegistryObject<Block> DRIST_TNT = REGISTRY.register("drist_tnt", () -> new DristTntBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
