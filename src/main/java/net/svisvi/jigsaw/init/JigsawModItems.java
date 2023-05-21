@@ -83,7 +83,6 @@ import net.svisvi.jigsaw.item.BeaweednutconsumableItem;
 import net.svisvi.jigsaw.item.BeaweeddustItem;
 import net.svisvi.jigsaw.item.BeaweeddataItem;
 import net.svisvi.jigsaw.item.BeaverzookaItem;
-import net.svisvi.jigsaw.item.BeavermassBottleItem;
 import net.svisvi.jigsaw.item.BeaverknifeItem;
 import net.svisvi.jigsaw.item.BeavercollarItem;
 import net.svisvi.jigsaw.item.BeaverbombItem;
@@ -244,7 +243,6 @@ public class JigsawModItems {
 	public static final RegistryObject<Item> TALLOW_BLOCK = block(JigsawModBlocks.TALLOW_BLOCK, JigsawModTabs.TAB_JIGSAW);
 	public static final RegistryObject<Item> BROWN_SOAP = REGISTRY.register("brown_soap", () -> new BrownSoapItem());
 	public static final RegistryObject<Item> DRIST_TNT = block(JigsawModBlocks.DRIST_TNT, JigsawModTabs.TAB_JIGSAW);
-	public static final RegistryObject<Item> BEAVERMASS_BOTTLE = REGISTRY.register("beavermass_bottle", () -> new BeavermassBottleItem());
 	public static final RegistryObject<Item> DRIST_TNT_ENTITY_SPAWN_EGG = REGISTRY.register("drist_tnt_entity_spawn_egg",
 			() -> new ForgeSpawnEggItem(JigsawModEntities.DRIST_TNT_ENTITY, -10079488, -11123432, new Item.Properties().tab(JigsawModTabs.TAB_JIGSAW)));
 
