@@ -28,6 +28,7 @@ import net.svisvi.jigsaw.block.BeavercutcostylBlock;
 import net.svisvi.jigsaw.block.BeavercomputerBlock;
 import net.svisvi.jigsaw.block.BeaverblockBlock;
 import net.svisvi.jigsaw.block.BeaverTopBlock;
+import net.svisvi.jigsaw.block.BeaverMassBlock;
 import net.svisvi.jigsaw.block.BeaverLiveCostylBlock;
 import net.svisvi.jigsaw.block.BeaverBottomBlock;
 import net.svisvi.jigsaw.JigsawMod;
@@ -71,6 +72,7 @@ public class JigsawModBlocks {
 	public static final RegistryObject<Block> FAT_BLOCK = REGISTRY.register("fat_block", () -> new FatBlockBlock());
 	public static final RegistryObject<Block> TALLOW_BLOCK = REGISTRY.register("tallow_block", () -> new TallowBlockBlock());
 	public static final RegistryObject<Block> DRIST_TNT = REGISTRY.register("drist_tnt", () -> new DristTntBlock());
+	public static final RegistryObject<Block> BEAVER_MASS = REGISTRY.register("beaver_mass", () -> new BeaverMassBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
