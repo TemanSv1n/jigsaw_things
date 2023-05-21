@@ -1,6 +1,7 @@
 
 package net.svisvi.jigsaw.entity;
 
+import net.svisvi.jigsaw.procedures.DristTntEntityOnEntityTickUpdateProcedure;
 import net.svisvi.jigsaw.init.JigsawModEntities;
 
 import net.minecraftforge.registries.ForgeRegistries;
@@ -90,6 +91,12 @@ public class DristTntEntityEntity extends PathfinderMob {
 		if (source.getMsgId().equals("witherSkull"))
 			return false;
 		return super.hurt(source, amount);
+	}
+
+	@Override
+	public void baseTick() {
+		super.baseTick();
+		DristTntEntityOnEntityTickUpdateProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	@Override
