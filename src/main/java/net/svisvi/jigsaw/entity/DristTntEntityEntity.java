@@ -93,6 +93,12 @@ public class DristTntEntityEntity extends PathfinderMob {
 	}
 
 	@Override
+	public void baseTick() {
+		super.baseTick();
+		DristTntEntityOnEntityTickUpdateProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
+	}
+
+	@Override
 	public boolean isPushable() {
 		return false;
 	}
