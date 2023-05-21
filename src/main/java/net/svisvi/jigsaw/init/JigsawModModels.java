@@ -14,6 +14,7 @@ import net.svisvi.jigsaw.client.model.Modelmaznya_slayer;
 import net.svisvi.jigsaw.client.model.Modeljetstream_chair;
 import net.svisvi.jigsaw.client.model.Modelhitler_moustache;
 import net.svisvi.jigsaw.client.model.Modelfool_bear;
+import net.svisvi.jigsaw.client.model.Modeldrist_tnt;
 import net.svisvi.jigsaw.client.model.Modelcustom_model;
 import net.svisvi.jigsaw.client.model.Modelcaptain_beaver;
 import net.svisvi.jigsaw.client.model.Modelbelly;
@@ -49,6 +50,7 @@ public class JigsawModModels {
 		event.registerLayerDefinition(Modelmaznya_slayer.LAYER_LOCATION, Modelmaznya_slayer::createBodyLayer);
 		event.registerLayerDefinition(Modelsubpants.LAYER_LOCATION, Modelsubpants::createBodyLayer);
 		event.registerLayerDefinition(Modelpoop_smoke_grenade_entity.LAYER_LOCATION, Modelpoop_smoke_grenade_entity::createBodyLayer);
+		event.registerLayerDefinition(Modeldrist_tnt.LAYER_LOCATION, Modeldrist_tnt::createBodyLayer);
 		event.registerLayerDefinition(ModelFoolBee.LAYER_LOCATION, ModelFoolBee::createBodyLayer);
 		event.registerLayerDefinition(ModelTeeth.LAYER_LOCATION, ModelTeeth::createBodyLayer);
 		event.registerLayerDefinition(ModelCockBelly.LAYER_LOCATION, ModelCockBelly::createBodyLayer);

@@ -15,6 +15,7 @@ import net.svisvi.jigsaw.client.renderer.LivingBeaverlegsRenderer;
 import net.svisvi.jigsaw.client.renderer.LivingBeaverRenderer;
 import net.svisvi.jigsaw.client.renderer.LivingBeaverBodyRenderer;
 import net.svisvi.jigsaw.client.renderer.JetstreamchairRenderer;
+import net.svisvi.jigsaw.client.renderer.DristTntEntityRenderer;
 import net.svisvi.jigsaw.client.renderer.CursedCowRenderer;
 import net.svisvi.jigsaw.client.renderer.BeaverbombRenderer;
 
@@ -53,5 +54,6 @@ public class JigsawModEntityRenderers {
 		event.registerEntityRenderer(JigsawModEntities.BEAWEEDNUTCONSUMABLE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(JigsawModEntities.SUPERSHOTGUNPR.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(JigsawModEntities.POOPS.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(JigsawModEntities.DRIST_TNT_ENTITY.get(), DristTntEntityRenderer::new);
 	}
 }

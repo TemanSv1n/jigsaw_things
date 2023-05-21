@@ -8617,97 +8617,54 @@
       "path": "~/ponos_dlc"
     },
     {
-      "name": "FartDebug",
-      "type": "item",
+      "name": "DristTntEntity",
+      "type": "livingentity",
       "sortid": 456,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fart_debug",
+      "registry_name": "drist_tnt_entity",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/FartDebugItem.java",
-          "src/main/resources/assets/jigsaw/models/item/fart_debug.json"
+          "src/main/java/net/svisvi/jigsaw/client/renderer/DristTntEntityRenderer.java",
+          "src/main/resources/assets/jigsaw/models/item/drist_tnt_entity_spawn_egg.json",
+          "src/main/java/net/svisvi/jigsaw/entity/DristTntEntityEntity.java"
         ]
-      },
-      "path": "~/ponos_dlc"
+      }
     },
     {
-      "name": "IronCan",
-      "type": "item",
+      "name": "DristTntEntityOnEntityTickUpdate",
+      "type": "procedure",
       "sortid": 457,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "iron_can",
+      "registry_name": "drist_tnt_entity_on_entity_tick_update",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/IronCanItem.java",
-          "src/main/resources/assets/jigsaw/models/item/iron_can.json"
+          "src/main/java/net/svisvi/jigsaw/procedures/DristTntEntityOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
-      },
-      "path": "~/ponos_dlc"
-    },
-    {
-      "name": "IronCanCraft",
-      "type": "recipe",
-      "sortid": 458,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "iron_can_craft",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/jigsaw/recipes/iron_can_craft.json"
-        ]
-      },
-      "path": "~/ponos_dlc"
-    },
-    {
-      "name": "FartCan",
-      "type": "item",
-      "sortid": 459,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fart_can",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jigsaw/models/item/fart_can.json",
-          "src/main/java/net/svisvi/jigsaw/item/FartCanItem.java"
-        ]
-      },
-      "path": "~/ponos_dlc"
-    },
-    {
-      "name": "PigAmmo",
-      "type": "item",
-      "sortid": 460,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pig_ammo",
-      "metadata": {
-        "files": [
-          "src/main/java/net/svisvi/jigsaw/item/PigAmmoItem.java",
-          "src/main/resources/assets/jigsaw/models/item/pig_ammo.json"
-        ]
-      },
-      "path": "~/ponos_dlc"
-    },
-    {
-      "name": "BeaverMass",
-      "type": "fluid",
-      "sortid": 461,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "beaver_mass",
-      "metadata": {
-        "files": [
-          "src/main/java/net/svisvi/jigsaw/item/BeaverMassItem.java",
-          "src/main/java/net/svisvi/jigsaw/fluid/BeaverMassFluid.java",
-          "src/main/java/net/svisvi/jigsaw/block/BeaverMassBlock.java",
-          "src/main/resources/assets/jigsaw/models/item/beaver_mass_bucket.json",
-          "src/main/resources/assets/jigsaw/models/block/beaver_mass.json",
-          "src/main/resources/assets/jigsaw/blockstates/beaver_mass.json"
-        ]
-      },
-      "path": "~/ponos_dlc"
+      }
     }
   ],
   "variable_elements": [
@@ -8801,7 +8758,6 @@
       "item.jigsaw.beaverbomb": "Бобровая бомба",
       "advancements.hitlerachievement.title": "Усики - проход в трусики",
       "item.jigsaw.onion_leggings": "Onion Leggings",
-      "item.jigsaw.fart_debug": "Fart (Debug)",
       "advancements.beaverblockachievement.title": "Бананакет, за что...",
       "item.jigsaw.cursed_cow_spawn_egg": "Яичко проклятой коровы",
       "item.jigsaw.shitammo": "Укомплектованный говеный патрон",
@@ -8814,7 +8770,6 @@
       "item.jigsaw.jumping_pants_leggings": "Jumping Pants",
       "item.minecraft.potion.effect.shitbottle": "Бутылочка с дерьмом",
       "item.jigsaw.beaver_boots": "Ботинки бобра",
-      "item.jigsaw.beaver_mass_bucket": "Beaver Mass Bucket",
       "item.minecraft.lingering_potion.effect.unlevitationpotion": "Оседающее зелье антилевитации",
       "item.jigsaw.jigsawbattery": "Цыганская батарея",
       "item.jigsaw.hitlermoustache_boots": "гитлер ботинки",
@@ -8955,7 +8910,6 @@
       "item.jigsaw.hazmat_leggings": "Hazmat Leggings",
       "advancements.pwhatachievement.descr": "Создайте шляпу Пугода",
       "advancements.captainbeaverachievement.title": "Я капитан! Что здесь происходит!?",
-      "block.jigsaw.beaver_mass": "Beaver Mass",
       "item.jigsaw.evokerfangsarm": "Призывательная рукавица",
       "advancements.jetstreamchairachievement.title": "Ad Castores!",
       "item.jigsaw.poops": "Poops",
@@ -8967,6 +8921,7 @@
       "item.jigsaw.beaweedsheetincomplete": "Сверхспресованный боброжмыховый лист - в процессе",
       "item.jigsaw.pwhat_leggings": "Пугод штаны пугод",
       "itemGroup.tabjigsaw": "Цыганство",
+      "item.jigsaw.drist_tnt_entity_spawn_egg": "Drist Tnt Entity Spawn Egg",
       "item.jigsaw.beaverknife": "Боброножик",
       "subtitles.ponos_sounds": "Звуки поноса",
       "enchantment.jigsaw.sruciblecharge": "Заряд",
@@ -8977,11 +8932,9 @@
       "item.jigsaw.super_auto_fork": "Супер автоматическая вилка",
       "item.jigsaw.susamoguscodesteal": "Susamoguscodesteal",
       "item.jigsaw.supershotgunpr": "Super shotgun pr",
-      "item.jigsaw.fart_can": "Fart Can",
       "advancements.pigkaxeachievement.descr": "Ударьте свинью громоотводом",
       "advancements.pwhatdispenserachievement.descr": "Поставьте шляпу на раздатчик",
       "item.jigsaw.slave_leggings": "Slave труселя",
-      "item.jigsaw.pig_ammo": "Pig Ammo",
       "item.jigsaw.unbreaker": "Unbreaker",
       "advancements.pigkaxeachievement.title": "Свинство",
       "entity.jigsaw.sniper_beaver": "Бобр",
@@ -9067,7 +9020,6 @@
       "item.jigsaw.belly_helmet": "пузо шлем",
       "key.jigsaw.wbeaver": "W - радио",
       "item.jigsaw.purgengun": "П.У.Р.Г.Е.Н.-мёт",
-      "item.jigsaw.iron_can": "Iron Can",
       "advancements.magic_jar_achievement.title": "Doctor, THERE IS A SHIT!!!",
       "block.jigsaw.p_whatblock": "шляпа пугода (тест)",
       "item.jigsaw.fool_disc": "Каламбур - Деревня Дураков",
@@ -9077,9 +9029,9 @@
       "advancements.evokerfangsachievement.descr": "Получите призывательную рукавицу",
       "effect.jigsaw.purgative": "Сильное слабительное",
       "item.jigsaw.shitgrenadeitem": "Дерьмовая граната предмет",
-      "fluid.jigsaw.beaver_mass": "Beaver Mass",
       "effect.jigsaw.egged": "Магия яичек",
       "advancements.srucibleachievement.title": "Против всех исчадий из глубин Бобруйска...",
+      "entity.jigsaw.drist_tnt_entity": "Drist Tnt Entity",
       "entity.jigsaw.cursed_cow": "Проклятая корова",
       "advancements.hitlerachievement.descr": "Создайте усики гитлера",
       "item.jigsaw.living_beaver_spawn_egg": "Яичко бобра",
@@ -9126,7 +9078,6 @@
       "item.jigsaw.beaverbomb": "Beaver bomb",
       "advancements.hitlerachievement.title": "Heil Hitler!",
       "item.jigsaw.onion_leggings": "Onion Leggings",
-      "item.jigsaw.fart_debug": "Fart (Debug)",
       "advancements.beaverblockachievement.title": "Why did Bananacat do this...",
       "item.jigsaw.cursed_cow_spawn_egg": "Cursed Cow Spawn Egg",
       "item.jigsaw.shitammo": "Complected shit pot",
@@ -9139,7 +9090,6 @@
       "item.jigsaw.jumping_pants_leggings": "Jumping Pants",
       "item.minecraft.potion.effect.shitbottle": "Liquid Beaweed",
       "item.jigsaw.beaver_boots": "Beaver Boots",
-      "item.jigsaw.beaver_mass_bucket": "Beaver Mass Bucket",
       "item.minecraft.lingering_potion.effect.unlevitationpotion": "Lingering Potion of Unlevitation",
       "item.jigsaw.jigsawbattery": "Jigsaw battery",
       "item.jigsaw.hitlermoustache_boots": "Hitlermoustache Boots",
@@ -9280,7 +9230,6 @@
       "item.jigsaw.hazmat_leggings": "Hazmat Leggings",
       "advancements.pwhatachievement.descr": "Create PW Hat",
       "advancements.captainbeaverachievement.title": "I am the Captain! What\u0027s going on there!?",
-      "block.jigsaw.beaver_mass": "Beaver Mass",
       "item.jigsaw.evokerfangsarm": "Evoker fang",
       "advancements.jetstreamchairachievement.title": "Ad Castores!",
       "item.jigsaw.poops": "Poops",
@@ -9292,6 +9241,7 @@
       "item.jigsaw.beaweedsheetincomplete": "Compressed beaweed - Incomplete",
       "item.jigsaw.pwhat_leggings": "Pwhat Leggings",
       "itemGroup.tabjigsaw": "Jigsaw",
+      "item.jigsaw.drist_tnt_entity_spawn_egg": "Drist Tnt Entity Spawn Egg",
       "item.jigsaw.beaverknife": "Beaver knife",
       "subtitles.ponos_sounds": "ponos sounds",
       "enchantment.jigsaw.sruciblecharge": "Charge",
@@ -9302,11 +9252,9 @@
       "item.jigsaw.super_auto_fork": "Super Automatic Fork",
       "item.jigsaw.susamoguscodesteal": "Susamoguscodesteal",
       "item.jigsaw.supershotgunpr": "Super shotgun pr",
-      "item.jigsaw.fart_can": "Fart Can",
       "item.jigsaw.slave_leggings": "Slave Pants",
       "advancements.pwhatdispenserachievement.descr": "Place hat on the dispenser",
       "advancements.pigkaxeachievement.descr": "Hit pig with lightning rod!",
-      "item.jigsaw.pig_ammo": "Pig Ammo",
       "item.jigsaw.unbreaker": "Unbreaker",
       "advancements.pigkaxeachievement.title": "Pigging",
       "entity.jigsaw.sniper_beaver": "Sniper Beaver",
@@ -9392,7 +9340,6 @@
       "item.jigsaw.belly_helmet": "Belly Helmet",
       "key.jigsaw.wbeaver": "W - radio",
       "item.jigsaw.purgengun": "P.U.R.G.E.N. gun",
-      "item.jigsaw.iron_can": "Iron Can",
       "advancements.magic_jar_achievement.title": "Doctor, THERE IS A SHIT!!!",
       "block.jigsaw.p_whatblock": "PW hat block (TEST)",
       "item.jigsaw.fool_disc": "Calambour - Fools\u0027 village",
@@ -9402,9 +9349,9 @@
       "advancements.evokerfangsachievement.descr": "Get evoker fangs arm!",
       "effect.jigsaw.purgative": "Strong purgative",
       "item.jigsaw.shitgrenadeitem": "Shit grenade item",
-      "fluid.jigsaw.beaver_mass": "Beaver Mass",
       "effect.jigsaw.egged": "Egg magic",
       "advancements.srucibleachievement.title": "Srucible",
+      "entity.jigsaw.drist_tnt_entity": "Drist Tnt Entity",
       "entity.jigsaw.cursed_cow": "Cursed Cow",
       "advancements.hitlerachievement.descr": "Create Hitler moustache",
       "item.jigsaw.living_beaver_spawn_egg": "Beaver Spawn Egg",
