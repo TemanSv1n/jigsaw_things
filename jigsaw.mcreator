@@ -24,11 +24,11 @@
         "eb": true,
         "ec": true,
         "files": [
+          "src/main/resources/assets/jigsaw/models/item/slave_leggings.json",
+          "src/main/resources/assets/jigsaw/models/item/slave_chestplate.json",
           "src/main/java/net/svisvi/jigsaw/item/SlaveItem.java",
           "src/main/resources/assets/jigsaw/models/item/slave_helmet.json",
-          "src/main/resources/assets/jigsaw/models/item/slave_boots.json",
-          "src/main/resources/assets/jigsaw/models/item/slave_chestplate.json",
-          "src/main/resources/assets/jigsaw/models/item/slave_leggings.json"
+          "src/main/resources/assets/jigsaw/models/item/slave_boots.json"
         ]
       }
     },
@@ -394,8 +394,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/svisvi/jigsaw/block/PWhatblockBlock.java",
-          "src/main/resources/assets/jigsaw/blockstates/p_whatblock.json",
           "src/main/resources/assets/jigsaw/models/item/p_whatblock.json",
+          "src/main/resources/assets/jigsaw/blockstates/p_whatblock.json",
           "src/main/resources/assets/jigsaw/models/block/p_whatblock.json"
         ]
       }
@@ -458,12 +458,12 @@
       "metadata": {
         "gb": true,
         "files": [
-          "src/main/java/net/svisvi/jigsaw/block/PonosBlock.java",
-          "src/main/java/net/svisvi/jigsaw/item/PonosItem.java",
-          "src/main/java/net/svisvi/jigsaw/fluid/PonosFluid.java",
-          "src/main/resources/assets/jigsaw/blockstates/ponos.json",
           "src/main/resources/assets/jigsaw/models/item/ponos_bucket.json",
-          "src/main/resources/assets/jigsaw/models/block/ponos.json"
+          "src/main/java/net/svisvi/jigsaw/item/PonosItem.java",
+          "src/main/resources/assets/jigsaw/blockstates/ponos.json",
+          "src/main/java/net/svisvi/jigsaw/fluid/PonosFluid.java",
+          "src/main/resources/assets/jigsaw/models/block/ponos.json",
+          "src/main/java/net/svisvi/jigsaw/block/PonosBlock.java"
         ]
       }
     },
@@ -495,9 +495,9 @@
       "registry_name": "rickrollgun",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/entity/RickrollgunEntity.java",
+          "src/main/resources/assets/jigsaw/models/item/rickrollgun.json",
           "src/main/java/net/svisvi/jigsaw/item/RickrollgunItem.java",
-          "src/main/resources/assets/jigsaw/models/item/rickrollgun.json"
+          "src/main/java/net/svisvi/jigsaw/entity/RickrollgunEntity.java"
         ]
       }
     },
@@ -567,8 +567,8 @@
       "registry_name": "flowergun_0",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/models/item/flowergun_0.json",
-          "src/main/java/net/svisvi/jigsaw/item/Flowergun0Item.java"
+          "src/main/java/net/svisvi/jigsaw/item/Flowergun0Item.java",
+          "src/main/resources/assets/jigsaw/models/item/flowergun_0.json"
         ]
       }
     },
@@ -680,8 +680,8 @@
       "registry_name": "circusdisc",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/models/item/circusdisc.json",
-          "src/main/java/net/svisvi/jigsaw/item/CircusdiscItem.java"
+          "src/main/java/net/svisvi/jigsaw/item/CircusdiscItem.java",
+          "src/main/resources/assets/jigsaw/models/item/circusdisc.json"
         ]
       }
     },
@@ -695,10 +695,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/svisvi/jigsaw/world/features/plants/BeaweedFeature.java",
-          "src/main/resources/assets/jigsaw/blockstates/beaweed.json",
-          "src/main/resources/assets/jigsaw/models/item/beaweed.json",
           "src/main/resources/assets/jigsaw/models/block/beaweed.json",
-          "src/main/java/net/svisvi/jigsaw/block/BeaweedBlock.java"
+          "src/main/java/net/svisvi/jigsaw/block/BeaweedBlock.java",
+          "src/main/resources/assets/jigsaw/blockstates/beaweed.json",
+          "src/main/resources/assets/jigsaw/models/item/beaweed.json"
         ]
       }
     },
@@ -769,8 +769,8 @@
       "registry_name": "beaweedsoup",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/models/item/beaweedsoup.json",
-          "src/main/java/net/svisvi/jigsaw/item/BeaweedsoupItem.java"
+          "src/main/java/net/svisvi/jigsaw/item/BeaweedsoupItem.java",
+          "src/main/resources/assets/jigsaw/models/item/beaweedsoup.json"
         ]
       }
     },
@@ -842,10 +842,10 @@
       "registry_name": "beaweeddustblock",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/models/block/beaweeddustblock.json",
-          "src/main/resources/assets/jigsaw/models/item/beaweeddustblock.json",
           "src/main/java/net/svisvi/jigsaw/block/BeaweeddustblockBlock.java",
-          "src/main/resources/assets/jigsaw/blockstates/beaweeddustblock.json"
+          "src/main/resources/assets/jigsaw/models/item/beaweeddustblock.json",
+          "src/main/resources/assets/jigsaw/blockstates/beaweeddustblock.json",
+          "src/main/resources/assets/jigsaw/models/block/beaweeddustblock.json"
         ]
       }
     },
@@ -924,8 +924,8 @@
         "eb": false,
         "ec": false,
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/ClownNoseItem.java",
-          "src/main/resources/assets/jigsaw/models/item/clown_nose_helmet.json"
+          "src/main/resources/assets/jigsaw/models/item/clown_nose_helmet.json",
+          "src/main/java/net/svisvi/jigsaw/item/ClownNoseItem.java"
         ]
       }
     },
@@ -981,8 +981,8 @@
         "eb": false,
         "ec": true,
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/CockItem.java",
-          "src/main/resources/assets/jigsaw/models/item/cock_chestplate.json"
+          "src/main/resources/assets/jigsaw/models/item/cock_chestplate.json",
+          "src/main/java/net/svisvi/jigsaw/item/CockItem.java"
         ]
       }
     },
@@ -1158,8 +1158,8 @@
         "eb": false,
         "ec": false,
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/TeethItem.java",
-          "src/main/resources/assets/jigsaw/models/item/teeth_helmet.json"
+          "src/main/resources/assets/jigsaw/models/item/teeth_helmet.json",
+          "src/main/java/net/svisvi/jigsaw/item/TeethItem.java"
         ]
       }
     },
@@ -1288,8 +1288,8 @@
         "eb": false,
         "ec": true,
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/NanomachinesItem.java",
-          "src/main/resources/assets/jigsaw/models/item/nanomachines_chestplate.json"
+          "src/main/resources/assets/jigsaw/models/item/nanomachines_chestplate.json",
+          "src/main/java/net/svisvi/jigsaw/item/NanomachinesItem.java"
         ]
       }
     },
@@ -1539,8 +1539,8 @@
       "registry_name": "fishclock",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/models/item/fishclock.json",
-          "src/main/java/net/svisvi/jigsaw/item/FishclockItem.java"
+          "src/main/java/net/svisvi/jigsaw/item/FishclockItem.java",
+          "src/main/resources/assets/jigsaw/models/item/fishclock.json"
         ]
       }
     },
@@ -1826,8 +1826,8 @@
       "registry_name": "purgenbundle",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/models/item/purgenbundle.json",
-          "src/main/java/net/svisvi/jigsaw/item/PurgenbundleItem.java"
+          "src/main/java/net/svisvi/jigsaw/item/PurgenbundleItem.java",
+          "src/main/resources/assets/jigsaw/models/item/purgenbundle.json"
         ]
       }
     },
@@ -1907,8 +1907,8 @@
       "registry_name": "purgengun",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/entity/PurgengunEntity.java",
           "src/main/resources/assets/jigsaw/models/item/purgengun.json",
+          "src/main/java/net/svisvi/jigsaw/entity/PurgengunEntity.java",
           "src/main/java/net/svisvi/jigsaw/item/PurgengunItem.java"
         ]
       }
@@ -2000,8 +2000,8 @@
       "registry_name": "shitammo",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/ShitammoItem.java",
-          "src/main/resources/assets/jigsaw/models/item/shitammo.json"
+          "src/main/resources/assets/jigsaw/models/item/shitammo.json",
+          "src/main/java/net/svisvi/jigsaw/item/ShitammoItem.java"
         ]
       }
     },
@@ -2014,9 +2014,9 @@
       "registry_name": "shit_ammo_gun",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/entity/ShitAmmoGunEntity.java",
           "src/main/resources/assets/jigsaw/models/item/shit_ammo_gun.json",
-          "src/main/java/net/svisvi/jigsaw/item/ShitAmmoGunItem.java"
+          "src/main/java/net/svisvi/jigsaw/item/ShitAmmoGunItem.java",
+          "src/main/java/net/svisvi/jigsaw/entity/ShitAmmoGunEntity.java"
         ]
       }
     },
@@ -2123,9 +2123,9 @@
       "registry_name": "purgenammogun",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/PurgenammogunItem.java",
           "src/main/resources/assets/jigsaw/models/item/purgenammogun.json",
-          "src/main/java/net/svisvi/jigsaw/entity/PurgenammogunEntity.java"
+          "src/main/java/net/svisvi/jigsaw/entity/PurgenammogunEntity.java",
+          "src/main/java/net/svisvi/jigsaw/item/PurgenammogunItem.java"
         ]
       }
     },
@@ -2192,8 +2192,8 @@
         "eb": false,
         "ec": false,
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/HitlermoustacheItem.java",
-          "src/main/resources/assets/jigsaw/models/item/hitlermoustache_helmet.json"
+          "src/main/resources/assets/jigsaw/models/item/hitlermoustache_helmet.json",
+          "src/main/java/net/svisvi/jigsaw/item/HitlermoustacheItem.java"
         ]
       }
     },
@@ -2262,8 +2262,8 @@
         "eb": false,
         "ec": true,
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/BellyItem.java",
-          "src/main/resources/assets/jigsaw/models/item/belly_chestplate.json"
+          "src/main/resources/assets/jigsaw/models/item/belly_chestplate.json",
+          "src/main/java/net/svisvi/jigsaw/item/BellyItem.java"
         ]
       }
     },
@@ -2307,9 +2307,9 @@
         "ec": true,
         "files": [
           "src/main/resources/assets/jigsaw/models/item/beaver_helmet.json",
+          "src/main/resources/assets/jigsaw/models/item/beaver_chestplate.json",
           "src/main/resources/assets/jigsaw/models/item/beaver_boots.json",
-          "src/main/java/net/svisvi/jigsaw/item/BeaverItem.java",
-          "src/main/resources/assets/jigsaw/models/item/beaver_chestplate.json"
+          "src/main/java/net/svisvi/jigsaw/item/BeaverItem.java"
         ]
       }
     },
@@ -2322,10 +2322,10 @@
       "registry_name": "beaverbomb",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/client/renderer/BeaverbombRenderer.java",
-          "src/main/resources/assets/jigsaw/models/item/beaverbomb.json",
+          "src/main/java/net/svisvi/jigsaw/entity/BeaverbombEntity.java",
           "src/main/java/net/svisvi/jigsaw/item/BeaverbombItem.java",
-          "src/main/java/net/svisvi/jigsaw/entity/BeaverbombEntity.java"
+          "src/main/java/net/svisvi/jigsaw/client/renderer/BeaverbombRenderer.java",
+          "src/main/resources/assets/jigsaw/models/item/beaverbomb.json"
         ]
       }
     },
@@ -2422,8 +2422,8 @@
         "eb": false,
         "ec": true,
         "files": [
-          "src/main/resources/assets/jigsaw/models/item/cock_belly_chestplate.json",
-          "src/main/java/net/svisvi/jigsaw/item/CockBellyItem.java"
+          "src/main/java/net/svisvi/jigsaw/item/CockBellyItem.java",
+          "src/main/resources/assets/jigsaw/models/item/cock_belly_chestplate.json"
         ]
       }
     },
@@ -2593,10 +2593,10 @@
       "registry_name": "beaver_bottom",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/block/BeaverBottomBlock.java",
-          "src/main/resources/assets/jigsaw/models/block/beaver_bottom.json",
           "src/main/resources/assets/jigsaw/models/item/beaver_bottom.json",
-          "src/main/resources/assets/jigsaw/blockstates/beaver_bottom.json"
+          "src/main/resources/assets/jigsaw/blockstates/beaver_bottom.json",
+          "src/main/java/net/svisvi/jigsaw/block/BeaverBottomBlock.java",
+          "src/main/resources/assets/jigsaw/models/block/beaver_bottom.json"
         ]
       }
     },
@@ -2777,8 +2777,8 @@
       "registry_name": "fool_disc",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/models/item/fool_disc.json",
-          "src/main/java/net/svisvi/jigsaw/item/FoolDiscItem.java"
+          "src/main/java/net/svisvi/jigsaw/item/FoolDiscItem.java",
+          "src/main/resources/assets/jigsaw/models/item/fool_disc.json"
         ]
       }
     },
@@ -2826,9 +2826,9 @@
       "registry_name": "shittybee",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/client/renderer/ShittybeeRenderer.java",
           "src/main/resources/assets/jigsaw/models/item/shittybee_spawn_egg.json",
-          "src/main/java/net/svisvi/jigsaw/entity/ShittybeeEntity.java"
+          "src/main/java/net/svisvi/jigsaw/entity/ShittybeeEntity.java",
+          "src/main/java/net/svisvi/jigsaw/client/renderer/ShittybeeRenderer.java"
         ]
       }
     },
@@ -2856,8 +2856,8 @@
       "registry_name": "living_beaver",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/entity/LivingBeaverEntity.java",
           "src/main/resources/assets/jigsaw/models/item/living_beaver_spawn_egg.json",
+          "src/main/java/net/svisvi/jigsaw/entity/LivingBeaverEntity.java",
           "src/main/java/net/svisvi/jigsaw/client/renderer/LivingBeaverRenderer.java"
         ]
       }
@@ -2871,8 +2871,8 @@
       "registry_name": "dn_aponos",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/DNAponosItem.java",
-          "src/main/resources/assets/jigsaw/models/item/dn_aponos.json"
+          "src/main/resources/assets/jigsaw/models/item/dn_aponos.json",
+          "src/main/java/net/svisvi/jigsaw/item/DNAponosItem.java"
         ]
       }
     },
@@ -2960,9 +2960,9 @@
       "registry_name": "splashponosmutagen",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/SplashponosmutagenItem.java",
           "src/main/java/net/svisvi/jigsaw/entity/SplashponosmutagenEntity.java",
-          "src/main/resources/assets/jigsaw/models/item/splashponosmutagen.json"
+          "src/main/resources/assets/jigsaw/models/item/splashponosmutagen.json",
+          "src/main/java/net/svisvi/jigsaw/item/SplashponosmutagenItem.java"
         ]
       }
     },
@@ -3008,8 +3008,8 @@
         "files": [
           "src/main/java/net/svisvi/jigsaw/block/BeaverLiveCostylBlock.java",
           "src/main/resources/assets/jigsaw/blockstates/beaver_live_costyl.json",
-          "src/main/resources/assets/jigsaw/models/item/beaver_live_costyl.json",
-          "src/main/resources/assets/jigsaw/models/block/beaver_live_costyl.json"
+          "src/main/resources/assets/jigsaw/models/block/beaver_live_costyl.json",
+          "src/main/resources/assets/jigsaw/models/item/beaver_live_costyl.json"
         ]
       }
     },
@@ -3057,8 +3057,8 @@
         "eb": false,
         "ec": false,
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/JokerNoseItem.java",
-          "src/main/resources/assets/jigsaw/models/item/joker_nose_helmet.json"
+          "src/main/resources/assets/jigsaw/models/item/joker_nose_helmet.json",
+          "src/main/java/net/svisvi/jigsaw/item/JokerNoseItem.java"
         ]
       }
     },
@@ -3200,8 +3200,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/jigsaw/models/item/sniper_beaver_spawn_egg.json",
-          "src/main/java/net/svisvi/jigsaw/entity/SniperBeaverEntity.java",
-          "src/main/java/net/svisvi/jigsaw/client/renderer/SniperBeaverRenderer.java"
+          "src/main/java/net/svisvi/jigsaw/client/renderer/SniperBeaverRenderer.java",
+          "src/main/java/net/svisvi/jigsaw/entity/SniperBeaverEntity.java"
         ]
       }
     },
@@ -3272,9 +3272,9 @@
       "registry_name": "purgen_ammo_gun_sniper",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/models/item/purgen_ammo_gun_sniper.json",
+          "src/main/java/net/svisvi/jigsaw/item/PurgenAmmoGunSniperItem.java",
           "src/main/java/net/svisvi/jigsaw/entity/PurgenAmmoGunSniperEntity.java",
-          "src/main/java/net/svisvi/jigsaw/item/PurgenAmmoGunSniperItem.java"
+          "src/main/resources/assets/jigsaw/models/item/purgen_ammo_gun_sniper.json"
         ]
       }
     },
@@ -3326,8 +3326,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/svisvi/jigsaw/entity/PurgenmanEntity.java",
-          "src/main/java/net/svisvi/jigsaw/client/renderer/PurgenmanRenderer.java",
-          "src/main/resources/assets/jigsaw/models/item/purgenman_spawn_egg.json"
+          "src/main/resources/assets/jigsaw/models/item/purgenman_spawn_egg.json",
+          "src/main/java/net/svisvi/jigsaw/client/renderer/PurgenmanRenderer.java"
         ]
       }
     },
@@ -3420,8 +3420,8 @@
       "registry_name": "murasam",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/MurasamItem.java",
-          "src/main/resources/assets/jigsaw/models/item/murasam.json"
+          "src/main/resources/assets/jigsaw/models/item/murasam.json",
+          "src/main/java/net/svisvi/jigsaw/item/MurasamItem.java"
         ]
       }
     },
@@ -3434,8 +3434,8 @@
       "registry_name": "murasamsheathempty",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/models/item/murasamsheathempty.json",
-          "src/main/java/net/svisvi/jigsaw/item/MurasamsheathemptyItem.java"
+          "src/main/java/net/svisvi/jigsaw/item/MurasamsheathemptyItem.java",
+          "src/main/resources/assets/jigsaw/models/item/murasamsheathempty.json"
         ]
       }
     },
@@ -3448,8 +3448,8 @@
       "registry_name": "murasamsheath",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/models/item/murasamsheath.json",
-          "src/main/java/net/svisvi/jigsaw/item/MurasamsheathItem.java"
+          "src/main/java/net/svisvi/jigsaw/item/MurasamsheathItem.java",
+          "src/main/resources/assets/jigsaw/models/item/murasamsheath.json"
         ]
       }
     },
@@ -3575,9 +3575,9 @@
       "registry_name": "living_beaverlegs",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/models/item/living_beaverlegs_spawn_egg.json",
+          "src/main/java/net/svisvi/jigsaw/entity/LivingBeaverlegsEntity.java",
           "src/main/java/net/svisvi/jigsaw/client/renderer/LivingBeaverlegsRenderer.java",
-          "src/main/java/net/svisvi/jigsaw/entity/LivingBeaverlegsEntity.java"
+          "src/main/resources/assets/jigsaw/models/item/living_beaverlegs_spawn_egg.json"
         ]
       }
     },
@@ -3590,9 +3590,9 @@
       "registry_name": "living_beaver_body",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/client/renderer/LivingBeaverBodyRenderer.java",
+          "src/main/java/net/svisvi/jigsaw/entity/LivingBeaverBodyEntity.java",
           "src/main/resources/assets/jigsaw/models/item/living_beaver_body_spawn_egg.json",
-          "src/main/java/net/svisvi/jigsaw/entity/LivingBeaverBodyEntity.java"
+          "src/main/java/net/svisvi/jigsaw/client/renderer/LivingBeaverBodyRenderer.java"
         ]
       }
     },
@@ -3640,10 +3640,10 @@
       "registry_name": "beavertopolivecostyl",
       "metadata": {
         "files": [
+          "src/main/resources/assets/jigsaw/models/block/beavertopolivecostyl.json",
           "src/main/java/net/svisvi/jigsaw/block/BeavertopolivecostylBlock.java",
-          "src/main/resources/assets/jigsaw/blockstates/beavertopolivecostyl.json",
           "src/main/resources/assets/jigsaw/models/item/beavertopolivecostyl.json",
-          "src/main/resources/assets/jigsaw/models/block/beavertopolivecostyl.json"
+          "src/main/resources/assets/jigsaw/blockstates/beavertopolivecostyl.json"
         ]
       }
     },
@@ -3688,9 +3688,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/jigsaw/models/block/beavercutcostyl.json",
-          "src/main/resources/assets/jigsaw/blockstates/beavercutcostyl.json",
+          "src/main/java/net/svisvi/jigsaw/block/BeavercutcostylBlock.java",
           "src/main/resources/assets/jigsaw/models/item/beavercutcostyl.json",
-          "src/main/java/net/svisvi/jigsaw/block/BeavercutcostylBlock.java"
+          "src/main/resources/assets/jigsaw/blockstates/beavercutcostyl.json"
         ]
       }
     },
@@ -3821,9 +3821,9 @@
       "registry_name": "beaverzooka",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/BeaverzookaItem.java",
+          "src/main/resources/assets/jigsaw/models/item/beaverzooka.json",
           "src/main/java/net/svisvi/jigsaw/entity/BeaverzookaEntity.java",
-          "src/main/resources/assets/jigsaw/models/item/beaverzooka.json"
+          "src/main/java/net/svisvi/jigsaw/item/BeaverzookaItem.java"
         ]
       }
     },
@@ -3908,10 +3908,10 @@
       "registry_name": "beaverblock",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/blockstates/beaverblock.json",
-          "src/main/resources/assets/jigsaw/models/item/beaverblock.json",
           "src/main/resources/assets/jigsaw/models/block/beaverblock.json",
-          "src/main/java/net/svisvi/jigsaw/block/BeaverblockBlock.java"
+          "src/main/resources/assets/jigsaw/blockstates/beaverblock.json",
+          "src/main/java/net/svisvi/jigsaw/block/BeaverblockBlock.java",
+          "src/main/resources/assets/jigsaw/models/item/beaverblock.json"
         ]
       }
     },
@@ -3993,8 +3993,8 @@
         "eb": false,
         "ec": false,
         "files": [
-          "src/main/resources/assets/jigsaw/models/item/merchant_helmet.json",
-          "src/main/java/net/svisvi/jigsaw/item/MerchantItem.java"
+          "src/main/java/net/svisvi/jigsaw/item/MerchantItem.java",
+          "src/main/resources/assets/jigsaw/models/item/merchant_helmet.json"
         ]
       }
     },
@@ -4035,8 +4035,8 @@
       "registry_name": "jetstreamchairitem",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/JetstreamchairitemItem.java",
-          "src/main/resources/assets/jigsaw/models/item/jetstreamchairitem.json"
+          "src/main/resources/assets/jigsaw/models/item/jetstreamchairitem.json",
+          "src/main/java/net/svisvi/jigsaw/item/JetstreamchairitemItem.java"
         ]
       }
     },
@@ -4176,9 +4176,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/jigsaw/blockstates/gunpowderbarrel.json",
-          "src/main/java/net/svisvi/jigsaw/block/GunpowderbarrelBlock.java",
           "src/main/resources/assets/jigsaw/models/item/gunpowderbarrel.json",
-          "src/main/resources/assets/jigsaw/models/block/gunpowderbarrel.json"
+          "src/main/resources/assets/jigsaw/models/block/gunpowderbarrel.json",
+          "src/main/java/net/svisvi/jigsaw/block/GunpowderbarrelBlock.java"
         ]
       }
     },
@@ -4332,8 +4332,8 @@
       "registry_name": "safegunpowderbarrel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/blockstates/safegunpowderbarrel.json",
           "src/main/resources/assets/jigsaw/models/item/safegunpowderbarrel.json",
+          "src/main/resources/assets/jigsaw/blockstates/safegunpowderbarrel.json",
           "src/main/java/net/svisvi/jigsaw/block/SafegunpowderbarrelBlock.java",
           "src/main/resources/assets/jigsaw/models/block/safegunpowderbarrel.json"
         ]
@@ -4493,10 +4493,10 @@
       "registry_name": "beavergunpowderbarrel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/models/block/beavergunpowderbarrel.json",
-          "src/main/resources/assets/jigsaw/models/item/beavergunpowderbarrel.json",
           "src/main/java/net/svisvi/jigsaw/block/BeavergunpowderbarrelBlock.java",
-          "src/main/resources/assets/jigsaw/blockstates/beavergunpowderbarrel.json"
+          "src/main/resources/assets/jigsaw/blockstates/beavergunpowderbarrel.json",
+          "src/main/resources/assets/jigsaw/models/item/beavergunpowderbarrel.json",
+          "src/main/resources/assets/jigsaw/models/block/beavergunpowderbarrel.json"
         ]
       }
     },
@@ -4689,8 +4689,8 @@
       "registry_name": "poopcloud",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/particles/poopcloud.json",
-          "src/main/java/net/svisvi/jigsaw/client/particle/PoopcloudParticle.java"
+          "src/main/java/net/svisvi/jigsaw/client/particle/PoopcloudParticle.java",
+          "src/main/resources/assets/jigsaw/particles/poopcloud.json"
         ]
       }
     },
@@ -4735,9 +4735,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/svisvi/jigsaw/block/BeavercomputerBlock.java",
+          "src/main/resources/assets/jigsaw/models/block/beavercomputer.json",
           "src/main/resources/assets/jigsaw/models/item/beavercomputer.json",
-          "src/main/resources/assets/jigsaw/blockstates/beavercomputer.json",
-          "src/main/resources/assets/jigsaw/models/block/beavercomputer.json"
+          "src/main/resources/assets/jigsaw/blockstates/beavercomputer.json"
         ]
       }
     },
@@ -5357,10 +5357,10 @@
       "registry_name": "invisibility_wheat",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/blockstates/invisibility_wheat.json",
-          "src/main/resources/assets/jigsaw/models/item/invisibility_wheat.json",
           "src/main/java/net/svisvi/jigsaw/block/InvisibilitywheatBlock.java",
-          "src/main/resources/assets/jigsaw/models/block/invisibility_wheat.json"
+          "src/main/resources/assets/jigsaw/models/block/invisibility_wheat.json",
+          "src/main/resources/assets/jigsaw/models/item/invisibility_wheat.json",
+          "src/main/resources/assets/jigsaw/blockstates/invisibility_wheat.json"
         ]
       }
     },
@@ -5392,10 +5392,10 @@
       "registry_name": "invisibility_wheat_bottom",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/blockstates/invisibility_wheat_bottom.json",
           "src/main/java/net/svisvi/jigsaw/block/InvisibilitywheatbottomBlock.java",
           "src/main/resources/assets/jigsaw/models/item/invisibility_wheat_bottom.json",
-          "src/main/resources/assets/jigsaw/models/block/invisibility_wheat_bottom.json"
+          "src/main/resources/assets/jigsaw/models/block/invisibility_wheat_bottom.json",
+          "src/main/resources/assets/jigsaw/blockstates/invisibility_wheat_bottom.json"
         ]
       }
     },
@@ -5535,10 +5535,10 @@
       "registry_name": "wheatplacer",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/models/item/wheatplacer.json",
-          "src/main/resources/assets/jigsaw/models/block/wheatplacer.json",
+          "src/main/resources/assets/jigsaw/blockstates/wheatplacer.json",
           "src/main/java/net/svisvi/jigsaw/block/WheatplacerBlock.java",
-          "src/main/resources/assets/jigsaw/blockstates/wheatplacer.json"
+          "src/main/resources/assets/jigsaw/models/block/wheatplacer.json",
+          "src/main/resources/assets/jigsaw/models/item/wheatplacer.json"
         ]
       }
     },
@@ -5591,9 +5591,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/svisvi/jigsaw/block/InvisibilitybushBlock.java",
+          "src/main/resources/assets/jigsaw/models/block/invisibilitybush.json",
           "src/main/resources/assets/jigsaw/models/item/invisibilitybush.json",
-          "src/main/resources/assets/jigsaw/blockstates/invisibilitybush.json",
-          "src/main/resources/assets/jigsaw/models/block/invisibilitybush.json"
+          "src/main/resources/assets/jigsaw/blockstates/invisibilitybush.json"
         ]
       }
     },
@@ -5707,10 +5707,10 @@
       "registry_name": "shitgrenade",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/entity/ShitgrenadeEntity.java",
-          "src/main/java/net/svisvi/jigsaw/client/renderer/ShitgrenadeRenderer.java",
           "src/main/resources/assets/jigsaw/models/item/shitgrenade.json",
-          "src/main/java/net/svisvi/jigsaw/item/ShitgrenadeItem.java"
+          "src/main/java/net/svisvi/jigsaw/item/ShitgrenadeItem.java",
+          "src/main/java/net/svisvi/jigsaw/entity/ShitgrenadeEntity.java",
+          "src/main/java/net/svisvi/jigsaw/client/renderer/ShitgrenadeRenderer.java"
         ]
       }
     },
@@ -5746,8 +5746,8 @@
       "registry_name": "shitgrenadeitem",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/ShitgrenadeitemItem.java",
-          "src/main/resources/assets/jigsaw/models/item/shitgrenadeitem.json"
+          "src/main/resources/assets/jigsaw/models/item/shitgrenadeitem.json",
+          "src/main/java/net/svisvi/jigsaw/item/ShitgrenadeitemItem.java"
         ]
       }
     },
@@ -5827,8 +5827,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/svisvi/jigsaw/client/renderer/PoopemitterRenderer.java",
-          "src/main/java/net/svisvi/jigsaw/entity/PoopemitterEntity.java",
-          "src/main/resources/assets/jigsaw/models/item/poopemitter_spawn_egg.json"
+          "src/main/resources/assets/jigsaw/models/item/poopemitter_spawn_egg.json",
+          "src/main/java/net/svisvi/jigsaw/entity/PoopemitterEntity.java"
         ]
       }
     },
@@ -5889,8 +5889,8 @@
       "registry_name": "marmoset",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/MarmosetItem.java",
-          "src/main/resources/assets/jigsaw/models/item/marmoset.json"
+          "src/main/resources/assets/jigsaw/models/item/marmoset.json",
+          "src/main/java/net/svisvi/jigsaw/item/MarmosetItem.java"
         ]
       }
     },
@@ -5916,9 +5916,9 @@
       "registry_name": "radio_beaver",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/entity/RadioBeaverEntity.java",
+          "src/main/resources/assets/jigsaw/models/item/radio_beaver_spawn_egg.json",
           "src/main/java/net/svisvi/jigsaw/client/renderer/RadioBeaverRenderer.java",
-          "src/main/resources/assets/jigsaw/models/item/radio_beaver_spawn_egg.json"
+          "src/main/java/net/svisvi/jigsaw/entity/RadioBeaverEntity.java"
         ]
       }
     },
@@ -6496,9 +6496,9 @@
       "registry_name": "pudgehook",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/models/item/pudgehook.json",
+          "src/main/java/net/svisvi/jigsaw/entity/PudgehookEntity.java",
           "src/main/java/net/svisvi/jigsaw/item/PudgehookItem.java",
-          "src/main/java/net/svisvi/jigsaw/entity/PudgehookEntity.java"
+          "src/main/resources/assets/jigsaw/models/item/pudgehook.json"
         ]
       }
     },
@@ -6634,9 +6634,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/jigsaw/models/item/maznyaslayer_leggings.json",
-          "src/main/resources/assets/jigsaw/models/item/maznyaslayer_chestplate.json",
           "src/main/resources/assets/jigsaw/models/item/maznyaslayer_helmet.json",
-          "src/main/java/net/svisvi/jigsaw/item/MaznyaslayerItem.java"
+          "src/main/java/net/svisvi/jigsaw/item/MaznyaslayerItem.java",
+          "src/main/resources/assets/jigsaw/models/item/maznyaslayer_chestplate.json"
         ]
       }
     },
@@ -6649,8 +6649,8 @@
       "registry_name": "srucible",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/models/item/srucible.json",
-          "src/main/java/net/svisvi/jigsaw/item/SrucibleItem.java"
+          "src/main/java/net/svisvi/jigsaw/item/SrucibleItem.java",
+          "src/main/resources/assets/jigsaw/models/item/srucible.json"
         ]
       }
     },
@@ -6925,11 +6925,11 @@
       "registry_name": "beaweedseeds",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/block/BeaweedseedsBlock.java",
           "src/main/java/net/svisvi/jigsaw/block/entity/BeaweedseedsBlockEntity.java",
+          "src/main/resources/assets/jigsaw/blockstates/beaweedseeds.json",
+          "src/main/java/net/svisvi/jigsaw/block/BeaweedseedsBlock.java",
           "src/main/resources/assets/jigsaw/models/item/beaweedseeds.json",
-          "src/main/resources/assets/jigsaw/models/block/beaweedseeds.json",
-          "src/main/resources/assets/jigsaw/blockstates/beaweedseeds.json"
+          "src/main/resources/assets/jigsaw/models/block/beaweedseeds.json"
         ]
       }
     },
@@ -7006,11 +7006,11 @@
       "registry_name": "beaweedstage_1",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/models/block/beaweedstage_1.json",
-          "src/main/java/net/svisvi/jigsaw/block/Beaweedstage1Block.java",
           "src/main/resources/assets/jigsaw/blockstates/beaweedstage_1.json",
+          "src/main/java/net/svisvi/jigsaw/block/Beaweedstage1Block.java",
           "src/main/java/net/svisvi/jigsaw/block/entity/Beaweedstage1BlockEntity.java",
-          "src/main/resources/assets/jigsaw/models/item/beaweedstage_1.json"
+          "src/main/resources/assets/jigsaw/models/item/beaweedstage_1.json",
+          "src/main/resources/assets/jigsaw/models/block/beaweedstage_1.json"
         ]
       }
     },
@@ -7023,11 +7023,11 @@
       "registry_name": "beaweedstage_3",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/block/Beaweedstage3Block.java",
-          "src/main/resources/assets/jigsaw/blockstates/beaweedstage_3.json",
-          "src/main/java/net/svisvi/jigsaw/block/entity/Beaweedstage3BlockEntity.java",
           "src/main/resources/assets/jigsaw/models/item/beaweedstage_3.json",
-          "src/main/resources/assets/jigsaw/models/block/beaweedstage_3.json"
+          "src/main/resources/assets/jigsaw/blockstates/beaweedstage_3.json",
+          "src/main/resources/assets/jigsaw/models/block/beaweedstage_3.json",
+          "src/main/java/net/svisvi/jigsaw/block/entity/Beaweedstage3BlockEntity.java",
+          "src/main/java/net/svisvi/jigsaw/block/Beaweedstage3Block.java"
         ]
       }
     },
@@ -7040,11 +7040,11 @@
       "registry_name": "beaweedstage_4",
       "metadata": {
         "files": [
+          "src/main/java/net/svisvi/jigsaw/block/entity/Beaweedstage4BlockEntity.java",
           "src/main/java/net/svisvi/jigsaw/block/Beaweedstage4Block.java",
           "src/main/resources/assets/jigsaw/models/item/beaweedstage_4.json",
-          "src/main/resources/assets/jigsaw/blockstates/beaweedstage_4.json",
           "src/main/resources/assets/jigsaw/models/block/beaweedstage_4.json",
-          "src/main/java/net/svisvi/jigsaw/block/entity/Beaweedstage4BlockEntity.java"
+          "src/main/resources/assets/jigsaw/blockstates/beaweedstage_4.json"
         ]
       }
     },
@@ -7119,8 +7119,8 @@
       "registry_name": "beaweeddata",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/models/item/beaweeddata.json",
-          "src/main/java/net/svisvi/jigsaw/item/BeaweeddataItem.java"
+          "src/main/java/net/svisvi/jigsaw/item/BeaweeddataItem.java",
+          "src/main/resources/assets/jigsaw/models/item/beaweeddata.json"
         ]
       }
     },
@@ -7258,9 +7258,9 @@
       "registry_name": "beaweednutconsumable",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/entity/BeaweednutconsumableEntity.java",
+          "src/main/resources/assets/jigsaw/models/item/beaweednutconsumable.json",
           "src/main/java/net/svisvi/jigsaw/item/BeaweednutconsumableItem.java",
-          "src/main/resources/assets/jigsaw/models/item/beaweednutconsumable.json"
+          "src/main/java/net/svisvi/jigsaw/entity/BeaweednutconsumableEntity.java"
         ]
       }
     },
@@ -7526,8 +7526,8 @@
       "registry_name": "pilule",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/models/item/pilule.json",
-          "src/main/java/net/svisvi/jigsaw/item/PiluleItem.java"
+          "src/main/java/net/svisvi/jigsaw/item/PiluleItem.java",
+          "src/main/resources/assets/jigsaw/models/item/pilule.json"
         ]
       }
     },
@@ -7564,8 +7564,8 @@
       "registry_name": "ampoule",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/AmpouleItem.java",
-          "src/main/resources/assets/jigsaw/models/item/ampoule.json"
+          "src/main/resources/assets/jigsaw/models/item/ampoule.json",
+          "src/main/java/net/svisvi/jigsaw/item/AmpouleItem.java"
         ]
       }
     },
@@ -7934,8 +7934,8 @@
       "registry_name": "jumping_pants",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/models/item/jumping_pants_leggings.json",
           "src/main/java/net/svisvi/jigsaw/item/JumpingPantsItem.java",
+          "src/main/resources/assets/jigsaw/models/item/jumping_pants_leggings.json",
           "src/main/resources/assets/jigsaw/models/item/jumping_pants_helmet.json"
         ]
       }
@@ -8124,8 +8124,8 @@
       "registry_name": "poops_item",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/PoopsItemItem.java",
-          "src/main/resources/assets/jigsaw/models/item/poops_item.json"
+          "src/main/resources/assets/jigsaw/models/item/poops_item.json",
+          "src/main/java/net/svisvi/jigsaw/item/PoopsItemItem.java"
         ]
       }
     },
@@ -8177,8 +8177,8 @@
       "registry_name": "susamoguscodesteal",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/SusamoguscodestealItem.java",
-          "src/main/resources/assets/jigsaw/models/item/susamoguscodesteal.json"
+          "src/main/resources/assets/jigsaw/models/item/susamoguscodesteal.json",
+          "src/main/java/net/svisvi/jigsaw/item/SusamoguscodestealItem.java"
         ]
       }
     },
@@ -8191,11 +8191,11 @@
       "registry_name": "hazmat",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/HazmatItem.java",
           "src/main/resources/assets/jigsaw/models/item/hazmat_helmet.json",
+          "src/main/resources/assets/jigsaw/models/item/hazmat_chestplate.json",
+          "src/main/java/net/svisvi/jigsaw/item/HazmatItem.java",
           "src/main/resources/assets/jigsaw/models/item/hazmat_leggings.json",
-          "src/main/resources/assets/jigsaw/models/item/hazmat_boots.json",
-          "src/main/resources/assets/jigsaw/models/item/hazmat_chestplate.json"
+          "src/main/resources/assets/jigsaw/models/item/hazmat_boots.json"
         ]
       }
     },
@@ -8342,8 +8342,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/svisvi/jigsaw/entity/PoopsEntity.java",
-          "src/main/resources/assets/jigsaw/models/item/poops.json",
-          "src/main/java/net/svisvi/jigsaw/item/PoopsItem.java"
+          "src/main/java/net/svisvi/jigsaw/item/PoopsItem.java",
+          "src/main/resources/assets/jigsaw/models/item/poops.json"
         ]
       }
     },
@@ -8492,8 +8492,8 @@
       "registry_name": "del_list",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/models/item/del_list.json",
-          "src/main/java/net/svisvi/jigsaw/item/DelListItem.java"
+          "src/main/java/net/svisvi/jigsaw/item/DelListItem.java",
+          "src/main/resources/assets/jigsaw/models/item/del_list.json"
         ]
       }
     },
@@ -8530,12 +8530,12 @@
       "registry_name": "fat",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/fluid/FatFluid.java",
-          "src/main/java/net/svisvi/jigsaw/block/FatBlock.java",
-          "src/main/resources/assets/jigsaw/models/item/fat_bucket.json",
-          "src/main/resources/assets/jigsaw/models/block/fat.json",
           "src/main/java/net/svisvi/jigsaw/item/FatItem.java",
-          "src/main/resources/assets/jigsaw/blockstates/fat.json"
+          "src/main/resources/assets/jigsaw/models/item/fat_bucket.json",
+          "src/main/resources/assets/jigsaw/blockstates/fat.json",
+          "src/main/java/net/svisvi/jigsaw/block/FatBlock.java",
+          "src/main/resources/assets/jigsaw/models/block/fat.json",
+          "src/main/java/net/svisvi/jigsaw/fluid/FatFluid.java"
         ]
       }
     },
@@ -8549,9 +8549,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/svisvi/jigsaw/block/FatBlockBlock.java",
-          "src/main/resources/assets/jigsaw/models/item/fat_block.json",
+          "src/main/resources/assets/jigsaw/blockstates/fat_block.json",
           "src/main/resources/assets/jigsaw/models/block/fat_block.json",
-          "src/main/resources/assets/jigsaw/blockstates/fat_block.json"
+          "src/main/resources/assets/jigsaw/models/item/fat_block.json"
         ]
       }
     },
@@ -8564,10 +8564,10 @@
       "registry_name": "tallow_block",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/block/TallowBlockBlock.java",
           "src/main/resources/assets/jigsaw/models/block/tallow_block.json",
-          "src/main/resources/assets/jigsaw/blockstates/tallow_block.json",
-          "src/main/resources/assets/jigsaw/models/item/tallow_block.json"
+          "src/main/resources/assets/jigsaw/models/item/tallow_block.json",
+          "src/main/java/net/svisvi/jigsaw/block/TallowBlockBlock.java",
+          "src/main/resources/assets/jigsaw/blockstates/tallow_block.json"
         ]
       }
     },
@@ -8595,9 +8595,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/jigsaw/models/item/drist_tnt.json",
-          "src/main/resources/assets/jigsaw/models/block/drist_tnt.json",
+          "src/main/java/net/svisvi/jigsaw/block/DristTntBlock.java",
           "src/main/resources/assets/jigsaw/blockstates/drist_tnt.json",
-          "src/main/java/net/svisvi/jigsaw/block/DristTntBlock.java"
+          "src/main/resources/assets/jigsaw/models/block/drist_tnt.json"
         ]
       }
     },
@@ -8610,8 +8610,8 @@
       "registry_name": "beavermass_bottle",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/BeavermassBottleItem.java",
-          "src/main/resources/assets/jigsaw/models/item/beavermass_bottle.json"
+          "src/main/resources/assets/jigsaw/models/item/beavermass_bottle.json",
+          "src/main/java/net/svisvi/jigsaw/item/BeavermassBottleItem.java"
         ]
       },
       "path": "~/ponos_dlc"
@@ -8625,9 +8625,9 @@
       "registry_name": "drist_tnt_entity",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/client/renderer/DristTntEntityRenderer.java",
+          "src/main/java/net/svisvi/jigsaw/entity/DristTntEntityEntity.java",
           "src/main/resources/assets/jigsaw/models/item/drist_tnt_entity_spawn_egg.json",
-          "src/main/java/net/svisvi/jigsaw/entity/DristTntEntityEntity.java"
+          "src/main/java/net/svisvi/jigsaw/client/renderer/DristTntEntityRenderer.java"
         ]
       }
     },
@@ -8665,6 +8665,92 @@
           }
         ]
       }
+    },
+    {
+      "name": "BeaverMass",
+      "type": "fluid",
+      "sortid": 458,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beaver_mass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw/models/item/beaver_mass_bucket.json",
+          "src/main/resources/assets/jigsaw/blockstates/beaver_mass.json",
+          "src/main/java/net/svisvi/jigsaw/item/BeaverMassItem.java",
+          "src/main/java/net/svisvi/jigsaw/fluid/BeaverMassFluid.java",
+          "src/main/java/net/svisvi/jigsaw/block/BeaverMassBlock.java",
+          "src/main/resources/assets/jigsaw/models/block/beaver_mass.json"
+        ]
+      },
+      "path": "~/ponos_dlc"
+    },
+    {
+      "name": "Fartgas",
+      "type": "fluid",
+      "sortid": 459,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fartgas",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw/blockstates/fartgas.json",
+          "src/main/java/net/svisvi/jigsaw/item/FartgasItem.java",
+          "src/main/java/net/svisvi/jigsaw/block/FartgasBlock.java",
+          "src/main/java/net/svisvi/jigsaw/fluid/FartgasFluid.java",
+          "src/main/resources/assets/jigsaw/models/item/fartgas_bucket.json",
+          "src/main/resources/assets/jigsaw/models/block/fartgas.json"
+        ]
+      },
+      "path": "~/ponos_dlc"
+    },
+    {
+      "name": "PigSolutionFluid",
+      "type": "fluid",
+      "sortid": 460,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pig_solution_fluid",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/fluid/PigSolutionFluidFluid.java",
+          "src/main/java/net/svisvi/jigsaw/block/PigSolutionFluidBlock.java",
+          "src/main/resources/assets/jigsaw/models/block/pig_solution_fluid.json",
+          "src/main/java/net/svisvi/jigsaw/item/PigSolutionFluidItem.java",
+          "src/main/resources/assets/jigsaw/blockstates/pig_solution_fluid.json",
+          "src/main/resources/assets/jigsaw/models/item/pig_solution_fluid_bucket.json"
+        ]
+      },
+      "path": "~/ponos_dlc"
+    },
+    {
+      "name": "IronCan",
+      "type": "item",
+      "sortid": 461,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_can",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/item/IronCanItem.java",
+          "src/main/resources/assets/jigsaw/models/item/iron_can.json"
+        ]
+      },
+      "path": "~/ponos_dlc"
+    },
+    {
+      "name": "IronCanRecipe",
+      "type": "recipe",
+      "sortid": 462,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_can_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw/recipes/iron_can_recipe.json"
+        ]
+      },
+      "path": "~/ponos_dlc"
     }
   ],
   "variable_elements": [
@@ -8770,6 +8856,7 @@
       "item.jigsaw.jumping_pants_leggings": "Jumping Pants",
       "item.minecraft.potion.effect.shitbottle": "Бутылочка с дерьмом",
       "item.jigsaw.beaver_boots": "Ботинки бобра",
+      "item.jigsaw.beaver_mass_bucket": "Beaver Mass Bucket",
       "item.minecraft.lingering_potion.effect.unlevitationpotion": "Оседающее зелье антилевитации",
       "item.jigsaw.jigsawbattery": "Цыганская батарея",
       "item.jigsaw.hitlermoustache_boots": "гитлер ботинки",
@@ -8777,6 +8864,7 @@
       "item.minecraft.tipped_arrow.effect.purgativestrong": "Слабительная стрела",
       "item.jigsaw.circusdisc.desc": "Клоунская музыка",
       "entity.jigsaw.poopemitter": "Имитатор поноса",
+      "fluid.jigsaw.pig_solution_fluid": "Pig Solution Fluid",
       "item.jigsaw.beaverammo": "Патрон бобра",
       "block.jigsaw.wheatplacer": "Невидимая пшеница",
       "advancements.fishclockachievement.title": "Рыбный четверг",
@@ -8784,6 +8872,7 @@
       "item.jigsaw.murasamsheathempty": "Пустые ножны",
       "item.minecraft.lingering_potion.effect.mutagen": "Вонючий Пурген-мутаген",
       "advancements.cursedcowachievement.title": "О нет...",
+      "block.jigsaw.pig_solution_fluid": "Pig Solution Fluid",
       "advancements.bellyachievement.title": "Кто здесь бибика?",
       "advancements.nanomachinesachievement.descr": "Активируйте наномашины",
       "item.jigsaw.hitlermoustache_helmet": "Усики гитлера",
@@ -8838,6 +8927,7 @@
       "item.jigsaw.purgenman_spawn_egg": "Левое яичко пурген мена",
       "entity.jigsaw.purgenman": "Пурген-мен",
       "block.jigsaw.invisibility_wheat_bottom": "Нижняя часть невидимой пшеницы",
+      "fluid.jigsaw.fartgas": "Fartgas",
       "entity.jigsaw.living_beaver": "Боброжуйка",
       "item.jigsaw.teeth_chestplate": "зуботело",
       "item.jigsaw.rickrollgun": "Рикроллер",
@@ -8855,6 +8945,7 @@
       "item.jigsaw.joker_nose_chestplate": "Тело джокер носа",
       "item.jigsaw.living_beaver_body_spawn_egg": "Призыв тела бобра",
       "advancements.beaverbombachievement.descr": "Создайте бобровую бомбу!",
+      "item.jigsaw.fartgas_bucket": "Fartgas Bucket",
       "block.jigsaw.beaweed": "Боброжмых",
       "advancements.purgengunachievement.descr": "Создайте Пургеномёт",
       "item.jigsaw.maznyaslayer_helmet": "Шлем Палача Мазни",
@@ -8903,6 +8994,7 @@
       "item.minecraft.splash_potion.effect.purgativestrong": "Взрывное слабительное",
       "advancements.beavercomputerachievement.title": "Приходите к нам на Дристпанк 2",
       "advancements.murasamachievement.descr": "Заполучите легендарное оружие коричневого самурая....",
+      "item.jigsaw.pig_solution_fluid_bucket": "Pig Solution Fluid Bucket",
       "item.jigsaw.cock_belly_helmet": "Cock ШЛЕМ",
       "item.jigsaw.living_beaverlegs_spawn_egg": "Ножки бобра",
       "item.jigsaw.beaverbody": "Трупик бобра",
@@ -8910,6 +9002,7 @@
       "item.jigsaw.hazmat_leggings": "Hazmat Leggings",
       "advancements.pwhatachievement.descr": "Создайте шляпу Пугода",
       "advancements.captainbeaverachievement.title": "Я капитан! Что здесь происходит!?",
+      "block.jigsaw.beaver_mass": "Beaver Mass",
       "item.jigsaw.evokerfangsarm": "Призывательная рукавица",
       "advancements.jetstreamchairachievement.title": "Ad Castores!",
       "item.jigsaw.poops": "Poops",
@@ -8923,6 +9016,7 @@
       "itemGroup.tabjigsaw": "Цыганство",
       "item.jigsaw.drist_tnt_entity_spawn_egg": "Drist Tnt Entity Spawn Egg",
       "item.jigsaw.beaverknife": "Боброножик",
+      "block.jigsaw.fartgas": "Fartgas",
       "subtitles.ponos_sounds": "Звуки поноса",
       "enchantment.jigsaw.sruciblecharge": "Заряд",
       "item.jigsaw.belly_chestplate": "Пузо",
@@ -9020,6 +9114,7 @@
       "item.jigsaw.belly_helmet": "пузо шлем",
       "key.jigsaw.wbeaver": "W - радио",
       "item.jigsaw.purgengun": "П.У.Р.Г.Е.Н.-мёт",
+      "item.jigsaw.iron_can": "Iron Can",
       "advancements.magic_jar_achievement.title": "Doctor, THERE IS A SHIT!!!",
       "block.jigsaw.p_whatblock": "шляпа пугода (тест)",
       "item.jigsaw.fool_disc": "Каламбур - Деревня Дураков",
@@ -9029,6 +9124,7 @@
       "advancements.evokerfangsachievement.descr": "Получите призывательную рукавицу",
       "effect.jigsaw.purgative": "Сильное слабительное",
       "item.jigsaw.shitgrenadeitem": "Дерьмовая граната предмет",
+      "fluid.jigsaw.beaver_mass": "Beaver Mass",
       "effect.jigsaw.egged": "Магия яичек",
       "advancements.srucibleachievement.title": "Против всех исчадий из глубин Бобруйска...",
       "entity.jigsaw.drist_tnt_entity": "Drist Tnt Entity",
@@ -9090,6 +9186,7 @@
       "item.jigsaw.jumping_pants_leggings": "Jumping Pants",
       "item.minecraft.potion.effect.shitbottle": "Liquid Beaweed",
       "item.jigsaw.beaver_boots": "Beaver Boots",
+      "item.jigsaw.beaver_mass_bucket": "Beaver Mass Bucket",
       "item.minecraft.lingering_potion.effect.unlevitationpotion": "Lingering Potion of Unlevitation",
       "item.jigsaw.jigsawbattery": "Jigsaw battery",
       "item.jigsaw.hitlermoustache_boots": "Hitlermoustache Boots",
@@ -9097,6 +9194,7 @@
       "item.minecraft.tipped_arrow.effect.purgativestrong": "Arrow of Purgative",
       "item.jigsaw.circusdisc.desc": "Circus theme",
       "entity.jigsaw.poopemitter": "Poop_emitter",
+      "fluid.jigsaw.pig_solution_fluid": "Pig Solution Fluid",
       "item.jigsaw.beaverammo": "Beaver ammo",
       "block.jigsaw.wheatplacer": "Wheat placer",
       "advancements.fishclockachievement.title": "Fishy thursday",
@@ -9104,6 +9202,7 @@
       "item.jigsaw.murasamsheathempty": "Empty sheath",
       "item.minecraft.lingering_potion.effect.mutagen": "Lingering Purgen Mutagen",
       "advancements.cursedcowachievement.title": "Oh no...",
+      "block.jigsaw.pig_solution_fluid": "Pig Solution Fluid",
       "advancements.nanomachinesachievement.descr": "Equip nanomachines!",
       "advancements.bellyachievement.title": "Who\u0027s beebeeka here?",
       "item.jigsaw.hitlermoustache_helmet": "Hitler moustache",
@@ -9158,6 +9257,7 @@
       "item.jigsaw.purgenman_spawn_egg": "Purgen man Spawn Egg",
       "entity.jigsaw.purgenman": "Purgen man",
       "block.jigsaw.invisibility_wheat_bottom": "Invisibility wheat",
+      "fluid.jigsaw.fartgas": "Fartgas",
       "entity.jigsaw.living_beaver": "Beaver",
       "item.jigsaw.teeth_chestplate": "Teeth Body",
       "item.jigsaw.rickrollgun": "Rickroll gun",
@@ -9175,6 +9275,7 @@
       "item.jigsaw.joker_nose_chestplate": "Joker Nose Body",
       "item.jigsaw.living_beaver_body_spawn_egg": "Beaver body Spawn Egg",
       "advancements.beaverbombachievement.descr": "Create Beaver Bomb",
+      "item.jigsaw.fartgas_bucket": "Fartgas Bucket",
       "block.jigsaw.beaweed": "Beaweed",
       "advancements.purgengunachievement.descr": "Create Purgen gun",
       "item.jigsaw.maznyaslayer_helmet": "Helmet of Maznya Slayer",
@@ -9223,6 +9324,7 @@
       "item.minecraft.splash_potion.effect.purgativestrong": "Splash Purgative",
       "advancements.beavercomputerachievement.title": "Come join us for the Dristpunk 2",
       "advancements.murasamachievement.descr": "Get the legendary weapon of brown samurai...",
+      "item.jigsaw.pig_solution_fluid_bucket": "Pig Solution Fluid Bucket",
       "item.jigsaw.cock_belly_helmet": "Cock Helmet",
       "item.jigsaw.living_beaverlegs_spawn_egg": "Beaver legs Spawn Egg",
       "item.jigsaw.beaverbody": "Beaver",
@@ -9230,6 +9332,7 @@
       "item.jigsaw.hazmat_leggings": "Hazmat Leggings",
       "advancements.pwhatachievement.descr": "Create PW Hat",
       "advancements.captainbeaverachievement.title": "I am the Captain! What\u0027s going on there!?",
+      "block.jigsaw.beaver_mass": "Beaver Mass",
       "item.jigsaw.evokerfangsarm": "Evoker fang",
       "advancements.jetstreamchairachievement.title": "Ad Castores!",
       "item.jigsaw.poops": "Poops",
@@ -9243,6 +9346,7 @@
       "itemGroup.tabjigsaw": "Jigsaw",
       "item.jigsaw.drist_tnt_entity_spawn_egg": "Drist Tnt Entity Spawn Egg",
       "item.jigsaw.beaverknife": "Beaver knife",
+      "block.jigsaw.fartgas": "Fartgas",
       "subtitles.ponos_sounds": "ponos sounds",
       "enchantment.jigsaw.sruciblecharge": "Charge",
       "item.jigsaw.belly_chestplate": "Belly",
@@ -9340,6 +9444,7 @@
       "item.jigsaw.belly_helmet": "Belly Helmet",
       "key.jigsaw.wbeaver": "W - radio",
       "item.jigsaw.purgengun": "P.U.R.G.E.N. gun",
+      "item.jigsaw.iron_can": "Iron Can",
       "advancements.magic_jar_achievement.title": "Doctor, THERE IS A SHIT!!!",
       "block.jigsaw.p_whatblock": "PW hat block (TEST)",
       "item.jigsaw.fool_disc": "Calambour - Fools\u0027 village",
@@ -9349,6 +9454,7 @@
       "advancements.evokerfangsachievement.descr": "Get evoker fangs arm!",
       "effect.jigsaw.purgative": "Strong purgative",
       "item.jigsaw.shitgrenadeitem": "Shit grenade item",
+      "fluid.jigsaw.beaver_mass": "Beaver Mass",
       "effect.jigsaw.egged": "Egg magic",
       "advancements.srucibleachievement.title": "Srucible",
       "entity.jigsaw.drist_tnt_entity": "Drist Tnt Entity",
