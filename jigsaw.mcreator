@@ -8610,8 +8610,8 @@
       "registry_name": "beavermass_bottle",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/models/item/beavermass_bottle.json",
-          "src/main/java/net/svisvi/jigsaw/item/BeavermassBottleItem.java"
+          "src/main/java/net/svisvi/jigsaw/item/BeavermassBottleItem.java",
+          "src/main/resources/assets/jigsaw/models/item/beavermass_bottle.json"
         ]
       },
       "path": "~/ponos_dlc"
@@ -9377,11 +9377,11 @@
     "name": "~",
     "children": [
       {
-        "name": "vs_recipes",
+        "name": "ponos_dlc",
         "children": []
       },
       {
-        "name": "ponos_dlc",
+        "name": "vs_recipes",
         "children": []
       }
     ]

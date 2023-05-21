@@ -33,7 +33,7 @@ public class PoopsProjectileHitsLivingEntityProcedure {
 				_level.sendParticles(ParticleTypes.HEART, x, y, z, 20, 1, 1, 1, 0.1);
 			if (world instanceof Level _level && !_level.isClientSide())
 				_level.explode(null, x, y, z, 4, Explosion.BlockInteraction.NONE);
-			entity.hurt(new IndirectEntityDamageSource("generic", immediatesourceentity, sourceentity), 4);
+			entity.hurt((new IndirectEntityDamageSource("cramming", immediatesourceentity, sourceentity)), 4);
 			if (Math.random() < 0.2) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(JigsawModItems.POOPS.get()));
