@@ -102,6 +102,7 @@ public class JigsawModVariables {
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "jigsaw_worldvars";
 		public boolean fish_moon = false;
+		public boolean shit_storm = false;
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -111,11 +112,13 @@ public class JigsawModVariables {
 
 		public void read(CompoundTag nbt) {
 			fish_moon = nbt.getBoolean("fish_moon");
+			shit_storm = nbt.getBoolean("shit_storm");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putBoolean("fish_moon", fish_moon);
+			nbt.putBoolean("shit_storm", shit_storm);
 			return nbt;
 		}
 

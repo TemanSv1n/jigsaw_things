@@ -117,6 +117,15 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onDestroyedByExplosion": {
+      "name": "DristTntRedstoneOn"
+    },
+    "onRedstoneOn": {
+      "name": "DristTntRedstoneOn"
+    },
+    "onHitByProjectile": {
+      "name": "DristTntRedstoneOn"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

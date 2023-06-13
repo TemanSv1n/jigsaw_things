@@ -18,12 +18,12 @@ import net.minecraft.world.entity.npc.VillagerProfession;
 public class JigsawModTrades {
 	@SubscribeEvent
 	public static void registerWanderingTrades(WandererTradesEvent event) {
-		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD, 32),
+		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD, 16),
 
-				new ItemStack(JigsawModItems.POOPS.get(), 16), 2, 5, 0.2f));
-		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD, 32),
+				new ItemStack(JigsawModItems.POOPS.get(), 8), 2, 5, 0.2f));
+		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD, 16),
 
-				new ItemStack(JigsawModItems.POOPS.get(), 16), 2, 5, 0.2f));
+				new ItemStack(JigsawModItems.POOPS.get(), 8), 2, 5, 0.2f));
 	}
 
 	@SubscribeEvent

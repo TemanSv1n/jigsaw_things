@@ -1,13 +1,13 @@
 
 package net.svisvi.jigsaw.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import javax.annotation.Nullable;
+import net.svisvi.jigsaw.init.JigsawModTabs;
+
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.Item;
 
 public class IronCanItem extends Item {
-
 	public IronCanItem() {
 		super(new Item.Properties().tab(JigsawModTabs.TAB_JIGSAW).stacksTo(64).rarity(Rarity.COMMON));
 	}
-
 }

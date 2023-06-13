@@ -6,9 +6,9 @@ package net.svisvi.jigsaw.init;
 
 import net.svisvi.jigsaw.block.WheatplacerBlock;
 import net.svisvi.jigsaw.block.TallowBlockBlock;
+import net.svisvi.jigsaw.block.SlavicTotemRawBlock;
 import net.svisvi.jigsaw.block.SafegunpowderbarrelBlock;
 import net.svisvi.jigsaw.block.PonosBlock;
-import net.svisvi.jigsaw.block.PigSolutionFluidBlock;
 import net.svisvi.jigsaw.block.PWhatblockBlock;
 import net.svisvi.jigsaw.block.InvisibilitywheatbottomBlock;
 import net.svisvi.jigsaw.block.InvisibilitywheatBlock;
@@ -16,7 +16,6 @@ import net.svisvi.jigsaw.block.InvisibilitybushBlock;
 import net.svisvi.jigsaw.block.GunpowderbarrelBlock;
 import net.svisvi.jigsaw.block.FatBlockBlock;
 import net.svisvi.jigsaw.block.FatBlock;
-import net.svisvi.jigsaw.block.FartgasBlock;
 import net.svisvi.jigsaw.block.DristTntBlock;
 import net.svisvi.jigsaw.block.Beaweedstage4Block;
 import net.svisvi.jigsaw.block.Beaweedstage3Block;
@@ -30,7 +29,6 @@ import net.svisvi.jigsaw.block.BeavercutcostylBlock;
 import net.svisvi.jigsaw.block.BeavercomputerBlock;
 import net.svisvi.jigsaw.block.BeaverblockBlock;
 import net.svisvi.jigsaw.block.BeaverTopBlock;
-import net.svisvi.jigsaw.block.BeaverMassBlock;
 import net.svisvi.jigsaw.block.BeaverLiveCostylBlock;
 import net.svisvi.jigsaw.block.BeaverBottomBlock;
 import net.svisvi.jigsaw.JigsawMod;
@@ -74,9 +72,7 @@ public class JigsawModBlocks {
 	public static final RegistryObject<Block> FAT_BLOCK = REGISTRY.register("fat_block", () -> new FatBlockBlock());
 	public static final RegistryObject<Block> TALLOW_BLOCK = REGISTRY.register("tallow_block", () -> new TallowBlockBlock());
 	public static final RegistryObject<Block> DRIST_TNT = REGISTRY.register("drist_tnt", () -> new DristTntBlock());
-	public static final RegistryObject<Block> BEAVER_MASS = REGISTRY.register("beaver_mass", () -> new BeaverMassBlock());
-	public static final RegistryObject<Block> FARTGAS = REGISTRY.register("fartgas", () -> new FartgasBlock());
-	public static final RegistryObject<Block> PIG_SOLUTION_FLUID = REGISTRY.register("pig_solution_fluid", () -> new PigSolutionFluidBlock());
+	public static final RegistryObject<Block> SLAVIC_TOTEM_RAW = REGISTRY.register("slavic_totem_raw", () -> new SlavicTotemRawBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -95,6 +91,7 @@ public class JigsawModBlocks {
 			Beaweedstage1Block.registerRenderLayer();
 			Beaweedstage3Block.registerRenderLayer();
 			Beaweedstage4Block.registerRenderLayer();
+			SlavicTotemRawBlock.registerRenderLayer();
 		}
 
 		@SubscribeEvent

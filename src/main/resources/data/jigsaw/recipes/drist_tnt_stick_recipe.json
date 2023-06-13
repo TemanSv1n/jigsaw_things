@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "1": {
+      "item": "jigsaw:brown_soap"
+    },
+    "2": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+  "result": {
+    "item": "jigsaw:drist_tnt_stick",
+    "count": 1
+  }
+}

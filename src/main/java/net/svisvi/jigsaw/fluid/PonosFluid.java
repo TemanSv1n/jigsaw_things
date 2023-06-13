@@ -30,9 +30,7 @@ public abstract class PonosFluid extends ForgeFlowingFluid {
 					.sound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty_lava"))))
 			.explosionResistance(100f)
 
-			.tickRate(8)
-
-			.bucket(JigsawModItems.PONOS_BUCKET).block(() -> (LiquidBlock) JigsawModBlocks.PONOS.get());
+			.tickRate(8).levelDecreasePerBlock(2).slopeFindDistance(6).bucket(JigsawModItems.PONOS_BUCKET).block(() -> (LiquidBlock) JigsawModBlocks.PONOS.get());
 
 	private PonosFluid() {
 		super(PROPERTIES);

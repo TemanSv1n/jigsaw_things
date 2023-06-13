@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "villager_remote",
+        "1": "plains_remote"
+      },
+      "name": "default"
+    }
+  }
+}

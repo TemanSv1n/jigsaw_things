@@ -38,6 +38,9 @@
     "tickRate": 10,
     "flammability": 50,
     "fireSpreadSpeed": 50,
-    "colorOnMap": "DEFAULT"
+    "colorOnMap": "DEFAULT",
+    "onTickUpdate": {
+      "name": "FatUpdateTick"
+    }
   }
 }

@@ -69,7 +69,7 @@ public class JetstreamchairEntity extends Monster {
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(JigsawModItems.JETSTREAMCHAIRITEM.get()));
+		this.spawnAtLocation(new ItemStack(JigsawModItems.JETSTREAMCHAIR_SPAWN_EGG.get()));
 	}
 
 	@Override

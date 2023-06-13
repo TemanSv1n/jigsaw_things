@@ -13,7 +13,7 @@
         "value": "Items.IRON_INGOT"
       },
       {
-        "value": "Items.DRIED_KELP"
+        "value": "Items.DYE#11"
       },
       {
         "value": "Items.IRON_INGOT"
@@ -28,13 +28,13 @@
         "value": "Items.DRIED_KELP"
       },
       {
-        "value": ""
+        "value": "Items.COAL"
       },
       {
-        "value": "Items.DYE#11"
+        "value": "Blocks.HOPPER"
       },
       {
-        "value": ""
+        "value": "Items.COAL"
       }
     ],
     "recipeReturnStack": {

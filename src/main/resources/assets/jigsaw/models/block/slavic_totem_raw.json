@@ -1,0 +1,8 @@
+{
+  "parent": "jigsaw:custom/slavic_totem_raw",
+  "textures": {
+    "all": "jigsaw:blocks/beaver_block",
+    "particle": "jigsaw:blocks/beaver_block",
+    "0": "jigsaw:blocks/slavic_totem"
+  }
+}

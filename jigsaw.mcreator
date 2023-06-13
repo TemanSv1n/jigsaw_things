@@ -4016,7 +4016,7 @@
       "type": "livingentity",
       "sortid": 223,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "jetstreamchair",
       "metadata": {
         "files": [
@@ -4115,7 +4115,7 @@
       "type": "recipe",
       "sortid": 227,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "jetstreamchairrecipe",
       "metadata": {
         "files": [
@@ -5287,7 +5287,7 @@
       "type": "achievement",
       "sortid": 284,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "jetstreamchairachievement",
       "metadata": {
         "files": [
@@ -7810,103 +7810,6 @@
       }
     },
     {
-      "name": "SupershotgunRightclicked",
-      "type": "procedure",
-      "sortid": 412,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "supershotgun_rightclicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/svisvi/jigsaw/procedures/SupershotgunRightclickedProcedure.java"
-        ],
-        "dependencies": []
-      }
-    },
-    {
-      "name": "Supershotgunpr",
-      "type": "rangeditem",
-      "sortid": 413,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "supershotgunpr",
-      "metadata": {
-        "files": [
-          "src/main/java/net/svisvi/jigsaw/item/SupershotgunprItem.java",
-          "src/main/resources/assets/jigsaw/models/item/supershotgunpr.json",
-          "src/main/java/net/svisvi/jigsaw/entity/SupershotgunprEntity.java"
-        ]
-      }
-    },
-    {
-      "name": "SupershotgunprProjectileHitsBlock",
-      "type": "procedure",
-      "sortid": 414,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "supershotgunpr_projectile_hits_block",
-      "metadata": {
-        "files": [
-          "src/main/java/net/svisvi/jigsaw/procedures/SupershotgunprProjectileHitsBlockProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "SupershotgunprProjectileHitsLivingEntity",
-      "type": "procedure",
-      "sortid": 415,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "supershotgunpr_projectile_hits_living_entity",
-      "metadata": {
-        "files": [
-          "src/main/java/net/svisvi/jigsaw/procedures/SupershotgunprProjectileHitsLivingEntityProcedure.java"
-        ],
-        "dependencies": []
-      }
-    },
-    {
-      "name": "SupershotgunItemInHandTick",
-      "type": "procedure",
-      "sortid": 416,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "supershotgun_item_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/svisvi/jigsaw/procedures/SupershotgunItemInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      }
-    },
-    {
       "name": "JumpingPantsLeggingsTickEvent",
       "type": "procedure",
       "sortid": 417,
@@ -8602,21 +8505,6 @@
       }
     },
     {
-      "name": "DristTntEntity",
-      "type": "livingentity",
-      "sortid": 456,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "drist_tnt_entity",
-      "metadata": {
-        "files": [
-          "src/main/java/net/svisvi/jigsaw/client/renderer/DristTntEntityRenderer.java",
-          "src/main/resources/assets/jigsaw/models/item/drist_tnt_entity_spawn_egg.json",
-          "src/main/java/net/svisvi/jigsaw/entity/DristTntEntityEntity.java"
-        ]
-      }
-    },
-    {
       "name": "DristTntEntityOnEntityTickUpdate",
       "type": "procedure",
       "sortid": 457,
@@ -8652,25 +8540,6 @@
       }
     },
     {
-      "name": "PigSolutionFluid",
-      "type": "fluid",
-      "sortid": 460,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pig_solution_fluid",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jigsaw/blockstates/pig_solution_fluid.json",
-          "src/main/java/net/svisvi/jigsaw/item/PigSolutionFluidItem.java",
-          "src/main/resources/assets/jigsaw/models/block/pig_solution_fluid.json",
-          "src/main/resources/assets/jigsaw/models/item/pig_solution_fluid_bucket.json",
-          "src/main/java/net/svisvi/jigsaw/block/PigSolutionFluidBlock.java",
-          "src/main/java/net/svisvi/jigsaw/fluid/PigSolutionFluidFluid.java"
-        ]
-      },
-      "path": "~/ponos_dlc"
-    },
-    {
       "name": "IronCanRecipe",
       "type": "recipe",
       "sortid": 462,
@@ -8700,42 +8569,591 @@
       "path": "~/ponos_dlc"
     },
     {
-      "name": "Fartgas",
-      "type": "fluid",
-      "sortid": 459,
+      "name": "DristerTnt",
+      "type": "livingentity",
+      "sortid": 463,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fartgas",
+      "registry_name": "drister_tnt",
       "metadata": {
         "files": [
-          "src/main/java/net/svisvi/jigsaw/item/FartgasItem.java",
-          "src/main/java/net/svisvi/jigsaw/fluid/FartgasFluid.java",
-          "src/main/java/net/svisvi/jigsaw/block/FartgasBlock.java",
-          "src/main/resources/assets/jigsaw/blockstates/fartgas.json",
-          "src/main/resources/assets/jigsaw/models/block/fartgas.json",
-          "src/main/resources/assets/jigsaw/models/item/fartgas_bucket.json"
+          "src/main/java/net/svisvi/jigsaw/entity/DristerTntEntity.java",
+          "src/main/resources/assets/jigsaw/models/item/drister_tnt_spawn_egg.json",
+          "src/main/java/net/svisvi/jigsaw/client/renderer/DristerTntRenderer.java"
         ]
-      },
-      "path": "~/ponos_dlc"
+      }
     },
     {
-      "name": "BeaverMass",
-      "type": "fluid",
-      "sortid": 458,
+      "name": "DristTntRedstoneOn",
+      "type": "procedure",
+      "sortid": 464,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "beaver_mass",
+      "registry_name": "drist_tnt_redstone_on",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jigsaw/models/block/beaver_mass.json",
-          "src/main/java/net/svisvi/jigsaw/fluid/BeaverMassFluid.java",
-          "src/main/resources/assets/jigsaw/blockstates/beaver_mass.json",
-          "src/main/resources/assets/jigsaw/models/item/beaver_mass_bucket.json",
-          "src/main/java/net/svisvi/jigsaw/block/BeaverMassBlock.java",
-          "src/main/java/net/svisvi/jigsaw/item/BeaverMassItem.java"
+          "src/main/java/net/svisvi/jigsaw/procedures/DristTntRedstoneOnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
-      },
-      "path": "~/ponos_dlc"
+      }
+    },
+    {
+      "name": "SlavicTotemRaw",
+      "type": "block",
+      "sortid": 465,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slavic_totem_raw",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/block/SlavicTotemRawBlock.java",
+          "src/main/resources/assets/jigsaw/models/item/slavic_totem_raw.json",
+          "src/main/resources/assets/jigsaw/models/block/slavic_totem_raw.json",
+          "src/main/resources/assets/jigsaw/blockstates/slavic_totem_raw.json"
+        ]
+      }
+    },
+    {
+      "name": "DristTntStick",
+      "type": "rangeditem",
+      "sortid": 466,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drist_tnt_stick",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw/models/item/drist_tnt_stick.json",
+          "src/main/java/net/svisvi/jigsaw/item/DristTntStickItem.java",
+          "src/main/java/net/svisvi/jigsaw/entity/DristTntStickEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "DristTntStickProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 467,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drist_tnt_stick_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/DristTntStickProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DristTntStickProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 468,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drist_tnt_stick_projectile_hits_living_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/DristTntStickProjectileHitsLivingEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DristTntStickRangedItemUsed",
+      "type": "procedure",
+      "sortid": 469,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drist_tnt_stick_ranged_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/DristTntStickRangedItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DristTntOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 470,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drist_tnt_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/DristTntOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FatUpdateTick",
+      "type": "procedure",
+      "sortid": 471,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fat_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/FatUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShitStormWandAdmin",
+      "type": "item",
+      "sortid": 474,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shit_storm_wand_admin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/item/ShitStormWandAdminItem.java",
+          "src/main/resources/assets/jigsaw/models/item/shit_storm_wand_admin.json"
+        ]
+      }
+    },
+    {
+      "name": "ShitStormWandAdminRightclicked",
+      "type": "procedure",
+      "sortid": 475,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shit_storm_wand_admin_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/ShitStormWandAdminRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ladle",
+      "type": "tool",
+      "sortid": 477,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ladle_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw/models/item/ladle_axe.json",
+          "src/main/java/net/svisvi/jigsaw/item/LadleItem.java"
+        ]
+      }
+    },
+    {
+      "name": "EmptyRocket",
+      "type": "livingentity",
+      "sortid": 478,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_rocket",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/client/renderer/EmptyRocketRenderer.java",
+          "src/main/resources/assets/jigsaw/models/item/empty_rocket_spawn_egg.json",
+          "src/main/java/net/svisvi/jigsaw/entity/EmptyRocketEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "PoopsRocket",
+      "type": "livingentity",
+      "sortid": 479,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poops_rocket",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/entity/PoopsRocketEntity.java",
+          "src/main/java/net/svisvi/jigsaw/client/renderer/PoopsRocketRenderer.java",
+          "src/main/resources/assets/jigsaw/models/item/poops_rocket_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "NoFuelRocket",
+      "type": "item",
+      "sortid": 480,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_fuel_rocket",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/item/NoFuelRocketItem.java",
+          "src/main/resources/assets/jigsaw/models/item/no_fuel_rocket.json"
+        ]
+      }
+    },
+    {
+      "name": "FuelProcessRocket",
+      "type": "item",
+      "sortid": 481,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuel_process_rocket",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/item/FuelProcessRocketItem.java",
+          "src/main/resources/assets/jigsaw/models/item/fuel_process_rocket.json"
+        ]
+      }
+    },
+    {
+      "name": "PoopsRemote",
+      "type": "item",
+      "sortid": 482,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poops_remote",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw/models/item/poops_remote.json",
+          "src/main/java/net/svisvi/jigsaw/item/PoopsRemoteItem.java"
+        ]
+      }
+    },
+    {
+      "name": "EmptyRocketEntityDies",
+      "type": "procedure",
+      "sortid": 483,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_rocket_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/EmptyRocketEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EmptyRocketRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 484,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_rocket_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/EmptyRocketRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EmptyRocketEntityShakingCondition",
+      "type": "procedure",
+      "sortid": 485,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_rocket_entity_shaking_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/EmptyRocketEntityShakingConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PoopsRemoteRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 486,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poops_remote_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/PoopsRemoteRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EmptyRocketOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 487,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_rocket_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/svisvi/jigsaw/procedures/EmptyRocketOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DristTntStickRecipe",
+      "type": "recipe",
+      "sortid": 488,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drist_tnt_stick_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw/recipes/drist_tnt_stick_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "DristTntRecipe",
+      "type": "recipe",
+      "sortid": 489,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drist_tnt_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw/recipes/drist_tnt_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EmptyRocketRecipe",
+      "type": "recipe",
+      "sortid": 490,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_rocket_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw/recipes/empty_rocket_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PoopsRemoteRecipe",
+      "type": "recipe",
+      "sortid": 491,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poops_remote_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw/recipes/poops_remote_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -8749,6 +9167,12 @@
       "name": "Allow_Double_Jump",
       "type": "logic",
       "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "shit_storm",
+      "type": "logic",
+      "scope": "world",
       "value": "false"
     }
   ],
@@ -8806,6 +9230,7 @@
     "ru_ru": {
       "item.jigsaw.fishclock": "Рыбные часы",
       "item.jigsaw.beaver_helmet": "Голова Бобра",
+      "entity.jigsaw.poops_rocket": "Empty Rocket",
       "item.jigsaw.captainbeaver_helmet": "Шляпа Капитана Бобра",
       "item.jigsaw.belly_leggings": "Пузо штаны",
       "item.jigsaw.beavercollar": "Косяк бобра",
@@ -8822,8 +9247,8 @@
       "advancements.teethmaskachievement.descr": "Создайте накладные зубы",
       "item.jigsaw.radio_beaver_spawn_egg": "Яичко радио бобра",
       "item.jigsaw.beaweedsoup": "Бобровый суп",
-      "item.jigsaw.cock_leggings": "Хуёвые штаны",
       "item.jigsaw.smokingsuperpipe": "Трубка",
+      "item.jigsaw.cock_leggings": "Хуёвые штаны",
       "item.jigsaw.jumping_pants_chestplate": "Jumping Pants Body",
       "item.jigsaw.beaverbomb": "Бобровая бомба",
       "item.jigsaw.jumping_pants_boots": "Jumping Pants Boots",
@@ -8874,6 +9299,7 @@
       "advancements.forkachievement.descr": "Соорудите вилку, чтобы чистить...",
       "item.jigsaw.beaweedtea": "Боброжмыховый чай",
       "item.jigsaw.ponos_bucket": "Ведёрко поноса",
+      "item.jigsaw.poops_rocket_spawn_egg": "Empty Rocket Spawn Egg",
       "advancements.jetstreamchairachievement.descr": "Создайте свою первую ракету!",
       "block.jigsaw.fat_block": "Fat Block",
       "item.minecraft.splash_potion.effect.shitbottle": "Разрывная бутылка дерьма",
@@ -8889,6 +9315,7 @@
       "item.jigsaw.pwhat_boots": "ПВботы",
       "item.jigsaw.clown_nose_chestplate": "клоунлоъх",
       "item.jigsaw.dvoretskiy": "Dvoretskiy",
+      "item.jigsaw.drister_tnt_spawn_egg": "Jetstream chair Spawn Egg",
       "effect.jigsaw.beaver_so_deffect": "Бобровый экран смерти",
       "item.jigsaw.brown_soap": "Brown Soap",
       "advancements.beavercollarachievement.title": "БОБРО-ЖМЫХ!!!",
@@ -8899,6 +9326,8 @@
       "item.jigsaw.sniper_beaver_spawn_egg": "Яичко бобра спинера",
       "advancements.clownachievement.descr": "Создайте клоунский нос",
       "entity.jigsaw.radio_beaver": "Подключенный боброжуйка",
+      "block.jigsaw.slavic_totem_raw": "Slavic Totem Raw",
+      "item.jigsaw.fuel_process_rocket": "No Fuel Rocket",
       "item.jigsaw.merchant_chestplate": "Merchant Body",
       "item.jigsaw.adminkiller": "Админская анальная палочка",
       "advancements.teethmaskachievement.title": "Зубослеп",
@@ -8908,6 +9337,7 @@
       "item.jigsaw.purgenman_spawn_egg": "Левое яичко пурген мена",
       "entity.jigsaw.purgenman": "Пурген-мен",
       "block.jigsaw.invisibility_wheat_bottom": "Нижняя часть невидимой пшеницы",
+      "entity.jigsaw.empty_rocket": "Empty Rocket",
       "entity.jigsaw.living_beaver": "Боброжуйка",
       "item.jigsaw.teeth_chestplate": "зуботело",
       "item.jigsaw.rickrollgun": "Рикроллер",
@@ -8947,6 +9377,7 @@
       "item.jigsaw.pudgehook": "Крюк Пуджа",
       "item.jigsaw.onion_boots": "Onion Boots",
       "item.jigsaw.joker_nose_helmet": "Нос дурака",
+      "item.jigsaw.poops_remote": "Poops Remote",
       "item.jigsaw.cock_helmet": "хуйHelmet",
       "item.jigsaw.pwhat_helmet": "Шляпа Пугода",
       "advancements.beaverblockachievement.descr": "Слепите рожу бобра",
@@ -8965,6 +9396,7 @@
       "item.jigsaw.radiohat_helmet": "Радио-шляпа",
       "block.jigsaw.beaweedstage_4": "Боброжмыховое отродье",
       "advancements.eggsachievement.descr": "Яйца",
+      "item.jigsaw.drist_tnt_stick": "Drist Tnt Stick",
       "block.jigsaw.beaweedstage_3": "Боброжмыховый стебелек",
       "block.jigsaw.beaweedstage_1": "Боброжмыховый проросток",
       "item.jigsaw.nanomachines_boots": "Наноботинки",
@@ -8982,6 +9414,7 @@
       "advancements.captainbeaverachievement.title": "Я капитан! Что здесь происходит!?",
       "item.jigsaw.evokerfangsarm": "Призывательная рукавица",
       "advancements.jetstreamchairachievement.title": "Ad Castores!",
+      "item.jigsaw.ladle_axe": "Ladle",
       "item.jigsaw.poops": "Poops",
       "item.jigsaw.maznyaslayer_boots": "Сапоги Палача Мазни",
       "effect.jigsaw.unlevitation": "Антилевитация",
@@ -8991,7 +9424,7 @@
       "item.jigsaw.beaweedsheetincomplete": "Сверхспресованный боброжмыховый лист - в процессе",
       "item.jigsaw.pwhat_leggings": "Пугод штаны пугод",
       "itemGroup.tabjigsaw": "Цыганство",
-      "item.jigsaw.drist_tnt_entity_spawn_egg": "Drist Tnt Entity Spawn Egg",
+      "item.jigsaw.no_fuel_rocket": "No Fuel Rocket",
       "item.jigsaw.beaverknife": "Боброножик",
       "subtitles.ponos_sounds": "Звуки поноса",
       "enchantment.jigsaw.sruciblecharge": "Заряд",
@@ -9001,13 +9434,13 @@
       "item.jigsaw.ponos_sounds": "Бобёр - звуки поноса",
       "item.jigsaw.super_auto_fork": "Супер автоматическая вилка",
       "item.jigsaw.susamoguscodesteal": "Susamoguscodesteal",
-      "item.jigsaw.supershotgunpr": "Super shotgun pr",
       "advancements.pigkaxeachievement.descr": "Ударьте свинью громоотводом",
       "advancements.pwhatdispenserachievement.descr": "Поставьте шляпу на раздатчик",
       "item.jigsaw.slave_leggings": "Slave труселя",
       "item.jigsaw.unbreaker": "Unbreaker",
       "advancements.pigkaxeachievement.title": "Свинство",
       "entity.jigsaw.sniper_beaver": "Бобр",
+      "entity.jigsaw.drister_tnt": "Jetstream chair",
       "item.jigsaw.pigkaxe": "Свинокоп",
       "item.jigsaw.fat_bucket": "Fat Bucket",
       "advancements.beaweedsoupachievement.title": "Фтонг!",
@@ -9026,6 +9459,7 @@
       "advancements.livingbeaverachievement.title": "И восстали бобры из поноса!",
       "item.jigsaw.sniperpromotionkit": "Набор повышения : снайпер",
       "block.jigsaw.invisibilitybush": "Невидимые кусты",
+      "item.jigsaw.empty_rocket_spawn_egg": "Empty Rocket Spawn Egg",
       "item.jigsaw.jumping_pants_helmet": "Jumping Pants Helmet",
       "advancements.bellyachievement.descr": "Создайте пузо",
       "item.jigsaw.cigarette": "Сигарета",
@@ -9080,6 +9514,7 @@
       "effect.jigsaw.poop": "Экран в говне",
       "advancements.medicgunachievement.title": "МЕЕЕЕЕДИК!!!",
       "advancements.purgenachievement.descr": "Создайте П.У.Р.Г.Е.Н.",
+      "item.jigsaw.shit_storm_wand_admin": "Shit Storm Wand",
       "item.jigsaw.dn_aponos": "ДНК поноса",
       "item.jigsaw.purgen_ammo_gun_sniper": "Пургеновая снайперка для бобра",
       "advancements.purgengunachievement.title": "Нюхай бебру!",
@@ -9090,6 +9525,7 @@
       "item.jigsaw.belly_helmet": "пузо шлем",
       "key.jigsaw.wbeaver": "W - радио",
       "item.jigsaw.purgengun": "П.У.Р.Г.Е.Н.-мёт",
+      "item.jigsaw.iron_can": "Iron Can",
       "advancements.magic_jar_achievement.title": "Doctor, THERE IS A SHIT!!!",
       "block.jigsaw.p_whatblock": "шляпа пугода (тест)",
       "item.jigsaw.fool_disc": "Каламбур - Деревня Дураков",
@@ -9101,7 +9537,6 @@
       "item.jigsaw.shitgrenadeitem": "Дерьмовая граната предмет",
       "effect.jigsaw.egged": "Магия яичек",
       "advancements.srucibleachievement.title": "Против всех исчадий из глубин Бобруйска...",
-      "entity.jigsaw.drist_tnt_entity": "Drist Tnt Entity",
       "entity.jigsaw.cursed_cow": "Проклятая корова",
       "advancements.hitlerachievement.descr": "Создайте усики гитлера",
       "item.jigsaw.living_beaver_spawn_egg": "Яичко бобра",
@@ -9125,6 +9560,7 @@
     "en_us": {
       "item.jigsaw.fishclock": "Fish clock",
       "item.jigsaw.beaver_helmet": "Beaver Head",
+      "entity.jigsaw.poops_rocket": "Poops Rocket",
       "item.jigsaw.captainbeaver_helmet": "Hat of Captain Beaver",
       "item.jigsaw.belly_leggings": "Belly Leggings",
       "item.jigsaw.beavercollar": "Collar of beaver",
@@ -9141,8 +9577,8 @@
       "advancements.teethmaskachievement.descr": "Create Teeth mask",
       "item.jigsaw.radio_beaver_spawn_egg": "Radio Beaver Spawn Egg",
       "item.jigsaw.beaweedsoup": "Beaweed soup",
-      "item.jigsaw.cock_leggings": "Cock Leggings",
       "item.jigsaw.smokingsuperpipe": "Smoking pipe",
+      "item.jigsaw.cock_leggings": "Cock Leggings",
       "item.jigsaw.jumping_pants_chestplate": "Jumping Pants Body",
       "item.jigsaw.beaverbomb": "Beaver bomb",
       "item.jigsaw.jumping_pants_boots": "Jumping Pants Boots",
@@ -9160,15 +9596,13 @@
       "item.jigsaw.jumping_pants_leggings": "Jumping Pants",
       "item.minecraft.potion.effect.shitbottle": "Liquid Beaweed",
       "item.jigsaw.beaver_boots": "Beaver Boots",
-      "item.jigsaw.beaver_mass_bucket": "Beaver Mass Bucket",
-      "item.jigsaw.jigsawbattery": "Jigsaw battery",
       "item.minecraft.lingering_potion.effect.unlevitationpotion": "Lingering Potion of Unlevitation",
+      "item.jigsaw.jigsawbattery": "Jigsaw battery",
       "item.jigsaw.hitlermoustache_boots": "Hitlermoustache Boots",
       "item.jigsaw.beaweeddata": "Beaweed data checker",
       "item.minecraft.tipped_arrow.effect.purgativestrong": "Arrow of Purgative",
       "item.jigsaw.circusdisc.desc": "Circus theme",
       "entity.jigsaw.poopemitter": "Poop_emitter",
-      "fluid.jigsaw.pig_solution_fluid": "Pig Solution Fluid",
       "item.jigsaw.beaverammo": "Beaver ammo",
       "block.jigsaw.wheatplacer": "Wheat placer",
       "advancements.fishclockachievement.title": "Fishy thursday",
@@ -9176,7 +9610,6 @@
       "item.jigsaw.murasamsheathempty": "Empty sheath",
       "item.minecraft.lingering_potion.effect.mutagen": "Lingering Purgen Mutagen",
       "advancements.cursedcowachievement.title": "Oh no...",
-      "block.jigsaw.pig_solution_fluid": "Pig Solution Fluid",
       "advancements.nanomachinesachievement.descr": "Equip nanomachines!",
       "advancements.bellyachievement.title": "Who\u0027s beebeeka here?",
       "item.jigsaw.hitlermoustache_helmet": "Hitler moustache",
@@ -9197,6 +9630,7 @@
       "advancements.forkachievement.descr": "Create Fork",
       "item.jigsaw.beaweedtea": "Beaweed tea",
       "item.jigsaw.ponos_bucket": "Bucket of ponos",
+      "item.jigsaw.poops_rocket_spawn_egg": "Poops Rocket Spawn Egg",
       "advancements.jetstreamchairachievement.descr": "Build your first rocket!",
       "block.jigsaw.fat_block": "Fat Block",
       "item.minecraft.splash_potion.effect.shitbottle": "Splash bottle of Beaweed",
@@ -9212,6 +9646,7 @@
       "item.jigsaw.pwhat_boots": "Pwhat Boots",
       "item.jigsaw.clown_nose_chestplate": "Clown Nose Body",
       "item.jigsaw.dvoretskiy": "Dvoretskiy",
+      "item.jigsaw.drister_tnt_spawn_egg": "Drist tnt Spawn Egg",
       "effect.jigsaw.beaver_so_deffect": "BrownSOD",
       "item.jigsaw.brown_soap": "Brown Soap",
       "advancements.beavercollarachievement.title": "Bea-WEED!!!",
@@ -9222,6 +9657,8 @@
       "item.jigsaw.sniper_beaver_spawn_egg": "Sniper Beaver Spawn Egg",
       "advancements.clownachievement.descr": "Create clown nose",
       "entity.jigsaw.radio_beaver": "Radio Beaver",
+      "block.jigsaw.slavic_totem_raw": "Slavic Totem Raw",
+      "item.jigsaw.fuel_process_rocket": "Fueling Rocket",
       "item.jigsaw.merchant_chestplate": "Merchant Body",
       "item.jigsaw.adminkiller": "Adminkiller",
       "advancements.teethmaskachievement.title": "say CHEESE",
@@ -9231,7 +9668,7 @@
       "item.jigsaw.purgenman_spawn_egg": "Purgen man Spawn Egg",
       "entity.jigsaw.purgenman": "Purgen man",
       "block.jigsaw.invisibility_wheat_bottom": "Invisibility wheat",
-      "fluid.jigsaw.fartgas": "Fartgas",
+      "entity.jigsaw.empty_rocket": "Empty Rocket",
       "entity.jigsaw.living_beaver": "Beaver",
       "item.jigsaw.teeth_chestplate": "Teeth Body",
       "item.jigsaw.rickrollgun": "Rickroll gun",
@@ -9249,7 +9686,6 @@
       "item.jigsaw.joker_nose_chestplate": "Joker Nose Body",
       "item.jigsaw.living_beaver_body_spawn_egg": "Beaver body Spawn Egg",
       "advancements.beaverbombachievement.descr": "Create Beaver Bomb",
-      "item.jigsaw.fartgas_bucket": "Fartgas Bucket",
       "block.jigsaw.beaweed": "Beaweed",
       "advancements.purgengunachievement.descr": "Create Purgen gun",
       "item.jigsaw.maznyaslayer_helmet": "Helmet of Maznya Slayer",
@@ -9272,6 +9708,7 @@
       "item.jigsaw.pudgehook": "Pudge hook",
       "item.jigsaw.onion_boots": "Onion Boots",
       "item.jigsaw.joker_nose_helmet": "Joker Nose",
+      "item.jigsaw.poops_remote": "Poops Remote",
       "item.jigsaw.cock_helmet": "Cock Helmet",
       "item.jigsaw.pwhat_helmet": "PW hat",
       "advancements.beaverblockachievement.descr": "Create Block of Beaver",
@@ -9290,6 +9727,7 @@
       "item.jigsaw.radiohat_helmet": "Radio Hat",
       "block.jigsaw.beaweedstage_4": "Beaweed stage 4",
       "advancements.eggsachievement.descr": "Eggs",
+      "item.jigsaw.drist_tnt_stick": "Drist Tnt Stick",
       "block.jigsaw.beaweedstage_3": "Beaweed stage 3",
       "block.jigsaw.beaweedstage_1": "Beaweed stage 1",
       "item.jigsaw.circusdisc": "Clown - Circus",
@@ -9298,7 +9736,6 @@
       "item.minecraft.splash_potion.effect.purgativestrong": "Splash Purgative",
       "advancements.beavercomputerachievement.title": "Come join us for the Dristpunk 2",
       "advancements.murasamachievement.descr": "Get the legendary weapon of brown samurai...",
-      "item.jigsaw.pig_solution_fluid_bucket": "Pig Solution Fluid Bucket",
       "item.jigsaw.cock_belly_helmet": "Cock Helmet",
       "item.jigsaw.living_beaverlegs_spawn_egg": "Beaver legs Spawn Egg",
       "item.jigsaw.beaverbody": "Beaver",
@@ -9306,9 +9743,9 @@
       "item.jigsaw.hazmat_leggings": "Hazmat Leggings",
       "advancements.pwhatachievement.descr": "Create PW Hat",
       "advancements.captainbeaverachievement.title": "I am the Captain! What\u0027s going on there!?",
-      "block.jigsaw.beaver_mass": "Beaver Mass",
       "item.jigsaw.evokerfangsarm": "Evoker fang",
       "advancements.jetstreamchairachievement.title": "Ad Castores!",
+      "item.jigsaw.ladle_axe": "Ladle",
       "item.jigsaw.poops": "Poops",
       "item.jigsaw.maznyaslayer_boots": "Boots of Maznya Slayer",
       "effect.jigsaw.unlevitation": "Unlevitation",
@@ -9318,9 +9755,8 @@
       "item.jigsaw.beaweedsheetincomplete": "Compressed beaweed - Incomplete",
       "item.jigsaw.pwhat_leggings": "Pwhat Leggings",
       "itemGroup.tabjigsaw": "Jigsaw",
-      "item.jigsaw.drist_tnt_entity_spawn_egg": "Drist Tnt Entity Spawn Egg",
+      "item.jigsaw.no_fuel_rocket": "No Fuel Rocket",
       "item.jigsaw.beaverknife": "Beaver knife",
-      "block.jigsaw.fartgas": "Fartgas",
       "subtitles.ponos_sounds": "ponos sounds",
       "enchantment.jigsaw.sruciblecharge": "Charge",
       "item.jigsaw.belly_chestplate": "Belly",
@@ -9329,13 +9765,13 @@
       "item.jigsaw.ponos_sounds": "Beaver - Ponos Sounds",
       "item.jigsaw.super_auto_fork": "Super Automatic Fork",
       "item.jigsaw.susamoguscodesteal": "Susamoguscodesteal",
-      "item.jigsaw.supershotgunpr": "Super shotgun pr",
       "item.jigsaw.slave_leggings": "Slave Pants",
       "advancements.pwhatdispenserachievement.descr": "Place hat on the dispenser",
       "advancements.pigkaxeachievement.descr": "Hit pig with lightning rod!",
       "item.jigsaw.unbreaker": "Unbreaker",
       "advancements.pigkaxeachievement.title": "Pigging",
       "entity.jigsaw.sniper_beaver": "Sniper Beaver",
+      "entity.jigsaw.drister_tnt": "Drist tnt",
       "item.jigsaw.pigkaxe": "Pigkaxe",
       "item.jigsaw.fat_bucket": "Fat Bucket",
       "advancements.beaweedsoupachievement.title": "Ftong!",
@@ -9354,6 +9790,7 @@
       "advancements.livingbeaverachievement.title": "The beavers rose from the diarrhea!",
       "item.jigsaw.sniperpromotionkit": "Promotion kit : Sniper",
       "block.jigsaw.invisibilitybush": "Invisibility leaves",
+      "item.jigsaw.empty_rocket_spawn_egg": "Empty Rocket Spawn Egg",
       "item.jigsaw.jumping_pants_helmet": "Jumping Pants Helmet",
       "advancements.bellyachievement.descr": "Create belly",
       "item.jigsaw.cigarette": "Cigarette",
@@ -9408,6 +9845,7 @@
       "effect.jigsaw.poop": "Poop",
       "advancements.medicgunachievement.title": "MEEEEEEEEDIC!!!",
       "advancements.purgenachievement.descr": "Create P.U.R.G.E.N.",
+      "item.jigsaw.shit_storm_wand_admin": "Shit Storm Wand",
       "item.jigsaw.dn_aponos": "DNA of ponos",
       "item.jigsaw.purgen_ammo_gun_sniper": "Purgen Ammo Gun Sniper",
       "advancements.purgengunachievement.title": "Smell bebra",
@@ -9428,10 +9866,8 @@
       "advancements.evokerfangsachievement.descr": "Get evoker fangs arm!",
       "effect.jigsaw.purgative": "Strong purgative",
       "item.jigsaw.shitgrenadeitem": "Shit grenade item",
-      "fluid.jigsaw.beaver_mass": "Beaver Mass",
       "effect.jigsaw.egged": "Egg magic",
       "advancements.srucibleachievement.title": "Srucible",
-      "entity.jigsaw.drist_tnt_entity": "Drist Tnt Entity",
       "entity.jigsaw.cursed_cow": "Cursed Cow",
       "advancements.hitlerachievement.descr": "Create Hitler moustache",
       "item.jigsaw.living_beaver_spawn_egg": "Beaver Spawn Egg",
@@ -9480,7 +9916,9 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "jei"
+    ],
     "currentGenerator": "forge-1.18.2",
     "credits": "Created by TemanSv1n",
     "modElementsPackage": "net.svisvi.jigsaw",

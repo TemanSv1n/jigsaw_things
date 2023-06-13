@@ -58,7 +58,7 @@ public class PoopsEntity extends AbstractArrow implements ItemSupplier {
 
 	@Override
 	protected ItemStack getPickupItem() {
-		return ItemStack.EMPTY;
+		return new ItemStack(JigsawModItems.POOPS.get());
 	}
 
 	@Override

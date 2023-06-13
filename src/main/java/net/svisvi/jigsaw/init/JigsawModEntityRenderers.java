@@ -10,12 +10,14 @@ import net.svisvi.jigsaw.client.renderer.ShittyBearRenderer;
 import net.svisvi.jigsaw.client.renderer.ShitgrenadeRenderer;
 import net.svisvi.jigsaw.client.renderer.RadioBeaverRenderer;
 import net.svisvi.jigsaw.client.renderer.PurgenmanRenderer;
+import net.svisvi.jigsaw.client.renderer.PoopsRocketRenderer;
 import net.svisvi.jigsaw.client.renderer.PoopemitterRenderer;
 import net.svisvi.jigsaw.client.renderer.LivingBeaverlegsRenderer;
 import net.svisvi.jigsaw.client.renderer.LivingBeaverRenderer;
 import net.svisvi.jigsaw.client.renderer.LivingBeaverBodyRenderer;
 import net.svisvi.jigsaw.client.renderer.JetstreamchairRenderer;
-import net.svisvi.jigsaw.client.renderer.DristTntEntityRenderer;
+import net.svisvi.jigsaw.client.renderer.EmptyRocketRenderer;
+import net.svisvi.jigsaw.client.renderer.DristerTntRenderer;
 import net.svisvi.jigsaw.client.renderer.CursedCowRenderer;
 import net.svisvi.jigsaw.client.renderer.BeaverbombRenderer;
 
@@ -52,8 +54,10 @@ public class JigsawModEntityRenderers {
 		event.registerEntityRenderer(JigsawModEntities.RADIO_BEAVER.get(), RadioBeaverRenderer::new);
 		event.registerEntityRenderer(JigsawModEntities.PUDGEHOOK.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(JigsawModEntities.BEAWEEDNUTCONSUMABLE.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(JigsawModEntities.SUPERSHOTGUNPR.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(JigsawModEntities.POOPS.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(JigsawModEntities.DRIST_TNT_ENTITY.get(), DristTntEntityRenderer::new);
+		event.registerEntityRenderer(JigsawModEntities.DRISTER_TNT.get(), DristerTntRenderer::new);
+		event.registerEntityRenderer(JigsawModEntities.DRIST_TNT_STICK.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(JigsawModEntities.EMPTY_ROCKET.get(), EmptyRocketRenderer::new);
+		event.registerEntityRenderer(JigsawModEntities.POOPS_ROCKET.get(), PoopsRocketRenderer::new);
 	}
 }

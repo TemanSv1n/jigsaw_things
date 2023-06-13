@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Highcompressedbeaweed"
+      },
+      {
+        "value": "CUSTOM:Radiohat.helmet"
+      },
+      {
+        "value": "CUSTOM:Highcompressedbeaweed"
+      },
+      {
+        "value": "Blocks.BLAST_FURNACE"
+      },
+      {
+        "value": "CUSTOM:Jetstreamchair.spawn_egg"
+      },
+      {
+        "value": "Blocks.BLAST_FURNACE"
+      },
+      {
+        "value": "Blocks.CAULDRON"
+      },
+      {
+        "value": "Blocks.BREWING_STAND"
+      },
+      {
+        "value": "Blocks.CAULDRON"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:NoFuelRocket"
+    },
+    "name": "empty_rocket_recipe",
+    "namespace": "mod"
+  }
+}

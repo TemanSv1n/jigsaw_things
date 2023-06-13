@@ -23,5 +23,9 @@ public class PoopsItemItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(new TextComponent("Fucking DEBUG"));
+		list.add(new TextComponent("then listen: use poops ranged (not this) to coordinate rocket. Rename it like this   x"));
+		list.add(new TextComponent("z       (e.g. 11"));
+		list.add(new TextComponent("67)"));
+		list.add(new TextComponent("so it will be your cords. To connect rocket with remote just make same NAMES (rocket entity name and remote item name; you can rename rocket in fueled!!! item phase"));
 	}
 }

@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "ponos_bomb",
+    "customModelName": "Normal",
+    "name": "Drist Tnt Stick",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "stackSize": 16,
+    "ammoItem": {
+      "value": "CUSTOM:DristTntStick"
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.egg.throw"
+    },
+    "hasGlow": false,
+    "animation": "spear",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "DristTntStickRangedItemUsed"
+    },
+    "bulletPower": 0.6,
+    "bulletDamage": 0.30000000000000004,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:DristTntStick"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "DristTntStickProjectileHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "DristTntStickProjectileHitsLivingEntity"
+    }
+  }
+}

@@ -47,11 +47,11 @@ public class LivingBeaverEntityIsHurtProcedure {
 			}
 			if (!entity.level.isClientSide())
 				entity.discard();
-			if (world instanceof ServerLevel _serverLevelForEntitySpawn) {
-				Entity _entityForSpawning = new RadioBeaverEntity(JigsawModEntities.RADIO_BEAVER.get(), _serverLevelForEntitySpawn);
-				_entityForSpawning.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
+			if (world instanceof ServerLevel _serverLevel) {
+				Entity _spawnentity = new RadioBeaverEntity(JigsawModEntities.RADIO_BEAVER.get(), _serverLevel);
+				_spawnentity.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 				{
-					Entity _ent = _entityForSpawning;
+					Entity _ent = _spawnentity;
 					_ent.setYRot(entity.getYRot());
 					_ent.setXRot(entity.getXRot());
 					_ent.setYBodyRot(_ent.getYRot());
@@ -63,9 +63,9 @@ public class LivingBeaverEntityIsHurtProcedure {
 						_entity.yHeadRotO = _entity.getYRot();
 					}
 				}
-				_entityForSpawning.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (entity.getDeltaMovement().y()), (entity.getDeltaMovement().z())));
+				_spawnentity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (entity.getDeltaMovement().y()), (entity.getDeltaMovement().z())));
 				{
-					Entity _entity = _entityForSpawning;
+					Entity _entity = _spawnentity;
 					if (_entity instanceof Player _player) {
 						_player.getInventory().armor.set(0, (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY));
 						_player.getInventory().setChanged();
@@ -74,7 +74,7 @@ public class LivingBeaverEntityIsHurtProcedure {
 					}
 				}
 				{
-					Entity _entity = _entityForSpawning;
+					Entity _entity = _spawnentity;
 					if (_entity instanceof Player _player) {
 						_player.getInventory().armor.set(1, (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY));
 						_player.getInventory().setChanged();
@@ -83,7 +83,7 @@ public class LivingBeaverEntityIsHurtProcedure {
 					}
 				}
 				{
-					Entity _entity = _entityForSpawning;
+					Entity _entity = _spawnentity;
 					if (_entity instanceof Player _player) {
 						_player.getInventory().armor.set(2, (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY));
 						_player.getInventory().setChanged();
@@ -92,7 +92,7 @@ public class LivingBeaverEntityIsHurtProcedure {
 					}
 				}
 				{
-					Entity _entity = _entityForSpawning;
+					Entity _entity = _spawnentity;
 					if (_entity instanceof Player _player) {
 						_player.getInventory().armor.set(3, new ItemStack(JigsawModItems.RADIOHAT_HELMET.get()));
 						_player.getInventory().setChanged();
@@ -100,14 +100,14 @@ public class LivingBeaverEntityIsHurtProcedure {
 						_living.setItemSlot(EquipmentSlot.HEAD, new ItemStack(JigsawModItems.RADIOHAT_HELMET.get()));
 					}
 				}
-				((_entityForSpawning instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY))
+				((_spawnentity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY))
 						.setHoverName(new TextComponent((((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDisplayName().getString()).substring((int) 1,
 								(int) (((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDisplayName().getString()).length() - 1)))));
-				_entityForSpawning.setCustomName(new TextComponent((((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDisplayName().getString()).substring((int) 1,
+				_spawnentity.setCustomName(new TextComponent((((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDisplayName().getString()).substring((int) 1,
 						(int) (((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDisplayName().getString()).length() - 1)))));
-				if (_entityForSpawning instanceof Mob _mobForSpawning)
-					_mobForSpawning.finalizeSpawn(_serverLevelForEntitySpawn, world.getCurrentDifficultyAt(_entityForSpawning.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
-				world.addFreshEntity(_entityForSpawning);
+				if (_spawnentity instanceof Mob _spawnmob)
+					_spawnmob.finalizeSpawn(_serverLevel, world.getCurrentDifficultyAt(_spawnentity.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+				world.addFreshEntity(_spawnentity);
 			}
 			if (sourceentity instanceof LivingEntity _entity) {
 				ItemStack _setstack = new ItemStack(Blocks.AIR);

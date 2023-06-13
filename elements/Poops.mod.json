@@ -12,7 +12,7 @@
     },
     "stackSize": 16,
     "ammoItem": {
-      "value": ""
+      "value": "CUSTOM:Poops"
     },
     "shootConstantly": false,
     "usageCount": 0,

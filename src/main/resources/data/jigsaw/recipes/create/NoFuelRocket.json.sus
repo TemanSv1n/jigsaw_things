@@ -1,0 +1,33 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "  R  "
+    " APA ",
+    "AAHAA",
+    "APSPA",
+    "APPPA",
+    " AAA "
+  ],
+  "key": {
+    "P": {
+      "item": "jigsaw:highcompressedbeaweed"
+    },
+    "S": {
+      "item": "jigsaw:jetstreamchair_spawn_egg"
+    },
+    "A": {
+      "item": "minecraft:cauldron"
+    },
+    "R": {
+      "item": "minecraft:redstone_block"
+    },
+    "H": {
+      "item": "jigsaw:radiohat"
+    }
+  },
+  "result": {
+    "item": "jigsaw:no_fuel_rocket",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

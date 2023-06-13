@@ -25,7 +25,11 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "Fucking DEBUG"
+      "Fucking DEBUG",
+      "then listen: use poops ranged (not this) to coordinate rocket. Rename it like this   x",
+      "z       (e.g. 11",
+      "67)",
+      "so it will be your cords. To connect rocket with remote just make same NAMES (rocket entity name and remote item name; you can rename rocket in fueled!!! item phase"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

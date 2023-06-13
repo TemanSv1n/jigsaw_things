@@ -3,10 +3,12 @@ package net.svisvi.jigsaw.item;
 
 import net.svisvi.jigsaw.procedures.PoopsRangedItemUsedProcedure;
 import net.svisvi.jigsaw.init.JigsawModTabs;
+import net.svisvi.jigsaw.init.JigsawModItems;
 import net.svisvi.jigsaw.entity.PoopsEntity;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -64,11 +66,38 @@ public class PoopsItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				PoopsEntity entityarrow = PoopsEntity.shoot(world, entity, world.getRandom(), 2.2f, 10, 0);
-				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
-				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
+				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == JigsawModItems.POOPS.get());
+				if (stack == ItemStack.EMPTY) {
+					for (int i = 0; i < entity.getInventory().items.size(); i++) {
+						ItemStack teststack = entity.getInventory().items.get(i);
+						if (teststack != null && teststack.getItem() == JigsawModItems.POOPS.get()) {
+							stack = teststack;
+							break;
+						}
+					}
+				}
+				if (entity.getAbilities().instabuild || stack != ItemStack.EMPTY) {
+					PoopsEntity entityarrow = PoopsEntity.shoot(world, entity, world.getRandom(), 2.2f, 10, 0);
+					itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
+					if (entity.getAbilities().instabuild) {
+						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
+					} else {
+						if (new ItemStack(JigsawModItems.POOPS.get()).isDamageableItem()) {
+							if (stack.hurt(1, world.getRandom(), entity)) {
+								stack.shrink(1);
+								stack.setDamageValue(0);
+								if (stack.isEmpty())
+									entity.getInventory().removeItem(stack);
+							}
+						} else {
+							stack.shrink(1);
+							if (stack.isEmpty())
+								entity.getInventory().removeItem(stack);
+						}
+					}
 
-				PoopsRangedItemUsedProcedure.execute(world, x, y, z, entity, itemstack);
+					PoopsRangedItemUsedProcedure.execute(world, x, y, z, entity, itemstack);
+				}
 			}
 		}
 	}

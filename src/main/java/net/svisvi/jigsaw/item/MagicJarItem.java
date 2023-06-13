@@ -35,7 +35,7 @@ import net.minecraft.world.item.UseAnim;
 
 public class MagicJarItem extends Item {
 	public MagicJarItem() {
-		super(new Item.Properties().tab(JigsawModTabs.TAB_JIGSAW).stacksTo(1).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f)
+		super(new Item.Properties().tab(JigsawModTabs.TAB_JIGSAW).stacksTo(1).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat()
 
 
 				.build()));	

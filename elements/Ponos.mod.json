@@ -9,8 +9,8 @@
     "tintType": "No tint",
     "canMultiply": false,
     "flowRate": 8,
-    "levelDecrease": 1,
-    "slopeFindDistance": 4,
+    "levelDecrease": 2,
+    "slopeFindDistance": 6,
     "spawnParticles": true,
     "dripParticle": {
       "value": "CUSTOM:Shit"

@@ -6,6 +6,8 @@ package net.svisvi.jigsaw.init;
 
 import net.svisvi.jigsaw.client.model.Modelsubpants;
 import net.svisvi.jigsaw.client.model.Modelshit_rocket;
+import net.svisvi.jigsaw.client.model.Modelrocket_2;
+import net.svisvi.jigsaw.client.model.Modelrocket;
 import net.svisvi.jigsaw.client.model.Modelradio_hat;
 import net.svisvi.jigsaw.client.model.Modelpoop_smoke_grenade_entity;
 import net.svisvi.jigsaw.client.model.Modelonion_Converted;
@@ -60,12 +62,14 @@ public class JigsawModModels {
 		event.registerLayerDefinition(Modelshit_rocket.LAYER_LOCATION, Modelshit_rocket::createBodyLayer);
 		event.registerLayerDefinition(Modelfool_bear.LAYER_LOCATION, Modelfool_bear::createBodyLayer);
 		event.registerLayerDefinition(ModelCarrot.LAYER_LOCATION, ModelCarrot::createBodyLayer);
+		event.registerLayerDefinition(Modelrocket.LAYER_LOCATION, Modelrocket::createBodyLayer);
 		event.registerLayerDefinition(ModelCock.LAYER_LOCATION, ModelCock::createBodyLayer);
 		event.registerLayerDefinition(Modeljetstream_chair.LAYER_LOCATION, Modeljetstream_chair::createBodyLayer);
 		event.registerLayerDefinition(ModelBeaver_hat.LAYER_LOCATION, ModelBeaver_hat::createBodyLayer);
 		event.registerLayerDefinition(ModelBeaver_body.LAYER_LOCATION, ModelBeaver_body::createBodyLayer);
 		event.registerLayerDefinition(Modelcustom_model.LAYER_LOCATION, Modelcustom_model::createBodyLayer);
 		event.registerLayerDefinition(Modelbelly.LAYER_LOCATION, Modelbelly::createBodyLayer);
+		event.registerLayerDefinition(Modelrocket_2.LAYER_LOCATION, Modelrocket_2::createBodyLayer);
 		event.registerLayerDefinition(ModelBeaver_body_armor.LAYER_LOCATION, ModelBeaver_body_armor::createBodyLayer);
 		event.registerLayerDefinition(Modelcaptain_beaver.LAYER_LOCATION, Modelcaptain_beaver::createBodyLayer);
 		event.registerLayerDefinition(ModelBeaver_boots.LAYER_LOCATION, ModelBeaver_boots::createBodyLayer);

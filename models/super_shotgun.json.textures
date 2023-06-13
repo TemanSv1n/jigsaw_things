@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "metal_part",
+        "2": "grindstone_pivot"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -15,7 +15,6 @@ public class PoopsRangedItemUsedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		(itemstack).shrink(1);
 		if (entity instanceof Player _player)
 			_player.getCooldowns().addCooldown(itemstack.getItem(), 120);
 		if (world instanceof Level _level) {

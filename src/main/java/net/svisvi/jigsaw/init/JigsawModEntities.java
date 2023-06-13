@@ -4,7 +4,6 @@
  */
 package net.svisvi.jigsaw.init;
 
-import net.svisvi.jigsaw.entity.SupershotgunprEntity;
 import net.svisvi.jigsaw.entity.SplashponosmutagenEntity;
 import net.svisvi.jigsaw.entity.SniperBeaverEntity;
 import net.svisvi.jigsaw.entity.ShittybeeEntity;
@@ -18,13 +17,16 @@ import net.svisvi.jigsaw.entity.PurgengunEntity;
 import net.svisvi.jigsaw.entity.PurgenammogunEntity;
 import net.svisvi.jigsaw.entity.PurgenAmmoGunSniperEntity;
 import net.svisvi.jigsaw.entity.PudgehookEntity;
+import net.svisvi.jigsaw.entity.PoopsRocketEntity;
 import net.svisvi.jigsaw.entity.PoopsEntity;
 import net.svisvi.jigsaw.entity.PoopemitterEntity;
 import net.svisvi.jigsaw.entity.LivingBeaverlegsEntity;
 import net.svisvi.jigsaw.entity.LivingBeaverEntity;
 import net.svisvi.jigsaw.entity.LivingBeaverBodyEntity;
 import net.svisvi.jigsaw.entity.JetstreamchairEntity;
-import net.svisvi.jigsaw.entity.DristTntEntityEntity;
+import net.svisvi.jigsaw.entity.EmptyRocketEntity;
+import net.svisvi.jigsaw.entity.DristerTntEntity;
+import net.svisvi.jigsaw.entity.DristTntStickEntity;
 import net.svisvi.jigsaw.entity.CursedCowEntity;
 import net.svisvi.jigsaw.entity.BeaweednutconsumableEntity;
 import net.svisvi.jigsaw.entity.BeaverzookaEntity;
@@ -110,12 +112,20 @@ public class JigsawModEntities {
 			EntityType.Builder.<PudgehookEntity>of(PudgehookEntity::new, MobCategory.MISC).setCustomClientFactory(PudgehookEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<BeaweednutconsumableEntity>> BEAWEEDNUTCONSUMABLE = register("projectile_beaweednutconsumable", EntityType.Builder.<BeaweednutconsumableEntity>of(BeaweednutconsumableEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(BeaweednutconsumableEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<SupershotgunprEntity>> SUPERSHOTGUNPR = register("projectile_supershotgunpr",
-			EntityType.Builder.<SupershotgunprEntity>of(SupershotgunprEntity::new, MobCategory.MISC).setCustomClientFactory(SupershotgunprEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<PoopsEntity>> POOPS = register("projectile_poops",
 			EntityType.Builder.<PoopsEntity>of(PoopsEntity::new, MobCategory.MISC).setCustomClientFactory(PoopsEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<DristTntEntityEntity>> DRIST_TNT_ENTITY = register("drist_tnt_entity", EntityType.Builder.<DristTntEntityEntity>of(DristTntEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-			.setTrackingRange(0).setUpdateInterval(3).setCustomClientFactory(DristTntEntityEntity::new).fireImmune().sized(1f, 1f));
+	public static final RegistryObject<EntityType<DristerTntEntity>> DRISTER_TNT = register("drister_tnt", EntityType.Builder.<DristerTntEntity>of(DristerTntEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+			.setUpdateInterval(3).setCustomClientFactory(DristerTntEntity::new).fireImmune().sized(1f, 1f));
+	public static final RegistryObject<EntityType<DristTntStickEntity>> DRIST_TNT_STICK = register("projectile_drist_tnt_stick",
+			EntityType.Builder.<DristTntStickEntity>of(DristTntStickEntity::new, MobCategory.MISC).setCustomClientFactory(DristTntStickEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<EmptyRocketEntity>> EMPTY_ROCKET = register("empty_rocket",
+			EntityType.Builder.<EmptyRocketEntity>of(EmptyRocketEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(384).setUpdateInterval(3).setCustomClientFactory(EmptyRocketEntity::new)
+
+					.sized(1f, 4.3f));
+	public static final RegistryObject<EntityType<PoopsRocketEntity>> POOPS_ROCKET = register("poops_rocket",
+			EntityType.Builder.<PoopsRocketEntity>of(PoopsRocketEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(384).setUpdateInterval(3).setCustomClientFactory(PoopsRocketEntity::new)
+
+					.sized(1f, 4.3f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -135,7 +145,9 @@ public class JigsawModEntities {
 			JetstreamchairEntity.init();
 			PoopemitterEntity.init();
 			RadioBeaverEntity.init();
-			DristTntEntityEntity.init();
+			DristerTntEntity.init();
+			EmptyRocketEntity.init();
+			PoopsRocketEntity.init();
 		});
 	}
 
@@ -152,6 +164,8 @@ public class JigsawModEntities {
 		event.put(JETSTREAMCHAIR.get(), JetstreamchairEntity.createAttributes().build());
 		event.put(POOPEMITTER.get(), PoopemitterEntity.createAttributes().build());
 		event.put(RADIO_BEAVER.get(), RadioBeaverEntity.createAttributes().build());
-		event.put(DRIST_TNT_ENTITY.get(), DristTntEntityEntity.createAttributes().build());
+		event.put(DRISTER_TNT.get(), DristerTntEntity.createAttributes().build());
+		event.put(EMPTY_ROCKET.get(), EmptyRocketEntity.createAttributes().build());
+		event.put(POOPS_ROCKET.get(), PoopsRocketEntity.createAttributes().build());
 	}
 }

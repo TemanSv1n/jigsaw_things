@@ -1,0 +1,8 @@
+{
+  "parent": "jigsaw:custom/iron_ladle",
+  "textures": {
+    "0": "jigsaw:blocks/povar",
+    "1": "jigsaw:blocks/barrel_side",
+    "particle": "jigsaw:items/shit_projectile"
+  }
+}

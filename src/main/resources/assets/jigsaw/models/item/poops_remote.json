@@ -1,0 +1,8 @@
+{
+  "parent": "jigsaw:custom/poops_remote",
+  "textures": {
+    "0": "jigsaw:blocks/villager_remote",
+    "1": "jigsaw:blocks/plains_remote",
+    "particle": "jigsaw:items/totem_of_shit"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "_fv": 39,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "shit_projectile",
+    "customModelName": "iron_ladle:default",
+    "name": "Ladle",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 2,
+    "efficiency": 7.0,
+    "attackSpeed": 1.4,
+    "enchantability": 14,
+    "damageVsEntity": 6.0,
+    "usageCount": 512,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}
