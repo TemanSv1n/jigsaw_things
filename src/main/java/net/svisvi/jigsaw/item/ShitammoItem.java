@@ -10,7 +10,7 @@ import net.minecraft.world.item.Item;
 
 public class ShitammoItem extends Item {
 	public ShitammoItem() {
-		super(new Item.Properties().tab(JigsawModTabs.TAB_JIGSAW).stacksTo(16).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(JigsawModTabs.TAB_JIGSAW).stacksTo(64).rarity(Rarity.COMMON));
 	}
 
 	@Override

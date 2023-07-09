@@ -6,6 +6,7 @@ package net.svisvi.jigsaw.init;
 
 import net.svisvi.jigsaw.client.particle.ShitParticle;
 import net.svisvi.jigsaw.client.particle.PoopcloudParticle;
+import net.svisvi.jigsaw.client.particle.PigCutParticle;
 import net.svisvi.jigsaw.client.particle.FlyParticle;
 
 import net.minecraftforge.fml.common.Mod;
@@ -23,5 +24,6 @@ public class JigsawModParticles {
 		Minecraft.getInstance().particleEngine.register((SimpleParticleType) JigsawModParticleTypes.SHIT.get(), ShitParticle::provider);
 		Minecraft.getInstance().particleEngine.register((SimpleParticleType) JigsawModParticleTypes.POOPCLOUD.get(), PoopcloudParticle::provider);
 		Minecraft.getInstance().particleEngine.register((SimpleParticleType) JigsawModParticleTypes.FLY.get(), FlyParticle::provider);
+		Minecraft.getInstance().particleEngine.register((SimpleParticleType) JigsawModParticleTypes.PIG_CUT.get(), PigCutParticle::provider);
 	}
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "jigsaw:custom/super_shotgun",
+  "textures": {
+    "0": "jigsaw:blocks/metal_part",
+    "2": "jigsaw:blocks/grindstone_pivot",
+    "particle": "jigsaw:items/beaver_gun"
+  }
+}

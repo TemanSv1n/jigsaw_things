@@ -1,0 +1,9 @@
+{
+  "parent": "jigsaw:custom/yamato_sheathed",
+  "textures": {
+    "0": "jigsaw:blocks/yamato_vergil",
+    "1": "jigsaw:blocks/yamato_vergil123",
+    "4": "jigsaw:blocks/yamato_sheath",
+    "particle": "jigsaw:items/minecart_contraption"
+  }
+}

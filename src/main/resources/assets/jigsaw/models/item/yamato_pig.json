@@ -1,0 +1,8 @@
+{
+  "parent": "jigsaw:custom/yamato_pig",
+  "textures": {
+    "0": "jigsaw:blocks/yamato_vergil",
+    "1": "jigsaw:blocks/yamato_pig_vergil123",
+    "particle": "jigsaw:items/netherite_sword"
+  }
+}

@@ -64,7 +64,7 @@ public class EntityhurtbeaverknifeProcedure {
 
 					private void run() {
 						entity.getPersistentData().putDouble("health_d", (entity.getPersistentData().getDouble("health_d") - (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)));
-						sourceentity.hurt(new DamageSource("flyIntoWall"), (float) entity.getPersistentData().getDouble("health_d"));
+						sourceentity.hurt((new DamageSource("flyIntoWall")), (float) entity.getPersistentData().getDouble("health_d"));
 						if (entity instanceof LivingEntity _entity)
 							_entity.setHealth((float) entity.getPersistentData().getDouble("health_i"));
 						MinecraftForge.EVENT_BUS.unregister(this);

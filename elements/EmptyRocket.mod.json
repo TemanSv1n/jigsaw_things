@@ -13,7 +13,7 @@
     "modelWidth": 1.0,
     "modelHeight": 4.3,
     "modelShadowSize": 1.0,
-    "mountedYOffset": 0.0,
+    "mountedYOffset": 1.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
       "value": -16777216,
@@ -64,7 +64,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": true,
-    "ridable": false,
+    "ridable": true,
     "canControlForward": false,
     "canControlStrafe": false,
     "immuneToFire": false,

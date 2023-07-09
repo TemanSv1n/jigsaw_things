@@ -16,6 +16,7 @@ import net.svisvi.jigsaw.client.renderer.LivingBeaverlegsRenderer;
 import net.svisvi.jigsaw.client.renderer.LivingBeaverRenderer;
 import net.svisvi.jigsaw.client.renderer.LivingBeaverBodyRenderer;
 import net.svisvi.jigsaw.client.renderer.JetstreamchairRenderer;
+import net.svisvi.jigsaw.client.renderer.HitlerEmitterRenderer;
 import net.svisvi.jigsaw.client.renderer.EmptyRocketRenderer;
 import net.svisvi.jigsaw.client.renderer.DristerTntRenderer;
 import net.svisvi.jigsaw.client.renderer.CursedCowRenderer;
@@ -59,5 +60,9 @@ public class JigsawModEntityRenderers {
 		event.registerEntityRenderer(JigsawModEntities.DRIST_TNT_STICK.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(JigsawModEntities.EMPTY_ROCKET.get(), EmptyRocketRenderer::new);
 		event.registerEntityRenderer(JigsawModEntities.POOPS_ROCKET.get(), PoopsRocketRenderer::new);
+		event.registerEntityRenderer(JigsawModEntities.SHIT_SNIPE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(JigsawModEntities.SHIT_GUN.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(JigsawModEntities.POOZOOKA.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(JigsawModEntities.HITLER_EMITTER.get(), HitlerEmitterRenderer::new);
 	}
 }

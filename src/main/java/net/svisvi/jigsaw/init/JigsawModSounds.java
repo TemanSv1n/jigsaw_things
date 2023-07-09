@@ -24,6 +24,14 @@ public class JigsawModSounds {
 		REGISTRY.put(new ResourceLocation("jigsaw", "fargus"), new SoundEvent(new ResourceLocation("jigsaw", "fargus")));
 		REGISTRY.put(new ResourceLocation("jigsaw", "ponos_sounds"), new SoundEvent(new ResourceLocation("jigsaw", "ponos_sounds")));
 		REGISTRY.put(new ResourceLocation("jigsaw", "circus_theme"), new SoundEvent(new ResourceLocation("jigsaw", "circus_theme")));
+		REGISTRY.put(new ResourceLocation("jigsaw", "scum_vergil"), new SoundEvent(new ResourceLocation("jigsaw", "scum_vergil")));
+		REGISTRY.put(new ResourceLocation("jigsaw", "slay_all_vergil"), new SoundEvent(new ResourceLocation("jigsaw", "slay_all_vergil")));
+		REGISTRY.put(new ResourceLocation("jigsaw", "snipe_shot"), new SoundEvent(new ResourceLocation("jigsaw", "snipe_shot")));
+		REGISTRY.put(new ResourceLocation("jigsaw", "snipe_recharge"), new SoundEvent(new ResourceLocation("jigsaw", "snipe_recharge")));
+		REGISTRY.put(new ResourceLocation("jigsaw", "shitgun_recharge"), new SoundEvent(new ResourceLocation("jigsaw", "shitgun_recharge")));
+		REGISTRY.put(new ResourceLocation("jigsaw", "sitgun_sjot"), new SoundEvent(new ResourceLocation("jigsaw", "sitgun_sjot")));
+		REGISTRY.put(new ResourceLocation("jigsaw", "poozooka_shot"), new SoundEvent(new ResourceLocation("jigsaw", "poozooka_shot")));
+		REGISTRY.put(new ResourceLocation("jigsaw", "poozooka_recharge"), new SoundEvent(new ResourceLocation("jigsaw", "poozooka_recharge")));
 	}
 
 	@SubscribeEvent

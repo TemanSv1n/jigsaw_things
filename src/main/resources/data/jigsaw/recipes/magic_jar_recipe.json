@@ -13,8 +13,7 @@
       "item": "minecraft:milk_bucket"
     },
     "4": {
-      "item": "minecraft:potion",
-      "nbt": {"Potion": "jigsaw:shitbottle"}
+      "item": "jigsaw:beaweedseeds"
     },
     "5": {
       "item": "minecraft:milk_bucket"

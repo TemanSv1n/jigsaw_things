@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jigsaw:poops_remote"
+    },
+    "title": {
+      "translate": "advancements.poops_remote_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.poops_remote_achievement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "poops_remote_achievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jigsaw:rocket_achievement"
+}

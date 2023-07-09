@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "yamato_vergil",
+        "1": "yamato_vergil123",
+        "4": "yamato_sheath"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -21,7 +21,7 @@ public class PudgehookProjectileHitsLivingEntityProcedure {
 		dyaw = Math.atan2(dz, dx);
 		dpitch = Math.atan2(Math.sqrt(dz * dz + dx * dx), dy) + Math.PI;
 		dist_k = Math.sqrt(dz * dz + dx * dx + dy * dy);
-		speed = 0.3;
+		speed = 0.4;
 		entity.setDeltaMovement(new Vec3((Math.sin(dpitch) * Math.cos(dyaw) * speed * dist_k), (Math.cos(dpitch) * speed), (Math.sin(dpitch) * Math.sin(dyaw) * speed * dist_k)));
 	}
 }

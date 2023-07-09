@@ -8,8 +8,10 @@ import net.svisvi.jigsaw.potion.UnlevitationMobEffect;
 import net.svisvi.jigsaw.potion.PurgativeMobEffect;
 import net.svisvi.jigsaw.potion.PoopMobEffect;
 import net.svisvi.jigsaw.potion.PonosmutagenMobEffect;
+import net.svisvi.jigsaw.potion.JudgementMobEffect;
 import net.svisvi.jigsaw.potion.EggedMobEffect;
 import net.svisvi.jigsaw.potion.BeaverSODeffectMobEffect;
+import net.svisvi.jigsaw.potion.BackJumpMobEffect;
 import net.svisvi.jigsaw.JigsawMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -26,4 +28,6 @@ public class JigsawModMobEffects {
 	public static final RegistryObject<MobEffect> UNLEVITATION = REGISTRY.register("unlevitation", () -> new UnlevitationMobEffect());
 	public static final RegistryObject<MobEffect> BEAVER_SO_DEFFECT = REGISTRY.register("beaver_so_deffect", () -> new BeaverSODeffectMobEffect());
 	public static final RegistryObject<MobEffect> EGGED = REGISTRY.register("egged", () -> new EggedMobEffect());
+	public static final RegistryObject<MobEffect> JUDGEMENT = REGISTRY.register("judgement", () -> new JudgementMobEffect());
+	public static final RegistryObject<MobEffect> BACK_JUMP = REGISTRY.register("back_jump", () -> new BackJumpMobEffect());
 }

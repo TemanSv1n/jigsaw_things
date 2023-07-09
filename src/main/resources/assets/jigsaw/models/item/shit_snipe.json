@@ -1,0 +1,8 @@
+{
+  "parent": "jigsaw:custom/shitsniper",
+  "textures": {
+    "1": "jigsaw:blocks/shitsniper_fix",
+    "2": "jigsaw:blocks/xrenoder",
+    "particle": "jigsaw:items/autospoon"
+  }
+}

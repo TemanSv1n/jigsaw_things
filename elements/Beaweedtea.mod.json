@@ -36,7 +36,7 @@
     "nutritionalValue": 5,
     "saturation": 0.4,
     "eatResultItem": {
-      "value": ""
+      "value": "CUSTOM:IronCan"
     },
     "isMeat": false,
     "isAlwaysEdible": true,

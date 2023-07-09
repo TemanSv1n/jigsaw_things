@@ -9,7 +9,11 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.projectile.Projectile;
+import net.minecraft.world.entity.projectile.LargeFireball;
+import net.minecraft.world.entity.projectile.AbstractHurtingProjectile;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -40,6 +44,9 @@ public class EmptyRocketOnEntityTickUpdateProcedure {
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles((SimpleParticleType) (JigsawModParticleTypes.SHIT.get()), x, (y - 4), z, 80, 0.3, 2, 0.3, 0.1);
 				if (entity.getPersistentData().getDouble("rocket_counter1") % 5 == 0) {
+					if (Math.random() <= 5e-7) {
+						entity.hurt(DamageSource.DRY_OUT, 1024);
+					}
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.cow.milk")), SoundSource.BLOCKS, 1, -1);
@@ -50,6 +57,27 @@ public class EmptyRocketOnEntityTickUpdateProcedure {
 					if ((world.getBlockState(new BlockPos(x, y, z))).getMaterial() == net.minecraft.world.level.material.Material.AIR) {
 						if (entity.getDeltaMovement().y() > 0 && entity.getPersistentData().getBoolean("fall_rocket") == false) {
 							world.setBlock(new BlockPos(x, y, z), JigsawModBlocks.PONOS.get().defaultBlockState(), 3);
+						}
+					}
+					if (entity.getPersistentData().getDouble("rocket_counter1") % 40 == 0) {
+						{
+							Entity _shootFrom = entity;
+							Level projectileLevel = _shootFrom.level;
+							if (!projectileLevel.isClientSide()) {
+								Projectile _entityToSpawn = new Object() {
+									public Projectile getFireball(Level level, Entity shooter, double ax, double ay, double az) {
+										AbstractHurtingProjectile entityToSpawn = new LargeFireball(EntityType.FIREBALL, level);
+										entityToSpawn.setOwner(shooter);
+										entityToSpawn.xPower = ax;
+										entityToSpawn.yPower = ay;
+										entityToSpawn.zPower = az;
+										return entityToSpawn;
+									}
+								}.getFireball(projectileLevel, entity, 0, (-3), 0);
+								_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+								_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 1, 0);
+								projectileLevel.addFreshEntity(_entityToSpawn);
+							}
 						}
 					}
 				}

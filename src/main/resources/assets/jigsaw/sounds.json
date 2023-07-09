@@ -58,5 +58,85 @@
         "stream": true
       }
     ]
+  },
+  "scum_vergil": {
+    "category": "player",
+    "subtitle": "subtitles.scum_vergil",
+    "sounds": [
+      {
+        "name": "jigsaw:vergil-scum-dmc-3-by-voicemod",
+        "stream": false
+      }
+    ]
+  },
+  "slay_all_vergil": {
+    "category": "player",
+    "subtitle": "subtitles.slay_all_vergil",
+    "sounds": [
+      {
+        "name": "jigsaw:slay-all-by-voicemod",
+        "stream": false
+      }
+    ]
+  },
+  "snipe_shot": {
+    "category": "player",
+    "subtitle": "subtitles.snipe_shot",
+    "sounds": [
+      {
+        "name": "jigsaw:assassinate_cast.mp3.mpeg",
+        "stream": false
+      }
+    ]
+  },
+  "snipe_recharge": {
+    "category": "player",
+    "subtitle": "subtitles.snipe_recharge",
+    "sounds": [
+      {
+        "name": "jigsaw:assassinate_pre_cast.mp3.mpeg",
+        "stream": false
+      }
+    ]
+  },
+  "shitgun_recharge": {
+    "category": "player",
+    "subtitle": "subtitles.shitgun_recharge",
+    "sounds": [
+      {
+        "name": "jigsaw:shotgun-reload-old_school-ra_the_sun_god-580332022",
+        "stream": false
+      }
+    ]
+  },
+  "sitgun_sjot": {
+    "category": "player",
+    "subtitle": "subtitles.sitgun_sjot",
+    "sounds": [
+      {
+        "name": "jigsaw:shotgunsnglshotfi-pe1108213",
+        "stream": false
+      }
+    ]
+  },
+  "poozooka_shot": {
+    "category": "player",
+    "subtitle": "subtitles.poozooka_shot",
+    "sounds": [
+      {
+        "name": "jigsaw:8d82b5_h3_rocket_launcher_shot_no_explosion_sound_effect",
+        "stream": false
+      }
+    ]
+  },
+  "poozooka_recharge": {
+    "category": "player",
+    "subtitle": "subtitles.poozooka_recharge",
+    "sounds": [
+      {
+        "name": "jigsaw:8d82b5_halo_3_rocket_launcher_equip_sound_effect",
+        "stream": false
+      }
+    ]
   }
 }

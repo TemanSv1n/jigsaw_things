@@ -1,0 +1,7 @@
+{
+  "parent": "jigsaw:custom/friendship_vent_g",
+  "textures": {
+    "1": "jigsaw:blocks/iron_trapdoor_hitler_g",
+    "particle": "jigsaw:items/bucket"
+  }
+}

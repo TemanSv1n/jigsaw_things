@@ -2,6 +2,7 @@ package net.svisvi.jigsaw.procedures;
 
 import net.svisvi.jigsaw.init.JigsawModMobEffects;
 import net.svisvi.jigsaw.init.JigsawModItems;
+import net.svisvi.jigsaw.init.JigsawModBlocks;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.common.Mod;
@@ -17,6 +18,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.LightningBolt;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -97,6 +99,10 @@ public class TotemofshitItemInHandTickProcedure {
 					}
 				}
 			}
+		}
+		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == JigsawModBlocks.SHIT_MISSILE.get().asItem()) {
+			((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)).shrink(1);
+			ShitMissileBlockDestroyedByExplosionProcedure.execute(world, x, y, z);
 		}
 	}
 }

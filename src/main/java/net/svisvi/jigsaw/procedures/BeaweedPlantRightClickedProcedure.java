@@ -30,6 +30,10 @@ public class BeaweedPlantRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		boolean found = false;
+		double sx = 0;
+		double sy = 0;
+		double sz = 0;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("forge:shears")))) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = new BlockPos(x, y, z);
@@ -113,6 +117,58 @@ public class BeaweedPlantRightClickedProcedure {
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
 			}
+		}
+		sx = -3;
+		found = false;
+		for (int index0 = 0; index0 < (int) (6); index0++) {
+			sy = -3;
+			for (int index1 = 0; index1 < (int) (6); index1++) {
+				sz = -3;
+				for (int index2 = 0; index2 < (int) (6); index2++) {
+					if ((world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock() == JigsawModBlocks.BEAWEED.get()) {
+						if (!world.isClientSide()) {
+							BlockPos _bp = new BlockPos(x + sx, y + sy, z + sz);
+							BlockEntity _blockEntity = world.getBlockEntity(_bp);
+							BlockState _bs = world.getBlockState(_bp);
+							if (_blockEntity != null)
+								_blockEntity.getTileData().putDouble("rand_gr", (Mth.nextInt(new Random(), 4, 9)));
+							if (world instanceof Level _level)
+								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+						}
+						{
+							BlockPos _bp = new BlockPos(x + sx, y + sy, z + sz);
+							BlockState _bs = JigsawModBlocks.BEAWEEDSTAGE_1.get().defaultBlockState();
+							BlockState _bso = world.getBlockState(_bp);
+							for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+								Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+								if (_property != null && _bs.getValue(_property) != null)
+									try {
+										_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+									} catch (Exception e) {
+									}
+							}
+							world.setBlock(_bp, _bs, 3);
+						}
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, new BlockPos(x + sx, y + sy, z + sz), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.snow_golem.shear")), SoundSource.BLOCKS, 1, 1);
+							} else {
+								_level.playLocalSound((x + sx), (y + sy), (z + sz), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.snow_golem.shear")), SoundSource.BLOCKS, 1, 1, false);
+							}
+						}
+						if (world instanceof ServerLevel _level)
+							_level.sendParticles((SimpleParticleType) (JigsawModParticleTypes.SHIT.get()), (x + sx), (y + sy), (z + sz), 5, 0.3, 0.3, 0.3, 0.7);
+						if (world instanceof Level _level && !_level.isClientSide()) {
+							ItemEntity entityToSpawn = new ItemEntity(_level, (x + sx), (y + sy), (z + sz), new ItemStack(JigsawModItems.BEAWEEDNUTCONSUMABLE.get()));
+							entityToSpawn.setPickUpDelay(10);
+							_level.addFreshEntity(entityToSpawn);
+						}
+					}
+					sz = sz + 1;
+				}
+				sy = sy + 1;
+			}
+			sx = sx + 1;
 		}
 	}
 }

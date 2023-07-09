@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "jigsaw:block/linear_projector"
+    }
+  }
+}

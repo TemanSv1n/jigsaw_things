@@ -1,0 +1,7 @@
+{
+  "parent": "jigsaw:custom/xrenoder2",
+  "textures": {
+    "0": "jigsaw:blocks/xrenoder2",
+    "particle": "jigsaw:items/beetroot_soup"
+  }
+}

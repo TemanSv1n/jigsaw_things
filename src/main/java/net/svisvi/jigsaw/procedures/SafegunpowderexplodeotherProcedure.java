@@ -26,6 +26,8 @@ public class SafegunpowderexplodeotherProcedure {
 						BeavergunpowderbarrelrightclickProcedure.execute(world, (x + sx), (y + sy), (z + sz));
 					} else if ((world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock() == JigsawModBlocks.DRIST_TNT.get()) {
 						DristTntRedstoneOnProcedure.execute(world, (x + sx), (y + sy), (z + sz));
+					} else if ((world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock() == JigsawModBlocks.SHIT_MISSILE.get()) {
+						ShitMissileBlockDestroyedByExplosionProcedure.execute(world, (x + sx), (y + sy), (z + sz));
 					}
 					sz = sz + 1;
 				}

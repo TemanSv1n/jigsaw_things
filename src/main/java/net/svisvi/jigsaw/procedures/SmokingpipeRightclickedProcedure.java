@@ -146,13 +146,13 @@ public class SmokingpipeRightclickedProcedure {
 			}
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles((SimpleParticleType) (JigsawModParticleTypes.POOPCLOUD.get()), x, y, z, 700, 3, 3, 3, 0);
-			if (world instanceof ServerLevel _serverLevel) {
-				Entity _spawnentity = new PoopemitterEntity(JigsawModEntities.POOPEMITTER.get(), _serverLevel);
-				_spawnentity.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
-				_spawnentity.getPersistentData().putDouble("counter1", 399);
-				if (_spawnentity instanceof Mob _spawnmob)
-					_spawnmob.finalizeSpawn(_serverLevel, world.getCurrentDifficultyAt(_spawnentity.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
-				world.addFreshEntity(_spawnentity);
+			if (world instanceof ServerLevel _serverLevelForEntitySpawn) {
+				Entity _entityForSpawning = new PoopemitterEntity(JigsawModEntities.POOPEMITTER.get(), _serverLevelForEntitySpawn);
+				_entityForSpawning.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
+				_entityForSpawning.getPersistentData().putDouble("counter1", 399);
+				if (_entityForSpawning instanceof Mob _mobForSpawning)
+					_mobForSpawning.finalizeSpawn(_serverLevelForEntitySpawn, world.getCurrentDifficultyAt(_entityForSpawning.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+				world.addFreshEntity(_entityForSpawning);
 			}
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == Items.GUNPOWDER) {
 			if (entity instanceof Player _player)

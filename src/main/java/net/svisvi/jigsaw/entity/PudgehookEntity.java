@@ -74,7 +74,7 @@ public class PudgehookEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void tick() {
 		super.tick();
-		PudgehookWhileProjectileFlyingTickProcedure.execute(this.level, this.getOwner(), this);
+		PudgehookWhileProjectileFlyingTickProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this.getOwner(), this);
 		if (this.inGround)
 			this.discard();
 	}

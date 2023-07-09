@@ -1,0 +1,55 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 1,
+    "texture": "netherite_horse_armor",
+    "customModelName": "shitbazooka:default",
+    "name": "Poozooka",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Jigsaw"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:ShitMissile"
+    },
+    "shootConstantly": false,
+    "usageCount": 3,
+    "actionSound": {
+      "value": "entity.generic.explode"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "ShitSnipeRangedItemUsed"
+    },
+    "onEntitySwing": {
+      "name": "ShitSnipeEntitySwingsItem"
+    },
+    "useCondition": {
+      "name": "ShitSnipeCanUseRangedItem"
+    },
+    "bulletPower": 1.2000000000000002,
+    "bulletDamage": 0.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:ShitMissile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "ShitMissileBlockDestroyedByExplosion"
+    },
+    "onBulletHitsEntity": {
+      "name": "PoozookaProjectileHitsLivingEntity"
+    },
+    "onBulletFlyingTick": {
+      "name": "PoozookaWhileProjectileFlyingTick"
+    }
+  }
+}

@@ -7,9 +7,11 @@ package net.svisvi.jigsaw.init;
 import net.svisvi.jigsaw.block.WheatplacerBlock;
 import net.svisvi.jigsaw.block.TallowBlockBlock;
 import net.svisvi.jigsaw.block.SlavicTotemRawBlock;
+import net.svisvi.jigsaw.block.ShitMissileBlock;
 import net.svisvi.jigsaw.block.SafegunpowderbarrelBlock;
 import net.svisvi.jigsaw.block.PonosBlock;
 import net.svisvi.jigsaw.block.PWhatblockBlock;
+import net.svisvi.jigsaw.block.LinearProjectorBlock;
 import net.svisvi.jigsaw.block.InvisibilitywheatbottomBlock;
 import net.svisvi.jigsaw.block.InvisibilitywheatBlock;
 import net.svisvi.jigsaw.block.InvisibilitybushBlock;
@@ -73,6 +75,8 @@ public class JigsawModBlocks {
 	public static final RegistryObject<Block> TALLOW_BLOCK = REGISTRY.register("tallow_block", () -> new TallowBlockBlock());
 	public static final RegistryObject<Block> DRIST_TNT = REGISTRY.register("drist_tnt", () -> new DristTntBlock());
 	public static final RegistryObject<Block> SLAVIC_TOTEM_RAW = REGISTRY.register("slavic_totem_raw", () -> new SlavicTotemRawBlock());
+	public static final RegistryObject<Block> LINEAR_PROJECTOR = REGISTRY.register("linear_projector", () -> new LinearProjectorBlock());
+	public static final RegistryObject<Block> SHIT_MISSILE = REGISTRY.register("shit_missile", () -> new ShitMissileBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -92,6 +96,8 @@ public class JigsawModBlocks {
 			Beaweedstage3Block.registerRenderLayer();
 			Beaweedstage4Block.registerRenderLayer();
 			SlavicTotemRawBlock.registerRenderLayer();
+			LinearProjectorBlock.registerRenderLayer();
+			ShitMissileBlock.registerRenderLayer();
 		}
 
 		@SubscribeEvent

@@ -9,6 +9,6 @@ public class PudgehookRangedItemUsedProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(itemstack.getItem(), 70);
+			_player.getCooldowns().addCooldown(itemstack.getItem(), 50);
 	}
 }

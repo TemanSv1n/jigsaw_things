@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "jigsaw:drist_tnt"
+    },
+    "title": {
+      "translate": "advancements.tnt_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.tnt_achievement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tnt_achievement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "jigsaw:drist_tnt"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "jigsaw:soap_achievement"
+}

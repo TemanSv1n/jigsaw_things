@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "xrenoder2",
+        "1": "drist_zooka",
+        "missing": "anvil"
+      },
+      "name": "default"
+    }
+  }
+}

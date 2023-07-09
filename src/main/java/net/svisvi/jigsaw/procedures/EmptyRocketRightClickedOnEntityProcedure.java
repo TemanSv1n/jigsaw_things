@@ -56,10 +56,10 @@ public class EmptyRocketRightClickedOnEntityProcedure {
 								zdst_c = false;
 							}
 							if ((xdst_c && zdst_c) == true) {
-								if (world instanceof ServerLevel _serverLevel) {
-									Entity _spawnentity = new PoopsRocketEntity(JigsawModEntities.POOPS_ROCKET.get(), _serverLevel);
-									_spawnentity.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
-									_spawnentity.getPersistentData().putDouble("xdst", new Object() {
+								if (world instanceof ServerLevel _serverLevelForEntitySpawn) {
+									Entity _entityForSpawning = new PoopsRocketEntity(JigsawModEntities.POOPS_ROCKET.get(), _serverLevelForEntitySpawn);
+									_entityForSpawning.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
+									_entityForSpawning.getPersistentData().putDouble("xdst", new Object() {
 										double convert(String s) {
 											try {
 												return Double.parseDouble(s.trim());
@@ -68,7 +68,7 @@ public class EmptyRocketRightClickedOnEntityProcedure {
 											return 0;
 										}
 									}.convert(Xdst));
-									_spawnentity.getPersistentData().putDouble("zdst", new Object() {
+									_entityForSpawning.getPersistentData().putDouble("zdst", new Object() {
 										double convert(String s) {
 											try {
 												return Double.parseDouble(s.trim());
@@ -77,11 +77,11 @@ public class EmptyRocketRightClickedOnEntityProcedure {
 											return 0;
 										}
 									}.convert(Zdst));
-									_spawnentity.setCustomName(new TextComponent((entity.getDisplayName().getString())));
-									if (_spawnentity instanceof LivingEntity _entity)
+									_entityForSpawning.setCustomName(new TextComponent((entity.getDisplayName().getString())));
+									if (_entityForSpawning instanceof LivingEntity _entity)
 										_entity.setHealth(entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1);
 									{
-										Entity _ent = _spawnentity;
+										Entity _ent = _entityForSpawning;
 										_ent.setYRot(entity.getYRot());
 										_ent.setXRot(entity.getXRot());
 										_ent.setYBodyRot(_ent.getYRot());
@@ -93,13 +93,13 @@ public class EmptyRocketRightClickedOnEntityProcedure {
 											_entity.yHeadRotO = _entity.getYRot();
 										}
 									}
-									_spawnentity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (entity.getDeltaMovement().y()), (entity.getDeltaMovement().z())));
+									_entityForSpawning.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (entity.getDeltaMovement().y()), (entity.getDeltaMovement().z())));
 									if (sourceentity instanceof Player _player && !_player.level.isClientSide())
 										_player.displayClientMessage(
 												new TextComponent((("var " + "xdst" + " = " + str1.substring((int) 0, (int) iindex1)) + "" + ("; var " + "zdst" + " = " + str1.substring((int) (iindex1 + 1), (int) (str1).length())))), (true));
-									if (_spawnentity instanceof Mob _spawnmob)
-										_spawnmob.finalizeSpawn(_serverLevel, world.getCurrentDifficultyAt(_spawnentity.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
-									world.addFreshEntity(_spawnentity);
+									if (_entityForSpawning instanceof Mob _mobForSpawning)
+										_mobForSpawning.finalizeSpawn(_serverLevelForEntitySpawn, world.getCurrentDifficultyAt(_entityForSpawning.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+									world.addFreshEntity(_entityForSpawning);
 								}
 								if (world instanceof Level _level) {
 									if (!_level.isClientSide()) {

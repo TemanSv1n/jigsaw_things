@@ -4,6 +4,11 @@
  */
 package net.svisvi.jigsaw.init;
 
+import net.svisvi.jigsaw.item.YamatopigItem;
+import net.svisvi.jigsaw.item.YamatoSheathedItem;
+import net.svisvi.jigsaw.item.YamatoSheathItem;
+import net.svisvi.jigsaw.item.YamatoItem;
+import net.svisvi.jigsaw.item.XrenoderItem;
 import net.svisvi.jigsaw.item.UnbreakerItem;
 import net.svisvi.jigsaw.item.TotemofshitItem;
 import net.svisvi.jigsaw.item.TeethItem;
@@ -20,6 +25,8 @@ import net.svisvi.jigsaw.item.ShitgrenadeitemItem;
 import net.svisvi.jigsaw.item.ShitgrenadeItem;
 import net.svisvi.jigsaw.item.ShitammoItem;
 import net.svisvi.jigsaw.item.ShitStormWandAdminItem;
+import net.svisvi.jigsaw.item.ShitSnipeItem;
+import net.svisvi.jigsaw.item.ShitGunItem;
 import net.svisvi.jigsaw.item.ShitAmmoGunItem;
 import net.svisvi.jigsaw.item.RickrollgunItem;
 import net.svisvi.jigsaw.item.RadiohatItem;
@@ -30,6 +37,7 @@ import net.svisvi.jigsaw.item.PurgenbadItem;
 import net.svisvi.jigsaw.item.PurgenammogunItem;
 import net.svisvi.jigsaw.item.PurgenAmmoGunSniperItem;
 import net.svisvi.jigsaw.item.PudgehookItem;
+import net.svisvi.jigsaw.item.PoozookaItem;
 import net.svisvi.jigsaw.item.PoopsRemoteItem;
 import net.svisvi.jigsaw.item.PoopsItemItem;
 import net.svisvi.jigsaw.item.PoopsItem;
@@ -59,6 +67,8 @@ import net.svisvi.jigsaw.item.HitlermoustacheItem;
 import net.svisvi.jigsaw.item.HighcompressedbeaweedItem;
 import net.svisvi.jigsaw.item.HazmatItem;
 import net.svisvi.jigsaw.item.FuelProcessRocketItem;
+import net.svisvi.jigsaw.item.FriendshipventgItem;
+import net.svisvi.jigsaw.item.FriendshipVentItem;
 import net.svisvi.jigsaw.item.FoolDiscItem;
 import net.svisvi.jigsaw.item.Flowergun1Item;
 import net.svisvi.jigsaw.item.Flowergun0Item;
@@ -259,6 +269,20 @@ public class JigsawModItems {
 	public static final RegistryObject<Item> NO_FUEL_ROCKET = REGISTRY.register("no_fuel_rocket", () -> new NoFuelRocketItem());
 	public static final RegistryObject<Item> FUEL_PROCESS_ROCKET = REGISTRY.register("fuel_process_rocket", () -> new FuelProcessRocketItem());
 	public static final RegistryObject<Item> POOPS_REMOTE = REGISTRY.register("poops_remote", () -> new PoopsRemoteItem());
+	public static final RegistryObject<Item> YAMATO = REGISTRY.register("yamato", () -> new YamatoItem());
+	public static final RegistryObject<Item> YAMATO_SHEATHED = REGISTRY.register("yamato_sheathed", () -> new YamatoSheathedItem());
+	public static final RegistryObject<Item> YAMATO_SHEATH = REGISTRY.register("yamato_sheath", () -> new YamatoSheathItem());
+	public static final RegistryObject<Item> YAMATO_PIG = REGISTRY.register("yamato_pig", () -> new YamatopigItem());
+	public static final RegistryObject<Item> LINEAR_PROJECTOR = block(JigsawModBlocks.LINEAR_PROJECTOR, JigsawModTabs.TAB_JIGSAW);
+	public static final RegistryObject<Item> XRENODER = REGISTRY.register("xrenoder", () -> new XrenoderItem());
+	public static final RegistryObject<Item> SHIT_SNIPE = REGISTRY.register("shit_snipe", () -> new ShitSnipeItem());
+	public static final RegistryObject<Item> SHIT_GUN = REGISTRY.register("shit_gun", () -> new ShitGunItem());
+	public static final RegistryObject<Item> POOZOOKA = REGISTRY.register("poozooka", () -> new PoozookaItem());
+	public static final RegistryObject<Item> SHIT_MISSILE = block(JigsawModBlocks.SHIT_MISSILE, JigsawModTabs.TAB_JIGSAW);
+	public static final RegistryObject<Item> FRIENDSHIP_VENT = REGISTRY.register("friendship_vent", () -> new FriendshipVentItem());
+	public static final RegistryObject<Item> FRIENDSHIP_VENT_G = REGISTRY.register("friendship_vent_g", () -> new FriendshipventgItem());
+	public static final RegistryObject<Item> HITLER_EMITTER_SPAWN_EGG = REGISTRY.register("hitler_emitter_spawn_egg",
+			() -> new ForgeSpawnEggItem(JigsawModEntities.HITLER_EMITTER, -6750157, -10079488, new Item.Properties().tab(JigsawModTabs.TAB_JIGSAW)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

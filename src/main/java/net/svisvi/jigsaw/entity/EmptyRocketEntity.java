@@ -108,6 +108,11 @@ public class EmptyRocketEntity extends PathfinderMob {
 	}
 
 	@Override
+	public double getPassengersRidingOffset() {
+		return super.getPassengersRidingOffset() + 1;
+	}
+
+	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.blaze.hurt"));
 	}
@@ -151,6 +156,7 @@ public class EmptyRocketEntity extends PathfinderMob {
 		ItemStack itemstack = sourceentity.getItemInHand(hand);
 		InteractionResult retval = InteractionResult.sidedSuccess(this.level.isClientSide());
 		super.mobInteract(sourceentity, hand);
+		sourceentity.startRiding(this);
 		double x = this.getX();
 		double y = this.getY();
 		double z = this.getZ();

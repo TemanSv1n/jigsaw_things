@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "shitsniper_fix",
+        "2": "xrenoder"
+      },
+      "name": "default"
+    }
+  }
+}

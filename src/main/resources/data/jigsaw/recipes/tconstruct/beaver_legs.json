@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:entity_melting",
+  "entity": "jigsaw:living_beaverlegs",
+  "result": {
+    "fluid": "jigsaw:ponos",
+    "amount": 125
+  },
+  "damage": 5
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "jigsaw:no_fuel_rocket"
+    },
+    "title": {
+      "translate": "advancements.rocket_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.rocket_achievement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "rocket_achievement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jigsaw:no_fuel_rocket"
+            ],
+            "count": {
+              "min": 1,
+              "max": 999
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "jigsaw:tnt_achievement"
+}

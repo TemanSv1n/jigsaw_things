@@ -13,7 +13,9 @@ import net.minecraftforge.common.ForgeMod;
 import net.minecraft.world.level.pathfinder.BlockPathTypes;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ThrownPotion;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.ai.navigation.WaterBoundPathNavigation;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.control.MoveControl;
@@ -26,6 +28,8 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.util.Mth;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
@@ -103,6 +107,11 @@ public class PoopsRocketEntity extends PathfinderMob {
 	}
 
 	@Override
+	public double getPassengersRidingOffset() {
+		return super.getPassengersRidingOffset() + 1;
+	}
+
+	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.blaze.hurt"));
 	}
@@ -139,6 +148,15 @@ public class PoopsRocketEntity extends PathfinderMob {
 	public void die(DamageSource source) {
 		super.die(source);
 		EmptyRocketEntityDiesProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
+	}
+
+	@Override
+	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
+		ItemStack itemstack = sourceentity.getItemInHand(hand);
+		InteractionResult retval = InteractionResult.sidedSuccess(this.level.isClientSide());
+		super.mobInteract(sourceentity, hand);
+		sourceentity.startRiding(this);
+		return retval;
 	}
 
 	@Override

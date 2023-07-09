@@ -18,4 +18,5 @@ public class JigsawModParticleTypes {
 	public static final RegistryObject<ParticleType<?>> SHIT = REGISTRY.register("shit", () -> new SimpleParticleType(false));
 	public static final RegistryObject<ParticleType<?>> POOPCLOUD = REGISTRY.register("poopcloud", () -> new SimpleParticleType(false));
 	public static final RegistryObject<ParticleType<?>> FLY = REGISTRY.register("fly", () -> new SimpleParticleType(false));
+	public static final RegistryObject<ParticleType<?>> PIG_CUT = REGISTRY.register("pig_cut", () -> new SimpleParticleType(false));
 }
