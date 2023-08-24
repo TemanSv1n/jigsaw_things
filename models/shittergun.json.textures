@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "barrel_side",
+        "1": "piston_side",
+        "2": "copper_block",
+        "3": "cauldron_inner",
+        "4": "shitter",
+        "5": "sussy_vent",
+        "missing": "copper_block"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "jigsaw:custom/hat_placer",
+  "textures": {
+    "0": "jigsaw:blocks/lodestone_top",
+    "1": "jigsaw:blocks/iron_bars",
+    "2": "jigsaw:blocks/barrel_side",
+    "3": "jigsaw:blocks/pink_wool",
+    "missing": "jigsaw:blocks/stonecutter_bottom",
+    "particle": "jigsaw:items/half_heart_of_the_sea"
+  }
+}

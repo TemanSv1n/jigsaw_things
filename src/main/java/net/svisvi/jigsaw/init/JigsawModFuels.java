@@ -23,5 +23,9 @@ public class JigsawModFuels {
 			event.setBurnTime(10);
 		else if (itemstack.getItem() == JigsawModBlocks.BEAWEED.get().asItem())
 			event.setBurnTime(100);
+		else if (itemstack.getItem() == JigsawModItems.SUSSY_FUEL.get())
+			event.setBurnTime(1600);
+		else if (itemstack.getItem() == JigsawModItems.DRY_BIO_FUEL.get())
+			event.setBurnTime(8000);
 	}
 }

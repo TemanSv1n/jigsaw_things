@@ -1,0 +1,21 @@
+{
+    "type": "create:mixing",
+    "ingredients": [
+        {
+            "tag": "forge:crops/tomato"
+        },
+        {
+            "item": "jigsaw:beaweedseeds"
+        }
+    ],
+    "results": [
+        {
+            "fluid": "create:potion",
+            "nbt": {
+                "Bottle": "REGULAR",
+                "Potion": "jigsaw:xreno_substance"
+            },
+            "amount": 100
+        }
+    ]
+}

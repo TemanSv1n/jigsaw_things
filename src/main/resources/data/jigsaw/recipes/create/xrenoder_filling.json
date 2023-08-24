@@ -1,0 +1,21 @@
+{
+    "type": "create:filling",
+    "ingredients": [
+      {
+        "item": "jigsaw:iron_can"
+      },
+      {
+        "fluid": "create:potion",
+        "nbt": {
+          "Bottle": "REGULAR",
+          "Potion": "jigsaw:xreno_substance"
+        },
+        "amount": 500
+      }
+    ],
+    "results": [
+      {
+        "item": "jigsaw:xrenoder"
+      }
+    ]
+  }

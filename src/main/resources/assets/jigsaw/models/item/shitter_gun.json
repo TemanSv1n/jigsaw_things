@@ -1,0 +1,13 @@
+{
+  "parent": "jigsaw:custom/shittergun",
+  "textures": {
+    "0": "jigsaw:blocks/barrel_side",
+    "1": "jigsaw:blocks/piston_side",
+    "2": "jigsaw:blocks/copper_block",
+    "3": "jigsaw:blocks/cauldron_inner",
+    "4": "jigsaw:blocks/shitter",
+    "5": "jigsaw:blocks/sussy_vent",
+    "missing": "jigsaw:blocks/copper_block",
+    "particle": "jigsaw:items/diarrhea_bottle"
+  }
+}

@@ -6,6 +6,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -23,6 +24,9 @@ public class PoozookaProjectileHitsLivingEntityProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity immediatesourceentity) {
 		if (entity == null || immediatesourceentity == null)
 			return;
+		ItemStack sussy = ItemStack.EMPTY;
+		sussy = new ItemStack(JigsawModBlocks.SHIT_MISSILE.get());
+		(sussy).enchant(Enchantments.BINDING_CURSE, 1);
 		if (world instanceof Level _level && !_level.isClientSide()) {
 			ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY));
 			entityToSpawn.setPickUpDelay(10);
@@ -31,10 +35,10 @@ public class PoozookaProjectileHitsLivingEntityProcedure {
 		{
 			Entity _entity = entity;
 			if (_entity instanceof Player _player) {
-				_player.getInventory().armor.set(1, new ItemStack(JigsawModBlocks.SHIT_MISSILE.get()));
+				_player.getInventory().armor.set(1, sussy);
 				_player.getInventory().setChanged();
 			} else if (_entity instanceof LivingEntity _living) {
-				_living.setItemSlot(EquipmentSlot.LEGS, new ItemStack(JigsawModBlocks.SHIT_MISSILE.get()));
+				_living.setItemSlot(EquipmentSlot.LEGS, sussy);
 			}
 		}
 		if (world instanceof ServerLevel _level)

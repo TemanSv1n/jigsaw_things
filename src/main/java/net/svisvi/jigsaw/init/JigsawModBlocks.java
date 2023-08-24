@@ -9,12 +9,16 @@ import net.svisvi.jigsaw.block.TallowBlockBlock;
 import net.svisvi.jigsaw.block.SlavicTotemRawBlock;
 import net.svisvi.jigsaw.block.ShitMissileBlock;
 import net.svisvi.jigsaw.block.SafegunpowderbarrelBlock;
+import net.svisvi.jigsaw.block.RogozPlacerBlock;
+import net.svisvi.jigsaw.block.RocketLocatorBlock;
 import net.svisvi.jigsaw.block.PonosBlock;
 import net.svisvi.jigsaw.block.PWhatblockBlock;
 import net.svisvi.jigsaw.block.LinearProjectorBlock;
 import net.svisvi.jigsaw.block.InvisibilitywheatbottomBlock;
 import net.svisvi.jigsaw.block.InvisibilitywheatBlock;
 import net.svisvi.jigsaw.block.InvisibilitybushBlock;
+import net.svisvi.jigsaw.block.InvisibilityRogozBlock;
+import net.svisvi.jigsaw.block.InvisibilityRogosBottomBlock;
 import net.svisvi.jigsaw.block.GunpowderbarrelBlock;
 import net.svisvi.jigsaw.block.FatBlockBlock;
 import net.svisvi.jigsaw.block.FatBlock;
@@ -77,6 +81,10 @@ public class JigsawModBlocks {
 	public static final RegistryObject<Block> SLAVIC_TOTEM_RAW = REGISTRY.register("slavic_totem_raw", () -> new SlavicTotemRawBlock());
 	public static final RegistryObject<Block> LINEAR_PROJECTOR = REGISTRY.register("linear_projector", () -> new LinearProjectorBlock());
 	public static final RegistryObject<Block> SHIT_MISSILE = REGISTRY.register("shit_missile", () -> new ShitMissileBlock());
+	public static final RegistryObject<Block> INVISIBILITY_ROGOZ = REGISTRY.register("invisibility_rogoz", () -> new InvisibilityRogozBlock());
+	public static final RegistryObject<Block> INVISIBILITY_ROGOS_BOTTOM = REGISTRY.register("invisibility_rogos_bottom", () -> new InvisibilityRogosBottomBlock());
+	public static final RegistryObject<Block> ROGOZ_PLACER = REGISTRY.register("rogoz_placer", () -> new RogozPlacerBlock());
+	public static final RegistryObject<Block> ROCKET_LOCATOR = REGISTRY.register("rocket_locator", () -> new RocketLocatorBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -98,6 +106,9 @@ public class JigsawModBlocks {
 			SlavicTotemRawBlock.registerRenderLayer();
 			LinearProjectorBlock.registerRenderLayer();
 			ShitMissileBlock.registerRenderLayer();
+			InvisibilityRogozBlock.registerRenderLayer();
+			InvisibilityRogosBottomBlock.registerRenderLayer();
+			RogozPlacerBlock.registerRenderLayer();
 		}
 
 		@SubscribeEvent

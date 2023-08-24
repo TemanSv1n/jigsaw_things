@@ -1,6 +1,7 @@
 package net.svisvi.jigsaw.procedures;
 
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 
 public class PudgehookProjectileHitsLivingEntityProcedure {
@@ -22,6 +23,9 @@ public class PudgehookProjectileHitsLivingEntityProcedure {
 		dpitch = Math.atan2(Math.sqrt(dz * dz + dx * dx), dy) + Math.PI;
 		dist_k = Math.sqrt(dz * dz + dx * dx + dy * dy);
 		speed = 0.4;
+		if (entity instanceof Player) {
+			speed = 1.2;
+		}
 		entity.setDeltaMovement(new Vec3((Math.sin(dpitch) * Math.cos(dyaw) * speed * dist_k), (Math.cos(dpitch) * speed), (Math.sin(dpitch) * Math.sin(dyaw) * speed * dist_k)));
 	}
 }

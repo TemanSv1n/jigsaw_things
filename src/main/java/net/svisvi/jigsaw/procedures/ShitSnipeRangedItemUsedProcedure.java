@@ -70,7 +70,7 @@ public class ShitSnipeRangedItemUsedProcedure {
 				recharger = 30;
 			}
 		} else if (JigsawModItems.POOZOOKA.get() == itemstack.getItem()) {
-			recharger = 140;
+			recharger = 90;
 		}
 		if (entity instanceof Player _player)
 			_player.getCooldowns().addCooldown(itemstack.getItem(), (int) (recharger - quicker));

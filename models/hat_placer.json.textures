@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "lodestone_top",
+        "1": "iron_bars",
+        "2": "barrel_side",
+        "3": "pink_wool",
+        "missing": "stonecutter_bottom"
+      },
+      "name": "default"
+    }
+  }
+}

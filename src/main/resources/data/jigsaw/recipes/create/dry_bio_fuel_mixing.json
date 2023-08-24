@@ -1,0 +1,24 @@
+{
+    "type": "create:mixing",
+    "ingredients": [
+        {
+            "fluid": "createindustry:kerosene",
+            "amount": 500
+        },
+        {
+            "fluid": "create:potion",
+            "nbt": {
+                "Bottle": "REGULAR",
+                "Potion": "jigsaw:xreno_substance"
+            },
+            "amount": 10
+        }
+    ],
+    "results": [
+        {
+            "item": "jigsaw:dry_bio_fuel",
+            "count": 8
+        }
+    ],
+    "heatRequirement": "heated"
+}

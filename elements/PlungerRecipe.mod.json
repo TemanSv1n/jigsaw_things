@@ -7,13 +7,13 @@
     "cookingTime": 200,
     "recipeRetstackSize": 1,
     "group": "",
-    "recipeShapeless": true,
+    "recipeShapeless": false,
     "recipeSlots": [
       {
         "value": ""
       },
       {
-        "value": "Items.BEETROOT"
+        "value": "Items.DRIED_KELP"
       },
       {
         "value": ""
@@ -22,7 +22,7 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:IronCan"
+        "value": "Items.STICK"
       },
       {
         "value": ""
@@ -31,16 +31,16 @@
         "value": ""
       },
       {
-        "value": "Items.SUGAR"
+        "value": "Items.STICK"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Xrenoder"
+      "value": "CUSTOM:Plunger"
     },
-    "name": "xrenoder_recipe",
+    "name": "plunger_recipe",
     "namespace": "mod"
   }
 }

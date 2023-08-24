@@ -61,7 +61,7 @@ public class LivingBeaverlegsEntity extends Wolf {
 				double z = LivingBeaverlegsEntity.this.getZ();
 				Entity entity = LivingBeaverlegsEntity.this;
 				Level world = LivingBeaverlegsEntity.this.level;
-				return super.canUse() && PlayerNotWearingCaptainBeaverHatProcedure.execute(world, x, y, z);
+				return super.canUse() && PlayerNotWearingCaptainBeaverHatProcedure.execute(world, x, y, z, entity);
 			}
 
 			@Override
@@ -71,7 +71,7 @@ public class LivingBeaverlegsEntity extends Wolf {
 				double z = LivingBeaverlegsEntity.this.getZ();
 				Entity entity = LivingBeaverlegsEntity.this;
 				Level world = LivingBeaverlegsEntity.this.level;
-				return super.canContinueToUse() && PlayerNotWearingCaptainBeaverHatProcedure.execute(world, x, y, z);
+				return super.canContinueToUse() && PlayerNotWearingCaptainBeaverHatProcedure.execute(world, x, y, z, entity);
 			}
 		});
 		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, ShittyBearEntity.class, false, false));

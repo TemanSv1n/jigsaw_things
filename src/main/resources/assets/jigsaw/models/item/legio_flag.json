@@ -1,0 +1,7 @@
+{
+  "parent": "jigsaw:custom/legioflag",
+  "textures": {
+    "1": "jigsaw:blocks/legioflag",
+    "particle": "jigsaw:items/flint_wrecker"
+  }
+}

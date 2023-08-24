@@ -15,17 +15,20 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.animal.Wolf;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
+import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.FollowMobGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
@@ -34,7 +37,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
-public class LivingBeaverEntity extends Wolf {
+public class LivingBeaverEntity extends PathfinderMob {
 	public LivingBeaverEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(JigsawModEntities.LIVING_BEAVER.get(), world);
 	}
@@ -65,7 +68,7 @@ public class LivingBeaverEntity extends Wolf {
 				double z = LivingBeaverEntity.this.getZ();
 				Entity entity = LivingBeaverEntity.this;
 				Level world = LivingBeaverEntity.this.level;
-				return super.canUse() && PlayerNotWearingCaptainBeaverHatProcedure.execute(world, x, y, z);
+				return super.canUse() && PlayerNotWearingCaptainBeaverHatProcedure.execute(world, x, y, z, entity);
 			}
 
 			@Override
@@ -75,12 +78,19 @@ public class LivingBeaverEntity extends Wolf {
 				double z = LivingBeaverEntity.this.getZ();
 				Entity entity = LivingBeaverEntity.this;
 				Level world = LivingBeaverEntity.this.level;
-				return super.canContinueToUse() && PlayerNotWearingCaptainBeaverHatProcedure.execute(world, x, y, z);
+				return super.canContinueToUse() && PlayerNotWearingCaptainBeaverHatProcedure.execute(world, x, y, z, entity);
 			}
 		});
 		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, ShittyBearEntity.class, false, false));
-		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(7, new FloatGoal(this));
+		this.goalSelector.addGoal(6, new MeleeAttackGoal(this, 1.2, false) {
+			@Override
+			protected double getAttackReachSqr(LivingEntity entity) {
+				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
+			}
+		});
+		this.targetSelector.addGoal(7, new HurtByTargetGoal(this).setAlertOthers());
+		this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(9, new FloatGoal(this));
 	}
 
 	@Override
@@ -127,7 +137,7 @@ public class LivingBeaverEntity extends Wolf {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		LivingBeaverOnEntityTickUpdateProcedure.execute(this);
+		LivingBeaverOnEntityTickUpdateProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	public static void init() {

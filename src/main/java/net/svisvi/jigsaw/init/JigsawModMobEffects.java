@@ -4,6 +4,7 @@
  */
 package net.svisvi.jigsaw.init;
 
+import net.svisvi.jigsaw.potion.XrenoderingMobEffect;
 import net.svisvi.jigsaw.potion.UnlevitationMobEffect;
 import net.svisvi.jigsaw.potion.PurgativeMobEffect;
 import net.svisvi.jigsaw.potion.PoopMobEffect;
@@ -30,4 +31,5 @@ public class JigsawModMobEffects {
 	public static final RegistryObject<MobEffect> EGGED = REGISTRY.register("egged", () -> new EggedMobEffect());
 	public static final RegistryObject<MobEffect> JUDGEMENT = REGISTRY.register("judgement", () -> new JudgementMobEffect());
 	public static final RegistryObject<MobEffect> BACK_JUMP = REGISTRY.register("back_jump", () -> new BackJumpMobEffect());
+	public static final RegistryObject<MobEffect> XRENODERING = REGISTRY.register("xrenodering", () -> new XrenoderingMobEffect());
 }

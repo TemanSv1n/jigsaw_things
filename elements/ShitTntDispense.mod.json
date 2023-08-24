@@ -1,0 +1,18 @@
+{
+  "_fv": 39,
+  "_type": "itemextension",
+  "definition": {
+    "item": {
+      "value": "CUSTOM:DristTnt"
+    },
+    "enableFuel": false,
+    "fuelPower": {
+      "fixedValue": 1600.0
+    },
+    "hasDispenseBehavior": true,
+    "dispenseResultItemstack": {
+      "name": "ShitTntDispenseOnDispenseAttemptWithResult"
+    },
+    "compostLayerChance": 0.0
+  }
+}

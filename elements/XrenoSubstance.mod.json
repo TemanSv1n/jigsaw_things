@@ -1,0 +1,21 @@
+{
+  "_fv": 39,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Xrenoder",
+    "splashName": "Splash Potion of Xrenoder",
+    "lingeringName": "Lingering Potion of Xrenoder",
+    "arrowName": "Arrow of Xrenoder",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Xrenodering"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "_fv": 39,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Xrenoder",
+    "icon": "xrenodering.png",
+    "color": {
+      "value": -50688,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "XrenoderingEffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "XrenoderingOnEffectActiveTick"
+    }
+  }
+}

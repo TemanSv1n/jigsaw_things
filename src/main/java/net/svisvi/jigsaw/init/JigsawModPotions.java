@@ -21,4 +21,5 @@ public class JigsawModPotions {
 	public static final RegistryObject<Potion> PURGATIVESTRONG = REGISTRY.register("purgativestrong",
 			() -> new Potion(new MobEffectInstance(JigsawModMobEffects.PURGATIVE.get(), 40, 0, false, true), new MobEffectInstance(JigsawModMobEffects.POOP.get(), 1200, 0, false, true), new MobEffectInstance(MobEffects.POISON, 600, 0, false, true)));
 	public static final RegistryObject<Potion> MUTAGEN = REGISTRY.register("mutagen", () -> new Potion(new MobEffectInstance(JigsawModMobEffects.PONOSMUTAGEN.get(), 20, 0, false, true)));
+	public static final RegistryObject<Potion> XRENO_SUBSTANCE = REGISTRY.register("xreno_substance", () -> new Potion(new MobEffectInstance(JigsawModMobEffects.XRENODERING.get(), 3600, 0, false, true)));
 }

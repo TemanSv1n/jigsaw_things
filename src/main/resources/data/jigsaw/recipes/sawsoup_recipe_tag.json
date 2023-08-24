@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1"
+  ],
+  "key": {
+    "0": {
+      "tag": "forge:dusts/wood"
+    },
+    "1": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "result": {
+    "item": "jigsaw:saw_soup",
+    "count": 1
+  }
+}

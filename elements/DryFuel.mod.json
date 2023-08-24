@@ -1,0 +1,21 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:SussyFuel"
+      },
+      {
+        "value": "CUSTOM:DryBioFuel"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "dry_fuel",
+    "namespace": "jigsaw"
+  }
+}

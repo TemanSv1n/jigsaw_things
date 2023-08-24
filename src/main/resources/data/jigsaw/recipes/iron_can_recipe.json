@@ -7,13 +7,13 @@
   ],
   "key": {
     "0": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:iron_nugget"
     },
     "1": {
-      "item": "minecraft:glass"
+      "item": "minecraft:glass_pane"
     },
     "2": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:iron_nugget"
     }
   },
   "result": {

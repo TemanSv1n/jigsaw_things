@@ -8,6 +8,7 @@ import net.svisvi.jigsaw.entity.SplashponosmutagenEntity;
 import net.svisvi.jigsaw.entity.SniperBeaverEntity;
 import net.svisvi.jigsaw.entity.ShittybeeEntity;
 import net.svisvi.jigsaw.entity.ShittyBearEntity;
+import net.svisvi.jigsaw.entity.ShitterGunEntity;
 import net.svisvi.jigsaw.entity.ShitgrenadeEntity;
 import net.svisvi.jigsaw.entity.ShitSnipeEntity;
 import net.svisvi.jigsaw.entity.ShitGunEntity;
@@ -138,6 +139,8 @@ public class JigsawModEntities {
 			EntityType.Builder.<PoozookaEntity>of(PoozookaEntity::new, MobCategory.MISC).setCustomClientFactory(PoozookaEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<HitlerEmitterEntity>> HITLER_EMITTER = register("hitler_emitter", EntityType.Builder.<HitlerEmitterEntity>of(HitlerEmitterEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
 			.setTrackingRange(0).setUpdateInterval(3).setCustomClientFactory(HitlerEmitterEntity::new).fireImmune().sized(0f, 0f));
+	public static final RegistryObject<EntityType<ShitterGunEntity>> SHITTER_GUN = register("projectile_shitter_gun",
+			EntityType.Builder.<ShitterGunEntity>of(ShitterGunEntity::new, MobCategory.MISC).setCustomClientFactory(ShitterGunEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

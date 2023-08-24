@@ -1,0 +1,15 @@
+{
+    "type": "create:crushing",
+    "ingredients": [
+        {
+            "item": "jigsaw:poops"
+        }
+    ],
+    "results": [
+        {
+            "item": "farmersdelight:minced_beef",
+            "count": 1
+        }
+    ],
+    "processingTime": 400
+}

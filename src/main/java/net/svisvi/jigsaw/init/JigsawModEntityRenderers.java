@@ -64,5 +64,6 @@ public class JigsawModEntityRenderers {
 		event.registerEntityRenderer(JigsawModEntities.SHIT_GUN.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(JigsawModEntities.POOZOOKA.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(JigsawModEntities.HITLER_EMITTER.get(), HitlerEmitterRenderer::new);
+		event.registerEntityRenderer(JigsawModEntities.SHITTER_GUN.get(), ThrownItemRenderer::new);
 	}
 }
